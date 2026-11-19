@@ -28,7 +28,10 @@ jobs:
           EP: ${{ inputs.episode }}
         run: |
           if [ -n "$EP" ]; then echo "scripts=episodes/$EP/script.md" >> "$GITHUB_OUTPUT"
-          else echo "scripts=$(git diff --name-only HEAD~1 HEAD -- 'episodes/**/script.md' | tr '\n' ' ')" >> "$GITHUB_OUTPUT"; fi
+          else
+            files=$(git diff --name-only HEAD~1 HEAD -- 'episodes/**/script.md' 2>/dev/null || git ls-files 'episodes/**/script.md')
+            echo "scripts=$(echo $files)" >> "$GITHUB_OUTPUT"
+          fi
       - name: Install Kokoro (CPU)
         if: steps.pick.outputs.scripts != ''
         run: |
