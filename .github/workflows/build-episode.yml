@@ -46,7 +46,7 @@ jobs:
       - name: Install Kokoro (CPU), ffmpeg, fonts
         if: steps.pick.outputs.eps != ''
         run: |
-          sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg fonts-dejavu-core
+          sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg fonts-dejavu-core fonts-comic-neue
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-voice.txt pillow
       - name: Voice and edit

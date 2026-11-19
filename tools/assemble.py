@@ -183,6 +183,82 @@ def write_srt(caps, path: Path):
                     encoding="utf-8")
 
 
+def load_spec(script: Path):
+    """animation.yaml next to the episode script (Shorts use their episode's)."""
+    for d in (script.parent, script.parent.parent):
+        f = d / "animation.yaml"
+        if f.exists():
+            import yaml
+            return yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+    return {}
+
+
+def scene_spec(sc, spec):
+    ids = sc["art"] or [sc["id"]]
+    shots = []
+    for sid in ids:
+        base, _, idx = sid.partition(".")  # "S10.4" = 4th shot of scene S10 only
+        v = spec.get(base)
+        if v:
+            v = v if isinstance(v, list) else [v]
+            if idx.isdigit() and 0 < int(idx) <= len(v):
+                v = [v[int(idx) - 1]]
+                v = [{k: x for k, x in v[0].items() if k != "at"}]
+            shots += [dict(s) for s in v]
+    if len(ids) > 1:  # borrowed from several scenes: equal split
+        for s in shots:
+            s.pop("at", None)
+    return shots or None
+
+
+def short_title(script: Path):
+    m = re.search(r"^Title:\s*(.+)$", script.read_text(encoding="utf-8"), re.M)
+    return re.sub(r"\s*#\w+", "", m.group(1)).strip() if m else ""
+
+
+def render_anim(job):
+    """Worker: one scene's animation -> mp4 segment (silent). job = dict, see build()."""
+    import doodle
+    import numpy as np
+    shots, seconds, wav, out, vertical, title = (job[k] for k in ("shots", "seconds", "wav", "out", "vertical", "title"))
+    frames = max(1, round(seconds * FPS))
+    with wave.open(wav) as w:
+        samples = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+        rate = w.getframerate()
+    talk = doodle.loudness(samples, rate, frames)
+    plan = doodle.scene_shots(shots, seconds)
+    size = (1080, 1920) if vertical else (1920, 1080)
+    ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
+                           "-s", f"{size[0]}x{size[1]}", "-r", str(FPS), "-i", "-", "-c:v", "libx264",
+                           "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+    frame0 = job["frame0"]
+    for f in range(frames):
+        t = f / FPS
+        shot, start, dur = next((x for x in reversed(plan) if t >= x[1]), plan[0])
+        img = doodle.render_shot_frame(shot, t - start, dur, frame0 + f, talk[f])
+        if vertical:
+            canvas = Image.new("RGB", size, doodle.C["paper"])
+            canvas.paste(img.resize((1080, 810), Image.BILINEAR, box=(240, 0, 1680, 1080)), (0, 470))
+            if title:
+                tp = doodle.Pen(canvas, frame0 + f)
+                words, lines, cur = title.split(), [], ""
+                for wd in words:
+                    if doodle.font(84).getlength((cur + " " + wd).strip()) > 980 and cur:
+                        lines.append(cur)
+                        cur = wd
+                    else:
+                        cur = (cur + " " + wd).strip()
+                lines.append(cur)
+                for i, ln in enumerate(lines[:3]):
+                    tp.text(540, 230 + i * 100 - (len(lines) - 1) * 50, ln, 84, "ink")
+            img = canvas
+        ff.stdin.write(img.tobytes())
+    ff.stdin.close()
+    if ff.wait():
+        raise RuntimeError(f"ffmpeg failed for {out}")
+    return out
+
+
 def build(script: Path, vertical: bool = False):
     script = script.resolve()
     scenes = parse_script(script)
@@ -198,7 +274,24 @@ def build(script: Path, vertical: bool = False):
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         clips, move, report = [], 0, []
+        spec = load_spec(script)
+        jobs, frame0 = {}, 0
+        for sc, d in zip(scenes, durations):
+            shots = scene_spec(sc, spec)
+            if shots:
+                jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),
+                                  "out": str(tmp / f"{sc['id']}_anim.mp4"), "vertical": vertical,
+                                  "title": short_title(script) if vertical else "", "frame0": frame0}
+            frame0 += round((d + PAUSE) * FPS)
+        if jobs:
+            from concurrent.futures import ProcessPoolExecutor
+            with ProcessPoolExecutor() as ex:
+                list(ex.map(render_anim, sorted(jobs.values(), key=lambda j: -j["seconds"])))
         for i, (sc, d) in enumerate(zip(scenes, durations)):
+            if sc["id"] in jobs:
+                clips.append(Path(jobs[sc["id"]]["out"]))
+                report.append({"scene": sc["id"], "seconds": round(d + PAUSE, 1), "images": ["animated"]})
+                continue
             imgs = scene_images(sc, art_dirs)
             if not imgs:
                 card = tmp / f"{sc['id']}_card.png"
@@ -220,8 +313,8 @@ def build(script: Path, vertical: bool = False):
         write_srt(caps, srt)
         vf = []
         if vertical:  # burned-in captions for Shorts
-            style = ("FontName=DejaVu Serif,Fontsize=13,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00141618,"
-                     "BorderStyle=1,Outline=2,Shadow=0,Alignment=2,MarginV=70")
+            style = ("FontName=Comic Neue,Fontsize=14,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00141618,"
+                     "BorderStyle=1,Outline=2.5,Shadow=0,Alignment=2,MarginV=45")
             vf = ["-vf", f"subtitles={srt}:force_style='{style}'"]
         final = out / f"{name}.mp4"
         run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(vo / "vo_full.wav"), *vf,

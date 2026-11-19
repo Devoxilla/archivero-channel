@@ -1,0 +1,444 @@
+# EP001 animation (tools/doodle.py). Times are fractions of the shot; "at" is a fraction of the scene.
+# World 1920x1080, ground at y=900, characters stand with feet at y~950.
+
+S01:
+  - bg: grey
+    cam: [1.0, 1.25]
+    focus: [960, 450]
+    items:
+      - {prop: wall, x: 960, y: 1080, w: 1920, h: 1080, bricks: true}
+      - {prop: slit_window, x: 960, y: 450, h: 420, w: 30}
+      - {label: "4 INCHES", x: 1350, y: 450, in: 0.35, c: red}
+      - {prop: arrow, x0: 1150, y0: 450, x1: 1000, y1: 450, in: 0.35}
+  - at: 0.42
+    bg: paper
+    items:
+      - {prop: ladder, x: 860, y: 1040, h: 1000, labels: ["HALFWAY HOUSE", "CAMP", "LOW", "MEDIUM", "HIGH", "SUPERMAX"]}
+      - {char: gary, x: 520, y: 400, s: 0.55, face: happy}
+      - {label: "GARY", x: 520, y: 120, in: 0.15, size: 60}
+    beats:
+      - {t: 0.45, who: gary, walk: [520, 1000], dur: 0.45}
+      - {t: 0.45, who: gary, face: scared, arms: up}
+
+S02:
+  - bg: dusk
+    cam: [1.0, 1.12]
+    focus: [760, 650]
+    items:
+      - {prop: floor, y: 950, c: brown}
+      - {prop: shelf, x: 1400, y: 950, w: 900, h: 760}
+      - {prop: desk, x: 760, y: 950, papers: true}
+      - {prop: lamp, x: 900, y: 760}
+      - {char: host, x: 520, y: 1000, s: 1.1}
+  - at: 0.22
+    bg: paper
+    items:
+      - {char: gary, x: 960, y: 950, face: happy, arms: wave}
+      - {label: "NOT A REAL PERSON", x: 960, y: 150, in: 0.25, size: 56, c: red}
+      - {label: "REAL RULES", x: 960, y: 270, in: 0.55, size: 56}
+  - at: 0.42
+    bg: paper
+    items:
+      - {prop: crowd, x: 960, y: 1000, w: 1800, rows: 5, per: 28}
+      - {prop: counter, x: 960, y: 260, from: 0, to: 155000, dur: 3}
+  - at: 0.68
+    bg: paper
+    items:
+      - {prop: ground, y: 900}
+      - {prop: house, x: 450, y: 900, s: 0.8}
+      - {prop: cell, x: 1450, y: 900, w: 600, h: 520}
+      - {prop: bars, x: 1450, y: 900, w: 600, h: 520}
+      - {char: inmate, id: walker, x: 650, y: 960, arms: hold, face: happy}
+      - {char: inmate, id: alone, x: 1450, y: 960, face: sad, shirt: orange}
+      - {label: "THE DIFFERENCE?", x: 960, y: 140, in: 0.45}
+    beats:
+      - {t: 0.1, who: walker, walk: [900, 960], dur: 0.5}
+
+S03:
+  - bg: paper
+    items:
+      - {prop: floor, y: 950, c: light}
+      - {prop: desk, x: 1300, y: 950, papers: true, c: grey}
+      - {char: gary, x: 600, y: 990, face: neutral, arms: hold}
+      - {label: "GARY, 34, ACCOUNTANT", x: 960, y: 140, in: 0.1, size: 64}
+      - {label: "FRAUD", x: 960, y: 270, in: 0.3, size: 70, c: red}
+      - {label: "NO VIOLENCE · NO RECORD", x: 960, y: 390, in: 0.55, size: 50}
+    beats:
+      - {t: 0.55, who: gary, face: happy}
+  - at: 0.24
+    bg: paper
+    cam: [1.0, 1.1]
+    items:
+      - {prop: form, x: 960, y: 560, fill: 12, total: "4"}
+      - {char: guard, id: clerk, x: 1500, y: 1000, arms: point, s: 0.9}
+  - at: 0.66
+    bg: paper
+    items:
+      - {prop: ladder, x: 860, y: 1040, h: 1000, labels: ["HALFWAY HOUSE", "CAMP", "LOW", "MEDIUM", "HIGH", "SUPERMAX"], highlight: 1}
+      - {char: gary, x: 520, y: 520, s: 0.55, face: happy}
+      - {prop: arrow, x0: 1500, y0: 300, x1: 1300, y1: 300, in: 0.2}
+      - {label: "UP", x: 1600, y: 300, in: 0.2, size: 60}
+      - {prop: arrow, x0: 1500, y0: 700, x1: 1300, y1: 700, in: 0.35, c: ink}
+      - {label: "DOWN", x: 1630, y: 700, in: 0.35, size: 60}
+    beats:
+      - {t: 0.7, who: gary, jump: true}
+
+S04:
+  - bg: sky
+    items:
+      - {prop: ground, y: 900}
+      - {prop: sun}
+      - {prop: house, x: 700, y: 900}
+      - {prop: sign, x: 1100, y: 900, text: "REENTRY CENTER", s: 0.8}
+      - {char: inmate, id: res, x: 1400, y: 960, arms: hold, face: happy}
+      - {label: "LEVEL 0: HALFWAY HOUSE", x: 960, y: 120, size: 64}
+    beats:
+      - {t: 0.3, who: res, walk: [1850, 960], dur: 0.6}
+  - at: 0.35
+    bg: night
+    items:
+      - {prop: moon}
+      - {prop: ground, y: 900, c: dark}
+      - {prop: house, x: 960, y: 900}
+      - {prop: clock, x: 1500, y: 350, r: 110, speed: 3}
+      - {char: inmate, id: res, x: 1900, y: 960, face: neutral}
+      - {char: staff, x: 650, y: 960, arms: hips, face: neutral}
+      - {label: "CURFEW", x: 1500, y: 560, in: 0.2, c: red, size: 60}
+    beats:
+      - {t: 0.05, who: res, walk: [1100, 960], dur: 0.5}
+      - {t: 0.6, who: staff, face: happy}
+  - at: 0.72
+    bg: paper
+    items:
+      - {prop: floor, y: 950, c: khaki}
+      - {prop: phone, x: 1250, y: 620, s: 1.3}
+      - {char: inmate, id: home, x: 700, y: 990, face: happy, arms: hips}
+      - {label: "FINISH LINE", x: 960, y: 140, in: 0.5, c: red}
+
+S05:
+  - bg: sky
+    items:
+      - {prop: ground, y: 900}
+      - {prop: sun, x: 250}
+      - {prop: building, x: 1200, y: 900, w: 900, h: 300, rows: 2, cols: 7, c: white, sign: "FEDERAL PRISON CAMP"}
+      - {prop: tree, x: 180, y: 900}
+      - {char: gary, x: -100, y: 960, face: neutral, arms: hold}
+      - {label: "LEVEL 1: MINIMUM", x: 960, y: 110, size: 64}
+      - {label: "NO FENCE", x: 380, y: 300, in: 0.4, c: red}
+    beats:
+      - {t: 0.0, who: gary, walk: [600, 960], dur: 0.4}
+      - {t: 0.5, who: gary, face: happy}
+  - at: 0.18
+    bg: paper
+    items:
+      - {prop: cupcake, x: 960, y: 760, s: 2.4}
+      - {label: "\"CLUB FED\"", x: 520, y: 200, in: 0.05}
+      - {label: "\"CAMP CUPCAKE\"", x: 1400, y: 300, in: 0.4, c: red}
+  - at: 0.36
+    bg: paper
+    items:
+      - {prop: floor, y: 950, c: light}
+      - {prop: desk, x: 960, y: 950, c: grey}
+      - {char: gary, x: 700, y: 990, arms: hold, face: neutral}
+      - {char: inmate, id: cook, x: 1250, y: 990, arms: point}
+      - {prop: phone, x: 1650, y: 500, in: 0.55}
+    beats:
+      - {t: 0.6, who: gary, face: sad}
+  - at: 0.55
+    bg: night
+    items:
+      - {prop: moon, x: 300}
+      - {prop: ground, y: 900, c: green}
+      - {prop: building, x: 400, y: 900, w: 700, h: 300, rows: 2, cols: 6, c: light}
+      - {char: gary, x: 700, y: 960, face: sad}
+      - {label: "ESCAPE = NEW CRIME", x: 1200, y: 180, in: 0.45, c: red}
+      - {label: "+ YEARS", x: 1200, y: 320, in: 0.6}
+    beats:
+      - {t: 0.05, who: gary, walk: [1750, 960], dur: 0.5}
+      - {t: 0.05, who: gary, face: scared}
+  - at: 0.82
+    bg: sky
+    items:
+      - {prop: road, y: 980}
+      - {prop: sign, x: 1500, y: 930, text: "GAS", c: yellow}
+      - {char: gary, x: 1100, y: 960, face: sad, arms: up}
+      - {char: guard, x: 600, y: 960, face: angry}
+      - {char: guard, id: guard2, x: 1500, y: 960, face: angry, flip: true}
+    beats:
+      - {t: 0.0, who: guard, walk: [900, 960], dur: 0.3}
+      - {t: 0.0, who: guard2, walk: [1300, 960], dur: 0.3}
+
+S06:
+  - bg: paper
+    items:
+      - {prop: ground, y: 900}
+      - {prop: building, x: 960, y: 900, w: 1000, h: 330, rows: 2, cols: 8}
+      - {prop: fence, x: 960, y: 960, w: 1700, h: 200, double: true}
+      - {label: "LEVEL 2: LOW", x: 960, y: 110, size: 64}
+      - {label: "DOUBLE FENCE", x: 1500, y: 300, in: 0.4, c: red}
+  - at: 0.25
+    bg: grey
+    items:
+      - {prop: floor, y: 950, c: concrete}
+      - {prop: bunk, x: 400, y: 950, s: 0.8}
+      - {prop: bunk, x: 960, y: 950, s: 0.8}
+      - {prop: bunk, x: 1520, y: 950, s: 0.8}
+      - {prop: wall, x: 680, y: 950, w: 40, h: 250, bricks: false, c: light}
+      - {prop: wall, x: 1240, y: 950, w: 40, h: 250, bricks: false, c: light}
+      - {char: gary, x: 1000, y: 990, s: 0.8, face: sad}
+      - {label: "PRIVACY?", x: 960, y: 150, in: 0.5}
+      - {prop: camera, x: 1750, y: 200}
+  - at: 0.6
+    bg: paper
+    items:
+      - {prop: floor, y: 950, c: khaki}
+      - {prop: building, x: 960, y: 520, w: 300, h: 200, rows: 1, cols: 1, c: dark}
+      - {prop: stool, x: 900, y: 950}
+      - {char: gary, x: 650, y: 990, face: happy}
+      - {char: inmate, id: rival, x: 1500, y: 990, face: angry}
+      - {label: "TV ROOM", x: 960, y: 120, size: 56}
+    beats:
+      - {t: 0.15, who: gary, walk: [880, 990], dur: 0.25}
+      - {t: 0.45, who: rival, walk: [1000, 990], dur: 0.2}
+      - {t: 0.45, who: gary, walk: [700, 990], dur: 0.15}
+      - {t: 0.7, who: gary, face: angry, arms: up, shake: 0.3}
+
+S07:
+  - bg: paper
+    items:
+      - {char: host, x: 760, y: 1000, s: 1.4, face: smug}
+      - {prop: question, x: 1350, y: 380, s: 1.4}
+      - {label: "COMMENT YOUR GUESS", x: 1300, y: 820, in: 0.4, size: 56}
+
+S08:
+  - bg: paper
+    items:
+      - {prop: floor, y: 950, c: light}
+      - {char: gary, x: 700, y: 990, face: angry, arms: up}
+      - {char: inmate, id: rival, x: 1150, y: 990, face: scared, flip: true}
+      - {char: guard, x: 1750, y: 990, face: angry, flip: true}
+      - {label: "+ POINTS", x: 960, y: 150, in: 0.3, c: red}
+    beats:
+      - {t: 0.0, who: gary, shake: 0.4}
+      - {t: 0.3, who: guard, walk: [1350, 990], dur: 0.3}
+      - {t: 0.65, who: gary, face: sad, arms: down}
+  - at: 0.16
+    bg: paper
+    items:
+      - {prop: ground, y: 900}
+      - {prop: building, x: 960, y: 900, w: 1100, h: 400, rows: 3, cols: 10}
+      - {prop: fence, x: 960, y: 960, w: 1800, h: 230, double: true, sensor: true}
+      - {label: "LEVEL 3: MEDIUM", x: 960, y: 110, size: 64}
+      - {label: "SENSORS", x: 1600, y: 360, in: 0.5, c: red, size: 56}
+  - at: 0.38
+    bg: paper
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1200, h: 700}
+      - {prop: bunk, x: 600, y: 950}
+      - {prop: toilet, x: 1450, y: 950}
+      - {prop: door, x: 1150, y: 950}
+      - {char: gary, x: 850, y: 990, face: sad}
+      - {char: inmate, id: roommate, x: 1300, y: 990, face: angry, flip: true}
+      - {label: "ROOMMATE", x: 1300, y: 170, in: 0.6, c: red}
+  - at: 0.62
+    bg: grey
+    items:
+      - {prop: clock, x: 960, y: 470, r: 230, speed: 6}
+      - {prop: crowd, x: 960, y: 1020, w: 1500, rows: 2, per: 18}
+      - {label: "YEAR AFTER YEAR", x: 960, y: 90, in: 0.4, size: 60}
+
+S09:
+  - bg: night
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1300, h: 760, c: grey}
+      - {prop: bunk, x: 700, y: 950, double: false}
+      - {char: gary, x: 1200, y: 990, face: sad}
+      - {char: guard, x: 1650, y: 990, flip: true, arms: hips}
+      - {label: "COUNT", x: 960, y: 120, size: 70, c: red}
+  - at: 0.18
+    bg: paper
+    items:
+      - {prop: floor, y: 950, c: light}
+      - {prop: desk, x: 700, y: 950, c: grey}
+      - {char: gary, x: 450, y: 990, arms: hold}
+      - {char: inmate, id: a, x: 1100, y: 990, arms: hold}
+      - {char: inmate, id: b, x: 1400, y: 990, arms: hold, flip: true}
+      - {label: "WORK CALL", x: 960, y: 120, in: 0.3}
+      - {prop: clock, x: 1650, y: 300, r: 100, speed: 4}
+  - at: 0.45
+    bg: paper
+    items:
+      - {prop: crowd, x: 960, y: 1000, w: 1600, rows: 3, per: 20}
+      - {prop: envelope, x: 960, y: 380, s: 1.5}
+      - {char: gary, x: 1700, y: 990, face: sad}
+      - {label: "MAIL CALL", x: 960, y: 120}
+  - at: 0.63
+    bg: night
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1300, h: 760, c: dark}
+      - {prop: bunk, x: 960, y: 950, double: false, dummy: false}
+      - {prop: flashlight, x: 960, y: 760, fx: 1700, fy: 150, sweep: 150}
+      - {label: "STILL BREATHING?", x: 960, y: 140, in: 0.3, c: red}
+  - at: 0.8
+    bg: paper
+    items:
+      - {prop: ladder, x: 860, y: 1040, h: 1000, labels: ["HALFWAY HOUSE", "CAMP", "LOW", "MEDIUM", "HIGH", "SUPERMAX"], highlight: 3}
+      - {prop: camera, x: 300, y: 250}
+      - {prop: camera, x: 1700, y: 250}
+
+S10:
+  - bg: paper
+    items:
+      - {prop: ground, y: 900, c: concrete}
+      - {char: gary, x: 500, y: 960, face: scared}
+      - {char: inmate, id: g1, x: 1200, y: 960, face: angry, flip: true, shirt: red}
+      - {char: inmate, id: g2, x: 1450, y: 960, face: angry, flip: true, shirt: red}
+      - {char: guard, x: 1900, y: 960, flip: true, face: angry}
+    beats:
+      - {t: 0.2, who: gary, walk: [900, 960], dur: 0.25}
+      - {t: 0.5, who: guard, walk: [1100, 960], dur: 0.2}
+      - {t: 0.7, who: gary, face: angry, arms: up, shake: 0.3}
+  - at: 0.14
+    bg: dusk
+    cam: [1.0, 1.08]
+    items:
+      - {prop: ground, y: 900, c: concrete}
+      - {prop: wall, x: 960, y: 900, w: 1700, h: 480, wire: true}
+      - {prop: tower, x: 250, y: 900, light: true}
+      - {prop: tower, x: 1670, y: 900, light: true}
+      - {label: "LEVEL 4: HIGH (USP)", x: 960, y: 110, size: 64}
+  - at: 0.38
+    bg: night
+    items:
+      - {prop: moon, x: 300}
+      - {prop: water, y: 760}
+      - {prop: island, x: 1000, y: 780, w: 900, light: true}
+      - {label: "ALCATRAZ 1934–1963", x: 960, y: 120, size: 60}
+      - {label: "36 TRIED · 0 OFFICIALLY ESCAPED", x: 960, y: 230, in: 0.5, size: 50, c: red}
+  - at: 0.63
+    bg: night
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1300, h: 760, c: dark}
+      - {prop: bunk, x: 650, y: 950, double: false, dummy: true}
+      - {prop: bunk, x: 1270, y: 950, double: false, dummy: true}
+      - {label: "FAKE HEADS", x: 960, y: 140, in: 0.3, c: red}
+  - at: 0.76
+    bg: night
+    items:
+      - {prop: moon, x: 1600}
+      - {prop: water, y: 700}
+      - {prop: raft, x: 600, y: 760, s: 1.3, drift: 40}
+      - {label: "5 NEVER FOUND", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.92
+    bg: grey
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1300, h: 760}
+      - {prop: wall, x: 1300, y: 600, w: 160, h: 90, bricks: false, c: grey}
+      - {char: gary, x: 1050, y: 990, face: smug, arms: point}
+
+S11:
+  - bg: grey
+    items:
+      - {char: gary, x: 800, y: 990, face: scared, arms: up}
+      - {char: guard, x: 1200, y: 990, face: angry, flip: true, arms: point}
+      - {label: "\"THE HOLE\"", x: 960, y: 150, in: 0.3, c: red}
+  - at: 0.3
+    bg: paper
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1300, h: 760, c: grey}
+      - {prop: door, x: 1300, y: 950, slot: true, tray: true, s: 1.4}
+      - {char: gary, x: 700, y: 990, face: sad}
+      - {label: "MEALS THROUGH A SLOT", x: 960, y: 140, in: 0.4, size: 56}
+  - at: 0.55
+    bg: sky
+    items:
+      - {prop: floor, y: 950}
+      - {prop: cage, x: 960, y: 950, w: 520, h: 520}
+      - {char: gary, x: 960, y: 940, face: sad, s: 0.8}
+  - at: 0.75
+    bg: paper
+    items:
+      - {prop: ground, y: 560, c: light}
+      - {prop: building, x: 960, y: 560, w: 1100, h: 380, rows: 3, cols: 10}
+      - {prop: pit, x: 960, y: 560, w: 1100, h: 330}
+      - {label: "EVERY LEVEL HAS A BASEMENT", x: 960, y: 960, in: 0.3, c: red, size: 56}
+
+S12:
+  - bg: grey
+    items:
+      - {prop: floor, y: 950}
+      - {char: gary, x: 700, y: 990, face: angry, arms: up}
+      - {char: guard, x: 1250, y: 990, face: scared, flip: true}
+    beats:
+      - {t: 0.0, who: gary, shake: 0.5}
+      - {t: 0.5, who: gary, face: scared, arms: down}
+  - at: 0.12
+    bg: paper
+    items:
+      - {prop: mountains, y: 820}
+      - {prop: ground, y: 820, c: khaki}
+      - {prop: building, x: 960, y: 820, w: 1200, h: 280, rows: 2, cols: 14, slits: true, sign: "ADX FLORENCE"}
+      - {label: "LEVEL 5: SUPERMAX", x: 960, y: 110, size: 64, c: red}
+      - {label: "\"ALCATRAZ OF THE ROCKIES\"", x: 960, y: 960, in: 0.5, size: 50}
+  - at: 0.38
+    bg: grey
+    cam: [1.0, 1.12]
+    items:
+      - {prop: cell, x: 960, y: 950, w: 1000, h: 760, c: concrete}
+      - {prop: slit_window, x: 960, y: 420, h: 300, w: 22}
+      - {prop: concrete_bed, x: 650, y: 950}
+      - {prop: desk, x: 1250, y: 950, c: concrete}
+      - {prop: stool, x: 1250, y: 950}
+      - {char: gary, x: 950, y: 990, face: sad, shirt: orange}
+      - {label: "7 × 12 FT", x: 960, y: 120, in: 0.15, size: 60}
+      - {label: "23 HOURS ALONE", x: 960, y: 270, in: 0.5, c: red, size: 56}
+  - at: 0.58
+    bg: sky
+    items:
+      - {prop: pit, x: 960, y: 560, w: 900, h: 520}
+      - {prop: wall, x: 960, y: 560, w: 920, h: 40, bricks: false, c: concrete}
+      - {char: gary, x: 960, y: 1040, s: 0.6, shirt: orange, face: sad}
+      - {label: "\"AN EMPTY SWIMMING POOL\"", x: 960, y: 150, in: 0.3, size: 52}
+  - at: 0.7
+    bg: grey
+    cam: [1.0, 1.35]
+    focus: [960, 450]
+    items:
+      - {prop: wall, x: 960, y: 1080, w: 1920, h: 1080}
+      - {prop: slit_window, x: 960, y: 450, h: 420, w: 30}
+      - {label: "SKY, NOT LANDSCAPE", x: 960, y: 900, in: 0.3, size: 56}
+  - at: 0.86
+    bg: paper
+    items:
+      - {prop: ladder, x: 860, y: 1040, h: 1000, labels: ["HALFWAY HOUSE", "CAMP", "LOW", "MEDIUM", "HIGH", "SUPERMAX"], highlight: 5}
+      - {char: gary, x: 560, y: 1000, s: 0.5, shirt: orange, face: sad}
+      - {label: "STEP-DOWN PROGRAM", x: 1550, y: 620, in: 0.2, c: red, size: 50}
+    beats:
+      - {t: 0.4, who: gary, walk: [560, 860], dur: 0.6}
+
+S13:
+  - bg: paper
+    items:
+      - {prop: pillars, x: 960, y: 850, values: [22, 38, 28, 12, 3], labels: ["MIN", "LOW", "MED", "HIGH", "ADMIN"], highlight: 1}
+      - {label: "MOST PEOPLE: LOW", x: 960, y: 120, in: 0.4, c: red}
+  - at: 0.35
+    bg: dusk
+    items:
+      - {prop: mountains, y: 760}
+      - {prop: ground, y: 760, c: khaki}
+      - {prop: road, y: 980, speed: 0}
+      - {prop: building, x: 260, y: 760, w: 300, h: 160, rows: 1, cols: 3, c: white, sign: "CAMP"}
+      - {prop: building, x: 720, y: 760, w: 380, h: 240, rows: 2, cols: 4, sign: "MEDIUM"}
+      - {prop: building, x: 1200, y: 760, w: 420, h: 300, rows: 3, cols: 5, c: grey, sign: "USP"}
+      - {prop: building, x: 1680, y: 760, w: 400, h: 220, rows: 2, cols: 8, slits: true, c: concrete, sign: "ADX"}
+      - {label: "ONE ROAD", x: 960, y: 110, in: 0.3, c: red}
+  - at: 0.72
+    bg: dusk
+    cam: [1.0, 1.1]
+    focus: [700, 600]
+    items:
+      - {prop: floor, y: 950, c: brown}
+      - {prop: shelf, x: 1450, y: 950, w: 800, h: 760}
+      - {prop: desk, x: 760, y: 950, papers: true}
+      - {char: host, x: 520, y: 1000, s: 1.1, face: smug}
+      - {label: "NEXT FILE: STRANGEST PUNISHMENTS", x: 1000, y: 120, in: 0.4, size: 50}

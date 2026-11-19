@@ -61,12 +61,12 @@ def test_stats_skips_without_secrets(monkeypatch, capsys):
 import assemble  # noqa: E402
 
 
-def test_assemble_parses_v2_script_and_shorts():
+def test_assemble_parses_script_and_shorts():
     ep = ROOT / "episodes/EP001-prison-security-levels"
     scenes = assemble.parse_script(ep / "script.md")
     assert scenes[0]["id"] == "S01" and len(scenes) == 13
     short = assemble.parse_script(ep / "shorts/short1-four-inch-window.md")
-    assert short[1]["art"] == ["S12"]
+    assert short[1]["art"] == ["S12.3"]
     assert make_voiceover.read_scenes(ep / "shorts/short1-four-inch-window.md")[0][1].startswith("This prison window")
 
 
@@ -91,3 +91,19 @@ def test_title_card_and_scene_images(tmp_path):
         (art / n).write_bytes(b"x")
     imgs = assemble.scene_images({"id": "S12", "art": []}, [art])
     assert [p.name for p in imgs] == ["S12.png", "S12_b.jpg"]
+
+
+def test_animation_spec_renders_every_shot():
+    import yaml
+    import doodle
+    ep = ROOT / "episodes/EP001-prison-security-levels"
+    spec = yaml.safe_load((ep / "animation.yaml").read_text())
+    scenes = assemble.parse_script(ep / "script.md")
+    assert {s["id"] for s in scenes} <= set(spec)
+    for sid, shots in spec.items():
+        for shot, start, dur in doodle.scene_shots(shots, 20.0):
+            for frac in (0.1, 0.9):
+                img = doodle.render_shot_frame(shot, dur * frac, dur, int(start * 25), 0.4)
+                assert img.size == (1920, 1080)
+    short = assemble.parse_script(ep / "shorts/short2-alcatraz-escape.md")
+    assert len(assemble.scene_spec(short[0], spec)) == 1
