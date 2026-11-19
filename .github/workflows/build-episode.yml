@@ -1,0 +1,76 @@
+name: Build episode (voice + video)
+on:
+  push:
+    paths: ["episodes/**/*.md", "episodes/**/art/**"]
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder, e.g. EP001-prison-security-levels"
+        required: true
+      voice:
+        description: "bm_george / bm_lewis (British) or am_michael / am_adam (American)"
+        default: bm_george
+      lang:
+        description: "b = British, a = American"
+        default: b
+      speed:
+        description: "Narration speed (1.0 = Kokoro default, 0.92 = slower, more documentary)"
+        default: "0.92"
+      shorts:
+        description: "Also build the Shorts in the episode's shorts/ folder"
+        type: boolean
+        default: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip, cache-dependency-path: requirements-voice.txt }
+      - name: Pick episodes
+        id: pick
+        env:
+          EP: ${{ inputs.episode }}
+        run: |
+          if [ -n "$EP" ]; then eps="episodes/$EP"
+          else
+            files=$(git diff --name-only HEAD~1 HEAD -- episodes 2>/dev/null || git ls-files episodes)
+            eps=$(echo "$files" | grep -oE '^episodes/[^/]+' | sort -u | tr '\n' ' ')
+          fi
+          echo "eps=$eps" >> "$GITHUB_OUTPUT"
+          echo "Episodes: $eps"
+      - name: Install Kokoro (CPU), ffmpeg, fonts
+        if: steps.pick.outputs.eps != ''
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg fonts-dejavu-core
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-voice.txt pillow
+      - name: Voice and edit
+        if: steps.pick.outputs.eps != ''
+        env:
+          VOICE: ${{ inputs.voice || 'bm_george' }}
+          LANG_CODE: ${{ inputs.lang || 'b' }}
+          SPEED: ${{ inputs.speed || '0.92' }}
+          SHORTS: ${{ inputs.shorts == false && 'no' || 'yes' }}
+        run: |
+          for ep in ${{ steps.pick.outputs.eps }}; do
+            [ -f "$ep/script.md" ] || continue
+            python tools/make_voiceover.py "$ep/script.md" --voice "$VOICE" --lang "$LANG_CODE" --speed "$SPEED"
+            python tools/assemble.py "$ep/script.md"
+            if [ "$SHORTS" = yes ] && [ -d "$ep/shorts" ]; then
+              for s in "$ep"/shorts/*.md; do
+                python tools/make_voiceover.py "$s" --voice "$VOICE" --lang "$LANG_CODE" --speed "$SPEED"
+                python tools/assemble.py "$s" --vertical
+              done
+            fi
+          done
+      - uses: actions/upload-artifact@v4
+        if: steps.pick.outputs.eps != ''
+        with:
+          name: episode-build
+          path: |
+            episodes/**/out/
+            episodes/**/vo_*/vo_full.wav
+          retention-days: 30

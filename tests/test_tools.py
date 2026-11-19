@@ -56,3 +56,38 @@ def test_stats_skips_without_secrets(monkeypatch, capsys):
     monkeypatch.delenv("YT_API_KEY", raising=False)
     assert youtube_stats.main() == 0
     assert "Skipping" in capsys.readouterr().out
+
+
+import assemble  # noqa: E402
+
+
+def test_assemble_parses_v2_script_and_shorts():
+    ep = ROOT / "episodes/EP001-prison-security-levels"
+    scenes = assemble.parse_script(ep / "script.md")
+    assert scenes[0]["id"] == "S01" and len(scenes) == 13
+    short = assemble.parse_script(ep / "shorts/short1-four-inch-window.md")
+    assert short[1]["art"] == ["S12"]
+    assert make_voiceover.read_scenes(ep / "shorts/short1-four-inch-window.md")[0][1].startswith("This prison window")
+
+
+def test_timeline_chapters_and_captions():
+    scenes = [{"id": "S01", "title": "HOOK", "text": "One. Two three four five six seven eight nine ten eleven twelve thirteen."},
+              {"id": "S02", "title": "INTRO", "text": "Hello there."},
+              {"id": "S03", "title": "LEVEL 0 — THE HALFWAY HOUSE", "text": "A house."}]
+    starts, caps, chapters = assemble.timeline(scenes, [10.0, 5.0, 20.0])
+    assert starts == [0.0, 10.6, 16.2]
+    assert chapters == ["0:00 Intro", "0:16 The Halfway House"]
+    assert abs(caps[-1][1] - 36.2) < 1e-6 and caps[0][0] == 0.0
+    assert assemble.fmt_srt(3725.5) == "01:02:05,500"
+
+
+def test_title_card_and_scene_images(tmp_path):
+    card = tmp_path / "c.png"
+    assemble.title_card("LEVEL 5 — ADMINISTRATIVE AND THE SUPERMAX", (640, 360), card)
+    assert card.exists()
+    art = tmp_path / "art"
+    art.mkdir()
+    for n in ("S1.png", "S12.png", "S12_b.jpg", "S120.png", "notes.txt"):
+        (art / n).write_bytes(b"x")
+    imgs = assemble.scene_images({"id": "S12", "art": []}, [art])
+    assert [p.name for p in imgs] == ["S12.png", "S12_b.jpg"]

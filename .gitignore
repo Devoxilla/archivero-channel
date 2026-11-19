@@ -4,3 +4,4 @@ __pycache__/
 vo_*/
 *.wav
 *.mp3
+out/

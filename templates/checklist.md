@@ -1,10 +1,10 @@
 # {code} checklist — {title}
 
 - [ ] Script written in script.md (scene markers [S01], [S02] ... kept), facts checked, [VERIFY] notes cleared
-- [ ] Push script.md: the "Channel voiceover" action renders the free Kokoro voiceover (download it from the run's Artifacts)
-- [ ] Key frames made (Microsoft Designer / Bing Image Creator / Gemini app) with the house style suffix from shotlist.md
-- [ ] Edit in CapCut free or DaVinci Resolve, captions on
+- [ ] Shot list written (copy EP001's shotlist.md layout); pictures saved in art/ as S01.png, S01_b.png ...
+- [ ] 3 Shorts scripts in shorts/ (copy EP001's; {art: Sxx} borrows episode pictures)
+- [ ] "Build episode" action run: download episode-build (video, captions, chapters, Shorts)
+- [ ] Optional polish in CapCut free: music bed, sound effects
 - [ ] Thumbnail in Canva Free (ladder or object + 3-word text)
 - [ ] Title, description, chapters, tags written (see README.md SEO section)
-- [ ] 3 Shorts cut from the strongest 30-50 s moments
 - [ ] Scheduled in YouTube Studio
