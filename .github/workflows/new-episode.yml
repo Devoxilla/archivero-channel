@@ -1,0 +1,34 @@
+name: New episode
+on:
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Episode title, e.g. Every Prison Security Level Explained"
+        required: true
+      slug:
+        description: "Short folder name (optional)"
+        required: false
+permissions:
+  contents: write
+jobs:
+  scaffold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Create episode folder
+        env:
+          TITLE: ${{ inputs.title }}
+          SLUG: ${{ inputs.slug }}
+        run: |
+          if [ -n "$SLUG" ]; then python tools/new_episode.py "$TITLE" --slug "$SLUG"; else python tools/new_episode.py "$TITLE"; fi
+      - name: Commit
+        env:
+          TITLE: ${{ inputs.title }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes
+          git commit -m "New episode: $TITLE"
+          git push
