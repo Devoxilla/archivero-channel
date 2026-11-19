@@ -20,6 +20,8 @@ on:
         description: "Also build the Shorts in the episode's shorts/ folder"
         type: boolean
         default: true
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -74,3 +76,18 @@ jobs:
             episodes/**/out/
             episodes/**/vo_*/vo_full.wav
           retention-days: 30
+      - name: Publish to the builds branch (one folder per episode)
+        if: steps.pick.outputs.eps != ''
+        run: |
+          rm -rf /tmp/pub && mkdir -p /tmp/pub
+          for ep in ${{ steps.pick.outputs.eps }}; do
+            d=/tmp/pub/$(basename "$ep"); mkdir -p "$d"
+            cp "$ep"/out/* "$d"/ 2>/dev/null || true
+            cp "$ep"/shorts/out/*.mp4 "$d"/ 2>/dev/null || true
+          done
+          git fetch -q --depth=1 origin builds && git worktree add -q /tmp/builds origin/builds || git worktree add -q --orphan -b builds /tmp/builds
+          cd /tmp/builds
+          cp -r /tmp/pub/* .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "Build ${GITHUB_SHA::7}" && git push -q origin HEAD:builds
