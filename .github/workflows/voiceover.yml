@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 2 }
       - uses: actions/setup-python@v5
-        with: { python-version: "3.11", cache: pip }
+        with: { python-version: "3.11", cache: pip, cache-dependency-path: requirements-voice.txt }
       - name: Pick scripts
         id: pick
         env:
@@ -37,7 +37,7 @@ jobs:
         run: |
           sudo apt-get update -q && sudo apt-get install -y -q espeak-ng
           pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install "kokoro>=0.9" soundfile
+          pip install -r requirements-voice.txt
       - name: Render
         if: steps.pick.outputs.scripts != ''
         env:
