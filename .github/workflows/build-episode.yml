@@ -53,7 +53,7 @@ jobs:
           VOICE: ${{ inputs.voice || 'bm_george' }}
           LANG_CODE: ${{ inputs.lang || 'b' }}
           SPEED: ${{ inputs.speed || '0.92' }}
-          SHORTS: ${{ inputs.shorts == false && 'no' || 'yes' }}
+          SHORTS: ${{ (github.event_name == 'workflow_dispatch' && !inputs.shorts) && 'no' || 'yes' }}
         run: |
           for ep in ${{ steps.pick.outputs.eps }}; do
             [ -f "$ep/script.md" ] || continue
