@@ -1,16 +1,18 @@
 name: Make art (free)
 on:
+  schedule:
+    - cron: "17 3 * * *"   # daily: continues episodes whose pictures are not finished (free daily allowance)
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode folder, e.g. EP001-pov-roman-legionary"
-        required: true
+        description: "Episode folder, e.g. EP001-pov-roman-legionary (empty = every unfinished episode)"
+        required: false
       max:
         description: "Pictures per run"
         default: "120"
       backend:
         description: "auto (Pollinations, then Cloudflare), pollinations or cloudflare"
-        default: auto
+        default: cloudflare
       build:
         description: "Start the episode build when every picture exists"
         type: boolean
@@ -18,7 +20,7 @@ on:
 permissions:
   contents: write
   actions: write
-concurrency: art-${{ inputs.episode }}
+concurrency: make-art
 jobs:
   art:
     runs-on: ubuntu-latest
@@ -37,15 +39,28 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
-          ep="episodes/${{ inputs.episode }}"; total=0; left=1; rounds=$(( (${{ inputs.max }} + 9) / 10 ))
+          if [ -z "$CF_API_TOKEN" ] && [ -z "$POLLINATIONS_TOKEN" ]; then
+            echo "### No CF_ACCOUNT_ID / CF_API_TOKEN secrets yet: nothing to do." >> "$GITHUB_STEP_SUMMARY"; exit 0
+          fi
+          EP="${{ inputs.episode }}"
+          if [ -z "$EP" ]; then  # scheduled run: first episode that still has missing pictures
+            for d in episodes/*/animation.yaml; do
+              e=$(dirname "$d"); n=$(python -c "import sys,yaml;sys.path.insert(0,'tools');import gemini_art;from pathlib import Path as P;e=P('$e');print(len(gemini_art.jobs(yaml.safe_load((e/'animation.yaml').read_text()),e/'art')))")
+              [ "$n" != "0" ] && { EP=$(basename "$e"); break; }
+            done
+          fi
+          [ -z "$EP" ] && { echo "### Every episode has its pictures." >> "$GITHUB_STEP_SUMMARY"; exit 0; }
+          echo "episode=$EP" >> "$GITHUB_OUTPUT"
+          MAX="${{ inputs.max }}"; MAX=${MAX:-150}; BACKEND="${{ inputs.backend }}"; BACKEND=${BACKEND:-cloudflare}
+          ep="episodes/$EP"; total=0; left=1; rounds=$(( (MAX + 9) / 10 ))
           for i in $(seq 1 $rounds); do
-            python tools/free_art.py "$ep" --max 10 --backend "${{ inputs.backend }}" | tee run.log
+            python tools/free_art.py "$ep" --max 10 --backend "$BACKEND" --pause 1 | tee run.log
             made=$(grep -oP '^made \K\d+(?=, failed)' run.log || echo 0)
             left=$(grep -oP '\K\d+(?= still missing)' run.log || echo 1)
             if [ "$made" != "0" ]; then
               total=$((total + made))
               python tools/shotlist.py "$ep"
-              git add "$ep" && git commit -qm "Art: $made pictures for ${{ inputs.episode }} [skip ci]"
+              git add "$ep" && git commit -qm "Art: $made pictures for $EP [skip ci]"
               git pull -q --rebase origin main && git push -q
             fi
             [ "$left" = "0" ] && break
@@ -54,6 +69,6 @@ jobs:
           echo "made=$total" >> "$GITHUB_OUTPUT"; echo "left=$left" >> "$GITHUB_OUTPUT"
           echo "### Art: made $total, $left still missing" >> "$GITHUB_STEP_SUMMARY"
       - name: Build the episode
-        if: inputs.build && steps.art.outputs.left == '0'
+        if: steps.art.outputs.left == '0' && steps.art.outputs.made != '0' && (github.event_name == 'schedule' || inputs.build)
         env: {GH_TOKEN: "${{ github.token }}"}
-        run: gh workflow run build-episode.yml -f episode="${{ inputs.episode }}"
+        run: gh workflow run build-episode.yml -f episode="${{ steps.art.outputs.episode }}"
