@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 48 done, plus 2 character references.
+106 pictures, 58 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -312,61 +312,61 @@ a line-up of Roman specialist soldiers: a surveyor with a groma, a clerk with a 
 a Roman tesserarius handing out a small wax tablet with the night password to a sentry at a fort gate at night, torches, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_c.png  (S11, shot 3)
+### [x] S11_c.png  (S11, shot 3)
 
 ```
 a Roman signifer standard bearer in a bear skin holding a century standard in one hand and a money box with a ledger in the other, like a bank manager, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_d.png  (S11, shot 4)
+### [x] S11_d.png  (S11, shot 4)
 
 ```
 a proud Roman centurion with a big sideways red crest on his helmet, scarred face, holding a vine stick, standing in a chaotic battle, his men following the crest, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_e.png  (S11, shot 5)  · attach REF_grunt.png
+### [x] S11_e.png  (S11, shot 5)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals scrubbing a long Roman stone latrine bench with a sponge on a stick, deadpan, flies buzzing, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S12_a.png  (S12, shot 1)
+### [x] S12_a.png  (S12, shot 1)
 
 ```
 a lively civilian town outside the walls of a Roman fortress, taverns, shops, merchants, women and children, soldiers off duty drinking, warm afternoon light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S12_b.png  (S12, shot 2)  · attach REF_grunt.png
+### [x] S12_b.png  (S12, shot 2)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals with an unofficial partner and a small child outside a little house in the fort town, a magistrate in the background covering his eyes, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S12_c.png  (S12, shot 3)  · attach REF_grunt.png
+### [x] S12_c.png  (S12, shot 3)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals spending coins in a tavern, a scribe writing a letter for him, a merchant selling him a good-luck charm and a new cloak, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S12_d.png  (S12, shot 4)
+### [x] S12_d.png  (S12, shot 4)
 
 ```
 a messenger arriving at a Roman fort with a chest of coins, soldiers cheering and jumping, coins flying, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_a.png  (S13, shot 1)
+### [x] S13_a.png  (S13, shot 1)
 
 ```
 inside a Roman fortress headquarters shrine, the golden eagle and unit standards in a stone room lit by oil lamps, two guards standing still, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_b.png  (S13, shot 2)
+### [x] S13_b.png  (S13, shot 2)
 
 ```
 cutaway view of a Roman shrine above an underground strongroom full of pay chests and coin sacks, a thief looking at the stairs nervously, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_c.png  (S13, shot 3)
+### [x] S13_c.png  (S13, shot 3)
 
 ```
 Roman soldiers at an outdoor altar sacrificing to Mars and Jupiter, smoke rising, a priest with a covered head, the eagle standard decorated with garlands for its birthday, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
