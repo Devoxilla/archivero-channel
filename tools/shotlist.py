@@ -1,6 +1,6 @@
 """Write shotlist.md for an episode: one ready-to-paste image prompt per picture in animation.yaml.
 
-    python tools/shotlist.py episodes/EP001-pov-roman-legionary [--vertical]
+    python tools/shotlist.py episodes/EP001-korean-war [--vertical]
 
 Prompts in animation.yaml can use {grunt}, {host}, {crowd} (defined under `characters:`) and {style}.
 The house style from STYLE.md is appended to every prompt. Pictures used by several shots appear once.

@@ -1,11 +1,11 @@
-# Shot list: EP001-pov-roman-legionary
+# Shot list: EP002-pov-roman-legionary
 
 106 pictures, 62 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
 2. Open one Gemini chat per character. Attach that reference picture, then paste the prompts marked with that character one after another in the same chat. Prompts without a character can go in any chat.
-3. Download each picture. File names don't matter: upload them in the chat with Claude (or to `EP001-pov-roman-legionary/art/inbox/` on GitHub) and Claude matches each one to its shot.
+3. Download each picture. File names don't matter: upload them in the chat with Claude (or to `EP002-pov-roman-legionary/art/inbox/` on GitHub) and Claude matches each one to its shot.
 Pictures should be landscape (16:9). If Gemini returns a square, ask: "same picture, wide 16:9".
 
 ## Character references

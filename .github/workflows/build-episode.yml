@@ -5,14 +5,14 @@ on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode folder, e.g. EP001-pov-roman-legionary"
+        description: "Episode folder, e.g. EP001-korean-war"
         required: true
       voice:
         description: "bm_george / bm_lewis (British) or am_michael / am_adam (American)"
-        default: bm_george
+        default: am_michael
       lang:
         description: "b = British, a = American"
-        default: b
+        default: a
       speed:
         description: "Narration speed (1.0 = Kokoro default, 0.92 = slower, more documentary)"
         default: "0.92"
@@ -53,8 +53,8 @@ jobs:
       - name: Voice and edit
         if: steps.pick.outputs.eps != ''
         env:
-          VOICE: ${{ inputs.voice || 'bm_george' }}
-          LANG_CODE: ${{ inputs.lang || 'b' }}
+          VOICE: ${{ inputs.voice || 'am_michael' }}
+          LANG_CODE: ${{ inputs.lang || 'a' }}
           SPEED: ${{ inputs.speed || '0.92' }}
           SHORTS: ${{ (github.event_name == 'workflow_dispatch' && !inputs.shorts) && 'no' || 'yes' }}
         run: |

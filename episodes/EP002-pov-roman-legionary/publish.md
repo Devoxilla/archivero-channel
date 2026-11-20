@@ -1,4 +1,4 @@
-# EP001 publish sheet
+# EP002 publish sheet
 
 ## Title (pick one; A/B test two in YouTube's Test & Compare)
 1. POV: You're a Roman Legionary
@@ -17,7 +17,7 @@ You are eighteen, you get nothing from the family farm, and the Roman army is hi
 Out of everything, what would make you quit first? Tell me in the comments.
 
 CHAPTERS
-(paste the contents of out/EP001-pov-roman-legionary_chapters.txt from the build here)
+(paste the contents of out/EP002-pov-roman-legionary_chapters.txt from the build here)
 
 SOURCES
 Vegetius, Epitoma rei militaris, Book 1

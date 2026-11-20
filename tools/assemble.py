@@ -1,8 +1,8 @@
 """Automatic first edit: art + voiceover -> captioned video, subtitles and YouTube chapters.
 
 Usage:
-    python tools/assemble.py episodes/EP001-pov-roman-legionary/script.md            # 16:9 episode
-    python tools/assemble.py episodes/EP001-pov-roman-legionary/shorts/short1.md --vertical
+    python tools/assemble.py episodes/EP001-korean-war/script.md            # 16:9 episode
+    python tools/assemble.py episodes/EP001-korean-war/shorts/short1.md --vertical
 
 Needs: ffmpeg on PATH, Pillow, and the voiceover from make_voiceover.py (folder vo_<script name>
 next to the script, one S01.wav ... per scene).

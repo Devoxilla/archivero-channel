@@ -3,7 +3,7 @@
 # with overlays drawn on top (stamp, title, pin, label, flash). "at" = where the shot starts, as a fraction
 # of the scene; overlay "in"/"out" = fractions of the shot. Frame is 1920x1080.
 # Prompts use tokens that tools/shotlist.py expands: {grunt}, {host}, {crowd}, {style}. Run
-#   python tools/shotlist.py episodes/EP001-pov-roman-legionary
+#   python tools/shotlist.py episodes/EP002-pov-roman-legionary
 # to get shotlist.md: one ready-to-paste prompt per picture. Missing pictures render as "ART NEEDED" cards.
 
 characters:

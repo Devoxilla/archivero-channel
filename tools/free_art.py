@@ -1,6 +1,6 @@
 """Make an episode's missing pictures with free image APIs (runs on GitHub Actions).
 
-    python tools/free_art.py episodes/EP001-pov-roman-legionary [--max 120] [--backend auto]
+    python tools/free_art.py episodes/EP001-korean-war [--max 120] [--backend auto]
 
 Backends:
   cloudflare    (default) Workers AI free tier: 10,000 neurons a day, about 100+ Flux schnell pictures.

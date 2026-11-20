@@ -12,7 +12,7 @@ Everything here is free: GitHub Actions (free minutes on private repos: 2,000/mo
 5. **Build**: every push that changes an episode's script, Shorts or art runs *Build episode (voice + video)*. It reads the script with Kokoro (free), then edits the video automatically: each shot's picture moves as planned in `animation.yaml` with its overlays, and the episode's Shorts are built in 9:16 with burned-in captions. Download from the run page → Artifacts → `episode-build`:
    - `out/<episode>.mp4` (16:9, 1080p), `out/<episode>.srt` (captions to upload), `out/<episode>_chapters.txt` (paste into the description)
    - `shorts/out/<short>.mp4` (9:16)
-   To change voice or speed, run it by hand: Actions → *Build episode* → Run workflow (`bm_george`, `bm_lewis` British; `am_michael`, `am_adam` with lang `a` for American; speed 0.92 default). About 15–25 min per episode.
+   To change voice or speed, run it by hand: Actions → *Build episode* → Run workflow (default `am_michael` American, lang `a`; `am_adam` also American; `bm_george` with lang `b` for British; speed 0.92 default). About 15–25 min per episode.
 6. **Publish**: fill in the episode's `publish.md` (titles, description, tags, Shorts schedule), make the thumbnail with `tools/thumbnail.py` or Canva Free, polish in CapCut if you want (music bed, sound effects), then schedule in YouTube Studio.
 7. **Analytics**: every Monday 08:00 UTC *Weekly analytics* saves `analytics/<date>.csv` (views, likes, comments per video, Shorts flagged) and shows the top 10 on the run's summary page.
 
@@ -24,9 +24,9 @@ Everything here is free: GitHub Actions (free minutes on private repos: 2,000/mo
 ## Run locally
 ```
 pip install kokoro soundfile pillow   # plus ffmpeg; Windows: also install espeak-ng
-python tools/make_voiceover.py episodes/EP001-pov-roman-legionary/script.md
-python tools/assemble.py episodes/EP001-pov-roman-legionary/script.md
-python tools/shotlist.py episodes/EP001-pov-roman-legionary
+python tools/make_voiceover.py episodes/EP001-korean-war/script.md
+python tools/assemble.py episodes/EP001-korean-war/script.md
+python tools/shotlist.py episodes/EP001-korean-war
 python tools/new_episode.py "How the KGB Worked From the Inside"
 pytest -q
 ```

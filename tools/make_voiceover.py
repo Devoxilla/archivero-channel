@@ -7,8 +7,8 @@ One-time setup (Windows, Mac or Linux, Python 3.10-3.12):
     (Windows only, also install espeak-ng: https://github.com/espeak-ng/espeak-ng/releases)
 
 Run:
-    python tools/make_voiceover.py episodes/EP001-pov-roman-legionary/script.md
-    python tools/make_voiceover.py episodes/EP001-pov-roman-legionary/script.md --voice am_michael --lang a   # American narrator
+    python tools/make_voiceover.py episodes/EP001-korean-war/script.md
+    python tools/make_voiceover.py episodes/EP001-korean-war/script.md --voice am_michael --lang a   # American narrator
 
 Output: a folder "vo_<script name>" with one WAV per scene (S01.wav, S02.wav ...) plus vo_full.wav.
 Scenes are the [S01], [S02] ... markers in the script. Text after "## Sources" is ignored,
@@ -44,8 +44,8 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("script")
-    parser.add_argument("--voice", default="bm_george")
-    parser.add_argument("--lang", default="b", help="b = British English, a = American English")
+    parser.add_argument("--voice", default="am_michael")
+    parser.add_argument("--lang", default="a", help="b = British English, a = American English")
     parser.add_argument("--speed", type=float, default=1.0)
     args = parser.parse_args()
 

@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode folder, e.g. EP001-pov-roman-legionary (empty = every unfinished episode)"
+        description: "Episode folder, e.g. EP001-korean-war (empty = every unfinished episode)"
         required: false
       max:
         description: "Pictures per run"

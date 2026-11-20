@@ -1,0 +1,680 @@
+# EP001 "The Korean War: The War That Never Ended" - animation plan (tools/doodle.py image shots).
+# Serious geopolitics file: wordless maps with overlays, caricatures of the (long dead) leaders, battle scenes.
+# Every shot is one illustrated picture from art/<img>, moved by the build; overlays (stamp, title, pin, label,
+# flash) are drawn on top. "at" = where the shot starts, as a fraction of the scene; overlay "in"/"out" =
+# fractions of the shot. Frame is 1920x1080. Maps carry no text: every name comes from an overlay.
+# No living people are drawn.
+
+characters:
+  grunt: >-
+    a young American infantryman of 1950 with a lean pale face, tired serious eyes and a stubbled jaw, an olive
+    M1 steel helmet with a camouflage net, an olive drab field jacket, canvas webbing, carrying an M1 rifle
+  host: >-
+    a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed
+    over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame
+  crowd: >-
+    rows of small cartoon American soldiers of 1950 in olive steel helmets and olive drab field jackets
+  map: >-
+    stylised flat cartoon map of the Korean Peninsula seen from above, the peninsula standing upright in the
+    middle of the picture, flat blue sea around it, the edge of China and Manchuria at the top, Japan at the
+    bottom right, absolutely no words, no letters, no labels
+
+refs:
+  grunt:
+    img: REF_grunt.png
+    prompt: "character reference sheet of {grunt}, full body, front view and three-quarter view, standing in a relaxed pose, plain light grey background"
+  host:
+    img: REF_host.png
+    prompt: "character reference sheet of {host}, full body, front view and three-quarter view, smug half-smile, plain light grey background"
+
+S01:
+  - img: S01_a.png
+    prompt: "wide aerial view of the Korean demilitarized zone, a long strip of wild green forest between two lines of tall barbed wire fences crossing rolling mountains, watchtowers on both sides, cold blue morning light"
+    move: pan_right
+    items:
+      - {stamp: "THE DMZ · TODAY", in: 0.05}
+  - at: 0.2
+    img: S01_b.png
+    prompt: "close-up of a rusty barbed wire fence with a red triangular minefield warning sign with a skull and no letters, misty hills behind"
+    move: push
+    items:
+      - {label: "250 KM", x: 480, y: 160, in: 0.25}
+      - {label: "4 KM WIDE", x: 1440, y: 160, in: 0.5}
+  - at: 0.42
+    img: S01_c.png
+    prompt: "two army generals of the 1950s, one in an American olive uniform and one in a North Korean uniform, sitting at opposite sides of a long table in a bare wooden hut, both exhausted and grim, signing papers, cigarette smoke"
+    move: push
+    items:
+      - {title: "1953", sub: "A CEASEFIRE, NOT A PEACE", y: 200, in: 0.2}
+  - at: 0.66
+    img: S01_d.png
+    prompt: "a vast field of simple white grave markers on a hillside in Korea, autumn trees, a lone soldier standing with head bowed"
+    move: pull
+    items:
+      - {title: "~3,000,000 DEAD", y: 940, size: 110, in: 0.25, c: red}
+  - at: 0.85
+    img: S01_e.png
+    prompt: "two American officers of 1945 in khaki uniforms bending over a big paper map of Asia on a desk at night, a desk lamp, a wall clock, one holding a pencil and a ruler"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {label: "30 MINUTES", x: 1450, y: 180, in: 0.4, c: red}
+
+S02:
+  - img: HOST_desk.png
+    prompt: "{host}, sitting at a cluttered wooden desk in a cramped archive full of shelves of files and maps, warm lamp light, smug half-smile, looking at the viewer"
+    move: push
+    focus: [0.4, 0.45]
+  - at: 0.3
+    img: S02_b.png
+    prompt: "a thick old cardboard archive folder lying on a desk, tied with string, a red wax seal, faded photographs of soldiers and tanks sticking out of it, lamp light, no text"
+    move: push
+    items:
+      - {title: "THE KOREAN WAR", sub: "1950 - 1953", y: 200, in: 0.1}
+  - at: 0.55
+    img: S02_c.png
+    prompt: "three famous wars shown as three framed pictures on an archive wall, left Second World War soldiers landing on a beach, right American helicopters over a jungle, the middle frame dusty and almost hidden by cobwebs showing soldiers in snowy mountains"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {label: "THE FORGOTTEN WAR", x: 960, y: 140, in: 0.3, c: red}
+  - at: 0.8
+    img: HOST_map.png
+    prompt: "{host}, standing beside a big wall map pointing with a wooden pointer, in a cramped archive, warm lamp light, smug half-smile"
+    move: push
+    focus: [0.35, 0.45]
+
+S03:
+  - img: S03_a.png
+    prompt: "Korea under Japanese colonial rule around 1940, Korean workers carrying heavy sacks under the watch of a Japanese officer with a sword, a red sun flag on a building, grey industrial town"
+    move: pan_right
+    items:
+      - {stamp: "KOREA · 1910 - 1945", in: 0.05}
+      - {label: "JAPANESE COLONY", x: 960, y: 160, in: 0.3}
+  - at: 0.25
+    img: S03_b.png
+    prompt: "Soviet tanks of 1945 with red stars rolling through a flat landscape of Manchuria, Soviet soldiers riding on top, dust clouds, August sun"
+    move: pan_left
+    items:
+      - {stamp: "8 AUGUST 1945", in: 0.1}
+  - at: 0.45
+    img: S03_c.png
+    prompt: "{map}, a thick red arrow coming down from the top into the northern half of the peninsula"
+    move: static
+    items:
+      - {label: "USSR", x: 960, y: 120, in: 0.15, c: red}
+  - at: 0.62
+    img: S03_d.png
+    prompt: "close-up of a hand holding a pencil drawing a straight horizontal line with a ruler across the middle of a paper map of the Korean peninsula, an old printed map without readable text, night lamp light"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {title: "THE 38TH PARALLEL", y: 920, size: 110, in: 0.35}
+  - at: 0.82
+    img: S03_e.png
+    prompt: "{map}, a thick dashed black line straight across the middle of the peninsula, the northern half in red, the southern half in blue"
+    move: static
+    items:
+      - {label: "SOVIET ZONE", x: 960, y: 260, in: 0.1, c: red}
+      - {label: "AMERICAN ZONE", x: 960, y: 820, in: 0.3}
+      - {label: "\"TEMPORARY\"", x: 1500, y: 540, in: 0.55}
+
+S04:
+  - img: S04_a.png
+    prompt: "caricature of young Kim Il Sung in 1948, a round-faced man in his thirties with short black hair in a plain grey Soviet-style tunic, standing in front of a red flag at a rally, a Soviet officer behind him"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {label: "KIM IL SUNG", x: 1450, y: 900, in: 0.2, c: red}
+  - at: 0.25
+    img: S04_b.png
+    prompt: "caricature of elderly Syngman Rhee in 1948, a thin old Korean man with white hair and a dark Western suit, standing at a podium with microphones, an American general behind him"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "SYNGMAN RHEE", x: 1450, y: 900, in: 0.2}
+  - at: 0.5
+    img: S04_c.png
+    prompt: "two Korean government buildings facing each other across a river, the left one with red flags, the right one with blue flags, both with crowds cheering, 1948"
+    move: pan_right
+    items:
+      - {label: "NORTH", x: 480, y: 160, in: 0.15, c: red}
+      - {label: "SOUTH", x: 1440, y: 160, in: 0.35}
+      - {stamp: "1948 · TWO STATES", in: 0.55}
+  - at: 0.78
+    img: S04_d.png
+    prompt: "a skirmish on a misty hillside along a border, soldiers firing rifles from behind rocks at each other across a valley, smoke, 1949"
+    move: push_shake
+    jolts: [0.5]
+    items:
+      - {label: "BORDER CLASHES", x: 960, y: 160, in: 0.25, c: red}
+
+S05:
+  - img: S05_a.png
+    prompt: "caricature of Joseph Stalin in a white Soviet marshal's uniform, sitting behind a huge desk in a dark Kremlin office, smoking a pipe, looking down at a small map, cold and calculating"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "STALIN", x: 1450, y: 900, in: 0.2, c: red}
+  - at: 0.25
+    img: S05_b.png
+    prompt: "a huge mushroom cloud over a flat Kazakh steppe at dawn, seen from far away, 1949"
+    move: pull
+    items:
+      - {stamp: "1949 · SOVIET A-BOMB", in: 0.15}
+  - at: 0.42
+    img: S05_c.png
+    prompt: "caricature of Mao Zedong in a grey Mao suit, standing on the Gate of Heavenly Peace in Beijing above a cheering crowd with red flags, 1949"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "MAO ZEDONG", x: 1450, y: 900, in: 0.2, c: red}
+  - at: 0.6
+    img: S05_d.png
+    prompt: "caricature of Dean Acheson, a tall American with a neat moustache and a grey suit, giving a speech at a podium in front of a big map of the Pacific, a curved line drawn through Japan that leaves Korea out"
+    move: push
+    items:
+      - {stamp: "JANUARY 1950", in: 0.1}
+      - {label: "KOREA LEFT OUT", x: 1450, y: 180, in: 0.4, c: red}
+  - at: 0.8
+    img: S05_e.png
+    prompt: "Soviet T-34 tanks being unloaded from a freight train at night at a station in North Korea, crates of artillery shells, Soviet advisers with clipboards, searchlights"
+    move: pan_right
+    items:
+      - {label: "MADE IN USSR", x: 960, y: 160, in: 0.3, c: red}
+
+S06:
+  - img: S06_a.png
+    prompt: "pre-dawn darkness, a long line of North Korean T-34 tanks with red stars rolling across a rice paddy towards the viewer, artillery flashes lighting up the hills behind, rain"
+    move: push_shake
+    jolts: [0.25, 0.55]
+    items:
+      - {stamp: "25 JUNE 1950 · 4:00 AM", in: 0.05}
+  - at: 0.25
+    img: S06_b.png
+    prompt: "{map}, many thick red arrows crossing the dashed line in the middle and pointing south down the whole peninsula"
+    move: static
+    items:
+      - {label: "~90,000 MEN", x: 1500, y: 300, in: 0.2, c: red}
+      - {label: "200+ TANKS", x: 1500, y: 420, in: 0.45, c: red}
+  - at: 0.48
+    img: S06_c.png
+    prompt: "a South Korean soldier of 1950 in an American-style helmet firing a small bazooka at a huge T-34 tank, the rocket bouncing off its armour, terrified face"
+    move: push
+    jolts: [0.45]
+    items:
+      - {label: "0 TANKS", x: 1450, y: 180, in: 0.5}
+  - at: 0.68
+    img: S06_d.png
+    prompt: "a long steel bridge over a wide river exploding in a huge fireball at night, crowded with refugees and carts, the city of Seoul burning behind"
+    move: push_shake
+    shake_px: 10
+    jolts: [0.3]
+    items:
+      - {flash: true, in: 0.3}
+      - {stamp: "28 JUNE · SEOUL FALLS", in: 0.5}
+  - at: 0.88
+    img: S06_e.png
+    prompt: "a 1950 newspaper on a breakfast table in an American home with a giant headline in unreadable black blocks and a photo of tanks, a worried man in a suit holding a coffee cup"
+    move: push
+
+S07:
+  - img: S07_a.png
+    prompt: "caricature of President Harry Truman in 1950, round glasses, grey double-breasted suit and bow tie, sitting at his desk in the Oval Office signing an order, determined jaw"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "TRUMAN", x: 1450, y: 900, in: 0.2}
+  - at: 0.25
+    img: S07_b.png
+    prompt: "the round United Nations Security Council table in 1950, delegates in suits raising their hands to vote, one chair in the middle clearly empty with a small Soviet red flag in front of it"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {label: "EMPTY SEAT", x: 960, y: 160, in: 0.3, c: red}
+      - {label: "NO VETO", x: 960, y: 940, in: 0.55, c: red}
+  - at: 0.5
+    img: S07_c.png
+    prompt: "soldiers of many nations in 1950 uniforms standing side by side under a pale blue United Nations flag, British, Turkish, Ethiopian, Colombian, Filipino, Australian, Canadian and French soldiers, proud"
+    move: pan_right
+    amount: 1.2
+    items:
+      - {title: "16 NATIONS", sub: "UNITED NATIONS COMMAND", y: 200, in: 0.2}
+  - at: 0.78
+    img: S07_d.png
+    prompt: "grey American warships of the US Seventh Fleet sailing in a line through a stormy strait, an island on the horizon, 1950"
+    move: pan_left
+    items:
+      - {label: "TAIWAN STRAIT", x: 960, y: 160, in: 0.3}
+
+S08:
+  - img: S08_a.png
+    prompt: "{grunt} and a handful of young American soldiers in a muddy roadside ditch in the rain, watching a column of T-34 tanks appear on the road ahead, fear on their faces, July 1950"
+    move: push
+    items:
+      - {stamp: "5 JULY 1950 · OSAN", in: 0.05}
+      - {label: "TASK FORCE SMITH", x: 1450, y: 900, in: 0.35}
+  - at: 0.25
+    img: S08_b.png
+    prompt: "exhausted American and South Korean soldiers retreating along a dusty road in blazing summer heat, refugees with carts and bundles on their heads beside them, burning village behind"
+    move: pan_left
+  - at: 0.45
+    img: S08_c.png
+    prompt: "{map}, almost the whole peninsula in red, only a small blue pocket left in the bottom right corner around a port, thick red arrows pressing against it"
+    move: static
+    items:
+      - {pin: "PUSAN", x: 1060, y: 820, in: 0.15}
+      - {title: "THE PUSAN PERIMETER", y: 140, size: 90, in: 0.35}
+  - at: 0.65
+    img: S08_d.png
+    prompt: "{grunt} firing from a sandbagged foxhole on a ridge at night, flares in the sky, tracer fire across the valley"
+    move: push_shake
+    jolts: [0.3, 0.6, 0.85]
+  - at: 0.85
+    img: S08_e.png
+    prompt: "a busy harbour at sunset, cargo ships unloading tanks, trucks and crates of ammunition on the docks, cranes, long lines of soldiers coming ashore"
+    move: pull
+    items:
+      - {label: "REINFORCEMENTS", x: 960, y: 160, in: 0.3}
+
+S09:
+  - img: S09_a.png
+    prompt: "caricature of General Douglas MacArthur, corncob pipe, aviator sunglasses and a crumpled general's cap with gold braid, standing on the bridge of a warship looking at the coast through binoculars, supremely confident"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "MACARTHUR", x: 1450, y: 900, in: 0.2}
+  - at: 0.25
+    img: S09_b.png
+    prompt: "a huge muddy tidal flat at low tide stretching to a harbour with high stone sea walls, ships stuck far out in a narrow channel, grey sky"
+    move: pan_right
+    items:
+      - {label: "10 M TIDES", x: 960, y: 160, in: 0.2, c: red}
+      - {label: "SEA WALLS", x: 1450, y: 700, in: 0.5}
+  - at: 0.45
+    img: S09_c.png
+    prompt: "US Marines in 1950 climbing wooden ladders up a high stone sea wall from landing boats, smoke, explosions, warships firing in the background, dusk"
+    move: push_shake
+    jolts: [0.2, 0.5]
+    items:
+      - {stamp: "15 SEPTEMBER 1950 · INCHON", in: 0.05}
+  - at: 0.68
+    img: S09_d.png
+    prompt: "{map}, a thick blue arrow coming from the sea on the left landing halfway up the west coast, a blue arrow breaking out of the bottom right corner, the red area cut in two"
+    move: static
+    items:
+      - {pin: "INCHON", x: 820, y: 470, in: 0.15}
+      - {pin: "SEOUL", x: 900, y: 450, in: 0.35}
+  - at: 0.86
+    img: S09_e.png
+    prompt: "American soldiers raising a flag over a damaged grand stone government building in a war-torn city, cheering Korean civilians, smoke drifting"
+    move: pull
+    items:
+      - {stamp: "SEOUL RETAKEN", in: 0.2}
+
+S10:
+  - img: S10_a.png
+    prompt: "an American general and officials in Washington bending over a big map table, one pushing a small blue flag up past a line across the middle of the peninsula, cigarette smoke, eager faces"
+    move: push
+    items:
+      - {label: "NEW GOAL: UNIFY KOREA", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.25
+    img: S10_b.png
+    prompt: "{map}, thick blue arrows pushing north across the dashed line in the middle all the way towards the river border at the top"
+    move: static
+    items:
+      - {pin: "PYONGYANG", x: 820, y: 330, in: 0.15}
+      - {label: "YALU RIVER", x: 960, y: 110, in: 0.4}
+  - at: 0.48
+    img: S10_c.png
+    prompt: "caricature of Zhou Enlai, a handsome Chinese man with thick black eyebrows in a grey tunic suit, speaking gravely to an Indian ambassador in a white jacket at night in a Beijing office"
+    move: push
+    focus: [0.45, 0.45]
+    items:
+      - {label: "ZHOU ENLAI", x: 1450, y: 900, in: 0.15, c: red}
+      - {label: "WARNING", x: 1450, y: 180, in: 0.45, c: red}
+  - at: 0.72
+    img: S10_d.png
+    prompt: "an American official in a suit in Washington tossing a telegram into a wastepaper basket with a dismissive smile, office with venetian blinds"
+    move: push
+    items:
+      - {label: "\"A BLUFF\"", x: 1450, y: 300, in: 0.3}
+  - at: 0.86
+    img: S10_e.png
+    prompt: "UN soldiers in jeeps and trucks driving north through a cold autumn landscape of bare hills towards a wide frozen river, relaxed, waving"
+    move: pan_right
+    items:
+      - {label: "HOME BY CHRISTMAS", x: 960, y: 160, in: 0.3}
+
+S11:
+  - img: S11_a.png
+    prompt: "night, thousands of Chinese soldiers in padded khaki-green winter uniforms and fur caps crossing a long bridge over a wide river in silence, rifles on their backs, no lights, moonlight"
+    move: pan_right
+    items:
+      - {stamp: "19 OCTOBER 1950 · YALU RIVER", in: 0.05}
+  - at: 0.25
+    img: S11_b.png
+    prompt: "Chinese soldiers in padded winter uniforms hiding under snowy pine trees and white sheets during the day, an American plane flying overhead without seeing them"
+    move: push
+    items:
+      - {label: "MARCH BY NIGHT", x: 480, y: 160, in: 0.2}
+      - {label: "HIDE BY DAY", x: 1440, y: 160, in: 0.45}
+  - at: 0.45
+    img: S11_c.png
+    prompt: "{map}, many huge red arrows pouring down from China at the top across the river into the northern half, small blue arrows near the top turning back"
+    move: static
+    items:
+      - {label: "~200,000 CHINESE", x: 1500, y: 300, in: 0.25, c: red}
+  - at: 0.65
+    img: S11_d.png
+    prompt: "a huge night attack in frozen mountains, waves of Chinese soldiers charging down a snowy slope blowing bugles, tracer bullets, a flare lighting everything in white"
+    move: push_shake
+    jolts: [0.2, 0.45, 0.7]
+    items:
+      - {label: "BUGLES IN THE DARK", x: 960, y: 160, in: 0.3}
+  - at: 0.86
+    img: S11_e.png
+    prompt: "a destroyed headquarters hut in snowy mountains after an air raid, smoke rising, a single Chinese soldier's fur cap lying in the snow"
+    move: push
+    items:
+      - {label: "MAO ANYING", x: 1450, y: 880, in: 0.3, c: red}
+      - {label: "MAO'S SON", x: 1450, y: 980, in: 0.5}
+
+S12:
+  - img: S12_a.png
+    prompt: "a frozen reservoir surrounded by snowy mountains, columns of tiny US Marine trucks on a narrow mountain road, Chinese soldiers on every ridge around them, blizzard"
+    move: pull
+    items:
+      - {stamp: "CHOSIN RESERVOIR · NOV 1950", in: 0.05}
+      - {label: "30,000", x: 600, y: 900, in: 0.3}
+      - {label: "120,000", x: 1350, y: 900, in: 0.5, c: red}
+  - at: 0.22
+    img: S12_b.png
+    prompt: "close-up of {grunt} with frost on his eyebrows and a scarf over his face, hugging his frozen rifle, icicles on his helmet, breath steaming"
+    move: push
+    focus: [0.5, 0.45]
+    items:
+      - {label: "-30°C", x: 1450, y: 200, in: 0.2, c: red}
+  - at: 0.42
+    img: S12_c.png
+    prompt: "a long column of US Marines walking south down an icy mountain road in a blizzard, carrying wounded men on stretchers and on the hoods of trucks"
+    move: pan_left
+    amount: 1.2
+  - at: 0.62
+    img: S12_d.png
+    prompt: "a harbour in December, a huge crowd of Korean refugees with bundles crowding the docks, a single grey cargo ship with its decks packed full of people, warships behind, snow"
+    move: pull
+    items:
+      - {stamp: "HUNGNAM · DECEMBER 1950", in: 0.05}
+      - {label: "~100,000 CIVILIANS", x: 960, y: 160, in: 0.35}
+  - at: 0.8
+    img: S12_e.png
+    prompt: "a single cargo ship at sea with every inch of its deck and holds crammed with thousands of refugees wrapped in blankets, cold grey sea"
+    move: push
+    items:
+      - {label: "BUILT FOR 12", x: 480, y: 160, in: 0.15}
+      - {label: "CARRIED 14,000", x: 1440, y: 160, in: 0.4, c: red}
+
+S13:
+  - img: HOST_lamp.png
+    prompt: "{host}, leaning towards the viewer and raising the oil lamp, eyebrows raised, a dark archive behind him, dramatic red lamp light"
+    move: push
+    items:
+      - {title: "YOUR CALL", sub: "MISTAKE OR RIGHT CALL?", y: 180, in: 0.2}
+
+S14:
+  - img: S14_a.png
+    prompt: "caricature of General Matthew Ridgway, a tough square-jawed American general with a hand grenade strapped to his chest harness, standing in front of tired soldiers in a snowy camp, speaking firmly"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {label: "RIDGWAY", x: 1450, y: 900, in: 0.2}
+  - at: 0.3
+    img: S14_b.png
+    prompt: "a row of American artillery guns firing at once in a snowy valley, huge muzzle flashes and smoke, shell casings piling up"
+    move: push_shake
+    jolts: [0.2, 0.4, 0.6, 0.8]
+    items:
+      - {title: "THE MEAT GRINDER", y: 200, in: 0.25, c: red}
+  - at: 0.58
+    img: S14_c.png
+    prompt: "{map}, a jagged front line across the middle of the peninsula close to the dashed line, blue below, red above, arrows going both ways"
+    move: static
+    items:
+      - {pin: "SEOUL", x: 900, y: 470, in: 0.15}
+      - {label: "4TH TIME", x: 1450, y: 470, in: 0.35, c: red}
+  - at: 0.8
+    img: S14_d.png
+    prompt: "a ruined city in early spring 1951, destroyed buildings, a lone tram on bent rails, civilians returning with bundles, soldiers patrolling"
+    move: pan_right
+    items:
+      - {stamp: "MARCH 1951", in: 0.1}
+
+S15:
+  - img: S15_a.png
+    prompt: "caricature of General Douglas MacArthur with corncob pipe and sunglasses jabbing his finger at a map of China on the wall, a bomber model on his desk, aggressive"
+    move: push
+    items:
+      - {label: "BOMB CHINA", x: 1450, y: 250, in: 0.15, c: red}
+      - {label: "BLOCKADE", x: 1450, y: 370, in: 0.35, c: red}
+      - {label: "ATOMIC?", x: 1450, y: 490, in: 0.55, c: red}
+  - at: 0.3
+    img: S15_b.png
+    prompt: "caricature of President Harry Truman with round glasses, reading a newspaper at his desk, face red with anger, steam coming from his ears, comic but serious"
+    move: push
+    focus: [0.5, 0.4]
+  - at: 0.5
+    img: S15_c.png
+    prompt: "a telegram being handed over, close-up of hands and an envelope with an official presidential seal and no readable text, dramatic light"
+    move: push
+    items:
+      - {stamp: "11 APRIL 1951 · FIRED", in: 0.2}
+  - at: 0.68
+    img: S15_d.png
+    prompt: "a huge ticker-tape parade in New York in 1951, an open car driving down a canyon of skyscrapers, paper confetti raining down, a cheering crowd, a general waving from the car"
+    move: pan_up
+  - at: 0.86
+    img: S15_e.png
+    prompt: "the White House at dusk with a single lit window, an American flag on the roof, calm and quiet"
+    move: push
+    items:
+      - {title: "CIVILIANS DECIDE", sub: "A LIMITED WAR", y: 200, in: 0.25}
+
+S16:
+  - img: S16_a.png
+    prompt: "a long table in a tent at Panmunjom, communist delegates in uniform on one side, UN delegates on the other, two small flags in the middle, everyone staring at each other in silence"
+    move: push
+    items:
+      - {stamp: "JULY 1951 · ARMISTICE TALKS", in: 0.05}
+  - at: 0.22
+    img: S16_b.png
+    prompt: "a wall calendar with pages flying off in the wind in front of the same negotiating table, a clock behind, the delegates aging"
+    move: push
+    items:
+      - {label: "WEEKS?", x: 480, y: 160, in: 0.1}
+      - {label: "2 YEARS", x: 1440, y: 160, in: 0.45, c: red}
+  - at: 0.4
+    img: S16_c.png
+    prompt: "a prisoner of war camp on an island in 1952, barbed wire fences, rows of tents, Chinese and North Korean prisoners in work clothes, some holding home-made banners without letters"
+    move: pan_right
+    items:
+      - {label: "PRISONERS", x: 960, y: 160, in: 0.3}
+  - at: 0.6
+    img: S16_d.png
+    prompt: "{grunt} in a muddy zigzag trench on a shell-blasted bare hill, sandbags and log bunkers, barbed wire in front, like a First World War battlefield"
+    move: push
+    items:
+      - {label: "HILL 355", x: 1450, y: 200, in: 0.3}
+  - at: 0.8
+    img: S16_e.png
+    prompt: "a bare hilltop pounded by explosions at night, every tree gone, craters everywhere, flares and smoke"
+    move: shake
+    jolts: [0.2, 0.5, 0.8]
+    items:
+      - {flash: true, in: 0.5}
+
+S17:
+  - img: S17_a.png
+    prompt: "two silver jet fighters of 1951 in a dogfight high above snowy mountains, an American F-86 Sabre with a yellow stripe chasing a swept-wing MiG-15 with red stars, vapour trails, a river border far below"
+    move: pan_right
+    items:
+      - {title: "MIG ALLEY", y: 200, in: 0.15}
+  - at: 0.25
+    img: S17_b.png
+    prompt: "a Soviet pilot of 1951 in a leather flying helmet in a jet cockpit, pulling a scarf over his face, a red star on the instrument panel, secretive"
+    move: push
+    focus: [0.5, 0.45]
+    items:
+      - {label: "SECRET SOVIET PILOTS", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.45
+    img: S17_c.png
+    prompt: "a formation of huge American B-29 bombers over a North Korean city, bombs falling in long strings, fires below, seen from above"
+    move: push
+    items:
+      - {label: "635,000 TONS", x: 1450, y: 200, in: 0.25, c: red}
+  - at: 0.65
+    img: S17_d.png
+    prompt: "a North Korean city completely flattened by bombing, only a few chimneys and broken walls standing, civilians in white clothes walking through the ruins, winter"
+    move: pan_left
+  - at: 0.85
+    img: S17_e.png
+    prompt: "a large concrete dam bursting after an air raid, flood water pouring into rice fields below, smoke rising from the top of the dam"
+    move: push
+    jolts: [0.3]
+
+S18:
+  - img: S18_a.png
+    prompt: "a Soviet funeral in Red Square in March 1953, a giant portrait of Stalin with black ribbons, huge crowds in dark coats, snow"
+    move: pull
+    items:
+      - {stamp: "MARCH 1953 · STALIN DIES", in: 0.1}
+  - at: 0.25
+    img: S18_b.png
+    prompt: "a wooden hall at Panmunjom in 1953, an American general and a North Korean general sitting at two separate tables signing thick documents, officers standing silently behind them, no handshakes"
+    move: push
+    items:
+      - {stamp: "27 JULY 1953 · PANMUNJOM", in: 0.05}
+  - at: 0.48
+    img: S18_c.png
+    prompt: "caricature of elderly Syngman Rhee with white hair in a dark suit, arms crossed, turning his back on a document on a table, stubborn"
+    move: push
+    focus: [0.5, 0.4]
+    items:
+      - {label: "REFUSED TO SIGN", x: 1450, y: 200, in: 0.3}
+  - at: 0.66
+    img: S18_d.png
+    prompt: "soldiers climbing out of trenches on a bare hill in total silence at 10 pm, looking at each other across the valley, a calm summer night with stars"
+    move: push
+    items:
+      - {label: "THE GUNS STOP", x: 960, y: 160, in: 0.3}
+  - at: 0.84
+    img: S18_e.png
+    prompt: "{map}, a thick wavy grey band crossing the peninsula close to the middle, slightly higher on the right and slightly lower on the left, red above, blue below"
+    move: static
+    items:
+      - {label: "DMZ", x: 1500, y: 470, in: 0.15}
+      - {label: "BACK TO THE START", x: 960, y: 950, in: 0.45, c: red}
+
+S19:
+  - img: S19_a.png
+    prompt: "a vast military cemetery with endless rows of white crosses and grave markers under a grey sky, an American flag at half mast"
+    move: pull
+    items:
+      - {label: "US: ~36,000", x: 960, y: 160, in: 0.25}
+  - at: 0.22
+    img: S19_b.png
+    prompt: "a symbolic image of four rows of small soldier silhouettes in different 1950s helmets fading into the distance, South Korean, Chinese, North Korean and American, sombre grey-blue light"
+    move: pan_right
+    items:
+      - {label: "S. KOREA: 130,000+", x: 960, y: 140, in: 0.1}
+      - {label: "CHINA: 180,000 - 400,000", x: 960, y: 260, in: 0.35, c: red}
+      - {label: "N. KOREA: HUNDREDS OF THOUSANDS", x: 960, y: 380, in: 0.6, c: red}
+  - at: 0.5
+    img: S19_c.png
+    prompt: "a long line of Korean civilian refugees in white clothes walking along a frozen road with bundles, children on their backs, a burned village behind, winter"
+    move: pan_left
+    items:
+      - {title: "2 - 3 MILLION KOREANS", y: 940, size: 100, in: 0.25, c: red}
+  - at: 0.76
+    img: S19_d.png
+    prompt: "an old black-and-white family photograph torn in half lying on a wooden floor, a mother on one half and her children on the other, soft light"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {label: "~10 MILLION SEPARATED", x: 960, y: 160, in: 0.3}
+
+S20:
+  - img: S20_a.png
+    prompt: "an American factory in 1951 producing tanks and jet fighters on long assembly lines, sparks flying, workers busy, a huge flag hanging from the ceiling"
+    move: pan_right
+    items:
+      - {label: "DEFENSE SPENDING x3", x: 960, y: 160, in: 0.25, c: red}
+  - at: 0.22
+    img: S20_b.png
+    prompt: "a stylised flat cartoon world map centred on the Pacific, a chain of blue military base markers and ships along Japan, Korea, the Philippines and Western Europe, no labels, no text"
+    move: static
+    items:
+      - {label: "CONTAINMENT", x: 960, y: 140, in: 0.15}
+      - {label: "NEXT: VIETNAM", x: 1500, y: 800, in: 0.5, c: red}
+  - at: 0.45
+    img: S20_c.png
+    prompt: "an American army base in South Korea, modern barracks and armoured vehicles, American and South Korean flags side by side, soldiers jogging"
+    move: push
+    items:
+      - {label: "~28,000 US TROOPS TODAY", x: 960, y: 160, in: 0.3}
+  - at: 0.65
+    img: S20_d.png
+    prompt: "a busy Japanese factory town in 1952, smoking chimneys, trucks loaded with crates for the army, workers in caps, a booming harbour behind"
+    move: pan_left
+    items:
+      - {label: "JAPAN BOOMS", x: 960, y: 160, in: 0.3}
+  - at: 0.84
+    img: S20_e.png
+    prompt: "Chinese soldiers returning home in 1953 marching through a city under red flags and flowers, crowds cheering, triumphant"
+    move: push
+    items:
+      - {label: "CHINA'S PRESTIGE", x: 960, y: 160, in: 0.3, c: red}
+
+S21:
+  - img: S21_a.png
+    prompt: "split picture of the Korean peninsula at night as seen from space, the southern half blazing with city lights, the northern half almost completely dark except one tiny glowing dot"
+    move: push
+    focus: [0.5, 0.5]
+    items:
+      - {label: "NORTH", x: 960, y: 200, in: 0.2, c: red}
+      - {label: "SOUTH", x: 960, y: 880, in: 0.4}
+  - at: 0.25
+    img: S21_b.png
+    prompt: "a modern South Korean megacity skyline at dusk, glass skyscrapers, neon lights, busy streets, a high-speed train passing"
+    move: pan_right
+  - at: 0.45
+    img: S21_c.png
+    prompt: "a huge military parade on a vast square, endless blocks of marching soldiers and a large missile on a truck, giant portraits on a building in the distance too small to see faces, grey sky"
+    move: pull
+    items:
+      - {label: "NUCLEAR WEAPONS", x: 960, y: 160, in: 0.35, c: red}
+  - at: 0.65
+    img: S21_d.png
+    prompt: "the blue huts at Panmunjom today, small bright blue single-storey buildings straddling a concrete border line, soldiers of both sides standing face to face, a grey building behind"
+    move: push
+    items:
+      - {stamp: "PANMUNJOM · TODAY", in: 0.1}
+  - at: 0.86
+    img: S21_e.png
+    prompt: "a missile launching at night from a remote coast, a bright streak of fire rising into the dark sky over the sea"
+    move: push_shake
+    jolts: [0.3]
+    items:
+      - {title: "PAUSED", sub: "NOT FINISHED", y: 200, in: 0.35, c: red}
+
+S22:
+  - img: S22_a.png
+    prompt: "{map}, a single thin glowing line across the middle of the peninsula, everything else dark and quiet, evening light"
+    move: push
+    items:
+      - {title: "70+ YEARS", sub: "OF CEASEFIRE", y: 200, in: 0.25}
+  - at: 0.5
+    img: HOST_lamp.png
+    move: push
+    items:
+      - {title: "I'LL LEAVE THE LAMP ON", y: 940, size: 80, in: 0.55}

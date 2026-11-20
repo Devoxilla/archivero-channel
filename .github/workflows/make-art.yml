@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode folder, e.g. EP001-pov-roman-legionary"
+        description: "Episode folder, e.g. EP001-korean-war"
         required: true
       max:
         description: "Pictures per run"

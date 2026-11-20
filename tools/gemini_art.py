@@ -1,6 +1,6 @@
 """Make an episode's missing pictures with the Gemini API (needs GEMINI_API_KEY).
 
-    GEMINI_API_KEY=... python tools/gemini_art.py episodes/EP001-pov-roman-legionary --max 40
+    GEMINI_API_KEY=... python tools/gemini_art.py episodes/EP001-korean-war --max 40
 
 Character references (`refs:` in animation.yaml) are made first; every prompt that uses {grunt} or {host}
 is sent with that reference picture attached, so the character stays the same. Pictures that already

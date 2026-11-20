@@ -109,17 +109,21 @@ def test_animation_spec_renders_every_shot():
     assert len(assemble.scene_spec(short[0], spec)) == 1
 
 
-def test_ep001_image_shots_shotlist_and_shorts(tmp_path):
+import pytest
+
+
+@pytest.mark.parametrize("name,n_scenes,min_pics", [("EP001-korean-war", 22, 80), ("EP002-pov-roman-legionary", 23, 80)])
+def test_image_episode_shots_shotlist_and_shorts(tmp_path, name, n_scenes, min_pics):
     import yaml
     import doodle
     import shotlist
     from PIL import Image
-    ep = ROOT / "episodes/EP001-pov-roman-legionary"
+    ep = ROOT / "episodes" / name
     spec = yaml.safe_load((ep / "animation.yaml").read_text())
     scenes = assemble.parse_script(ep / "script.md")
-    assert len(scenes) == 23 and {s["id"] for s in scenes} <= set(spec)
+    assert len(scenes) == n_scenes and {s["id"] for s in scenes} <= set(spec)
     pics = shotlist.pictures(spec)
-    assert len(pics) == len({p[0] for p in pics}) > 80
+    assert len(pics) == len({p[0] for p in pics}) > min_pics
     for img, *_ , prompt in pics:  # every token expands, every prompt carries the house style
         full = shotlist.expand(prompt, spec["characters"])
         assert "{" not in full and full.endswith("no watermark, 16:9")
