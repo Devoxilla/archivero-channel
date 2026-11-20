@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 0 done, plus 2 character references.
+106 pictures, 8 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -10,13 +10,13 @@ Pictures should be landscape (16:9). If Gemini returns a square, ask: "same pict
 
 ## Character references
 
-### [ ] REF_grunt.png  (the grunt)
+### [x] REF_grunt.png  (the grunt)
 
 ```
 character reference sheet of a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals, full body, front view and three-quarter view, standing in a relaxed pose, holding a red curved rectangular shield and a javelin, plain light grey background, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] REF_host.png  (the host)
+### [x] REF_host.png  (the host)
 
 ```
 character reference sheet of a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, full body, front view and three-quarter view, smug half-smile, plain light grey background, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -24,49 +24,49 @@ character reference sheet of a short round-bodied archivist with a pale round fa
 
 ## Shots
 
-### [ ] S01_a.png  (S01, shot 1)
+### [x] S01_a.png  (S01, shot 1)
 
 ```
 wide view of a dark dripping German forest in heavy rain, a long column of tiny Roman soldiers, mules and wagons squeezed between huge trees and a misty bog, gloomy green and grey light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_b.png  (S01, shot 2)  · attach REF_grunt.png
+### [x] S01_b.png  (S01, shot 2)  · attach REF_grunt.png
 
 ```
 close-up of a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals, soaked by rain, water dripping off the helmet rim, mud on his face, staring blankly ahead, forest behind him, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_c.png  (S01, shot 3)
+### [x] S01_c.png  (S01, shot 3)
 
 ```
 close-up of muddy hobnailed Roman sandals sinking into a flooded forest path, a heavy wet red shield dragging beside them, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_d.png  (S01, shot 4)
+### [x] S01_d.png  (S01, shot 4)
 
 ```
 dark forest seen through trees, dozens of shadowy Germanic warriors with spears and round shields crouching between the trunks, only their eyes visible, rain, the Roman column far away in the background, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_e.png  (S01, shot 5)
+### [x] S01_e.png  (S01, shot 5)
 
 ```
 a golden Roman eagle standard on a pole lying in the mud of a forest, rain falling, a broken red shield next to it, dramatic low angle, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] HOST_desk.png  (S02, shot 1)  · attach REF_host.png
+### [x] HOST_desk.png  (S02, shot 1)  · attach REF_host.png
 
 ```
 a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, sitting at a cluttered wooden desk in a cramped archive full of shelves of files and maps, warm lamp light, smug half-smile, looking at the viewer, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S02_b.png  (S02, shot 2)  · attach REF_grunt.png
+### [x] S02_b.png  (S02, shot 2)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals standing straight in full kit in front of a plain warm background, holding a red curved rectangular shield and a javelin, like a museum display figure, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S02_c.png  (S02, shot 3)
+### [x] S02_c.png  (S02, shot 3)
 
 ```
 stylised cartoon map of the Roman Empire around 9 AD from Britain to Syria, the empire in bright red, the sea in flat blue, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
