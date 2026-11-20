@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 58 done, plus 2 character references.
+106 pictures, 65 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -372,19 +372,19 @@ cutaway view of a Roman shrine above an underground strongroom full of pay chest
 Roman soldiers at an outdoor altar sacrificing to Mars and Jupiter, smoke rising, a priest with a covered head, the eagle standard decorated with garlands for its birthday, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_d.png  (S13, shot 4)
+### [x] S13_d.png  (S13, shot 4)
 
 ```
 a small dark underground Mithras temple with benches on both sides, a painting of a god slaying a bull at the end, soldiers in strange masks, candle light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_e.png  (S13, shot 5)  · attach REF_grunt.png
+### [x] S13_e.png  (S13, shot 5)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals pouring a little wine on the ground and kissing a lucky charm, looking up at the sky hopefully, grey clouds gathering, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] HOST_lamp.png  (S14, shot 1)  · attach REF_host.png
+### [x] HOST_lamp.png  (S14, shot 1)  · attach REF_host.png
 
 ```
 a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, leaning towards the viewer and raising the oil lamp, eyebrows raised, a dark archive behind him, dramatic red lamp light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -396,25 +396,25 @@ a short round-bodied archivist with a pale round face, tiny round wire glasses, 
 four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of underpants in a parcel, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_a.png  (S15, shot 1)  · attach REF_grunt.png
+### [x] S15_a.png  (S15, shot 1)  · attach REF_grunt.png
 
 ```
 a Roman centurion raising a gnarled vine stick over a cowering legionary's back, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals watching in the background horrified, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_b.png  (S15, shot 2)
+### [x] S15_b.png  (S15, shot 2)
 
 ```
 a furious Roman centurion holding a snapped vine stick, a pile of broken sticks at his feet, shouting with his hand out for another one, his soldiers glaring, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_c.png  (S15, shot 3)
+### [x] S15_c.png  (S15, shot 3)
 
 ```
 a Roman sentry asleep on a rampart at night, leaning on his spear, an officer with a torch discovering him, the sentry's comrades holding clubs in the shadows behind, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_d.png  (S15, shot 4)
+### [x] S15_d.png  (S15, shot 4)
 
 ```
 rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets and red curved rectangular shields in a line counting off, every tenth soldier pulled out with a sad face, the others looking at the ground, grey sky, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
