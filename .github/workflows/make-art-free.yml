@@ -1,0 +1,59 @@
+name: Make art (free)
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder, e.g. EP001-pov-roman-legionary"
+        required: true
+      max:
+        description: "Pictures per run"
+        default: "120"
+      backend:
+        description: "auto (Pollinations, then Cloudflare), pollinations or cloudflare"
+        default: auto
+      build:
+        description: "Start the episode build when every picture exists"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  actions: write
+concurrency: art-${{ inputs.episode }}
+jobs:
+  art:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install pyyaml pillow
+      - name: Make missing pictures (saved every 10)
+        id: art
+        env:
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          ep="episodes/${{ inputs.episode }}"; total=0; left=1; rounds=$(( (${{ inputs.max }} + 9) / 10 ))
+          for i in $(seq 1 $rounds); do
+            python tools/free_art.py "$ep" --max 10 --backend "${{ inputs.backend }}" | tee run.log
+            made=$(grep -oP '^made \K\d+(?=, failed)' run.log || echo 0)
+            left=$(grep -oP '\K\d+(?= still missing)' run.log || echo 1)
+            if [ "$made" != "0" ]; then
+              total=$((total + made))
+              python tools/shotlist.py "$ep"
+              git add "$ep" && git commit -qm "Art: $made pictures for ${{ inputs.episode }} [skip ci]"
+              git pull -q --rebase origin main && git push -q
+            fi
+            [ "$left" = "0" ] && break
+            [ "$made" = "0" ] && { echo "No progress this round, stopping."; break; }
+          done
+          echo "made=$total" >> "$GITHUB_OUTPUT"; echo "left=$left" >> "$GITHUB_OUTPUT"
+          echo "### Art: made $total, $left still missing" >> "$GITHUB_STEP_SUMMARY"
+      - name: Build the episode
+        if: inputs.build && steps.art.outputs.left == '0'
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: gh workflow run build-episode.yml -f episode="${{ inputs.episode }}"
