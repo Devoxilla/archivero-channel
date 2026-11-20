@@ -789,11 +789,12 @@ _img_cache = {}
 MOVES = ("push", "pull", "pan_left", "pan_right", "pan_up", "pan_down", "shake", "static", "push_shake")
 
 
-def picture(path, prompt=""):
+def picture(path, prompt="", size=None):
     """Cover-fit picture at 1.2x the frame (room to move). Missing file -> 'art needed' card."""
-    key = str(path)
+    fw, fh = size or (W, H)
+    key = f"{path}@{fw}x{fh}"
     if key not in _img_cache:
-        bw, bh = int(W * 1.2), int(H * 1.2)
+        bw, bh = int(fw * 1.2), int(fh * 1.2)
         if path and Path(path).exists():
             im = Image.open(path).convert("RGB")
             r = max(bw / im.width, bh / im.height)
@@ -828,21 +829,22 @@ def clip_for(path):
     return c if c.exists() else None
 
 
-def clip_frames(clip):
+def clip_frames(clip, size=None):
     """Decode a clip once to cover-fit JPEG frames at FPS (1.2x the frame, like picture()). Returns the paths."""
-    key = str(clip)
+    fw, fh = size or (W, H)
+    key = f"{clip}@{fw}x{fh}"
     if key not in _img_cache:
         import hashlib
         import shutil
         import subprocess
         import tempfile
         st = Path(clip).stat()
-        h = hashlib.md5(f"{Path(clip).resolve()}:{st.st_size}:{st.st_mtime}".encode()).hexdigest()[:12]
+        h = hashlib.md5(f"{Path(clip).resolve()}:{st.st_size}:{st.st_mtime}:{fw}x{fh}".encode()).hexdigest()[:12]
         out = Path(tempfile.gettempdir()) / "doodle_clips" / h
         if not out.exists():
             tmp = out.with_name(f"{h}.{os.getpid()}")
             tmp.mkdir(parents=True, exist_ok=True)
-            bw, bh = int(W * 1.2), int(H * 1.2)
+            bw, bh = int(fw * 1.2), int(fh * 1.2)
             vf = (f"fps={FPS},scale={bw}:{bh}:force_original_aspect_ratio=increase,"
                   f"crop={bw}:{bh}:(iw-{bw})/2:(ih-{bh})*0.35")
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(clip), "-an", "-vf", vf, "-q:v", "3",
@@ -855,17 +857,18 @@ def clip_frames(clip):
     return _img_cache[key]
 
 
-def moving_picture(shot, tt, dur, frame):
-    clip = clip_for(shot.get("_img_path"))
+def moving_picture(shot, tt, dur, frame, size=None, path_key="_img_path"):
+    FW, FH = size or (W, H)
+    clip = clip_for(shot.get(path_key))
     if clip:  # play the clip once at normal speed, then hold its last frame; the camera move stays gentle
-        frames = clip_frames(clip)
+        frames = clip_frames(clip, size)
         im = Image.open(frames[min(int(tt * FPS), len(frames) - 1)]).convert("RGB") if frames else \
-            picture(shot.get("_img_path"), shot.get("prompt", ""))
+            picture(shot.get(path_key), shot.get("prompt", ""), size)
         shot = dict(shot, amount=shot.get("amount", 1.0) * 0.4, jolts=[])
         if shot.get("move") in ("shake", "push_shake"):
             shot["move"] = "push"
     else:
-        im = picture(shot.get("_img_path"), shot.get("prompt", ""))
+        im = picture(shot.get(path_key), shot.get("prompt", ""), size)
     bw, bh = im.size
     k = ease(tt / max(dur, 0.01)) if shot.get("ease", True) else tt / max(dur, 0.01)
     mv = shot.get("move", "push")
@@ -887,7 +890,7 @@ def moving_picture(shot, tt, dur, frame):
     fx, fy = shot.get("focus", [0.5, 0.5])
     cx += (fx - 0.5) * (z - 1) * 2
     cy += (fy - 0.5) * (z - 1) * 2
-    cw, ch = W / z, H / z
+    cw, ch = FW / z, FH / z
     jx = jy = 0.0
     shaking = mv in ("shake", "push_shake") or any(abs(tt - s * dur) < 0.35 for s in shot.get("jolts", []))
     if shaking:
@@ -896,7 +899,7 @@ def moving_picture(shot, tt, dur, frame):
         jx, jy = r.uniform(-a, a), r.uniform(-a, a)
     x0 = min(max(cx * bw - cw / 2 + jx, 0), bw - cw)
     y0 = min(max(cy * bh - ch / 2 + jy, 0), bh - ch)
-    return im.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
+    return im.resize((FW, FH), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
 
 
 def stamp(p, it, life):
@@ -998,6 +1001,60 @@ def render_shot_frame(shot, tt, dur, frame, talk=0.0):
         x0 = min(max(fx - cw / 2, 0), W - cw)
         y0 = min(max(fy - ch / 2, 0), H - ch)
         img = img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
+    return img
+
+
+VW, VH = 1080, 1920  # native vertical (Shorts) frame
+
+
+def vertical_item(it, slot=0):
+    """Move a 16:9 overlay into the 9:16 frame, between the Short's title (top) and the captions (bottom).
+    Labels stack centred under the title (slot = the label's order in the shot). Overrides: vx, vy, vsize."""
+    it = dict(it)
+    if "label" in it:
+        size = g(it, "size", 80) * 0.85
+        size = min(size, size * 900 / max(1, font(int(size)).getlength(it["label"])))
+        it.update(x=540, y=540 + 150 * slot, size=size)
+    elif "pin" in it:
+        x, y = g(it, "x", 960), g(it, "y", 540)
+        it.update(x=540 + (x - 960) * 0.42, y=540 + (min(max(y, 160), 900) - 160) / 740 * 700)
+    elif "stamp" in it:
+        size = g(it, "size", 54) * 0.85
+        size = min(size, size * 900 / max(1, font(int(size)).getlength(it["stamp"])))
+        it.update(x=60, y=1330, size=size)
+    elif "title" in it:
+        size = g(it, "size", 170)
+        size = min(size, size * 980 / max(1, font(int(size)).getlength(it["title"])))
+        it.update(x=540, y=780, size=size, sub_size=g(it, "sub_size", 70) * 0.85)
+    for k, k2 in (("vx", "x"), ("vy", "y"), ("vsize", "size")):
+        if k in it:
+            it[k2] = it[k]
+    return it
+
+
+def render_vertical_frame(shot, tt, dur, frame):
+    """Native 9:16 frame from the shot's art_916/ picture (or clip) with its overlays moved into the tall frame."""
+    img = moving_picture(shot, tt, dur, frame, (VW, VH), "_img916")
+    p = Pen(img, frame)
+    flashes = []
+    slots = {id(it): n for n, it in enumerate(x for x in shot.get("items", []) if "label" in x)}
+    for it in shot.get("items", []):
+        t_in, t_out = g(it, "in", 0) * dur, g(it, "out", 1.01) * dur
+        if not (t_in <= tt < t_out):
+            continue
+        life, v = tt - t_in, vertical_item(it, slots.get(id(it), 0))
+        if "label" in v:
+            label(p, v, tt, life)
+        elif "stamp" in v:
+            stamp(p, v, life)
+        elif "title" in v:
+            title(p, v, life)
+        elif "pin" in v:
+            pin(p, v, life)
+        elif "flash" in v:
+            flashes.append(life)
+    for life in flashes:
+        img = flash(img, life)
     return img
 
 

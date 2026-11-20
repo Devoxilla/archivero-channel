@@ -218,3 +218,21 @@ def test_polish_busy_bands():
     shot = {"items": [{"stamp": "CHOSIN", "in": 0.1}, {"label": "30,000", "y": 620}, {"label": "X", "y": 900}]}
     bands = polish.busy_bands([[(shot, 0.0, 10.0)]], [5.0], [10.0])
     assert len(bands) == 2 and bands[0][0] == 6.0 and bands[1][2] < bands[0][2] < 1000
+
+
+def test_vertical_items_stay_on_screen():
+    import doodle
+    a = doodle.vertical_item({"label": "~10 MILLION SEPARATED FAMILIES", "x": 1700, "y": 900}, 0)
+    b = doodle.vertical_item({"label": "CARRIED 14,000", "x": 1350, "y": 160}, 1)
+    assert a["x"] == 540 and b["y"] > a["y"]  # labels stack under each other, centred
+    assert doodle.font(int(a["size"])).getlength(a["label"]) <= 900
+    s = doodle.vertical_item({"stamp": "HUNGNAM · DECEMBER 1950"})
+    assert s["x"] == 60 and 1200 < s["y"] < 1400  # above the captions
+
+
+def test_shorts_list_ep001():
+    import shotlist
+    import yaml
+    ep = ROOT / "episodes/EP001-korean-war"
+    imgs = shotlist.shorts_pictures(ep, yaml.safe_load((ep / "animation.yaml").read_text()))
+    assert "S12_e.png" in imgs and len(imgs) == len(set(imgs))

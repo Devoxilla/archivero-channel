@@ -210,9 +210,12 @@ def scene_spec(sc, spec, art_dir=None):
                 v = [v[int(idx) - 1]]
                 v = [{k: x for k, x in v[0].items() if k != "at"}]
             shots += [dict(s) for s in v]
-    for s in shots:  # pictures live in the episode's art/ folder
+    for s in shots:  # pictures live in the episode's art/ folder; 9:16 versions for Shorts in art_916/
         if "img" in s:
             s["_img_path"] = str(art_dir / s["img"]) if art_dir else s["img"]
+            v = art_dir.parent / "art_916" / s["img"] if art_dir else None
+            if v and (v.exists() or v.with_suffix(".mp4").exists()):
+                s["_img916"] = str(v)
     if len(ids) > 1:  # borrowed from several scenes: equal split
         for s in shots:
             s.pop("at", None)
@@ -222,6 +225,37 @@ def scene_spec(sc, spec, art_dir=None):
 def short_title(script: Path):
     m = re.search(r"^Title:\s*(.+)$", script.read_text(encoding="utf-8"), re.M)
     return re.sub(r"\s*#\w+", "", m.group(1)).strip() if m else ""
+
+
+def title_lines(title, size=84, width=980):
+    import doodle
+    lines, cur = [], ""
+    for wd in title.split():
+        if doodle.font(size).getlength((cur + " " + wd).strip()) > width and cur:
+            lines.append(cur)
+            cur = wd
+        else:
+            cur = (cur + " " + wd).strip()
+    return lines + [cur] if cur else lines
+
+
+def vertical_title(img, title, frame):
+    """Short title over a full-screen picture: white with a heavy outline on a soft dark band at the top."""
+    import doodle
+    from PIL import ImageDraw
+    size = 76
+    lines = title_lines(title, size)
+    while len(lines) > 3 and size > 52:
+        size -= 6
+        lines = title_lines(title, size)
+    band = Image.new("L", (1, 520))
+    band.putdata([int(150 * max(0, 1 - y / 520) ** 1.6) for y in range(520)])
+    shade = Image.new("RGB", (1080, 520), (0, 0, 0))
+    img.paste(shade, (0, 0), band.resize((1080, 520)))
+    d = ImageDraw.Draw(img)
+    for i, ln in enumerate(lines[:3]):
+        d.text((540, 200 + i * size * 1.18 - (len(lines[:3]) - 1) * size * 0.3), ln, font=doodle.font(size),
+               fill=(255, 255, 255), anchor="mm", stroke_width=max(4, size // 12), stroke_fill=(20, 20, 20))
 
 
 def render_anim(job):
@@ -245,9 +279,16 @@ def render_anim(job):
     for f in range(frames):
         t = f / FPS
         shot, start, dur = next((x for x in reversed(plan) if t >= x[1]), plan[0])
-        img = doodle.render_shot_frame(shot, t - start, dur, frame0 + f, talk[f])
-        img = polish.frame_transition(img, f, frames, t_in, t_out)  # picture only; a Short's title stays still
-        if vertical:
+        native = vertical and shot.get("_img916")
+        if native:  # full-screen 9:16 picture, title drawn over it
+            img = doodle.render_vertical_frame(shot, t - start, dur, frame0 + f)
+            img = polish.frame_transition(img, f, frames, t_in, t_out)
+            if title:
+                vertical_title(img, title, frame0 + f)
+        else:
+            img = doodle.render_shot_frame(shot, t - start, dur, frame0 + f, talk[f])
+            img = polish.frame_transition(img, f, frames, t_in, t_out)  # picture only; a Short's title stays still
+        if vertical and not native:
             canvas = Image.new("RGB", size, doodle.C["paper"])
             canvas.paste(img.resize((1080, 810), Image.BILINEAR, box=(240, 0, 1680, 1080)), (0, 470))
             if title:

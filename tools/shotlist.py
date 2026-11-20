@@ -81,7 +81,45 @@ def build(ep: Path, aspect="16:9"):
     out = ep / "shotlist.md"
     out.write_text("\n".join(lines), encoding="utf-8")
     flow_list(ep, spec, chars)
+    shorts_list(ep, spec, chars)
     return out, len(pics), len(done)
+
+
+VERTICAL = ("Vertical 9:16 portrait composition for a phone screen, main subject in the middle third, "
+            "calm sky or plain area at the top")
+
+
+def shorts_pictures(ep: Path, spec):
+    """Pictures the Shorts in <ep>/shorts/ use, in order of first use."""
+    import assemble
+    out = []
+    for f in sorted((ep / "shorts").glob("*.md")):
+        for sc in assemble.parse_script(f):
+            for s in assemble.scene_spec(sc, spec):
+                if s.get("img") and s["img"] not in out:
+                    out.append(s["img"])
+    return out
+
+
+def shorts_list(ep: Path, spec, chars):
+    """shorts_916.md: a tall (9:16) version of every picture the Shorts use. Saved as art_916/<same name>,
+    it fills the whole phone screen in the Short (otherwise the 16:9 picture is shown as a band)."""
+    imgs = shorts_pictures(ep, spec) if (ep / "shorts").exists() else []
+    if not imgs:
+        return None
+    prompts = {img: (sid, pr) for img, sid, _, pr in pictures(spec)}
+    art = ep / "art_916"
+    lines = [f"# Vertical pictures for the Shorts: {ep.name}", "",
+             f"{len(imgs)} pictures. Make them **portrait 9:16** (Google Flow: Image, Nano Banana, 9:16 — free) and "
+             f"save each as `episodes/{ep.name}/art_916/<name>` (PNG, same name as the 16:9 picture).", ""]
+    for img in imgs:
+        sid, pr = prompts.get(img, ("?", ""))
+        tick = "x" if (art / img).exists() else " "
+        lines += [f"### [{tick}] {img}  ({sid})", "", "```", f"{VERTICAL}: " + expand(pr, chars, "tall vertical framing, 9:16"),
+                  "```", ""]
+    out = ep / "shorts_916.md"
+    out.write_text("\n".join(lines), encoding="utf-8")
+    return out
 
 
 FLOW_STYLE = ("2D cartoon animation, bold thick black outlines, flat bright colours with simple cel shading, "
