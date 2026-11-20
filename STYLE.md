@@ -95,3 +95,10 @@ Maps and labels are drawn by the build (pins, arrows, names, dates), so map pict
 
 Rules for every script: a cold-open hook in the first 20 seconds, a chapter every 3–5 minutes, one dark-funny line
 per minute, a question for the comments around 40%, real sources at the end, no invented quotes.
+
+## Shorts rules (default since 2026-11-20)
+- First line = an aggressive hook in under 2 seconds: short punchy fragments, the shocking number or betrayal first ("Two men. Thirty minutes. One pencil line."). No dates or set-up before the hook.
+- No title text on screen: only the word-by-word captions. The build opens on a punch-in with a shake and an impact sound.
+- Last line sends viewers to the full episode: "... is in the episode linked below. Watch it now." The build adds a FULL EPISODE end card (last 3 s) with an arrow at the Related-video link.
+- Each Short file has `Related video:` (set in YouTube Studio when uploading) and a pinned comment with the episode link.
+- Full-screen 9:16 pictures in `art_916/` (prompts in `shorts_916.md`).

@@ -258,6 +258,33 @@ def vertical_title(img, title, frame):
                fill=(255, 255, 255), anchor="mm", stroke_width=max(4, size // 12), stroke_fill=(20, 20, 20))
 
 
+CTA_S = 3.2  # seconds of end card at the end of a Short
+
+
+def end_card(img, life):
+    """Short end card: 'FULL EPISODE' box and an arrow bouncing down at the related-video link (bottom left)."""
+    import math
+    import doodle
+    from PIL import ImageDraw
+    k = min(1.0, life / 0.25)
+    s = 1 + 0.2 * math.sin(k * math.pi) if k < 1 else 1
+    shade = Image.new("RGB", img.size, (0, 0, 0))
+    img.paste(Image.blend(img, shade, 0.35 * k))
+    d = ImageDraw.Draw(img)
+    w, h = int(860 * s), int(330 * s)
+    x0, y0 = 540 - w // 2, 870 - h // 2
+    d.rounded_rectangle([x0, y0, x0 + w, y0 + h], 34, fill=(20, 20, 20), outline=(255, 210, 0), width=10)
+    d.text((540, y0 + h * 0.36), "FULL EPISODE", font=doodle.font(int(110 * s)), fill=(255, 210, 0), anchor="mm",
+           stroke_width=5, stroke_fill=(20, 20, 20))
+    d.text((540, y0 + h * 0.74), "TAP THE LINK BELOW", font=doodle.font(int(62 * s)), fill=(255, 255, 255),
+           anchor="mm")
+    bob = 26 * math.sin(life * 9)
+    ax, ay = 150, 1250 + bob
+    d.rectangle([ax - 26, ay - 170, ax + 26, ay], fill=(255, 210, 0), outline=(20, 20, 20), width=6)
+    d.polygon([(ax - 80, ay - 10), (ax + 80, ay - 10), (ax, ay + 110)], fill=(255, 210, 0), outline=(20, 20, 20),
+              width=6)
+
+
 def render_anim(job):
     """Worker: one scene's animation -> mp4 segment (silent). job = dict, see build()."""
     import doodle
@@ -304,6 +331,8 @@ def render_anim(job):
                 for i, ln in enumerate(lines[:3]):
                     tp.text(540, 230 + i * 100 - (len(lines) - 1) * 50, ln, 84, "ink")
             img = canvas
+        if job.get("cta") and t >= seconds - CTA_S:
+            end_card(img, t - (seconds - CTA_S))
         ff.stdin.write(img.tobytes())
     ff.stdin.close()
     if ff.wait():
@@ -331,14 +360,19 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
         spec = load_spec(script)
         jobs, frame0 = {}, 0
         kinds = [None] * len(scenes) if plain else polish.transition_plan(len(scenes))
+        if vertical and not plain:
+            kinds[0] = "zoom"  # Shorts open on a punch-in, not a fade from black
         plans = []
         for i, (sc, d) in enumerate(zip(scenes, durations)):
             shots = scene_spec(sc, spec, spec_dir(script) / "art")
+            if vertical and not plain and i == 0 and shots:  # hook: the first picture lands with a shake
+                shots[0] = dict(shots[0], jolts=[0.0] + list(shots[0].get("jolts", [])))
             plans.append(__import__("doodle").scene_shots(shots, d + PAUSE) if shots else [])
             if shots:
                 jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),
                                   "out": str(tmp / f"{sc['id']}_anim.mp4"), "vertical": vertical,
-                                  "title": short_title(script) if vertical else "", "frame0": frame0,
+                                  "title": short_title(script) if vertical and plain else "", "frame0": frame0,
+                                  "cta": vertical and not plain and i == len(scenes) - 1,
                                   "trans_in": kinds[i],
                                   "trans_out": None if plain else (kinds[i + 1] if i + 1 < len(scenes) else "dip")}
             frame0 += round((d + PAUSE) * FPS)
@@ -384,6 +418,9 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
         else:
             # sound design + music under the narration, word-by-word captions burned in
             events = polish.sound_events(plans, starts, [d + PAUSE for d in durations], kinds)
+            if vertical:  # hook impact on the first frame, a pop when the end card lands
+                events += [{"t": 0.0, "kind": "boom"}, {"t": 0.02, "kind": "hit"},
+                           {"t": max(0.0, total - CTA_S), "kind": "pop"}]
             bg = polish.background_track(vo / "vo_full.wav", events, starts, total, tmp / "bg.wav")
             words = []
             for sc, d, t0 in zip(scenes, durations, starts):

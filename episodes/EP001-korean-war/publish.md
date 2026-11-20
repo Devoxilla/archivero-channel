@@ -40,3 +40,9 @@ korean war, korean war explained, 38th parallel, dmz, north korea, south korea, 
 1. shorts/short1-thirty-minutes.md
 2. shorts/short2-truman-fires-macarthur.md
 3. shorts/short3-fourteen-thousand.md
+
+## Shorts → full episode (do this for every Short)
+1. Upload the full episode first (it can be scheduled or unlisted until release).
+2. When uploading each Short in YouTube Studio, open **Related video** and pick *The Korean War: The War That Never Ended*. A tappable link to the episode then shows under the Short; the end card's arrow points at it.
+3. Post the pinned comment from the Short's file with the episode's link, and pin it.
+4. The Short says "linked below. Watch it now." at the end, so the link must be set before publishing.
