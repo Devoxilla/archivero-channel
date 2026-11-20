@@ -102,3 +102,4 @@ per minute, a question for the comments around 40%, real sources at the end, no 
 - Last line sends viewers to the full episode: "... is in the episode linked below. Watch it now." The build adds a FULL EPISODE end card (last 3 s) with an arrow at the Related-video link.
 - Each Short file has `Related video:` (set in YouTube Studio when uploading) and a pinned comment with the episode link.
 - Full-screen 9:16 pictures in `art_916/` (prompts in `shorts_916.md`).
+- Fast cuts: list 3-6 pictures per Short scene (`{art: S12.5, S12.4, S19.3}`), about one per 2-3 s of narration. The build cuts to a new picture or a new framing at least every 1.8 s. `S10.1!` borrows a picture without its overlays.

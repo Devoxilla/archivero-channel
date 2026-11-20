@@ -107,16 +107,19 @@ def sound_events(scene_plans, scene_starts, scene_lengths, kinds_in, art_dir=Non
             g0 = t0 + start
             if k > 0:
                 ev.append({"t": g0, "kind": "cut"})
-            for amb in shot_ambience(shot):
-                ev.append({"t": g0, "kind": "bed_" + amb, "dur": dur})
-            img = shot.get("_img_path") or shot.get("img")
+            if shot.get("_cont"):  # a later framing of the same picture (Short fast cuts): no new beds or clip
+                pass
+            else:
+                for amb in shot_ambience(shot):
+                    ev.append({"t": g0, "kind": "bed_" + amb, "dur": shot.get("_span", dur)})
+            img = None if shot.get("_cont") else (shot.get("_img_path") or shot.get("img"))
             if img:
                 clip = Path(img).with_suffix(".mp4")
                 if clip.exists():
-                    ev.append({"t": g0, "kind": "clip", "path": str(clip), "dur": dur})
+                    ev.append({"t": g0, "kind": "clip", "path": str(clip), "dur": shot.get("_span", dur)})
             for it in shot.get("items", []):
                 ti = g0 + it.get("in", 0) * dur
-                if ti >= t0 + length:
+                if ti >= t0 + length or it.get("in", 0) < 0:
                     continue
                 if "label" in it:
                     ev.append({"t": ti, "kind": "pop"})

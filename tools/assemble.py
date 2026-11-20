@@ -16,6 +16,7 @@ Output (folder "out" next to the script): <name>.mp4, <name>.srt (captions to up
 <name>_chapters.txt (paste into the description). Shorts get captions burned in.
 """
 import argparse
+import math
 import json
 import re
 import subprocess
@@ -148,7 +149,7 @@ def title_card(title: str, size: tuple[int, int], path: Path):
 def scene_images(sc, art_dirs):
     ids = sc["art"] or [sc["id"]]
     found = []
-    for sid in ids:
+    for sid in (i.rstrip("!") for i in ids):
         for d in art_dirs:
             if d.is_dir():
                 found += sorted(p for p in d.iterdir() if p.suffix.lower() in IMG_EXT
@@ -202,6 +203,8 @@ def scene_spec(sc, spec, art_dir=None):
     ids = sc["art"] or [sc["id"]]
     shots = []
     for sid in ids:
+        bare = sid.endswith("!")  # "S10.1!" = that picture without its overlays (labels from another context)
+        sid = sid.rstrip("!")
         base, _, idx = sid.partition(".")  # "S10.4" = 4th shot of scene S10 only
         v = spec.get(base)
         if v:
@@ -209,7 +212,7 @@ def scene_spec(sc, spec, art_dir=None):
             if idx.isdigit() and 0 < int(idx) <= len(v):
                 v = [v[int(idx) - 1]]
                 v = [{k: x for k, x in v[0].items() if k != "at"}]
-            shots += [dict(s) for s in v]
+            shots += [dict(s, items=[]) if bare else dict(s) for s in v]
     for s in shots:  # pictures live in the episode's art/ folder; 9:16 versions for Shorts in art_916/
         if "img" in s:
             s["_img_path"] = str(art_dir / s["img"]) if art_dir else s["img"]
@@ -220,6 +223,44 @@ def scene_spec(sc, spec, art_dir=None):
         for s in shots:
             s.pop("at", None)
     return shots or None
+
+
+CUT_S = 1.8  # Shorts: longest time on one picture or framing before a cut
+CUT_MOVES = [("push", [0.5, 0.42]), ("pan_left", [0.5, 0.5]), ("pull", [0.45, 0.4]), ("pan_right", [0.5, 0.55]),
+             ("push", [0.6, 0.6]), ("pan_up", [0.5, 0.5])]
+
+
+def fast_cuts(shots, seconds, max_s=CUT_S):
+    """Split every shot longer than max_s into pieces with different framings, so a Short cuts every ~1.5 s.
+    Overlays stay where they were in time; later pieces show them without a new pop or sound."""
+    import doodle
+    plan = doodle.scene_shots(shots, seconds)
+    out, n_cut = [], 0
+    for shot, start, dur in plan:
+        n = max(1, math.ceil(dur / max_s - 0.15))
+        for k in range(n):
+            a, b = start + dur * k / n, start + dur * (k + 1) / n
+            piece = dict(shot, at=a / seconds)
+            if k:
+                mv, focus = CUT_MOVES[(n_cut + k) % len(CUT_MOVES)]
+                piece.update(move=mv, focus=focus, amount=1.3, jolts=[], _cont=True)
+            else:
+                piece["_span"] = dur
+                piece["jolts"] = [j * dur / (b - a) for j in shot.get("jolts", []) if j * dur < b - a]
+            items = []
+            for it in shot.get("items", []):
+                t_in, t_out = it.get("in", 0) * dur, it.get("out", 1.01) * dur
+                if t_out <= a - start or (t_in >= b - start):
+                    continue
+                if t_in >= a - start:  # starts in this piece: normal pop-in
+                    items.append(dict(it, **{"in": (t_in - (a - start)) / (b - a)},
+                                      out=(t_out - (a - start)) / (b - a)))
+                else:  # already on screen: stays, no new pop
+                    items.append(dict(it, **{"in": -1.0}, out=(t_out - (a - start)) / (b - a)))
+            piece["items"] = items
+            out.append(piece)
+        n_cut += n
+    return out
 
 
 def short_title(script: Path):
@@ -367,6 +408,8 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
             shots = scene_spec(sc, spec, spec_dir(script) / "art")
             if vertical and not plain and i == 0 and shots:  # hook: the first picture lands with a shake
                 shots[0] = dict(shots[0], jolts=[0.0] + list(shots[0].get("jolts", [])))
+            if vertical and not plain and shots:  # fast cuts: a new picture or framing every ~1.5 s
+                shots = fast_cuts(shots, d + PAUSE)
             plans.append(__import__("doodle").scene_shots(shots, d + PAUSE) if shots else [])
             if shots:
                 jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),

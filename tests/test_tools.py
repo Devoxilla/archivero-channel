@@ -138,7 +138,7 @@ def test_image_episode_shots_shotlist_and_shorts(tmp_path, name, n_scenes, min_p
     assert a.getpixel((960, 300)) != (238, 232, 220) and a.tobytes() != b.tobytes()
     for f in sorted((ep / "shorts").glob("*.md")):
         for sc in assemble.parse_script(f):
-            assert sc["art"] and len(assemble.scene_spec(sc, spec, tmp_path)) == 1
+            assert sc["art"] and len(assemble.scene_spec(sc, spec, tmp_path)) == len(sc["art"])
 
 
 def test_gemini_art_jobs_and_request(tmp_path):
@@ -236,3 +236,16 @@ def test_shorts_list_ep001():
     ep = ROOT / "episodes/EP001-korean-war"
     imgs = shotlist.shorts_pictures(ep, yaml.safe_load((ep / "animation.yaml").read_text()))
     assert "S12_e.png" in imgs and len(imgs) == len(set(imgs))
+
+
+def test_fast_cuts_split_long_shots():
+    import assemble
+    shots = [{"img": "a.png", "items": [{"label": "X", "in": 0.1}, {"stamp": "S", "in": 0.8}]}, {"img": "b.png"}]
+    out = assemble.fast_cuts(shots, 8.0)
+    assert len(out) >= 5 and all("at" in s for s in out)
+    first = [s for s in out if s["img"] == "a.png"]
+    assert not first[0].get("_cont") and all(s.get("_cont") for s in first[1:])
+    assert first[1]["items"][0]["in"] == -1.0  # label already on screen: no second pop
+    sc = {"id": "S01", "art": ["S01.1!"]}
+    got = assemble.scene_spec(sc, {"S01": [{"img": "x.png", "items": [{"label": "Y"}]}]})
+    assert got[0]["items"] == []
