@@ -86,9 +86,13 @@ jobs:
             cp "$ep"/out/* "$d"/ 2>/dev/null || true
             cp "$ep"/shorts/out/*.mp4 "$d"/ 2>/dev/null || true
           done
+          # GitHub refuses files over 100 MB: split big videos into 90 MB parts (join with: cat x.mp4.part* > x.mp4)
+          find /tmp/pub -type f -size +95M | while read -r f; do split -b 90M -d "$f" "$f.part" && rm "$f"; done
           git fetch -q --depth=1 origin builds && git worktree add -q /tmp/builds origin/builds || git worktree add -q --orphan -b builds /tmp/builds
           cd /tmp/builds
+          for d in /tmp/pub/*; do rm -rf "./$(basename "$d")"; done   # replace this episode's old files
           cp -r /tmp/pub/* .
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A && git commit -qm "Build ${GITHUB_SHA::7}" && git push -q origin HEAD:builds
+          # keep only the latest snapshot (no history of old videos)
+          git checkout -q --orphan snapshot && git add -A && git commit -qm "Build ${GITHUB_SHA::7}" && git push -q -f origin HEAD:builds
