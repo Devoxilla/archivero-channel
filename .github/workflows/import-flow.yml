@@ -1,0 +1,45 @@
+name: Import Flow art
+on:
+  push:
+    paths: ["incoming/*/map.json", ".github/workflows/import-flow.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency: make-art
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q pillow pyyaml
+      - name: Move incoming files into art/
+        id: mv
+        run: |
+          python - <<'PY'
+          import json, glob, os, shutil, subprocess
+          from PIL import Image
+          eps = []
+          for mp in glob.glob("incoming/*/map.json"):
+              d = os.path.dirname(mp); m = json.load(open(mp)); ep = m["episode"]
+              art = f"episodes/{ep}/art"; os.makedirs(art, exist_ok=True)
+              for src, shot in m["files"].items():
+                  Image.open(f"{d}/{src}").convert("RGB").save(f"{art}/{shot}.png", optimize=True)
+              for v in glob.glob(f"{d}/*.mp4"):
+                  shutil.copy(v, f"{art}/{os.path.basename(v)}")
+              shutil.rmtree(d); eps.append(ep)
+              print(ep, len(m["files"]), "pictures")
+          open(os.environ["GITHUB_OUTPUT"], "a").write("eps=" + " ".join(eps) + "\n")
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for ep in ${{ steps.mv.outputs.eps }}; do python tools/shotlist.py "episodes/$ep" || true; done
+          git add -A episodes incoming
+          git commit -qm "Import Flow art: ${{ steps.mv.outputs.eps }} [skip ci]" || exit 0
+          git pull -q --rebase origin main && git push -q
+      - name: Build
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: for ep in ${{ steps.mv.outputs.eps }}; do gh workflow run build-episode.yml -f episode="$ep"; done
