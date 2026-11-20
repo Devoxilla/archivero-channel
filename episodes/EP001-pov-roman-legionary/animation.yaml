@@ -18,6 +18,15 @@ characters:
     rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets
     and red curved rectangular shields
 
+# Character reference pictures: made first, then given to the image tool with every prompt that uses the token.
+refs:
+  grunt:
+    img: REF_grunt.png
+    prompt: "character reference sheet of {grunt}, full body, front view and three-quarter view, standing in a relaxed pose, holding a red curved rectangular shield and a javelin, plain light grey background"
+  host:
+    img: REF_host.png
+    prompt: "character reference sheet of {host}, full body, front view and three-quarter view, smug half-smile, plain light grey background"
+
 S01:
   - img: S01_a.png
     prompt: "wide view of a dark dripping German forest in heavy rain, a long column of tiny Roman soldiers, mules and wagons squeezed between huge trees and a misty bog, gloomy green and grey light"

@@ -135,3 +135,21 @@ def test_ep001_image_shots_shotlist_and_shorts(tmp_path):
     for f in sorted((ep / "shorts").glob("*.md")):
         for sc in assemble.parse_script(f):
             assert sc["art"] and len(assemble.scene_spec(sc, spec, tmp_path)) == 1
+
+
+def test_gemini_art_jobs_and_request(tmp_path):
+    import base64
+    import gemini_art
+    spec = {"characters": {"grunt": "a pale soldier"},
+            "refs": {"grunt": {"img": "REF_grunt.png", "prompt": "sheet of {grunt}"}},
+            "S01": [{"img": "S01_a.png", "prompt": "{grunt} in rain"}, {"img": "S01_b.png", "prompt": "a map"}]}
+    assert [j[0] for j in gemini_art.jobs(spec, tmp_path)] == ["REF_grunt.png", "S01_a.png", "S01_b.png"]
+    assert gemini_art.jobs(spec, tmp_path)[1][2] == ["REF_grunt.png"]
+    (tmp_path / "S01_b.png").write_bytes(b"x")
+    assert [j[0] for j in gemini_art.jobs(spec, tmp_path)] == ["REF_grunt.png", "S01_a.png"]
+    body = gemini_art.request_body("a pale soldier in rain", [b"PNG"])
+    parts = body["contents"][0]["parts"]
+    assert base64.b64decode(parts[0]["inline_data"]["data"]) == b"PNG" and "same character" in parts[1]["text"]
+    assert body["generationConfig"]["imageConfig"]["aspectRatio"] == "16:9"
+    img = base64.b64encode(b"IMG").decode()
+    assert gemini_art.image_from({"candidates": [{"content": {"parts": [{"inlineData": {"data": img}}]}}]}) == b"IMG"

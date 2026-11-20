@@ -1,7 +1,7 @@
 name: Build episode (voice + video)
 on:
   push:
-    paths: ["episodes/*/script.md", "episodes/*/shorts/*.md", "episodes/*/animation.yaml", "episodes/*/art/**"]
+    paths: ["episodes/*/script.md", "episodes/*/shorts/*.md", "episodes/*/animation.yaml", "episodes/*/art/**", "!episodes/*/art/inbox/**"]
   workflow_dispatch:
     inputs:
       episode:

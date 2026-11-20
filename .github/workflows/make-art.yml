@@ -1,0 +1,46 @@
+name: Make art (Gemini)
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode folder, e.g. EP001-pov-roman-legionary"
+        required: true
+      max:
+        description: "Pictures per run"
+        default: "40"
+      build:
+        description: "Start the episode build when every picture exists"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+  actions: write
+concurrency: art-${{ inputs.episode }}
+jobs:
+  art:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install pyyaml pillow
+      - name: Make missing pictures
+        id: art
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
+        run: python tools/gemini_art.py "episodes/${{ inputs.episode }}" --max "${{ inputs.max }}"
+      - name: Commit pictures
+        if: steps.art.outputs.made != '0'
+        run: |
+          python tools/shotlist.py "episodes/${{ inputs.episode }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add "episodes/${{ inputs.episode }}"
+          git commit -m "Art: ${{ steps.art.outputs.made }} pictures for ${{ inputs.episode }}"
+          git push
+      - name: Build the episode
+        if: inputs.build && steps.art.outputs.left == '0' && steps.art.outputs.made != '0'
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: gh workflow run build-episode.yml -f episode="${{ inputs.episode }}"

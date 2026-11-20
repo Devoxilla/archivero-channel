@@ -4,6 +4,8 @@
 
 Prompts in animation.yaml can use {grunt}, {host}, {crowd} (defined under `characters:`) and {style}.
 The house style from STYLE.md is appended to every prompt. Pictures used by several shots appear once.
+Character reference pictures (`refs:`) come first; every later prompt that uses {grunt} or {host} is
+made with that reference picture attached.
 """
 import argparse
 import re
@@ -26,8 +28,13 @@ def expand(prompt, chars, aspect="16:9"):
     return f"{text}, {STYLE}, {aspect}"
 
 
+def uses(prompt, refs):
+    """Reference characters a prompt needs, e.g. ['grunt']."""
+    return [k for k in refs if "{" + k + "}" in prompt]
+
+
 def pictures(spec):
-    """[(img, scene, shot_no, prompt)] in order, first use of each picture only."""
+    """[(img, scene, shot_no, prompt)] in order, first use of each picture only (refs not included)."""
     seen, out = set(), []
     for sid, shots in spec.items():
         if not re.fullmatch(r"S\d+", str(sid)):
@@ -42,19 +49,30 @@ def pictures(spec):
 
 def build(ep: Path, aspect="16:9"):
     spec = yaml.safe_load((ep / "animation.yaml").read_text(encoding="utf-8")) or {}
-    chars = spec.get("characters", {})
+    chars, refs = spec.get("characters", {}), spec.get("refs", {})
     pics = pictures(spec)
     art = ep / "art"
     done = [p for p in pics if (art / p[0]).exists()]
     lines = [f"# Shot list: {ep.name}", "",
-             f"{len(pics)} pictures, {len(done)} done. Make each one with a free generator "
-             "(Bing Image Creator / Microsoft Designer, Gemini, Leonardo, Ideogram), choose landscape 16:9, "
-             f"save it under the name shown, and put it in `{ep.name}/art/`.",
-             "For pictures with the Grunt or the Archivero, give the generator your saved reference picture of "
-             "that character and start the prompt with \"same character, same outfit, new pose:\".", ""]
+             f"{len(pics)} pictures, {len(done)} done, plus {len(refs)} character references.", "",
+             "**In the Gemini app** (gemini.google.com, Plus plan):",
+             "1. Make the character references first (top of this list). Keep the best one of each.",
+             "2. Open one Gemini chat per character. Attach that reference picture, then paste the prompts marked with "
+             "that character one after another in the same chat. Prompts without a character can go in any chat.",
+             "3. Download each picture. File names don't matter: upload them in the chat with Claude (or to "
+             f"`{ep.name}/art/inbox/` on GitHub) and Claude matches each one to its shot.",
+             "Pictures should be landscape (16:9). If Gemini returns a square, ask: \"same picture, wide 16:9\".", ""]
+    if refs:
+        lines += ["## Character references", ""]
+        for k, r in refs.items():
+            tick = "x" if (art / r["img"]).exists() else " "
+            lines += [f"### [{tick}] {r['img']}  (the {k})", "", "```", expand(r["prompt"], chars, "16:9"), "```", ""]
+        lines += ["## Shots", ""]
     for img, sid, i, prompt in pics:
         tick = "x" if (art / img).exists() else " "
-        lines += [f"## [{tick}] {img}  ({sid}, shot {i})", "", "```", expand(prompt, chars, aspect), "```", ""]
+        need = uses(prompt, refs)
+        tag = f"  · attach {', '.join(refs[k]['img'] for k in need)}" if need else ""
+        lines += [f"### [{tick}] {img}  ({sid}, shot {i}){tag}", "", "```", expand(prompt, chars, aspect), "```", ""]
     out = ep / "shotlist.md"
     out.write_text("\n".join(lines), encoding="utf-8")
     return out, len(pics), len(done)
