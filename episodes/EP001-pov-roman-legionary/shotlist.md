@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 18 done, plus 2 character references.
+106 pictures, 28 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -132,61 +132,61 @@ a pile of 225 shiny silver Roman denarii coins on a wooden table, a paymaster's 
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals holding out his open palm with three tiny coins in it, a bag of salt next to him crossed out, deadpan, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_a.png  (S05, shot 1)
+### [x] S05_a.png  (S05, shot 1)
 
 ```
 rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets and red curved rectangular shields marching on a long straight dusty road in summer heat, heavy packs, sweat, a centurion with a sundial shouting, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_b.png  (S05, shot 2)  · attach REF_grunt.png
+### [x] S05_b.png  (S05, shot 2)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals attacking a wooden training post with a wooden sword and a heavy wicker shield, exhausted, a trainer watching with arms crossed, training ground, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_c.png  (S05, shot 3)
+### [x] S05_c.png  (S05, shot 3)
 
 ```
 comparison split image, left a Roman soldier stabbing forward with a short sword marked with a green tick shape, right a soldier slashing wildly marked with a red cross shape, simple flat background, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_d.png  (S05, shot 4)  · attach REF_grunt.png
+### [x] S05_d.png  (S05, shot 4)  · attach REF_grunt.png
 
 ```
 rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets and red curved rectangular shields digging a ditch and building an earth rampart with a wooden stake palisade at sunset, baskets of earth, shovels everywhere, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in the foreground holding a shovel like a trophy, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_e.png  (S05, shot 5)
+### [x] S05_e.png  (S05, shot 5)
 
 ```
 bird's-eye view of a square Roman marching camp with a ditch, rampart, palisade and perfectly straight streets of identical leather tents, at night with torches, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_a.png  (S06, shot 1)  · attach REF_grunt.png
+### [x] S06_a.png  (S06, shot 1)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals standing in only a wool tunic, cloak and hobnailed sandals, arms out, while two other soldiers dress him like a doll, plain warm background, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_b.png  (S06, shot 2)
+### [x] S06_b.png  (S06, shot 2)
 
 ```
 object close-up of Roman legionary equipment laid out on a wooden table, iron helmet with cheek guards, segmented iron armour, chain mail shirt, dramatic light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_c.png  (S06, shot 3)
+### [x] S06_c.png  (S06, shot 3)
 
 ```
 close-up of a Roman pilum javelin stuck in an enemy's wooden round shield, its long iron neck bent, the enemy warrior looking annoyed trying to pull it out, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_d.png  (S06, shot 4)
+### [x] S06_d.png  (S06, shot 4)
 
 ```
 close-up of a Roman gladius short sword and a pugio dagger on a red curved rectangular scutum shield, dramatic light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_e.png  (S06, shot 5)  · attach REF_grunt.png
+### [x] S06_e.png  (S06, shot 5)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals bent under a huge pole loaded with a cooking pot, a saw, a pickaxe, a basket, rope, a sickle and food bags, a real mule next to him giving him a sympathetic look, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
