@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 8 done, plus 2 character references.
+106 pictures, 18 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -72,61 +72,61 @@ a skinny young Roman legionary with a very pale, round, deadpan face, dark tired
 stylised cartoon map of the Roman Empire around 9 AD from Britain to Syria, the empire in bright red, the sea in flat blue, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S02_d.png  (S02, shot 4)  · attach REF_grunt.png
+### [x] S02_d.png  (S02, shot 4)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals holding a shovel instead of a sword, a mountain of paperwork scrolls and a huge ditch behind him, a fainting modern drill sergeant in the corner, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_a.png  (S03, shot 1)  · attach REF_grunt.png
+### [x] S03_a.png  (S03, shot 1)  · attach REF_grunt.png
 
 ```
 a small poor farm in northern Italy, an older brother proudly holding the farm deed and a goat, the younger brother a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals as an 18 year old farm boy in a plain tunic with empty hands, sunny hills, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_b.png  (S03, shot 2)
+### [x] S03_b.png  (S03, shot 2)
 
 ```
 caricature portrait of the Roman general Gaius Marius, 100 BC, recognisable but cartoonish, stern exaggerated expression, red general's cloak, pointing at a crowd of poor men lining up, dramatic background of a Roman forum, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_c.png  (S03, shot 3)  · attach REF_grunt.png
+### [x] S03_c.png  (S03, shot 3)  · attach REF_grunt.png
 
 ```
 a bored Roman recruiting officer behind a table reading a letter of recommendation, the farm boy a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals standing nervously in front, a rich local big man in a toga patting his shoulder, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_d.png  (S03, shot 4)  · attach REF_grunt.png
+### [x] S03_d.png  (S03, shot 4)  · attach REF_grunt.png
 
 ```
 a Roman army doctor checking the teeth of the farm boy a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals, measuring his height against a stick, looking at his eyes, comic medical exam, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_e.png  (S03, shot 5)  · attach REF_grunt.png
+### [x] S03_e.png  (S03, shot 5)  · attach REF_grunt.png
 
 ```
 rows of new recruits raising their right hands swearing an oath in front of Roman standards, small lead tags hanging around their necks, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in the middle, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_a.png  (S04, shot 1)
+### [x] S04_a.png  (S04, shot 1)
 
 ```
 close-up of a long Roman scroll contract unrolling across a desk, tiny unreadable writing, a wax seal, an ink pen, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_b.png  (S04, shot 2)  · attach REF_grunt.png
+### [x] S04_b.png  (S04, shot 2)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals trying to hand flowers to a woman over a fence, a stern centurion standing between them holding a vine stick, comic, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_c.png  (S04, shot 3)
+### [x] S04_c.png  (S04, shot 3)
 
 ```
 a pile of 225 shiny silver Roman denarii coins on a wooden table, a paymaster's hands sweeping most of them away into small sacks, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_d.png  (S04, shot 4)  · attach REF_grunt.png
+### [x] S04_d.png  (S04, shot 4)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals holding out his open palm with three tiny coins in it, a bag of salt next to him crossed out, deadpan, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
