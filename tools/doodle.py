@@ -797,7 +797,7 @@ def picture(path, prompt=""):
             im = Image.open(path).convert("RGB")
             r = max(bw / im.width, bh / im.height)
             im = im.resize((int(im.width * r + 1), int(im.height * r + 1)), Image.LANCZOS)
-            x0, y0 = (im.width - bw) // 2, (im.height - bh) // 2
+            x0, y0 = (im.width - bw) // 2, int((im.height - bh) * 0.35)  # keep heads: crop a bit above centre
             im = im.crop((x0, y0, x0 + bw, y0 + bh))
         else:
             im = Image.new("RGB", (bw, bh), (238, 232, 220))
