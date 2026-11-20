@@ -1,11 +1,11 @@
 name: Build episode (voice + video)
 on:
   push:
-    paths: ["episodes/**/*.md", "episodes/**/art/**"]
+    paths: ["episodes/*/script.md", "episodes/*/shorts/*.md", "episodes/*/animation.yaml", "episodes/*/art/**"]
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode folder, e.g. EP001-prison-security-levels"
+        description: "Episode folder, e.g. EP001-pov-roman-legionary"
         required: true
       voice:
         description: "bm_george / bm_lewis (British) or am_michael / am_adam (American)"
@@ -41,6 +41,7 @@ jobs:
             files=$(git diff --name-only HEAD~1 HEAD -- episodes 2>/dev/null || git ls-files episodes)
             eps=$(echo "$files" | grep -oE '^episodes/[^/]+' | sort -u | tr '\n' ' ')
           fi
+          eps=$(for e in $eps; do [ -f "$e/script.md" ] && printf '%s ' "$e"; done)
           echo "eps=$eps" >> "$GITHUB_OUTPUT"
           echo "Episodes: $eps"
       - name: Install Kokoro (CPU), ffmpeg, fonts

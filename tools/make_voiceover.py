@@ -7,8 +7,8 @@ One-time setup (Windows, Mac or Linux, Python 3.10-3.12):
     (Windows only, also install espeak-ng: https://github.com/espeak-ng/espeak-ng/releases)
 
 Run:
-    python tools/make_voiceover.py episodes/EP001-prison-security-levels/script.md
-    python tools/make_voiceover.py episodes/EP001-prison-security-levels/script.md --voice am_michael --lang a   # American narrator
+    python tools/make_voiceover.py episodes/EP001-pov-roman-legionary/script.md
+    python tools/make_voiceover.py episodes/EP001-pov-roman-legionary/script.md --voice am_michael --lang a   # American narrator
 
 Output: a folder "vo_<script name>" with one WAV per scene (S01.wav, S02.wav ...) plus vo_full.wav.
 Scenes are the [S01], [S02] ... markers in the script. Text after "## Sources" is ignored,

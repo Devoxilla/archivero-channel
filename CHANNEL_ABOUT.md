@@ -2,9 +2,9 @@
 
 Good evening. I'm the Archivero, keeper of the files nobody asked for.
 
-Every week I open one of them, by lamplight: every prison security level, every rank of a medieval castle, every circle of a forgotten punishment. Strange systems, explained one rung at a time, from the harmless top of the ladder to the bottom nobody talks about.
+Every week I open one of them, by lamplight: wars, empires, spies and the soldiers nobody remembers. What it was really like to be a Roman legionary, how the KGB worked from the inside, every elite unit explained, whole empires summarized from the first day to the last.
 
-Hand-drawn ink, one red lamp, and the facts, with sources in every description.
+Bold cartoon animation, dark jokes, real history, with sources in every description.
 
-New files every Tuesday and Friday. Shorts in between.
+New files every week. Shorts in between.
 Pick a file. I'll leave the lamp on.

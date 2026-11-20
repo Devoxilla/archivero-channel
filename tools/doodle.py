@@ -782,9 +782,129 @@ def char_at(it, beats, tt, dur):
     return st
 
 
+# ---------------------------------------------------------------- illustrated shots (pictures from art/)
+
+_img_cache = {}
+MOVES = ("push", "pull", "pan_left", "pan_right", "pan_up", "pan_down", "shake", "static", "push_shake")
+
+
+def picture(path, prompt=""):
+    """Cover-fit picture at 1.2x the frame (room to move). Missing file -> 'art needed' card."""
+    key = str(path)
+    if key not in _img_cache:
+        bw, bh = int(W * 1.2), int(H * 1.2)
+        if path and Path(path).exists():
+            im = Image.open(path).convert("RGB")
+            r = max(bw / im.width, bh / im.height)
+            im = im.resize((int(im.width * r + 1), int(im.height * r + 1)), Image.LANCZOS)
+            x0, y0 = (im.width - bw) // 2, (im.height - bh) // 2
+            im = im.crop((x0, y0, x0 + bw, y0 + bh))
+        else:
+            im = Image.new("RGB", (bw, bh), (238, 232, 220))
+            d = ImageDraw.Draw(im)
+            d.rectangle([60, 60, bw - 60, bh - 60], outline=C["ink"], width=10)
+            d.text((bw / 2, bh * 0.36), "ART NEEDED: " + Path(str(path)).name, font=font(70), fill=C["red"], anchor="mm")
+            words, lines, cur = prompt.split(), [], ""
+            for w_ in words:
+                if font(44).getlength((cur + " " + w_).strip()) > W - 360 and cur:
+                    lines.append(cur)
+                    cur = w_
+                else:
+                    cur = (cur + " " + w_).strip()
+            if cur:
+                lines.append(cur)
+            for i, ln in enumerate(lines[:6]):
+                d.text((bw / 2, bh * 0.5 + i * 60), ln, font=font(44), fill=C["ink"], anchor="mm")
+        _img_cache[key] = im
+    return _img_cache[key]
+
+
+def moving_picture(shot, tt, dur, frame):
+    im = picture(shot.get("_img_path"), shot.get("prompt", ""))
+    bw, bh = im.size
+    k = ease(tt / max(dur, 0.01)) if shot.get("ease", True) else tt / max(dur, 0.01)
+    mv = shot.get("move", "push")
+    amt = shot.get("amount", 1.0)
+    z = 1.0
+    cx, cy = 0.5, 0.5
+    if mv in ("push", "push_shake"):
+        z = 1.0 + 0.16 * amt * k
+    elif mv == "pull":
+        z = 1.0 + 0.16 * amt * (1 - k)
+    elif mv in ("pan_left", "pan_right"):
+        z = 1.04
+        cx = 0.5 + (0.08 * amt) * ((1 - 2 * k) if mv == "pan_left" else (2 * k - 1))
+    elif mv in ("pan_up", "pan_down"):
+        z = 1.04
+        cy = 0.5 + (0.08 * amt) * ((1 - 2 * k) if mv == "pan_up" else (2 * k - 1))
+    elif mv == "shake":
+        z = 1.06
+    fx, fy = shot.get("focus", [0.5, 0.5])
+    cx += (fx - 0.5) * (z - 1) * 2
+    cy += (fy - 0.5) * (z - 1) * 2
+    cw, ch = W / z, H / z
+    jx = jy = 0.0
+    shaking = mv in ("shake", "push_shake") or any(abs(tt - s * dur) < 0.35 for s in shot.get("jolts", []))
+    if shaking:
+        r = random.Random(frame)
+        a = shot.get("shake_px", 14)
+        jx, jy = r.uniform(-a, a), r.uniform(-a, a)
+    x0 = min(max(cx * bw - cw / 2 + jx, 0), bw - cw)
+    y0 = min(max(cy * bh - ch / 2 + jy, 0), bh - ch)
+    return im.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch))
+
+
+def stamp(p, it, life):
+    """Typewriter date/place stamp, white on black, lower left by default."""
+    txt = it["stamp"]
+    n = max(1, int(len(txt) * min(1.0, life / 1.2)))
+    size = g(it, "size", 54)
+    x, y = g(it, "x", 80), g(it, "y", 960)
+    tw = font(size).getlength(txt)
+    p.d.rectangle([x - 24, y - size * 0.8, x + tw + 24, y + size * 0.8], fill=C["ink"])
+    p.d.text((x, y), txt[:n], font=font(size), fill=C["white"], anchor="lm")
+
+
+def title(p, it, life):
+    """Huge block-letter title with heavy outline, optional subtitle line."""
+    k = min(1.0, life / 0.3)
+    s = 1 + 0.18 * math.sin(k * math.pi) if k < 1 else 1
+    size = g(it, "size", 170) * s
+    x, y = g(it, "x", 960), g(it, "y", 200)
+    p.d.text((x, y), it["title"], font=font(int(size)), fill=col(g(it, "c", "white")), anchor="mm",
+             stroke_width=int(size * 0.07), stroke_fill=C["ink"])
+    if it.get("sub"):
+        ss = g(it, "sub_size", 70)
+        p.d.text((x, y + size * 0.85), it["sub"], font=font(int(ss)), fill=col(g(it, "sub_c", "yellow")),
+                 anchor="mm", stroke_width=int(ss * 0.1), stroke_fill=C["ink"])
+
+
+def pin(p, it, life):
+    x, y = g(it, "x", 960), g(it, "y", 540)
+    r = 16 + 6 * math.sin(life * 6)
+    ring = 20 + (life * 60) % 60
+    p.d.ellipse([x - ring, y - ring, x + ring, y + ring], outline=C["red"], width=5)
+    p.d.ellipse([x - r, y - r, x + r, y + r], fill=C["red"], outline=C["ink"], width=5)
+    if it.get("pin"):
+        size = g(it, "size", 52)
+        p.d.text((x + 40, y), it["pin"], font=font(size), fill=C["white"], anchor="lm",
+                 stroke_width=6, stroke_fill=C["ink"])
+
+
+def flash(img, life):
+    if life < 0.25:
+        a = int(255 * (1 - life / 0.25))
+        return Image.blend(img, Image.new("RGB", img.size, (255, 255, 255)), a / 255)
+    return img
+
+
 def render_shot_frame(shot, tt, dur, frame, talk=0.0):
-    img = Image.new("RGB", (W, H), BG.get(shot.get("bg", "paper"), C["paper"]))
+    if "img" in shot:
+        img = moving_picture(shot, tt, dur, frame)
+    else:
+        img = Image.new("RGB", (W, H), BG.get(shot.get("bg", "paper"), C["paper"]))
     p = Pen(img, frame)
+    flashes = []
     beats = shot.get("beats", [])
     for idx, it in enumerate(shot.get("items", [])):
         t_in, t_out = g(it, "in", 0) * dur, g(it, "out", 1.01) * dur
@@ -797,6 +917,14 @@ def render_shot_frame(shot, tt, dur, frame, talk=0.0):
                 fn(p, it, life)
         elif "label" in it:
             label(p, it, tt, life)
+        elif "stamp" in it:
+            stamp(p, it, life)
+        elif "title" in it:
+            title(p, it, life)
+        elif "pin" in it:
+            pin(p, it, life)
+        elif "flash" in it:
+            flashes.append(life)
         elif "char" in it:
             st = char_at(it, beats, tt, dur)
             if not st.visible:
@@ -811,6 +939,10 @@ def render_shot_frame(shot, tt, dur, frame, talk=0.0):
             person(p, st.x + dx, st.y + dy, g(it, "s", 1), st.shirt, st.face, st.walk, st.arms,
                    g(it, "hat", "cap" if it["char"] == "guard" else None), blink, st.flip,
                    0.0, g(it, "skin", "skin"), g(it, "hair", None), g(it, "pants", None))
+    for life in flashes:
+        img = flash(img, life)
+    if "img" in shot:
+        return img
     z0, z1 = shot.get("cam", [1.0, 1.06])
     z = z0 + (z1 - z0) * ease(tt / max(dur, 0.01))
     if abs(z - 1) > 0.002:

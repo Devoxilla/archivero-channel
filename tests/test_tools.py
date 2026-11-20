@@ -10,7 +10,7 @@ import youtube_stats  # noqa: E402
 
 
 def test_read_scenes_ep001():
-    scenes = make_voiceover.read_scenes(ROOT / "episodes/EP001-prison-security-levels/script.md")
+    scenes = make_voiceover.read_scenes(ROOT / "episodes/pilot-prison-security-levels/script.md")
     assert [s for s, _ in scenes][:3] == ["S01", "S02", "S03"]
     assert all("[VERIFY" not in body and "## Sources" not in body for _, body in scenes)
 
@@ -62,7 +62,7 @@ import assemble  # noqa: E402
 
 
 def test_assemble_parses_script_and_shorts():
-    ep = ROOT / "episodes/EP001-prison-security-levels"
+    ep = ROOT / "episodes/pilot-prison-security-levels"
     scenes = assemble.parse_script(ep / "script.md")
     assert scenes[0]["id"] == "S01" and len(scenes) == 13
     short = assemble.parse_script(ep / "shorts/short1-four-inch-window.md")
@@ -96,7 +96,7 @@ def test_title_card_and_scene_images(tmp_path):
 def test_animation_spec_renders_every_shot():
     import yaml
     import doodle
-    ep = ROOT / "episodes/EP001-prison-security-levels"
+    ep = ROOT / "episodes/pilot-prison-security-levels"
     spec = yaml.safe_load((ep / "animation.yaml").read_text())
     scenes = assemble.parse_script(ep / "script.md")
     assert {s["id"] for s in scenes} <= set(spec)
@@ -107,3 +107,31 @@ def test_animation_spec_renders_every_shot():
                 assert img.size == (1920, 1080)
     short = assemble.parse_script(ep / "shorts/short2-alcatraz-escape.md")
     assert len(assemble.scene_spec(short[0], spec)) == 1
+
+
+def test_ep001_image_shots_shotlist_and_shorts(tmp_path):
+    import yaml
+    import doodle
+    import shotlist
+    from PIL import Image
+    ep = ROOT / "episodes/EP001-pov-roman-legionary"
+    spec = yaml.safe_load((ep / "animation.yaml").read_text())
+    scenes = assemble.parse_script(ep / "script.md")
+    assert len(scenes) == 23 and {s["id"] for s in scenes} <= set(spec)
+    pics = shotlist.pictures(spec)
+    assert len(pics) == len({p[0] for p in pics}) > 80
+    for img, *_ , prompt in pics:  # every token expands, every prompt carries the house style
+        full = shotlist.expand(prompt, spec["characters"])
+        assert "{" not in full and full.endswith("no watermark, 16:9")
+    # a real picture moves; a missing one becomes an ART NEEDED card; overlays draw on both
+    Image.new("RGB", (800, 450), (40, 90, 60)).save(tmp_path / "S01_a.png")
+    shots = assemble.scene_spec({"id": "S01", "art": []}, spec, tmp_path)
+    for shot, start, dur in doodle.scene_shots(shots, 30.0):
+        for frac in (0.05, 0.5, 0.95):
+            assert doodle.render_shot_frame(shot, dur * frac, dur, 7, 0).size == (1920, 1080)
+    a = doodle.render_shot_frame(shots[0], 0.1, 6, 1)
+    b = doodle.render_shot_frame(shots[0], 5.9, 6, 1)
+    assert a.getpixel((960, 300)) != (238, 232, 220) and a.tobytes() != b.tobytes()
+    for f in sorted((ep / "shorts").glob("*.md")):
+        for sc in assemble.parse_script(f):
+            assert sc["art"] and len(assemble.scene_spec(sc, spec, tmp_path)) == 1

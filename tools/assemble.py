@@ -1,8 +1,8 @@
 """Automatic first edit: art + voiceover -> captioned video, subtitles and YouTube chapters.
 
 Usage:
-    python tools/assemble.py episodes/EP001-prison-security-levels/script.md            # 16:9 episode
-    python tools/assemble.py episodes/EP001-prison-security-levels/shorts/short1.md --vertical
+    python tools/assemble.py episodes/EP001-pov-roman-legionary/script.md            # 16:9 episode
+    python tools/assemble.py episodes/EP001-pov-roman-legionary/shorts/short1.md --vertical
 
 Needs: ffmpeg on PATH, Pillow, and the voiceover from make_voiceover.py (folder vo_<script name>
 next to the script, one S01.wav ... per scene).
@@ -183,6 +183,11 @@ def write_srt(caps, path: Path):
                     encoding="utf-8")
 
 
+def spec_dir(script: Path) -> Path:
+    """Episode folder (Shorts live in <episode>/shorts/)."""
+    return script.parent.parent if script.parent.name == "shorts" else script.parent
+
+
 def load_spec(script: Path):
     """animation.yaml next to the episode script (Shorts use their episode's)."""
     for d in (script.parent, script.parent.parent):
@@ -193,7 +198,7 @@ def load_spec(script: Path):
     return {}
 
 
-def scene_spec(sc, spec):
+def scene_spec(sc, spec, art_dir=None):
     ids = sc["art"] or [sc["id"]]
     shots = []
     for sid in ids:
@@ -205,6 +210,9 @@ def scene_spec(sc, spec):
                 v = [v[int(idx) - 1]]
                 v = [{k: x for k, x in v[0].items() if k != "at"}]
             shots += [dict(s) for s in v]
+    for s in shots:  # pictures live in the episode's art/ folder
+        if "img" in s:
+            s["_img_path"] = str(art_dir / s["img"]) if art_dir else s["img"]
     if len(ids) > 1:  # borrowed from several scenes: equal split
         for s in shots:
             s.pop("at", None)
@@ -277,7 +285,7 @@ def build(script: Path, vertical: bool = False):
         spec = load_spec(script)
         jobs, frame0 = {}, 0
         for sc, d in zip(scenes, durations):
-            shots = scene_spec(sc, spec)
+            shots = scene_spec(sc, spec, spec_dir(script) / "art")
             if shots:
                 jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),
                                   "out": str(tmp / f"{sc['id']}_anim.mp4"), "vertical": vertical,

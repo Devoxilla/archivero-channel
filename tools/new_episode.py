@@ -1,6 +1,6 @@
 """Create a new episode folder: episodes/EPnnn-<slug>/ with script.md and checklist.md.
 
-Usage: python tools/new_episode.py "Every Prison Security Level Explained" [--slug prison-levels]
+Usage: python tools/new_episode.py "How the KGB Worked From the Inside" [--slug kgb-inside]
 """
 import argparse
 import datetime as dt
