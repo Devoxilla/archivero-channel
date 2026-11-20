@@ -308,7 +308,7 @@ S09:
     prompt: "{map}, a thick blue arrow coming from the sea on the left landing halfway up the west coast, a blue arrow breaking out of the bottom right corner, the red area cut in two"
     move: static
     items:
-      - {pin: "INCHON", x: 820, y: 470, in: 0.15}
+      - {pin: "INCHON", x: 820, y: 480, side: left, in: 0.15}
       - {pin: "SEOUL", x: 900, y: 450, in: 0.35}
   - at: 0.86
     img: S09_e.png
@@ -393,8 +393,8 @@ S12:
     move: pull
     items:
       - {stamp: "CHOSIN RESERVOIR · NOV 1950", in: 0.05}
-      - {label: "30,000", x: 600, y: 900, in: 0.3}
-      - {label: "120,000", x: 1350, y: 900, in: 0.5, c: red}
+      - {label: "30,000", x: 600, y: 620, in: 0.3}
+      - {label: "120,000", x: 1350, y: 620, in: 0.5, c: red}
   - at: 0.22
     img: S12_b.png
     prompt: "close-up of {grunt} with frost on his eyebrows and a scarf over his face, hugging his frozen rifle, icicles on his helmet, breath steaming"

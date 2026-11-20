@@ -183,3 +183,38 @@ def test_flow_clip_replaces_still(tmp_path):
     c = doodle.render_shot_frame(shot, 3.9, 4, 3)  # past the clip's end: holds the last frame
     assert a.size == (1920, 1080) and a.tobytes() != b.tobytes() and a.getpixel((960, 300)) != (238, 232, 220)
     assert c.size == (1920, 1080)
+
+
+def test_polish_transition_plan_and_frames():
+    import numpy as np
+    from PIL import Image
+    import polish
+    plan = polish.transition_plan(6)
+    assert plan[0] == "dip" and len(plan) == 6 and set(plan[1:]) <= set(polish.TRANSITIONS)
+    img = Image.new("RGB", (192, 108), (120, 60, 30))
+    first = polish.frame_transition(img, 0, 100, "dip", "zoom")
+    mid = polish.frame_transition(img, 50, 100, "dip", "zoom")
+    assert np.asarray(first).mean() < np.asarray(mid).mean()  # opens from black
+    assert np.array_equal(np.asarray(mid), np.asarray(img))  # untouched in the middle
+
+
+def test_polish_words_chunks_and_ass(tmp_path):
+    import polish
+    words = polish.scene_words("Then came the most daring move of the war.", 4.0)
+    assert len(words) == 9 and words[0][1] == 0 and words[-1][2] <= 4.0
+    timed = polish.scene_words("Then came the", 2.0, timed=[["Then", 0.1, 0.4], ["came", 0.5, 0.8], ["the", 0.9, 1.0]])
+    assert timed[1] == ("came", 0.5, 0.8)
+    chunks = polish.caption_chunks(words)
+    assert all(1 <= len(c) <= 3 for c in chunks) and sum(len(c) for c in chunks) == 9
+    busy = [(0.0, 10.0, 900.0)]
+    ass = (polish.write_ass(words, tmp_path / "c.ass", busy=busy)).read_text()
+    assert "\\pos(960,878)" in ass and "&H00D7FF&" in ass  # stepped above the stamp, active word in yellow
+    vert = polish.write_ass(words, tmp_path / "v.ass", vertical=True).read_text()
+    assert "PlayResX: 1080" in vert and "\\pos(540,1520)" in vert
+
+
+def test_polish_busy_bands():
+    import polish
+    shot = {"items": [{"stamp": "CHOSIN", "in": 0.1}, {"label": "30,000", "y": 620}, {"label": "X", "y": 900}]}
+    bands = polish.busy_bands([[(shot, 0.0, 10.0)]], [5.0], [10.0])
+    assert len(bands) == 2 and bands[0][0] == 6.0 and bands[1][2] < bands[0][2] < 1000

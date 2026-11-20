@@ -932,7 +932,9 @@ def pin(p, it, life):
     p.d.ellipse([x - r, y - r, x + r, y + r], fill=C["red"], outline=C["ink"], width=5)
     if it.get("pin"):
         size = g(it, "size", 52)
-        p.d.text((x + 40, y), it["pin"], font=font(size), fill=C["white"], anchor="lm",
+        left = it.get("side") == "left"
+        p.d.text((x - 40 if left else x + 40, y), it["pin"], font=font(size), fill=C["white"],
+                 anchor="rm" if left else "lm",
                  stroke_width=6, stroke_fill=C["ink"])
 
 

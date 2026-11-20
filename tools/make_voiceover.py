@@ -18,6 +18,7 @@ Voices to try: British male bm_george, bm_lewis; American male am_michael, am_ad
 Use --lang b for British voices and --lang a for American voices.
 """
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -58,9 +59,17 @@ def main():
     full = []
 
     for scene_id, body in read_scenes(script):
-        chunks = [audio for _, _, audio in pipeline(body, voice=args.voice, speed=args.speed)]
-        audio = np.concatenate([np.asarray(c, dtype=np.float32) for c in chunks])
+        chunks, words, offset = [], [], 0.0
+        for result in pipeline(body, voice=args.voice, speed=args.speed):
+            audio = np.asarray(result.audio if hasattr(result, "audio") else result[2], dtype=np.float32)
+            for tk in getattr(result, "tokens", None) or []:  # word timings for the karaoke captions
+                if getattr(tk, "start_ts", None) is not None and getattr(tk, "end_ts", None) is not None:
+                    words.append([tk.text, round(offset + tk.start_ts, 3), round(offset + tk.end_ts, 3)])
+            chunks.append(audio)
+            offset += len(audio) / SAMPLE_RATE
+        audio = np.concatenate(chunks)
         sf.write(out_dir / f"{scene_id}.wav", audio, SAMPLE_RATE)
+        (out_dir / f"{scene_id}.words.json").write_text(json.dumps(words), encoding="utf-8")
         full.extend([audio, silence])
         print(f"{scene_id}: {len(audio) / SAMPLE_RATE:.1f} s")
 

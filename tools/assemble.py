@@ -228,7 +228,9 @@ def render_anim(job):
     """Worker: one scene's animation -> mp4 segment (silent). job = dict, see build()."""
     import doodle
     import numpy as np
+    import polish
     shots, seconds, wav, out, vertical, title = (job[k] for k in ("shots", "seconds", "wav", "out", "vertical", "title"))
+    t_in, t_out = job.get("trans_in"), job.get("trans_out")
     frames = max(1, round(seconds * FPS))
     with wave.open(wav) as w:
         samples = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
@@ -244,6 +246,7 @@ def render_anim(job):
         t = f / FPS
         shot, start, dur = next((x for x in reversed(plan) if t >= x[1]), plan[0])
         img = doodle.render_shot_frame(shot, t - start, dur, frame0 + f, talk[f])
+        img = polish.frame_transition(img, f, frames, t_in, t_out)  # picture only; a Short's title stays still
         if vertical:
             canvas = Image.new("RGB", size, doodle.C["paper"])
             canvas.paste(img.resize((1080, 810), Image.BILINEAR, box=(240, 0, 1680, 1080)), (0, 470))
@@ -267,7 +270,9 @@ def render_anim(job):
     return out
 
 
-def build(script: Path, vertical: bool = False):
+def build(script: Path, vertical: bool = False, plain: bool = False):
+    """plain=True: the old edit (hard cuts, voice only, no burned captions on the 16:9 video)."""
+    import polish
     script = script.resolve()
     scenes = parse_script(script)
     vo = script.parent / f"vo_{script.stem}"
@@ -284,12 +289,17 @@ def build(script: Path, vertical: bool = False):
         clips, move, report = [], 0, []
         spec = load_spec(script)
         jobs, frame0 = {}, 0
-        for sc, d in zip(scenes, durations):
+        kinds = [None] * len(scenes) if plain else polish.transition_plan(len(scenes))
+        plans = []
+        for i, (sc, d) in enumerate(zip(scenes, durations)):
             shots = scene_spec(sc, spec, spec_dir(script) / "art")
+            plans.append(__import__("doodle").scene_shots(shots, d + PAUSE) if shots else [])
             if shots:
                 jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),
                                   "out": str(tmp / f"{sc['id']}_anim.mp4"), "vertical": vertical,
-                                  "title": short_title(script) if vertical else "", "frame0": frame0}
+                                  "title": short_title(script) if vertical else "", "frame0": frame0,
+                                  "trans_in": kinds[i],
+                                  "trans_out": None if plain else (kinds[i + 1] if i + 1 < len(scenes) else "dip")}
             frame0 += round((d + PAUSE) * FPS)
         if jobs:
             from concurrent.futures import ProcessPoolExecutor
@@ -319,15 +329,33 @@ def build(script: Path, vertical: bool = False):
              "-c", "copy", str(video)])
         srt = out / f"{name}.srt"
         write_srt(caps, srt)
-        vf = []
-        if vertical:  # burned-in captions for Shorts
-            style = ("FontName=Comic Neue,Fontsize=14,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00141618,"
-                     "BorderStyle=1,Outline=2.5,Shadow=0,Alignment=2,MarginV=45")
-            vf = ["-vf", f"subtitles={srt}:force_style='{style}'"]
+        total = sum(durations) + PAUSE * len(durations)
         final = out / f"{name}.mp4"
-        run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(vo / "vo_full.wav"), *vf,
-             "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-             "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(final)])
+        if plain:
+            vf = []
+            if vertical:  # burned-in captions for Shorts
+                style = ("FontName=Comic Neue,Fontsize=14,Bold=1,PrimaryColour=&H00FFFFFF,OutlineColour=&H00141618,"
+                         "BorderStyle=1,Outline=2.5,Shadow=0,Alignment=2,MarginV=45")
+                vf = ["-vf", f"subtitles={srt}:force_style='{style}'"]
+            run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(vo / "vo_full.wav"), *vf,
+                 "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                 "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(final)])
+        else:
+            # sound design + music under the narration, word-by-word captions burned in
+            events = polish.sound_events(plans, starts, [d + PAUSE for d in durations], kinds)
+            bg = polish.background_track(vo / "vo_full.wav", events, starts, total, tmp / "bg.wav")
+            words = []
+            for sc, d, t0 in zip(scenes, durations, starts):
+                timed = polish.load_word_timings(vo, sc["id"])
+                words += [(w, t0 + a, t0 + b) for w, a, b in polish.scene_words(sc["text"], d, timed)]
+            busy = [] if vertical else polish.busy_bands(plans, starts, [d + PAUSE for d in durations])
+            ass = polish.write_ass(words, tmp / "captions.ass", vertical, busy)
+            mix = ("[1:a]aresample=44100,pan=stereo|c0=c0|c1=c0[v];"
+                   "[v][2:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+            run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(vo / "vo_full.wav"), "-i", str(bg),
+                 "-filter_complex", mix, "-vf", f"ass={ass}", "-map", "0:v", "-map", "[a]",
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k",
+                 "-ar", "44100", "-shortest", "-movflags", "+faststart", str(final)])
     (out / f"{name}_chapters.txt").write_text("\n".join(chapters) + "\n", encoding="utf-8")
     (out / f"{name}_report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
     missing = [r["scene"] for r in report if r["images"][0].endswith("_card.png")]
@@ -340,5 +368,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("script")
     ap.add_argument("--vertical", action="store_true", help="9:16 Short with burned-in captions")
+    ap.add_argument("--plain", action="store_true", help="old edit: no transitions, sound design, music or karaoke captions")
     a = ap.parse_args()
-    build(Path(a.script), a.vertical)
+    build(Path(a.script), a.vertical, a.plain)
