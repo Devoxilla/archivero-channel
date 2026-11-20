@@ -165,3 +165,21 @@ def test_free_art_retry_after_and_seeds():
     assert free_art.retry_after("busy", 12) == 12
     assert free_art.seed_for("S01_b.png", ["REF_grunt.png"]) == free_art.seed_for("S05_b.png", ["REF_grunt.png"])
     assert free_art.seed_for("S01_a.png", []) != free_art.seed_for("S01_c.png", [])
+
+
+def test_flow_clip_replaces_still(tmp_path):
+    import shutil
+    import subprocess
+    import doodle
+    import shotlist
+    if not shutil.which("ffmpeg"):
+        pytest.skip("ffmpeg missing")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "testsrc=size=1280x720:rate=24:duration=2",
+                    str(tmp_path / "S01_a.mp4")], check=True)
+    assert shotlist.has_art(tmp_path, "S01_a.png")
+    shot = {"img": "S01_a.png", "_img_path": str(tmp_path / "S01_a.png"), "move": "push_shake"}
+    a = doodle.render_shot_frame(shot, 0.1, 4, 1)
+    b = doodle.render_shot_frame(shot, 1.5, 4, 2)
+    c = doodle.render_shot_frame(shot, 3.9, 4, 3)  # past the clip's end: holds the last frame
+    assert a.size == (1920, 1080) and a.tobytes() != b.tobytes() and a.getpixel((960, 300)) != (238, 232, 220)
+    assert c.size == (1920, 1080)

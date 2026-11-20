@@ -65,7 +65,7 @@ def jobs(spec, art):
     refs = spec.get("refs", {})
     out = [(r["img"], r["prompt"], []) for r in refs.values()]
     out += [(img, p, [refs[k]["img"] for k in shotlist.uses(p, refs)]) for img, _, _, p in shotlist.pictures(spec)]
-    return [j for j in out if not (art / j[0]).exists()]
+    return [j for j in out if not shotlist.has_art(art, j[0])]
 
 
 def main():

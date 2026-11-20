@@ -21,6 +21,7 @@ S05:                      # scene id from the script
 All times (at, in, out, t, dur) are fractions of the shot (or scene for "at"). World is 1920x1080.
 """
 import math
+import os
 import random
 from pathlib import Path
 
@@ -819,8 +820,52 @@ def picture(path, prompt=""):
     return _img_cache[key]
 
 
+def clip_for(path):
+    """A video clip saved next to a picture (art/S06_a.mp4 for S06_a.png) replaces the still."""
+    if not path:
+        return None
+    c = Path(str(path)).with_suffix(".mp4")
+    return c if c.exists() else None
+
+
+def clip_frames(clip):
+    """Decode a clip once to cover-fit JPEG frames at FPS (1.2x the frame, like picture()). Returns the paths."""
+    key = str(clip)
+    if key not in _img_cache:
+        import hashlib
+        import shutil
+        import subprocess
+        import tempfile
+        st = Path(clip).stat()
+        h = hashlib.md5(f"{Path(clip).resolve()}:{st.st_size}:{st.st_mtime}".encode()).hexdigest()[:12]
+        out = Path(tempfile.gettempdir()) / "doodle_clips" / h
+        if not out.exists():
+            tmp = out.with_name(f"{h}.{os.getpid()}")
+            tmp.mkdir(parents=True, exist_ok=True)
+            bw, bh = int(W * 1.2), int(H * 1.2)
+            vf = (f"fps={FPS},scale={bw}:{bh}:force_original_aspect_ratio=increase,"
+                  f"crop={bw}:{bh}:(iw-{bw})/2:(ih-{bh})*0.35")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(clip), "-an", "-vf", vf, "-q:v", "3",
+                            str(tmp / "%05d.jpg")], check=True)
+            try:
+                tmp.rename(out)
+            except OSError:  # another worker finished first
+                shutil.rmtree(tmp, ignore_errors=True)
+        _img_cache[key] = sorted(out.glob("*.jpg"))
+    return _img_cache[key]
+
+
 def moving_picture(shot, tt, dur, frame):
-    im = picture(shot.get("_img_path"), shot.get("prompt", ""))
+    clip = clip_for(shot.get("_img_path"))
+    if clip:  # play the clip once at normal speed, then hold its last frame; the camera move stays gentle
+        frames = clip_frames(clip)
+        im = Image.open(frames[min(int(tt * FPS), len(frames) - 1)]).convert("RGB") if frames else \
+            picture(shot.get("_img_path"), shot.get("prompt", ""))
+        shot = dict(shot, amount=shot.get("amount", 1.0) * 0.4, jolts=[])
+        if shot.get("move") in ("shake", "push_shake"):
+            shot["move"] = "push"
+    else:
+        im = picture(shot.get("_img_path"), shot.get("prompt", ""))
     bw, bh = im.size
     k = ease(tt / max(dur, 0.01)) if shot.get("ease", True) else tt / max(dur, 0.01)
     mv = shot.get("move", "push")
