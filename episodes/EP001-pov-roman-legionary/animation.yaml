@@ -243,7 +243,7 @@ S08:
       - {label: "CALL 3", x: 1500, y: 160, in: 0.7, c: red}
   - at: 0.25
     img: S08_b.png
-    prompt: "side view of a very long Roman marching column on a road through hills, scouts in front, surveyors, wagons, cavalry, siege engines, legion blocks six men wide, camp followers at the back"
+    prompt: "side view of a very long ancient Roman marching column on an unpaved dirt road through hills, scouts in front, surveyors, wagons, cavalry, siege engines, legion blocks six men wide, camp followers at the back"
     move: pan_right
     amount: 1.4
   - at: 0.5
@@ -261,7 +261,7 @@ S08:
 
 S09:
   - img: S09_a.png
-    prompt: "stylised cartoon map of the Roman Empire under Augustus, around 9 AD, the empire in red, the Rhine and Danube rivers drawn thick and blue, Germania beyond the Rhine in dark green forest, no labels"
+    prompt: "wordless stylised cartoon map with absolutely no letters or writing, the Roman Empire under Augustus, around 9 AD, the empire in red, the Rhine and Danube rivers drawn thick and blue, Germania beyond the Rhine in dark green forest, no labels"
     move: static
     items:
       - {pin: "SPAIN", x: 520, y: 720, in: 0.1}
@@ -296,7 +296,7 @@ S10:
     move: pan_right
   - at: 0.22
     img: S10_b.png
-    prompt: "close-up of thin wooden writing tablets with ink lines on a desk, a soldier happily holding up a pair of woolly socks and underpants from a parcel, no readable text"
+    prompt: "close-up of thin wooden writing tablets with ink lines on a desk, an ancient Roman legionary in a red tunic happily holding up a pair of pair of woolly socks and sandals from a parcel, no readable text"
     move: push
     items:
       - {stamp: "VINDOLANDA · ~100 AD", in: 0.05}
@@ -402,7 +402,7 @@ S14:
       - {title: "YOUR TURN", sub: "WHAT MAKES YOU QUIT?", y: 180, in: 0.25}
   - at: 0.55
     img: S14_b.png
-    prompt: "four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of underpants in a parcel"
+    prompt: "four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of woolly socks in a parcel"
     move: static
     items:
       - {label: "1", x: 240, y: 120, in: 0.05}

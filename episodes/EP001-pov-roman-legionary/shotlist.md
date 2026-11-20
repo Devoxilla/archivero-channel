@@ -1,6 +1,6 @@
 # Shot list: EP001-pov-roman-legionary
 
-106 pictures, 65 done, plus 2 character references.
+106 pictures, 62 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -222,10 +222,10 @@ a shining golden Roman eagle standard, the aquila, raised high on a pole against
 a Roman camp before sunrise, a trumpeter blowing a long curved horn, sleepy soldiers taking down leather tents, dark blue sky with a thin orange line, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [x] S08_b.png  (S08, shot 2)
+### [ ] S08_b.png  (S08, shot 2)
 
 ```
-side view of a very long Roman marching column on a road through hills, scouts in front, surveyors, wagons, cavalry, siege engines, legion blocks six men wide, camp followers at the back, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+side view of a very long ancient Roman marching column on an unpaved dirt road through hills, scouts in front, surveyors, wagons, cavalry, siege engines, legion blocks six men wide, camp followers at the back, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] S08_c.png  (S08, shot 3)
@@ -246,10 +246,10 @@ early afternoon, Roman soldiers dropping their packs and immediately starting to
 a finished Roman fortified camp at dusk, sentries with torches on the rampart, campfires inside, a dark landscape around it, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [x] S09_a.png  (S09, shot 1)
+### [ ] S09_a.png  (S09, shot 1)
 
 ```
-stylised cartoon map of the Roman Empire under Augustus, around 9 AD, the empire in red, the Rhine and Danube rivers drawn thick and blue, Germania beyond the Rhine in dark green forest, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+wordless stylised cartoon map with absolutely no letters or writing, the Roman Empire under Augustus, around 9 AD, the empire in red, the Rhine and Danube rivers drawn thick and blue, Germania beyond the Rhine in dark green forest, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] HOST_map.png  (S09, shot 2)  · attach REF_host.png
@@ -276,10 +276,10 @@ rows of identical small cartoon Roman legionaries with pale round deadpan faces,
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals doing chores in a Roman fort: chopping firewood, cleaning armour, carrying stones, a montage-like busy scene with other soldiers building a road, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [x] S10_b.png  (S10, shot 2)
+### [ ] S10_b.png  (S10, shot 2)
 
 ```
-close-up of thin wooden writing tablets with ink lines on a desk, a soldier happily holding up a pair of woolly socks and underpants from a parcel, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+close-up of thin wooden writing tablets with ink lines on a desk, an ancient Roman legionary in a red tunic happily holding up a pair of pair of woolly socks and sandals from a parcel, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] S10_c.png  (S10, shot 3)
@@ -393,7 +393,7 @@ a short round-bodied archivist with a pale round face, tiny round wire glasses, 
 ### [ ] S14_b.png  (S14, shot 2)
 
 ```
-four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of underpants in a parcel, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of woolly socks in a parcel, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] S15_a.png  (S15, shot 1)  · attach REF_grunt.png
