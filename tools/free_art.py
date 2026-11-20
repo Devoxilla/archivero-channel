@@ -80,7 +80,7 @@ def cloudflare(prompt, seed, ref_url=None):
         raise RuntimeError("CF_ACCOUNT_ID / CF_API_TOKEN not set")
     url = f"https://api.cloudflare.com/client/v4/accounts/{acc}/ai/run/@cf/black-forest-labs/flux-1-schnell"
     prompt = prompt.replace(", 16:9", "") + ", wide cinematic composition with the main subject in the middle band"
-    body = json.dumps({"prompt": prompt[:2000], "steps": 8, "seed": seed}).encode()
+    body = json.dumps({"prompt": prompt[:2000], "steps": 8}).encode()
     data, _ = fetch(urllib.request.Request(url, data=body, headers={**UA, "Authorization": f"Bearer {tok}",
                                                                       "Content-Type": "application/json"}))
     res = json.loads(data)
@@ -117,7 +117,7 @@ def make(prompt, seed, order, ref_url=None, tries=6):
                 errs.append(f"{name} HTTP {e.code}: {msg}")
                 if name == "cloudflare" and (e.code == 429 or "4006" in msg or "neurons" in msg.lower()):
                     raise QuotaDone(msg)
-                if e.code in (401, 403) or (e.code == 402 and "FREE_LIMIT" not in msg):
+                if e.code in (400, 401, 403, 404) or (e.code == 402 and "FREE_LIMIT" not in msg):
                     break
                 time.sleep(retry_after(msg, 20 * (n + 1)))  # rate limit / busy: wait as told
             except Exception as e:  # noqa: BLE001
@@ -165,6 +165,9 @@ def main():
         except RuntimeError as e:
             failed.append(img)
             print(f"FAILED {img}: {e}", flush=True)
+            if len(failed) >= 3 and made == 0:
+                print("Three failures and nothing made: stopping this run.", flush=True)
+                break
             continue
         im.save(art / img)
         made += 1
