@@ -153,3 +153,11 @@ def test_gemini_art_jobs_and_request(tmp_path):
     assert body["generationConfig"]["imageConfig"]["aspectRatio"] == "16:9"
     img = base64.b64encode(b"IMG").decode()
     assert gemini_art.image_from({"candidates": [{"content": {"parts": [{"inlineData": {"data": img}}]}}]}) == b"IMG"
+
+
+def test_free_art_retry_after_and_seeds():
+    import free_art
+    assert free_art.retry_after("Free limit reached. Retry after 27s, or get") == 30
+    assert free_art.retry_after("busy", 12) == 12
+    assert free_art.seed_for("S01_b.png", ["REF_grunt.png"]) == free_art.seed_for("S05_b.png", ["REF_grunt.png"])
+    assert free_art.seed_for("S01_a.png", []) != free_art.seed_for("S01_c.png", [])

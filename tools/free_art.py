@@ -15,6 +15,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -87,7 +88,12 @@ def cloudflare(prompt, seed, ref_url=None):
 BACKENDS = {"pollinations": pollinations, "cloudflare": cloudflare}
 
 
-def make(prompt, seed, order, ref_url=None, tries=3):
+def retry_after(msg, default=46):
+    m = re.search(r"[Rr]etry after (\d+)", msg)
+    return int(m.group(1)) + 3 if m else default
+
+
+def make(prompt, seed, order, ref_url=None, tries=6):
     errs = []
     for name in order:
         for n in range(tries):
@@ -99,16 +105,17 @@ def make(prompt, seed, order, ref_url=None, tries=3):
                         return BACKENDS[name](prompt, seed, None), name
                     raise
             except urllib.error.HTTPError as e:
-                errs.append(f"{name} HTTP {e.code}: {e.read()[:200]!r}")
-                if e.code in (401, 402, 403):
+                msg = e.read()[:300].decode(errors="replace")
+                errs.append(f"{name} HTTP {e.code}: {msg}")
+                if e.code in (401, 403) or (e.code == 402 and "FREE_LIMIT" not in msg):
                     break
-                time.sleep(15 * (n + 1))
+                time.sleep(retry_after(msg, 20 * (n + 1)))  # rate limit / busy: wait as told
             except Exception as e:  # noqa: BLE001
                 errs.append(f"{name}: {e}")
                 if "not set" in str(e):
                     break
-                time.sleep(10 * (n + 1))
-    raise RuntimeError("; ".join(errs[-4:]))
+                time.sleep(15 * (n + 1))
+    raise RuntimeError("; ".join(errs[-3:]))
 
 
 def raw_url(path):
@@ -122,7 +129,7 @@ def main():
     ap.add_argument("episode", type=Path)
     ap.add_argument("--max", type=int, default=120)
     ap.add_argument("--backend", default="auto", choices=["auto", *BACKENDS])
-    ap.add_argument("--pause", type=float, default=float(os.environ.get("ART_PAUSE", "6")))
+    ap.add_argument("--pause", type=float, default=float(os.environ.get("ART_PAUSE", "46")))
     a = ap.parse_args()
     order = list(BACKENDS) if a.backend == "auto" else [a.backend]
     spec = yaml.safe_load((a.episode / "animation.yaml").read_text(encoding="utf-8"))
