@@ -43,6 +43,9 @@ S01:
       - {label: "4 KM WIDE", x: 1440, y: 160, in: 0.5}
   - at: 0.42
     img: S01_c.png
+    also:
+      - img: S01_c2.jpg
+        prompt: "a burned-out Korean village in winter 1951, broken roofs and smoke, an abandoned ox cart in the snow"
     prompt: "two army generals of the 1950s, one in an American olive uniform and one in a North Korean uniform, sitting at opposite sides of a long table in a bare wooden hut, both exhausted and grim, signing papers, cigarette smoke"
     move: push
     items:
@@ -87,6 +90,9 @@ S02:
 
 S03:
   - img: S03_a.png
+    also:
+      - img: S03_a2.jpg
+        prompt: "Korean labourers of the 1940s in ragged clothes pushing coal carts out of a dark mine tunnel, a Japanese foreman with a stick watching"
     prompt: "Korea under Japanese colonial rule around 1940, Korean workers carrying heavy sacks under the watch of a Japanese officer with a sword, a red sun flag on a building, grey industrial town"
     move: pan_right
     items:
@@ -94,6 +100,9 @@ S03:
       - {label: "JAPANESE COLONY", x: 960, y: 160, in: 0.3}
   - at: 0.25
     img: S03_b.png
+    also:
+      - img: S03_b2.jpg
+        prompt: "worried American officials of 1945 in a Washington office at night staring at a wall map of Asia, telephones on the desk, cigarette smoke"
     prompt: "Soviet tanks of 1945 with red stars rolling through a flat landscape of Manchuria, Soviet soldiers riding on top, dust clouds, August sun"
     move: pan_left
     items:
@@ -106,6 +115,9 @@ S03:
       - {label: "USSR", x: 960, y: 120, in: 0.15, c: red}
   - at: 0.62
     img: S03_d.png
+    also:
+      - img: S03_d2.jpg
+        prompt: "close-up of an old paper atlas open on a desk, a fingertip pressing on a dot in the middle of the Korean peninsula, a pencil line just above it, lamp light, no readable text"
     prompt: "close-up of a hand holding a pencil drawing a straight horizontal line with a ruler across the middle of a paper map of the Korean peninsula, an old printed map without readable text, night lamp light"
     flow: "The hand slowly draws the pencil line from left to right across the whole map with the ruler, the lamp flickers, close static camera."
     move: push
@@ -114,6 +126,9 @@ S03:
       - {title: "THE 38TH PARALLEL", y: 920, size: 110, in: 0.35}
   - at: 0.82
     img: S03_e.png
+    also:
+      - img: S03_e2.jpg
+        prompt: "a lonely wooden barrier pole across a dirt road in 1947 Korea, a Soviet sentry on one side and an American sentry on the other, cold mist"
     prompt: "{map}, a thick dashed black line straight across the middle of the peninsula, the northern half in red, the southern half in blue"
     move: static
     items:
@@ -123,6 +138,9 @@ S03:
 
 S04:
   - img: S04_a.png
+    also:
+      - img: S04_a2.jpg
+        prompt: "young Korean guerrilla fighters of the 1930s in a snowy Manchurian forest with old rifles and fur hats, campfire smoke"
     prompt: "caricature of young Kim Il Sung in 1948, a round-faced man in his thirties with short black hair in a plain grey Soviet-style tunic, standing in front of a red flag at a rally, a Soviet officer behind him"
     move: push
     focus: [0.45, 0.4]
@@ -130,6 +148,9 @@ S04:
       - {label: "KIM IL SUNG", x: 1450, y: 900, in: 0.2, c: red}
   - at: 0.25
     img: S04_b.png
+    also:
+      - img: S04_b2.jpg
+        prompt: "a 1948 Korean polling station, a long queue of men and women in white hanbok waiting to vote, a wooden ballot box, a soldier at the door"
     prompt: "caricature of elderly Syngman Rhee in 1948, a thin old Korean man with white hair and a dark Western suit, standing at a podium with microphones, an American general behind him"
     move: push
     focus: [0.5, 0.4]
@@ -137,6 +158,9 @@ S04:
       - {label: "SYNGMAN RHEE", x: 1450, y: 900, in: 0.2}
   - at: 0.5
     img: S04_c.png
+    also:
+      - img: S04_c2.jpg
+        prompt: "two angry cartoon fists, one in a red sleeve and one in a blue sleeve, pounding opposite ends of a table with a wordless map of Korea on it, papers flying"
     prompt: "two Korean government buildings facing each other across a river, the left one with red flags, the right one with blue flags, both with crowds cheering, 1948"
     move: pan_right
     items:
@@ -145,6 +169,9 @@ S04:
       - {stamp: "1948 · TWO STATES", in: 0.55}
   - at: 0.78
     img: S04_d.png
+    also:
+      - img: S04_d2.jpg
+        prompt: "a North Korean official of 1949 in a dark coat arriving by train at a snowy Moscow station with a briefcase, Soviet officers waiting on the platform"
     prompt: "a skirmish on a misty hillside along a border, soldiers firing rifles from behind rocks at each other across a valley, smoke, 1949"
     move: push_shake
     jolts: [0.5]
@@ -153,6 +180,9 @@ S04:
 
 S05:
   - img: S05_a.png
+    also:
+      - img: S05_a2.jpg
+        prompt: "a huge mushroom cloud over a flat Kazakh steppe at dawn, seen from far away, 1949"
     prompt: "caricature of Joseph Stalin in a white Soviet marshal's uniform, sitting behind a huge desk in a dark Kremlin office, smoking a pipe, looking down at a small map, cold and calculating"
     move: push
     focus: [0.5, 0.4]
@@ -173,6 +203,9 @@ S05:
       - {label: "MAO ZEDONG", x: 1450, y: 900, in: 0.2, c: red}
   - at: 0.6
     img: S05_d.png
+    also:
+      - img: S05_d2.jpg
+        prompt: "caricature of Mao Zedong in 1950 in a grey tunic suit sitting in a wicker chair, listening carefully with a cigarette, a red flag behind"
     prompt: "caricature of Dean Acheson, a tall American with a neat moustache and a grey suit, giving a speech at a podium in front of a big map of the Pacific, a curved line drawn through Japan that leaves Korea out"
     move: push
     items:
@@ -180,6 +213,9 @@ S05:
       - {label: "KOREA LEFT OUT", x: 1450, y: 180, in: 0.4, c: red}
   - at: 0.8
     img: S05_e.png
+    also:
+      - img: S05_e2.jpg
+        prompt: "rain on a rice paddy at night in June 1950, North Korean soldiers crouching in the dark beside artillery guns waiting for the signal"
     prompt: "Soviet T-34 tanks being unloaded from a freight train at night at a station in North Korea, crates of artillery shells, Soviet advisers with clipboards, searchlights"
     move: pan_right
     items:
@@ -187,6 +223,9 @@ S05:
 
 S06:
   - img: S06_a.png
+    also:
+      - img: S06_a2.jpg
+        prompt: "huge columns of North Korean infantry in khaki uniforms and caps marching south on a dirt road with rifles, artillery towed by trucks, dawn"
     prompt: "pre-dawn darkness, a long line of North Korean T-34 tanks with red stars rolling across a rice paddy towards the viewer, artillery flashes lighting up the hills behind, rain"
     flow: "The tanks roll steadily towards the camera through the rain, their tracks splashing water, artillery flashes light up the hills behind, slow push-in."
     move: push_shake
@@ -224,6 +263,9 @@ S06:
 
 S07:
   - img: S07_a.png
+    also:
+      - img: S07_a2.jpg
+        prompt: "an empty chair at a long conference table with a small red Soviet flag on a stand in front of it, a big empty hall, 1950"
     prompt: "caricature of President Harry Truman in 1950, round glasses, grey double-breasted suit and bow tie, sitting at his desk in the Oval Office signing an order, determined jaw"
     move: push
     focus: [0.5, 0.4]
@@ -231,6 +273,9 @@ S07:
       - {label: "TRUMAN", x: 1450, y: 900, in: 0.2}
   - at: 0.25
     img: S07_b.png
+    also:
+      - img: S07_b2.jpg
+        prompt: "United Nations delegates in suits standing and applauding in a 1950 conference hall, press photographers with flashbulbs"
     prompt: "the round United Nations Security Council table in 1950, delegates in suits raising their hands to vote, one chair in the middle clearly empty with a small Soviet red flag in front of it"
     move: push
     focus: [0.5, 0.5]
@@ -239,6 +284,9 @@ S07:
       - {label: "NO VETO", x: 960, y: 940, in: 0.55, c: red}
   - at: 0.5
     img: S07_c.png
+    also:
+      - img: S07_c2.jpg
+        prompt: "troop ships at a busy Korean harbour in 1950, soldiers of many nations marching down gangplanks with kit bags, British, Turkish and Ethiopian uniforms"
     prompt: "soldiers of many nations in 1950 uniforms standing side by side under a pale blue United Nations flag, British, Turkish, Ethiopian, Colombian, Filipino, Australian, Canadian and French soldiers, proud"
     move: pan_right
     amount: 1.2
@@ -246,6 +294,9 @@ S07:
       - {title: "16 NATIONS", sub: "UNITED NATIONS COMMAND", y: 200, in: 0.2}
   - at: 0.78
     img: S07_d.png
+    also:
+      - img: S07_d2.jpg
+        prompt: "young American soldiers of 1950 relaxing in a bar in occupied Japan, drinking beer and laughing, an officer bursting in with orders"
     prompt: "grey American warships of the US Seventh Fleet sailing in a line through a stormy strait, an island on the horizon, 1950"
     move: pan_left
     items:
@@ -253,6 +304,9 @@ S07:
 
 S08:
   - img: S08_a.png
+    also:
+      - img: S08_a2.jpg
+        prompt: "a small group of American soldiers running back across a muddy field in the rain, a burning tank and black smoke behind them"
     prompt: "{grunt} and a handful of young American soldiers in a muddy roadside ditch in the rain, watching a column of T-34 tanks appear on the road ahead, fear on their faces, July 1950"
     move: push
     items:
@@ -260,10 +314,16 @@ S08:
       - {label: "TASK FORCE SMITH", x: 1450, y: 900, in: 0.35}
   - at: 0.25
     img: S08_b.png
+    also:
+      - img: S08_b2.jpg
+        prompt: "a crowded port city in summer 1950 packed with retreating soldiers, refugees and army trucks, cargo ships in the harbour"
     prompt: "exhausted American and South Korean soldiers retreating along a dusty road in blazing summer heat, refugees with carts and bundles on their heads beside them, burning village behind"
     move: pan_left
   - at: 0.45
     img: S08_c.png
+    also:
+      - img: S08_c2.jpg
+        prompt: "American soldiers digging trenches along a river bank in blazing summer heat, sandbags, a jeep with a radio aerial"
     prompt: "{map}, almost the whole peninsula in red, only a small blue pocket left in the bottom right corner around a port, thick red arrows pressing against it"
     move: static
     items:
@@ -271,6 +331,9 @@ S08:
       - {title: "THE PUSAN PERIMETER", y: 140, size: 90, in: 0.35}
   - at: 0.65
     img: S08_d.png
+    also:
+      - img: S08_d2.jpg
+        prompt: "cranes unloading tanks and crates from cargo ships at a busy harbour at sunset in 1950, long lines of army trucks"
     prompt: "{grunt} firing from a sandbagged foxhole on a ridge at night, flares in the sky, tracer fire across the valley"
     move: push_shake
     jolts: [0.3, 0.6, 0.85]
@@ -283,6 +346,9 @@ S08:
 
 S09:
   - img: S09_a.png
+    also:
+      - img: S09_a2.jpg
+        prompt: "a huge fleet of grey warships and landing ships at sea at dawn, hundreds of small landing boats, smoke on the coast"
     prompt: "caricature of General Douglas MacArthur, corncob pipe, aviator sunglasses and a crumpled general's cap with gold braid, standing on the bridge of a warship looking at the coast through binoculars, supremely confident"
     move: push
     focus: [0.5, 0.4]
@@ -297,6 +363,9 @@ S09:
       - {label: "SEA WALLS", x: 1450, y: 700, in: 0.5}
   - at: 0.45
     img: S09_c.png
+    also:
+      - img: S09_c2.jpg
+        prompt: "North Korean sentries asleep in a bunker on a quiet coast at night, a lantern, the sea calm outside"
     prompt: "US Marines in 1950 climbing wooden ladders up a high stone sea wall from landing boats, smoke, explosions, warships firing in the background, dusk"
     flow: "The Marines climb the ladders one after another up the sea wall, smoke rolls across, warships flash in the background, slow upward tilt."
     move: push_shake
@@ -319,12 +388,18 @@ S09:
 
 S10:
   - img: S10_a.png
+    also:
+      - img: S10_a2.jpg
+        prompt: "American tanks and trucks rolling past a broken wooden roadblock pole on a country road in October 1950, soldiers cheering on top"
     prompt: "an American general and officials in Washington bending over a big map table, one pushing a small blue flag up past a line across the middle of the peninsula, cigarette smoke, eager faces"
     move: push
     items:
       - {label: "NEW GOAL: UNIFY KOREA", x: 960, y: 160, in: 0.3, c: red}
   - at: 0.25
     img: S10_b.png
+    also:
+      - img: S10_b2.jpg
+        prompt: "American and South Korean soldiers in jeeps driving into a captured North Korean city in October 1950, damaged buildings, cheering soldiers"
     prompt: "{map}, thick blue arrows pushing north across the dashed line in the middle all the way towards the river border at the top"
     move: static
     items:
@@ -332,6 +407,9 @@ S10:
       - {label: "YALU RIVER", x: 960, y: 110, in: 0.4}
   - at: 0.48
     img: S10_c.png
+    also:
+      - img: S10_c2.jpg
+        prompt: "a wide river at the border between Korea and China seen from a hill in autumn 1950, a long iron bridge, Chinese soldiers watching from the far bank"
     prompt: "caricature of Zhou Enlai, a handsome Chinese man with thick black eyebrows in a grey tunic suit, speaking gravely to an Indian ambassador in a white jacket at night in a Beijing office"
     move: push
     focus: [0.45, 0.45]
@@ -353,6 +431,9 @@ S10:
 
 S11:
   - img: S11_a.png
+    also:
+      - img: S11_a2.jpg
+        prompt: "long columns of Chinese soldiers in padded khaki-green uniforms marching at night in single file along a mountain path, no lights, moon behind clouds"
     prompt: "night, thousands of Chinese soldiers in padded khaki-green winter uniforms and fur caps crossing a long bridge over a wide river in silence, rifles on their backs, no lights, moonlight"
     flow: "The long column of soldiers walks silently across the bridge from left to right, the river flows below, moonlight shimmers on the water, slow sideways tracking shot."
     move: pan_right
@@ -360,6 +441,9 @@ S11:
       - {stamp: "19 OCTOBER 1950 · YALU RIVER", in: 0.05}
   - at: 0.25
     img: S11_b.png
+    also:
+      - img: S11_b2.jpg
+        prompt: "American officers in a tent in November 1950 laughing over coffee next to a map table, a captured Chinese fur cap lying on the table"
     prompt: "Chinese soldiers in padded winter uniforms hiding under snowy pine trees and white sheets during the day, an American plane flying overhead without seeing them"
     move: push
     items:
@@ -367,12 +451,18 @@ S11:
       - {label: "HIDE BY DAY", x: 1440, y: 160, in: 0.45}
   - at: 0.45
     img: S11_c.png
+    also:
+      - img: S11_c2.jpg
+        prompt: "American soldiers in a snowy camp in November 1950 eating a turkey dinner from mess tins, smiling, a pine branch decorated like a Christmas tree"
     prompt: "{map}, many huge red arrows pouring down from China at the top across the river into the northern half, small blue arrows near the top turning back"
     move: static
     items:
       - {label: "~200,000 CHINESE", x: 1500, y: 300, in: 0.25, c: red}
   - at: 0.65
     img: S11_d.png
+    also:
+      - img: S11_d2.jpg
+        prompt: "a burned wooden headquarters hut in a snowy forest after an air raid, smoke rising, an American fighter plane flying away in the sky"
     prompt: "a huge night attack in frozen mountains, waves of Chinese soldiers charging down a snowy slope blowing bugles, tracer bullets, a flare lighting everything in white"
     flow: "Soldiers charge down the snowy slope towards the camera, a flare slowly falls and swings, tracer lines streak across, snow flies."
     move: push_shake
@@ -389,6 +479,9 @@ S11:
 
 S12:
   - img: S12_a.png
+    also:
+      - img: S12_a2.jpg
+        prompt: "a thermometer hanging on a frozen tent pole, frost everywhere, American soldiers huddled around a tiny fire in a snowstorm"
     prompt: "a frozen reservoir surrounded by snowy mountains, columns of tiny US Marine trucks on a narrow mountain road, Chinese soldiers on every ridge around them, blizzard"
     move: pull
     items:
@@ -397,6 +490,9 @@ S12:
       - {label: "120,000", x: 1350, y: 620, in: 0.5, c: red}
   - at: 0.22
     img: S12_b.png
+    also:
+      - img: S12_b2.jpg
+        prompt: "US Marines on a snowy mountain road firing back at the ridges while others lift wounded men onto trucks, blizzard"
     prompt: "close-up of {grunt} with frost on his eyebrows and a scarf over his face, hugging his frozen rifle, icicles on his helmet, breath steaming"
     move: push
     focus: [0.5, 0.45]
@@ -404,6 +500,9 @@ S12:
       - {label: "-30°C", x: 1450, y: 200, in: 0.2, c: red}
   - at: 0.42
     img: S12_c.png
+    also:
+      - img: S12_c2.jpg
+        prompt: "crowds of Korean civilians with bundles and children crowding a frozen harbour dock in December 1950, ships waiting offshore"
     prompt: "a long column of US Marines walking south down an icy mountain road in a blizzard, carrying wounded men on stretchers and on the hoods of trucks"
     flow: "The column trudges slowly away from the camera down the icy road, the blizzard swirls, breath steams, a truck's headlights glow through the snow."
     move: pan_left
@@ -417,6 +516,9 @@ S12:
       - {label: "~100,000 CIVILIANS", x: 960, y: 160, in: 0.35}
   - at: 0.8
     img: S12_e.png
+    also:
+      - img: S12_e2.jpg
+        prompt: "Seoul burning in January 1951, smoke over the rooftops and a broken bridge over a frozen river, refugees crossing on the ice"
     prompt: "a single cargo ship at sea with every inch of its deck and holds crammed with thousands of refugees wrapped in blankets, cold grey sea"
     flow: "The ship rolls gently on the grey sea, snowflakes fall, people huddle under blankets and a few look up at the sky, slow pull-back revealing the whole crowded deck."
     move: push
@@ -433,6 +535,9 @@ S13:
 
 S14:
   - img: S14_a.png
+    also:
+      - img: S14_a2.jpg
+        prompt: "exhausted American soldiers sitting in the snow beside a road in January 1951, heads down, a broken-down truck behind them"
     prompt: "caricature of General Matthew Ridgway, a tough square-jawed American general with a hand grenade strapped to his chest harness, standing in front of tired soldiers in a snowy camp, speaking firmly"
     move: push
     focus: [0.45, 0.4]
@@ -440,6 +545,9 @@ S14:
       - {label: "RIDGWAY", x: 1450, y: 900, in: 0.2}
   - at: 0.3
     img: S14_b.png
+    also:
+      - img: S14_b2.jpg
+        prompt: "a long line of American tanks firing across a snowy valley at dusk, muzzle flashes, explosions on the far hills"
     prompt: "a row of American artillery guns firing at once in a snowy valley, huge muzzle flashes and smoke, shell casings piling up"
     move: push_shake
     jolts: [0.2, 0.4, 0.6, 0.8]
@@ -447,6 +555,9 @@ S14:
       - {title: "THE MEAT GRINDER", y: 200, in: 0.25, c: red}
   - at: 0.58
     img: S14_c.png
+    also:
+      - img: S14_c2.jpg
+        prompt: "American and South Korean soldiers walking through the ruined streets of Seoul in March 1951, raising a flag on a broken building"
     prompt: "{map}, a jagged front line across the middle of the peninsula close to the dashed line, blue below, red above, arrows going both ways"
     move: static
     items:
@@ -461,6 +572,9 @@ S14:
 
 S15:
   - img: S15_a.png
+    also:
+      - img: S15_a2.jpg
+        prompt: "caricature of President Harry Truman in 1951, round glasses, staring at a glowing red button on his desk and sweating, dark office"
     prompt: "caricature of General Douglas MacArthur with corncob pipe and sunglasses jabbing his finger at a map of China on the wall, a bomber model on his desk, aggressive"
     move: push
     items:
@@ -469,6 +583,9 @@ S15:
       - {label: "ATOMIC?", x: 1450, y: 490, in: 0.55, c: red}
   - at: 0.3
     img: S15_b.png
+    also:
+      - img: S15_b2.jpg
+        prompt: "a newspaper boy of 1951 on a busy American street holding up a newspaper with a huge photo of a general, people crowding to buy it, no readable text"
     prompt: "caricature of President Harry Truman with round glasses, reading a newspaper at his desk, face red with anger, steam coming from his ears, comic but serious"
     move: push
     focus: [0.5, 0.4]
@@ -491,6 +608,9 @@ S15:
 
 S16:
   - img: S16_a.png
+    also:
+      - img: S16_a2.jpg
+        prompt: "a prisoner of war camp of 1952 behind barbed wire, rows of tents, prisoners in plain uniforms, an American guard tower"
     prompt: "a long table in a tent at Panmunjom, communist delegates in uniform on one side, UN delegates on the other, two small flags in the middle, everyone staring at each other in silence"
     move: push
     items:
@@ -524,6 +644,9 @@ S16:
 
 S17:
   - img: S17_a.png
+    also:
+      - img: S17_a2.jpg
+        prompt: "an American pilot of 1951 in a jet cockpit with an oxygen mask and goggles, looking over his shoulder at an enemy jet behind him, blue sky"
     prompt: "two silver jet fighters of 1951 in a dogfight high above snowy mountains, an American F-86 Sabre with a yellow stripe chasing a swept-wing MiG-15 with red stars, vapour trails, a river border far below"
     flow: "The Sabre chases the MiG in a tight banking turn across the sky, vapour trails curling behind them, the camera follows both jets."
     move: pan_right
@@ -531,6 +654,9 @@ S17:
       - {title: "MIG ALLEY", y: 200, in: 0.15}
   - at: 0.25
     img: S17_b.png
+    also:
+      - img: S17_b2.jpg
+        prompt: "an American general and a Soviet general of 1951 standing back to back in the snow, each holding a finger to his lips, comic but serious"
     prompt: "a Soviet pilot of 1951 in a leather flying helmet in a jet cockpit, pulling a scarf over his face, a red star on the instrument panel, secretive"
     move: push
     focus: [0.5, 0.45]
@@ -538,12 +664,18 @@ S17:
       - {label: "SECRET SOVIET PILOTS", x: 960, y: 160, in: 0.3, c: red}
   - at: 0.45
     img: S17_c.png
+    also:
+      - img: S17_c2.jpg
+        prompt: "orange napalm fire spreading across a snowy hillside village seen from a low flying plane, black smoke, 1951"
     prompt: "a formation of huge American B-29 bombers over a North Korean city, bombs falling in long strings, fires below, seen from above"
     move: push
     items:
       - {label: "635,000 TONS", x: 1450, y: 200, in: 0.25, c: red}
   - at: 0.65
     img: S17_d.png
+    also:
+      - img: S17_d2.jpg
+        prompt: "North Korean families living in caves and dugouts in a hillside in 1952, cooking over a small fire, a child looking up at the sky"
     prompt: "a North Korean city completely flattened by bombing, only a few chimneys and broken walls standing, civilians in white clothes walking through the ruins, winter"
     move: pan_left
   - at: 0.85
@@ -554,12 +686,18 @@ S17:
 
 S18:
   - img: S18_a.png
+    also:
+      - img: S18_a2.jpg
+        prompt: "a line of prisoners of war in 1953 walking through a gate in a barbed wire fence towards neutral officers with clipboards, one prisoner hesitating"
     prompt: "a Soviet funeral in Red Square in March 1953, a giant portrait of Stalin with black ribbons, huge crowds in dark coats, snow"
     move: pull
     items:
       - {stamp: "MARCH 1953 · STALIN DIES", in: 0.1}
   - at: 0.25
     img: S18_b.png
+    also:
+      - img: S18_b2.jpg
+        prompt: "caricature of elderly Syngman Rhee in 1953, white hair and dark suit, angrily tearing up a paper in his office, an American diplomat looking shocked"
     prompt: "a wooden hall at Panmunjom in 1953, an American general and a North Korean general sitting at two separate tables signing thick documents, officers standing silently behind them, no handshakes"
     move: push
     items:
@@ -587,12 +725,18 @@ S18:
 
 S19:
   - img: S19_a.png
+    also:
+      - img: S19_a2.jpg
+        prompt: "a quiet hillside cemetery in North Korea with thousands of small grey grave stones marked with red stars, pine trees, mist"
     prompt: "a vast military cemetery with endless rows of white crosses and grave markers under a grey sky, an American flag at half mast"
     move: pull
     items:
       - {label: "US: ~36,000", x: 960, y: 160, in: 0.25}
   - at: 0.22
     img: S19_b.png
+    also:
+      - img: S19_b2.jpg
+        prompt: "a lonely soldier's cap and rifle lying in the snow on an empty battlefield, a crow nearby, grey sky"
     prompt: "a symbolic image of four rows of small soldier silhouettes in different 1950s helmets fading into the distance, South Korean, Chinese, North Korean and American, sombre grey-blue light"
     move: pan_right
     items:
@@ -601,12 +745,18 @@ S19:
       - {label: "N. KOREA: HUNDREDS OF THOUSANDS", x: 960, y: 380, in: 0.6, c: red}
   - at: 0.5
     img: S19_c.png
+    also:
+      - img: S19_c2.jpg
+        prompt: "a Korean mother in a white hanbok standing in a ruined village holding a small child, smoke behind her, looking at the viewer"
     prompt: "a long line of Korean civilian refugees in white clothes walking along a frozen road with bundles, children on their backs, a burned village behind, winter"
     move: pan_left
     items:
       - {title: "2 - 3 MILLION KOREANS", y: 940, size: 100, in: 0.25, c: red}
   - at: 0.76
     img: S19_d.png
+    also:
+      - img: S19_d2.jpg
+        prompt: "an elderly Korean woman crying and holding the hands of an old man across a table at a family reunion meeting, volunteers in the background"
     prompt: "an old black-and-white family photograph torn in half lying on a wooden floor, a mother on one half and her children on the other, soft light"
     move: push
     focus: [0.5, 0.5]
@@ -615,12 +765,18 @@ S19:
 
 S20:
   - img: S20_a.png
+    also:
+      - img: S20_a2.jpg
+        prompt: "generals of several Western armies in 1951 uniforms standing around a wordless map of Europe, flags of many nations behind, serious faces"
     prompt: "an American factory in 1951 producing tanks and jet fighters on long assembly lines, sparks flying, workers busy, a huge flag hanging from the ceiling"
     move: pan_right
     items:
       - {label: "DEFENSE SPENDING x3", x: 960, y: 160, in: 0.25, c: red}
   - at: 0.22
     img: S20_b.png
+    also:
+      - img: S20_b2.jpg
+        prompt: "American and South Korean soldiers of today saluting together at a flag ceremony on a military base, modern uniforms"
     prompt: "a stylised flat cartoon world map centred on the Pacific, a chain of blue military base markers and ships along Japan, Korea, the Philippines and Western Europe, no labels, no text"
     move: static
     items:
@@ -628,12 +784,18 @@ S20:
       - {label: "NEXT: VIETNAM", x: 1500, y: 800, in: 0.5, c: red}
   - at: 0.45
     img: S20_c.png
+    also:
+      - img: S20_c2.jpg
+        prompt: "a busy Japanese street in the 1950s with new shops, cars and bicycles, crowds, shop signs with no readable text"
     prompt: "an American army base in South Korea, modern barracks and armoured vehicles, American and South Korean flags side by side, soldiers jogging"
     move: push
     items:
       - {label: "~28,000 US TROOPS TODAY", x: 960, y: 160, in: 0.3}
   - at: 0.65
     img: S20_d.png
+    also:
+      - img: S20_d2.jpg
+        prompt: "a grey American destroyer of the 1950s patrolling a narrow strait in front of the green mountains of Taiwan, calm sea"
     prompt: "a busy Japanese factory town in 1952, smoking chimneys, trucks loaded with crates for the army, workers in caps, a booming harbour behind"
     move: pan_left
     items:
@@ -647,6 +809,9 @@ S20:
 
 S21:
   - img: S21_a.png
+    also:
+      - img: S21_a2.jpg
+        prompt: "a modern South Korean city at night with glowing skyscrapers, busy streets and people with phones, neon lights with no readable text"
     prompt: "split picture of the Korean peninsula at night as seen from space, the southern half blazing with city lights, the northern half almost completely dark except one tiny glowing dot"
     move: push
     focus: [0.5, 0.5]
@@ -665,6 +830,9 @@ S21:
       - {label: "NUCLEAR WEAPONS", x: 960, y: 160, in: 0.35, c: red}
   - at: 0.65
     img: S21_d.png
+    also:
+      - img: S21_d2.jpg
+        prompt: "a missile launching from a mobile launcher on a rural road in North Korea, a huge plume of fire and smoke, distant mountains"
     prompt: "the blue huts at Panmunjom today, small bright blue single-storey buildings straddling a concrete border line, soldiers of both sides standing face to face, a grey building behind"
     move: push
     items:
@@ -679,6 +847,9 @@ S21:
 
 S22:
   - img: S22_a.png
+    also:
+      - img: S22_a2.jpg
+        prompt: "a muddy trench on a hilltop in 1952, a tired soldier looking out over the valley at the enemy hill opposite, rain"
     prompt: "{map}, a single thin glowing line across the middle of the peninsula, everything else dark and quiet, evening light"
     move: push
     items:
