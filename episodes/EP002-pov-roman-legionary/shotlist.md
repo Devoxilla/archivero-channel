@@ -1,6 +1,6 @@
 # Shot list: EP002-pov-roman-legionary
 
-106 pictures, 62 done, plus 2 character references.
+106 pictures, 72 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -222,7 +222,7 @@ a shining golden Roman eagle standard, the aquila, raised high on a pole against
 a Roman camp before sunrise, a trumpeter blowing a long curved horn, sleepy soldiers taking down leather tents, dark blue sky with a thin orange line, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_b.png  (S08, shot 2)
+### [x] S08_b.png  (S08, shot 2)
 
 ```
 side view of a very long ancient Roman marching column on an unpaved dirt road through hills, scouts in front, surveyors, wagons, cavalry, siege engines, legion blocks six men wide, camp followers at the back, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -246,7 +246,7 @@ early afternoon, Roman soldiers dropping their packs and immediately starting to
 a finished Roman fortified camp at dusk, sentries with torches on the rampart, campfires inside, a dark landscape around it, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_a.png  (S09, shot 1)
+### [x] S09_a.png  (S09, shot 1)
 
 ```
 wordless stylised cartoon map with absolutely no letters or writing, the Roman Empire under Augustus, around 9 AD, the empire in red, the Rhine and Danube rivers drawn thick and blue, Germania beyond the Rhine in dark green forest, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -276,7 +276,7 @@ rows of identical small cartoon Roman legionaries with pale round deadpan faces,
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals doing chores in a Roman fort: chopping firewood, cleaning armour, carrying stones, a montage-like busy scene with other soldiers building a road, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S10_b.png  (S10, shot 2)
+### [x] S10_b.png  (S10, shot 2)
 
 ```
 close-up of thin wooden writing tablets with ink lines on a desk, an ancient Roman legionary in a red tunic happily holding up a pair of pair of woolly socks and sandals from a parcel, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -390,7 +390,7 @@ a skinny young Roman legionary with a very pale, round, deadpan face, dark tired
 a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, leaning towards the viewer and raising the oil lamp, eyebrows raised, a dark archive behind him, dramatic red lamp light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_b.png  (S14, shot 2)
+### [x] S14_b.png  (S14, shot 2)
 
 ```
 four comic panels in one image, left to right: a calendar with twenty years, a soldier marching on blistered feet, a soldier digging, a pair of woolly socks in a parcel, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -420,37 +420,37 @@ a Roman sentry asleep on a rampart at night, leaning on his spear, an officer wi
 rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets and red curved rectangular shields in a line counting off, every tenth soldier pulled out with a sad face, the others looking at the ground, grey sky, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_e.png  (S15, shot 5)
+### [x] S15_e.png  (S15, shot 5)
 
 ```
 caricature portrait of Marcus Crassus, 71 BC, recognisable but cartoonish, rich and smug, golden rings, holding a scroll of orders, dramatic background of a defeated army camp, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_a.png  (S16, shot 1)
+### [x] S16_a.png  (S16, shot 1)
 
 ```
 aerial view of a Roman fort hospital, a square building with small ward rooms around a garden courtyard, orderlies carrying stretchers, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_b.png  (S16, shot 2)
+### [x] S16_b.png  (S16, shot 2)
 
 ```
 object close-up of Roman bronze surgical tools on a cloth: scalpels, forceps, probes, bone lever, needles, dramatic light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_c.png  (S16, shot 3)
+### [x] S16_c.png  (S16, shot 3)
 
 ```
 a Roman army surgeon pulling an arrowhead out of a legionary's arm, the patient biting a leather strap and gripping a cup of wine, comic but grim, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_d.png  (S16, shot 4)
+### [x] S16_d.png  (S16, shot 4)
 
 ```
 comparison split image, left a big scary Germanic warrior with an axe, right a dirty camp water barrel with green germs drawn as tiny grinning monsters, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_e.png  (S16, shot 5)  · attach REF_grunt.png
+### [x] S16_e.png  (S16, shot 5)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals sitting on a camp latrine looking pale and sick, sweating, other soldiers lying with fever in a tent behind, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
