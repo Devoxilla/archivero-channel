@@ -1,6 +1,6 @@
 # Shot list: EP002-pov-roman-legionary
 
-106 pictures, 72 done, plus 2 character references.
+106 pictures, 82 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -456,61 +456,61 @@ comparison split image, left a big scary Germanic warrior with an axe, right a d
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals sitting on a camp latrine looking pale and sick, sweating, other soldiers lying with fever in a tent behind, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_a.png  (S17, shot 1)
+### [x] S17_a.png  (S17, shot 1)
 
 ```
 a misty frontier river at dawn, a mass of Germanic raiders charging across the shallow water with spears and round shields, horns raised, seen from behind a Roman shield wall, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_b.png  (S17, shot 2)
+### [x] S17_b.png  (S17, shot 2)
 
 ```
 rows of identical small cartoon Roman legionaries with pale round deadpan faces, red tunics, iron helmets and red curved rectangular shields throwing javelins in a big volley, the javelins arcing through the sky, battle, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_c.png  (S17, shot 3)  · attach REF_grunt.png
+### [x] S17_c.png  (S17, shot 3)  · attach REF_grunt.png
 
 ```
 chaotic battle between a Roman shield wall and Germanic warriors, the lines crashing together, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in the foreground crouching behind his shield, terrified, stabbing low, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_d.png  (S17, shot 4)
+### [x] S17_d.png  (S17, shot 4)
 
 ```
 diagram-like cartoon of a Roman battle line from above, each soldier covered by the shield of the man to his right, men behind pushing forward, flat colours, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_e.png  (S17, shot 5)  · attach REF_grunt.png
+### [x] S17_e.png  (S17, shot 5)  · attach REF_grunt.png
 
 ```
 after the battle at dusk, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals exhausted and muddy, sitting on his shield, then realising someone has handed him a shovel, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_a.png  (S18, shot 1)
+### [x] S18_a.png  (S18, shot 1)
 
 ```
 a Roman testudo tortoise formation of soldiers with shields locked on every side and overhead, walking up to a stone wall under a rain of arrows and rocks, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_b.png  (S18, shot 2)
+### [x] S18_b.png  (S18, shot 2)
 
 ```
 Roman siege engines in action, a big ballista throwing a stone and a small scorpio bolt thrower aimed by a smug engineer, soldiers covering their ears, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_c.png  (S18, shot 3)
+### [x] S18_c.png  (S18, shot 3)
 
 ```
 caricature portrait of Julius Caesar, 52 BC, recognisable but cartoonish, smug, balding with a laurel wreath, red general's cloak, holding a map, dramatic background of siege walls and towers, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_d.png  (S18, shot 4)
+### [x] S18_d.png  (S18, shot 4)
 
 ```
 bird's-eye view of a hill town surrounded by two rings of Roman walls, ditches and towers, one ring facing in and one facing out, a huge relief army attacking the outer ring, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_e.png  (S18, shot 5)  · attach REF_grunt.png
+### [x] S18_e.png  (S18, shot 5)  · attach REF_grunt.png
 
 ```
 a Roman instructor telling an epic story with big gestures to bored recruits, who are all holding shovels, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in front, deadpan, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
