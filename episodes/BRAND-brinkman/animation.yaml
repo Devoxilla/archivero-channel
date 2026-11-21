@@ -1,0 +1,28 @@
+# Brinkman channel branding pictures (not an episode). Made by make-art-free.yml, composited by hand into
+# the banner and profile picture. No text in any picture.
+characters:
+  style: >-
+    bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of
+    a modern adult animated history explainer, high detail, absolutely no text, no letters, no watermark
+
+S01:
+  - img: B_globe_bomb_1.png
+    prompt: "a cartoon globe of planet Earth shaped like a round black-iron bomb with a short lit fuse sparking on top, continents in green and ochre, oceans in teal, centred icon on a plain white background, {style}"
+  - img: B_globe_bomb_2.png
+    prompt: "logo icon: the Earth as an old cartoon cannonball bomb, a burning fuse with bright sparks coming out of the North Pole, simple and bold, centred on a plain white background, {style}"
+  - img: B_globe_bomb_3.png
+    prompt: "a round world globe with a smoking lit fuse, teetering on the very edge of a cliff, cartoon emblem, centred on a plain white background, {style}"
+  - img: B_brink_1.png
+    prompt: "a giant world map spread on a war-room table that ends abruptly at the edge of a sheer cliff, toy tanks, warships, fighter planes and missiles sliding toward the edge into a dark abyss, a desk lamp glowing, dramatic warm light, {style}"
+  - img: B_brink_2.png
+    prompt: "a huge round world globe balanced on the edge of a rocky cliff above a dark stormy abyss, tiny tanks, ships and soldiers on the globe, red stormy sky, dramatic, {style}"
+  - img: B_warroom.png
+    prompt: "a huge vintage world map pinned on the wooden wall of a dim war room, red pins and red strings connecting hotspots in Korea, Europe and the Middle East, small drawings of tanks, warships and missiles on the map, a green banker lamp glowing on a desk with a red telephone, {style}"
+  - img: B_korea.png
+    prompt: "American soldiers of 1950 in olive helmets fighting in snowy Korean mountains at dusk, explosions, a burning tank, dramatic wide scene, {style}"
+  - img: B_coldwar.png
+    prompt: "Cold War standoff: Soviet and American nuclear missiles on launch pads facing each other across a wide plain under a red sky, searchlights, dramatic wide scene, {style}"
+  - img: B_modern.png
+    prompt: "modern warships, aircraft carrier, fighter jets and drones over a tense narrow sea strait at sunset, dramatic wide scene, {style}"
+  - img: B_redphone.png
+    prompt: "a red rotary telephone and a big round red button on a dark wooden desk with secret files and a world map, cold war hotline, dramatic lamp light, {style}"
