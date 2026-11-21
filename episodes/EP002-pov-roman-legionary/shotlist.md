@@ -1,6 +1,6 @@
 # Shot list: EP002-pov-roman-legionary
 
-106 pictures, 92 done, plus 2 character references.
+106 pictures, 101 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -576,55 +576,55 @@ chaotic battle in mud and rain between Roman legionaries and Germanic warriors a
 a wounded Roman general in a red cloak alone in a tent at night in the rain, holding his sword, head bowed, a single oil lamp, dark and tragic, no gore, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_g.png  (S20, shot 7)
+### [x] S20_g.png  (S20, shot 7)
 
 ```
 Germanic warriors running off into the forest carrying three golden Roman eagle standards, rain, smoke, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_h.png  (S20, shot 8)
+### [x] S20_h.png  (S20, shot 8)
 
 ```
 a modern museum display case with excavated rusty Roman objects, coins, hobnails, a sword blade and an iron cavalry face mask in the middle, spotlights, a little archaeologist in the corner, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_i.png  (S20, shot 9)
+### [x] S20_i.png  (S20, shot 9)
 
 ```
 an ancient Roman stone tombstone carved with a centurion with medals and a wreath, standing in a quiet museum room, soft light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_a.png  (S21, shot 1)
+### [x] S21_a.png  (S21, shot 1)
 
 ```
 caricature of the old Roman emperor Augustus, 9 AD, cartoonish, unshaven and messy hair, banging his head against a palace door, shouting, servants horrified, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_b.png  (S21, shot 2)
+### [x] S21_b.png  (S21, shot 2)
 
 ```
 three Roman legion standards with numbers painted over in black, laid in a dusty storeroom, a single beam of light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_c.png  (S21, shot 3)
+### [x] S21_c.png  (S21, shot 3)
 
 ```
 a Roman army arriving at a silent forest battlefield years later, bones on the ground, soldiers taking off their helmets in grief, foggy, no gore, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_d.png  (S21, shot 4)
+### [x] S21_d.png  (S21, shot 4)
 
 ```
 a Roman soldier proudly holding up a recovered golden eagle standard in a crowd of cheering soldiers, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_e.png  (S21, shot 5)
+### [x] S21_e.png  (S21, shot 5)
 
 ```
 stylised cartoon map of Europe with the Rhine river as a thick blue line, the Roman side in red with roads and towns, the Germanic side in dark green forest, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_a.png  (S22, shot 1)  · attach REF_grunt.png
+### [x] S22_a.png  (S22, shot 1)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals being handed transfer orders by a clerk, packing his kit with relief, a sign pointing to another legion, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
