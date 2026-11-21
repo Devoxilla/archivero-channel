@@ -1,7 +1,7 @@
 # Format: The Entire [Conflict] Summarized (25–40 min)
 
 [S01] HOOK — the moment it became unstoppable.
-[S02] INTRO — the Archivero: who fought whom, how long, the cost.
+[S02] INTRO — Brinkman: who fought whom, how long, the cost.
 [S03] ROOTS — the old grievance (map).
 [S04] SPARK — the event that started it.
 [S05]–[S10] PHASES — one scene per phase: front lines on the map, key battle, key leader.

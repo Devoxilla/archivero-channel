@@ -1,6 +1,6 @@
 # {code} — {title}
 
-Channel: Documentary Animation · Narrator: the Archivero · Target length: about 11 minutes (about 2,700 words)
+Channel: Brinkman · Narrator: Brinkman (American voice) · Target length: about 11 minutes (about 2,700 words)
 Status: draft, {date}
 
 ---
@@ -9,7 +9,7 @@ Status: draft, {date}
 (One strange, concrete fact in 2-3 sentences. Promise the payoff.)
 
 [S02] INTRO
-Good evening. I'm the Archivero. I keep the files nobody asked for. Tonight's file: ...
+Good evening, this is Brinkman. Every war starts at the brink, and tonight's brink is ...
 
 [S03] LEVEL 1
 ...
@@ -24,7 +24,7 @@ Good evening. I'm the Archivero. I keep the files nobody asked for. Tonight's fi
 ...
 
 [S07] OUTRO
-(Answer the comment question, tease the next file.)
+(Answer the comment question, tease the next episode.)
 
 ---
 

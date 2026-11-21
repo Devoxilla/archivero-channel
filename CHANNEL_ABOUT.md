@@ -1,10 +1,7 @@
 # Channel description (YouTube Studio → Customization → Basic info)
 
-Good evening. I'm the Archivero, keeper of the files nobody asked for.
+Brinkman: every war starts at the brink.
 
-Every week I open one of them, by lamplight: wars, empires, spies and the soldiers nobody remembers. What it was really like to be a Roman legionary, how the KGB worked from the inside, every elite unit explained, whole empires summarized from the first day to the last.
+Animated war history and geopolitics explained. Every episode takes one war, crisis or empire and shows how it really happened: the powers behind it, the maps, the decisions made under pressure, and the consequences we still live with today. Realistic, serious, fact-dense, with sources in every description.
 
-Bold cartoon animation, dark jokes, real history, with sources in every description.
-
-New files every week. Shorts in between.
-Pick a file. I'll leave the lamp on.
+New episodes every week. Shorts in between.

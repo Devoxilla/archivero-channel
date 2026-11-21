@@ -225,7 +225,7 @@ def face_parts(p, hx, hy, k, face, blink, flip, talk):
 
 
 def host(p: Pen, x, y, s=1.0, talk=0.0, blink=False, face="neutral", t=0.0, lamp=True):
-    """The Archivero: round ink-blob archivist, tiny round glasses, brown cardigan, red-flame lamp."""
+    """Brinkman (host, formerly the Archivero): round archivist, tiny round glasses, brown cardigan, red-flame lamp."""
     k = s
     bob = math.sin(t * 2.2) * 5 * k
     cy = y - 190 * k + bob

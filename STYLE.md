@@ -1,4 +1,4 @@
-# The Archivero — style guide and prompt templates
+# Brinkman — style guide and prompt templates
 
 Niche: history, wars, military units, spies, empires and geopolitics, told as dark, funny, fact-dense
 explainers and first-person stories. Long episodes of 25–45 minutes, plus 3 Shorts per episode.
@@ -29,7 +29,7 @@ Make each picture once, keep the best, name it after its shot (`S03_a.png`) and 
 
 ## 2. Recurring characters (make each once, then always give the tool the reference picture)
 
-**The Archivero (host, appears in the intro, the mid-roll question and the outro)**
+**Brinkman (host and channel mascot, see branding/FINAL; appears in the intro, the mid-roll question and the outro)**
 > a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an
 > oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, standing in a
 > cramped archive full of shelves of files and maps, warm lamp light, smug half-smile
@@ -65,7 +65,7 @@ country's flag instead.
 | Object / weapon | close-up of [OBJECT] on [SURFACE], dramatic light | push-in |
 | Map | stylised cartoon map of [REGION] in [YEAR], bright flat colours, no labels | the build adds pins, arrows, labels |
 | Comparison | split image, left [A], right [B] | static + labels |
-| Host | the Archivero at his desk / pointing at a map / holding a file | push-in |
+| Host | Brinkman at his desk / pointing at a map / holding a file | push-in |
 
 Maps and labels are drawn by the build (pins, arrows, names, dates), so map pictures should have NO text.
 
@@ -103,3 +103,10 @@ per minute, a question for the comments around 40%, real sources at the end, no 
 - Each Short file has `Related video:` (set in YouTube Studio when uploading) and a pinned comment with the episode link.
 - Full-screen 9:16 pictures in `art_916/` (prompts in `shorts_916.md`).
 - Fast cuts: list 3-6 pictures per Short scene (`{art: S12.5, S12.4, S19.3}`), about one per 2-3 s of narration. The build cuts to a new picture or a new framing at least every 1.8 s. `S10.1!` borrows a picture without its overlays.
+
+## Branding (Brinkman)
+- Channel name Brinkman, handle @brinkman, tagline "Every war starts at the brink." Files: branding/FINAL/ in the project folder; build copies in brand/ (logo_round.png, banner_1920.jpg).
+- Narration never names an old host; the intro is "Good evening, this is Brinkman..." and the outro "Next time on Brinkman...".
+- Long episodes end on a 12 s silent end screen (the banner, slow push-in) for YouTube's end-screen elements (lower half).
+- Shorts end card shows the round Brinkman logo above FULL EPISODE / TAP THE LINK BELOW.
+- The 150 px watermark is set in YouTube Studio (Branding > Video watermark), not burned in.

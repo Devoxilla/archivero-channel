@@ -1,6 +1,6 @@
-# The Archivero — channel workflow
+# Brinkman — channel workflow (repo: archivero-channel)
 
-English animated history channel: wars, empires, spies and geopolitics, told as dark, funny, fact-dense explainers and second-person POV stories (25–45 min episodes plus 3 Shorts each). Hosted by the Archivero, a round archivist with tiny glasses, a brown cardigan and an oil lamp with a red flame; "you" are the Grunt, a pale deadpan soldier whose uniform changes with the era. Bold black-outline cartoon illustrations, bright flat colours. Style guide, characters and prompt templates: `STYLE.md`. Formats: `templates/formats/`. Backlog: `ideas.md`.
+English animated history channel: wars, empires, spies and geopolitics, told as dark, funny, fact-dense explainers and second-person POV stories (25–45 min episodes plus 3 Shorts each). Hosted by Brinkman, a round archivist with tiny glasses, a brown cardigan and an oil lamp with a red flame; "you" are the Grunt, a pale deadpan soldier whose uniform changes with the era. Bold black-outline cartoon illustrations, bright flat colours. Style guide, characters and prompt templates: `STYLE.md`. Formats: `templates/formats/`. Backlog: `ideas.md`.
 
 Everything here is free: GitHub Actions (free minutes on private repos: 2,000/month), Kokoro TTS (Apache-2.0), YouTube Data API key (free quota).
 

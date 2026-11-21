@@ -322,6 +322,31 @@ def vertical_title(img, title, frame):
 
 
 CTA_S = 3.2  # seconds of end card at the end of a Short
+BRAND = Path(__file__).resolve().parent.parent / "brand"
+LOGO = BRAND / "logo_round.png"  # round channel logo (Shorts end card)
+END_S = 12.0  # long episodes: silent end screen (channel banner) for YouTube's end-screen elements
+
+
+def end_screen(final, tmp):
+    """Append END_S seconds of the channel banner (slow push-in, fade from black) to a long episode, so YouTube's
+    end-screen elements (subscribe + next video) sit on the brand instead of covering the last narration."""
+    banner = BRAND / "banner_1920.jpg"
+    if not banner.exists():
+        return final
+    slate = tmp / "endscreen.mp4"
+    n = round(END_S * FPS)
+    vf = (f"scale=2112:1188,zoompan=z='min(1.0+on/{n}*0.05,1.05)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':"
+          f"d={n}:s=1920x1080:fps={FPS},fade=t=in:st=0:d=0.8,format=yuv420p")
+    run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", str(banner), "-f", "lavfi", "-i",
+         "anullsrc=r=44100:cl=stereo", "-vf", vf, "-t", f"{END_S}", "-map", "0:v", "-map", "1:a",
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-ar", "44100",
+         str(slate)])
+    body = tmp / "body.mp4"
+    final.replace(body)
+    (tmp / "end_list.txt").write_text(f"file '{body}'\nfile '{slate}'\n")
+    run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(tmp / "end_list.txt"),
+         "-c", "copy", "-movflags", "+faststart", str(final)])
+    return final
 
 
 def end_card(img, life):
@@ -341,6 +366,11 @@ def end_card(img, life):
            stroke_width=5, stroke_fill=(20, 20, 20))
     d.text((540, y0 + h * 0.74), "TAP THE LINK BELOW", font=doodle.font(int(62 * s)), fill=(255, 255, 255),
            anchor="mm")
+    if LOGO.exists():  # channel logo above the box
+        logo = Image.open(LOGO).convert("RGBA")
+        r = int(250 * s)
+        logo = logo.resize((r, r), Image.LANCZOS)
+        img.paste(logo, (540 - r // 2, y0 - r - 30), logo)
     bob = 26 * math.sin(life * 9)
     ax, ay = 150, 1250 + bob
     d.rectangle([ax - 26, ay - 170, ax + 26, ay], fill=(255, 210, 0), outline=(20, 20, 20), width=6)
@@ -504,6 +534,8 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
                  "-filter_complex", mix, "-vf", f"ass={ass}", "-map", "0:v", "-map", "[a]",
                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k",
                  "-ar", "44100", "-shortest", "-movflags", "+faststart", str(final)])
+            if not vertical:
+                end_screen(final, tmp)
     (out / f"{name}_chapters.txt").write_text("\n".join(chapters) + "\n", encoding="utf-8")
     (out / f"{name}_report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
     missing = [r["scene"] for r in report if r["images"][0].endswith("_card.png")]

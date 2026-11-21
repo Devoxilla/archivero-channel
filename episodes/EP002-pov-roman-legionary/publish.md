@@ -12,7 +12,7 @@ Two variants for Test & Compare:
 Prompt for a dedicated picture: the S01_b prompt + "YouTube thumbnail composition, big character on the left third, empty space on the other side for a title".
 
 ## Description
-You are eighteen, you get nothing from the family farm, and the Roman army is hiring. Tonight the Archivero puts the helmet on you: recruitment, the twenty-year contract, training with double-weight swords, the kit that made soldiers "Marius's mules", daily life on the Rhine frontier, the discipline, the doctors, your first battle, and a September week in 9 AD in a German forest that your legion will not survive.
+You are eighteen, you get nothing from the family farm, and the Roman army is hiring. Tonight Brinkman puts the helmet on you: recruitment, the twenty-year contract, training with double-weight swords, the kit that made soldiers "Marius's mules", daily life on the Rhine frontier, the discipline, the doctors, your first battle, and a September week in 9 AD in a German forest that your legion will not survive.
 
 Out of everything, what would make you quit first? Tell me in the comments.
 

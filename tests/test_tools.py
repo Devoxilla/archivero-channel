@@ -35,7 +35,7 @@ def test_is_short():
 def test_fetch_and_summary_with_mock_api():
     def get(endpoint, params):
         if endpoint == "channels":
-            return {"items": [{"snippet": {"title": "Archivero"},
+            return {"items": [{"snippet": {"title": "Brinkman"},
                                "statistics": {"subscriberCount": "120", "viewCount": "5000", "videoCount": "2"},
                                "contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]}
         if endpoint == "playlistItems":
