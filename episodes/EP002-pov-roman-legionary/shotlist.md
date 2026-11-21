@@ -1,6 +1,6 @@
 # Shot list: EP002-pov-roman-legionary
 
-106 pictures, 82 done, plus 2 character references.
+106 pictures, 92 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -516,61 +516,61 @@ bird's-eye view of a hill town surrounded by two rings of Roman walls, ditches a
 a Roman instructor telling an epic story with big gestures to bored recruits, who are all holding shovels, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in front, deadpan, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_a.png  (S19, shot 1)
+### [x] S19_a.png  (S19, shot 1)
 
 ```
 three Roman legions crossing a wooden bridge over the wide Rhine into dark forest in spring, standards and eagles, long columns, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_b.png  (S19, shot 2)
+### [x] S19_b.png  (S19, shot 2)
 
 ```
 caricature of the Roman general Publius Quinctilius Varus, 9 AD, cartoonish, overconfident and pompous, sitting on a judge's chair in a forest clearing, collecting taxes from annoyed Germanic tribesmen, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_c.png  (S19, shot 3)
+### [x] S19_c.png  (S19, shot 3)
 
 ```
 caricature of the Germanic prince Arminius, young, blond, charming smile, wearing a Roman officer's uniform, dining at Varus's table and raising a cup, eyes glancing sideways, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_d.png  (S19, shot 4)
+### [x] S19_d.png  (S19, shot 4)
 
 ```
 an older Germanic noble urgently whispering a warning to Varus, who waves him away laughing, Arminius watching from the doorway in shadow, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_e.png  (S19, shot 5)
+### [x] S19_e.png  (S19, shot 5)
 
 ```
 the Roman army packing up a summer camp near a river at the end of summer, the first autumn leaves falling, wagons loading, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_b.png  (S20, shot 2)
+### [x] S20_b.png  (S20, shot 2)
 
 ```
 Arminius on horseback riding away into the forest with a friendly wave, his back to the Roman camp, a sinister grin only the viewer can see, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_c.png  (S20, shot 3)
+### [x] S20_c.png  (S20, shot 3)
 
 ```
 stylised cartoon map of a narrow strip of land between wooded hills and a great bog, a thin red line of the Roman column squeezed through it, dark green forest everywhere, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_d.png  (S20, shot 4)  · attach REF_grunt.png
+### [x] S20_d.png  (S20, shot 4)  · attach REF_grunt.png
 
 ```
 spears flying out of the dark rainy forest at a Roman column, soldiers raising shields, mules panicking, mud everywhere, a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals in the foreground ducking, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_e.png  (S20, shot 5)
+### [x] S20_e.png  (S20, shot 5)
 
 ```
 chaotic battle in mud and rain between Roman legionaries and Germanic warriors among trees, wagons overturned, no battle line, total confusion, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_f.png  (S20, shot 6)
+### [x] S20_f.png  (S20, shot 6)
 
 ```
 a wounded Roman general in a red cloak alone in a tent at night in the rain, holding his sword, head bowed, a single oil lamp, dark and tragic, no gore, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
