@@ -99,7 +99,7 @@ per minute, a question for the comments around 40%, real sources at the end, no 
 ## Shorts rules (default since 2026-11-20)
 - First line = an aggressive hook in under 2 seconds: short punchy fragments, the shocking number or betrayal first ("Two men. Thirty minutes. One pencil line."). No dates or set-up before the hook.
 - No title text on screen: only the word-by-word captions. The build opens on a punch-in with a shake and an impact sound.
-- Last line sends viewers to the full episode: "... is in the episode linked below. Watch it now." The build adds a FULL EPISODE end card (last 3 s) with an arrow at the Related-video link.
+- Last line sends viewers to the full episode: "... is in the episode linked below. Watch it now." The build adds a FULL EPISODE end card with an arrow at the Related-video link, in its own 3 s silent tail AFTER the last spoken line (it never covers captions).
 - Each Short file has `Related video:` (set in YouTube Studio when uploading) and a pinned comment with the episode link.
 - Full-screen 9:16 pictures in `art_916/` (prompts in `shorts_916.md`).
 - Fast cuts: list 3-6 pictures per Short scene (`{art: S12.5, S12.4, S19.3}`), about one per 2-3 s of narration. The build cuts to a new picture or a new framing at least every 1.8 s. `S10.1!` borrows a picture without its overlays.
