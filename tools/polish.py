@@ -105,7 +105,7 @@ def sound_events(scene_plans, scene_starts, scene_lengths, kinds_in, art_dir=Non
             ev.append({"t": t0, "kind": "trans_" + kinds_in[si]})
         for k, (shot, start, dur) in enumerate(plan or []):
             g0 = t0 + start
-            if k > 0:
+            if k > 0 and not shot.get("_quiet"):
                 ev.append({"t": g0, "kind": "cut"})
             if shot.get("_cont"):  # a later framing of the same picture (Short fast cuts): no new beds or clip
                 pass

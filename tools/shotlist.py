@@ -49,6 +49,10 @@ def pictures(spec):
             if img and img not in seen:
                 seen.add(img)
                 out.append((img, sid, i, s.get("prompt", "")))
+            for x in s.get("also", []):  # cut-away pictures for long-episode fast cuts
+                if isinstance(x, dict) and x.get("img") and x["img"] not in seen:
+                    seen.add(x["img"])
+                    out.append((x["img"], sid, i, x.get("prompt", "")))
     return out
 
 

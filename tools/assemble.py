@@ -226,24 +226,37 @@ def scene_spec(sc, spec, art_dir=None):
 
 
 CUT_S = 1.8  # Shorts: longest time on one picture or framing before a cut
+LONG_CUT_S = 4.0  # long episodes: same idea, a new picture or framing at least every ~4 s
 CUT_MOVES = [("push", [0.5, 0.42]), ("pan_left", [0.5, 0.5]), ("pull", [0.45, 0.4]), ("pan_right", [0.5, 0.55]),
              ("push", [0.6, 0.6]), ("pan_up", [0.5, 0.5])]
 
 
-def fast_cuts(shots, seconds, max_s=CUT_S):
-    """Split every shot longer than max_s into pieces with different framings, so a Short cuts every ~1.5 s.
-    Overlays stay where they were in time; later pieces show them without a new pop or sound."""
+SPOT_ITEMS = ("pin", "label", "arrow")  # overlays tied to a spot in their own picture
+
+
+def fast_cuts(shots, seconds, max_s=CUT_S, extras=False):
+    """Split every shot longer than max_s into pieces with different framings, so the picture changes every
+    ~max_s seconds. Overlays stay where they were in time; later pieces show them without a new pop or sound.
+    extras=True: a shot's `also:` pictures (art/<img>, when the file exists) fill alternate pieces; those pieces
+    keep stamps and titles only, and a piece where a label or pin pops in stays on the original picture."""
     import doodle
     plan = doodle.scene_shots(shots, seconds)
     out, n_cut = [], 0
     for shot, start, dur in plan:
         n = max(1, math.ceil(dur / max_s - 0.15))
+        alts = []
+        if extras and shot.get("_img_path"):
+            art = Path(shot["_img_path"]).parent
+            alts = [x.get("img") if isinstance(x, dict) else x for x in shot.get("also", [])]
+            alts = [x for x in alts if x and ((art / x).exists() or (art / x).with_suffix(".mp4").exists())]
+        n_alt = 0
         for k in range(n):
             a, b = start + dur * k / n, start + dur * (k + 1) / n
             piece = dict(shot, at=a / seconds)
             if k:
                 mv, focus = CUT_MOVES[(n_cut + k) % len(CUT_MOVES)]
-                piece.update(move=mv, focus=focus, amount=1.3, jolts=[], _cont=True)
+                piece.update(move=mv, focus=focus, amount=1.3, jolts=[], _cont=True, _t0=a - start)
+                piece["_quiet"] = extras  # long episodes: a reframe of the same picture cuts without a whoosh
             else:
                 piece["_span"] = dur
                 piece["jolts"] = [j * dur / (b - a) for j in shot.get("jolts", []) if j * dur < b - a]
@@ -257,6 +270,15 @@ def fast_cuts(shots, seconds, max_s=CUT_S):
                                       out=(t_out - (a - start)) / (b - a)))
                 else:  # already on screen: stays, no new pop
                     items.append(dict(it, **{"in": -1.0}, out=(t_out - (a - start)) / (b - a)))
+            spot_pops = any(any(t in it for t in SPOT_ITEMS) and it["in"] >= 0 for it in items)
+            if k % 2 and alts and not spot_pops:  # cut away to another picture of the same moment
+                img = alts[n_alt % len(alts)]
+                n_alt += 1
+                piece.update(img=img, _img_path=str(Path(shot["_img_path"]).parent / img), _t0=0.0,
+                             flow=None, prompt="")
+                piece.pop("_img916", None)
+                piece["_quiet"] = False
+                items = [it for it in items if not any(t in it for t in SPOT_ITEMS)]
             piece["items"] = items
             out.append(piece)
         n_cut += n
@@ -404,21 +426,26 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
         if vertical and not plain:
             kinds[0] = "zoom"  # Shorts open on a punch-in, not a fade from black
         plans = []
+        # Shorts: the end card gets its own silent tail after the last line, so it never covers captions
+        tail = CTA_S if vertical and not plain else 0.0
+        spans = [d + PAUSE + (tail if i == len(scenes) - 1 else 0.0) for i, d in enumerate(durations)]
         for i, (sc, d) in enumerate(zip(scenes, durations)):
             shots = scene_spec(sc, spec, spec_dir(script) / "art")
             if vertical and not plain and i == 0 and shots:  # hook: the first picture lands with a shake
                 shots[0] = dict(shots[0], jolts=[0.0] + list(shots[0].get("jolts", [])))
             if vertical and not plain and shots:  # fast cuts: a new picture or framing every ~1.5 s
-                shots = fast_cuts(shots, d + PAUSE)
-            plans.append(__import__("doodle").scene_shots(shots, d + PAUSE) if shots else [])
+                shots = fast_cuts(shots, spans[i])
+            elif not plain and shots:  # long episode: a new picture or framing every ~4 s
+                shots = fast_cuts(shots, spans[i], LONG_CUT_S, extras=True)
+            plans.append(__import__("doodle").scene_shots(shots, spans[i]) if shots else [])
             if shots:
-                jobs[sc["id"]] = {"shots": shots, "seconds": d + PAUSE, "wav": str(vo / f"{sc['id']}.wav"),
+                jobs[sc["id"]] = {"shots": shots, "seconds": spans[i], "wav": str(vo / f"{sc['id']}.wav"),
                                   "out": str(tmp / f"{sc['id']}_anim.mp4"), "vertical": vertical,
                                   "title": short_title(script) if vertical and plain else "", "frame0": frame0,
                                   "cta": vertical and not plain and i == len(scenes) - 1,
                                   "trans_in": kinds[i],
                                   "trans_out": None if plain else (kinds[i + 1] if i + 1 < len(scenes) else "dip")}
-            frame0 += round((d + PAUSE) * FPS)
+            frame0 += round(spans[i] * FPS)
         if jobs:
             from concurrent.futures import ProcessPoolExecutor
             with ProcessPoolExecutor() as ex:
@@ -426,14 +453,14 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
         for i, (sc, d) in enumerate(zip(scenes, durations)):
             if sc["id"] in jobs:
                 clips.append(Path(jobs[sc["id"]]["out"]))
-                report.append({"scene": sc["id"], "seconds": round(d + PAUSE, 1), "images": ["animated"]})
+                report.append({"scene": sc["id"], "seconds": round(spans[i], 1), "images": ["animated"]})
                 continue
             imgs = scene_images(sc, art_dirs)
             if not imgs:
                 card = tmp / f"{sc['id']}_card.png"
                 title_card(sc["title"], size, card)
                 imgs = [card]
-            span = d + PAUSE
+            span = spans[i]
             each = span / len(imgs)
             for k, img in enumerate(imgs):
                 clip = tmp / f"{sc['id']}_{k}.mp4"
@@ -447,7 +474,7 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
              "-c", "copy", str(video)])
         srt = out / f"{name}.srt"
         write_srt(caps, srt)
-        total = sum(durations) + PAUSE * len(durations)
+        total = sum(spans)
         final = out / f"{name}.mp4"
         if plain:
             vf = []
@@ -460,7 +487,7 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
                  "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", str(final)])
         else:
             # sound design + music under the narration, word-by-word captions burned in
-            events = polish.sound_events(plans, starts, [d + PAUSE for d in durations], kinds)
+            events = polish.sound_events(plans, starts, spans, kinds)
             if vertical:  # hook impact on the first frame, a pop when the end card lands
                 events += [{"t": 0.0, "kind": "boom"}, {"t": 0.02, "kind": "hit"},
                            {"t": max(0.0, total - CTA_S), "kind": "pop"}]
@@ -472,7 +499,7 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
             busy = [] if vertical else polish.busy_bands(plans, starts, [d + PAUSE for d in durations])
             ass = polish.write_ass(words, tmp / "captions.ass", vertical, busy)
             mix = ("[1:a]aresample=44100,pan=stereo|c0=c0|c1=c0[v];"
-                   "[v][2:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+                   "[v][2:a]amix=inputs=2:normalize=0:duration=longest,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
             run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(vo / "vo_full.wav"), "-i", str(bg),
                  "-filter_complex", mix, "-vf", f"ass={ass}", "-map", "0:v", "-map", "[a]",
                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-c:a", "aac", "-b:a", "192k",
@@ -480,7 +507,7 @@ def build(script: Path, vertical: bool = False, plain: bool = False):
     (out / f"{name}_chapters.txt").write_text("\n".join(chapters) + "\n", encoding="utf-8")
     (out / f"{name}_report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
     missing = [r["scene"] for r in report if r["images"][0].endswith("_card.png")]
-    print(f"{final}: {sum(durations) + PAUSE * len(durations):.0f} s, {len(scenes)} scenes, "
+    print(f"{final}: {sum(spans):.0f} s, {len(scenes)} scenes, "
           f"title cards for {missing or 'none'}")
     return final
 

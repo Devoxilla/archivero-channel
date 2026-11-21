@@ -862,7 +862,7 @@ def moving_picture(shot, tt, dur, frame, size=None, path_key="_img_path"):
     clip = clip_for(shot.get(path_key))
     if clip:  # play the clip once at normal speed, then hold its last frame; the camera move stays gentle
         frames = clip_frames(clip, size)
-        im = Image.open(frames[min(int(tt * FPS), len(frames) - 1)]).convert("RGB") if frames else \
+        im = Image.open(frames[min(int((tt + shot.get("_t0", 0.0)) * FPS), len(frames) - 1)]).convert("RGB") if frames else \
             picture(shot.get(path_key), shot.get("prompt", ""), size)
         shot = dict(shot, amount=shot.get("amount", 1.0) * 0.4, jolts=[])
         if shot.get("move") in ("shake", "push_shake"):
