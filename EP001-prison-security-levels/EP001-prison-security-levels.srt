@@ -1,0 +1,776 @@
+1
+00:00:00,000 --> 00:00:04,757
+There is a prison in Colorado where the window is about four inches wide.
+
+2
+00:00:04,757 --> 00:00:07,038
+It is built so you can see the sky,
+
+3
+00:00:07,038 --> 00:00:08,472
+but not where you are.
+
+4
+00:00:08,472 --> 00:00:13,360
+Most people in the American federal system will never get anywhere near it.
+
+5
+00:00:13,360 --> 00:00:17,401
+To reach it, you have to fall through every other level first.
+
+6
+00:00:17,401 --> 00:00:19,812
+Today we climb down the whole ladder,
+
+7
+00:00:19,812 --> 00:00:22,875
+one rung at a time, all the way to that window.
+
+8
+00:00:23,475 --> 00:00:24,304
+Good evening.
+
+9
+00:00:24,304 --> 00:00:25,453
+I'm the Archivero.
+
+10
+00:00:25,453 --> 00:00:27,622
+I keep the files nobody asked for,
+
+11
+00:00:27,622 --> 00:00:30,939
+in a room nobody visits, by the light of a lamp that
+
+12
+00:00:30,939 --> 00:00:32,278
+never quite goes out.
+
+13
+00:00:32,278 --> 00:00:36,489
+Tonight's file is a thick one: every security level of the federal
+
+14
+00:00:36,489 --> 00:00:38,722
+prison system in the United States.
+
+15
+00:00:38,722 --> 00:00:44,399
+Roughly a hundred and fifty-five thousand people live somewhere on this ladder right now.
+
+16
+00:00:44,399 --> 00:00:47,908
+Some of them can walk out the front door every morning.
+
+17
+00:00:47,908 --> 00:00:51,735
+Some of them have not seen another prisoner's face in years.
+
+18
+00:00:51,735 --> 00:00:54,989
+The difference between those two lives is not luck.
+
+19
+00:00:54,989 --> 00:00:55,946
+It is a number.
+
+20
+00:00:55,946 --> 00:00:58,051
+So before we open the first door,
+
+21
+00:00:58,051 --> 00:01:00,475
+let's look at how that number is made.
+
+22
+00:01:01,075 --> 00:01:03,960
+When someone is sentenced to federal prison,
+
+23
+00:01:03,960 --> 00:01:08,551
+the Bureau of Prisons does not simply pick a building with a free bed.
+
+24
+00:01:08,551 --> 00:01:10,321
+It fills in a scoring form.
+
+25
+00:01:10,321 --> 00:01:12,748
+Points for how serious the crime was.
+
+26
+00:01:12,748 --> 00:01:15,043
+Points for any history of violence.
+
+27
+00:01:15,043 --> 00:01:17,928
+Points for any past escape, even an old one.
+
+28
+00:01:17,928 --> 00:01:20,813
+Points for how long is left on the sentence,
+
+29
+00:01:20,813 --> 00:01:23,895
+and for any other charges waiting in the wings.
+
+30
+00:01:23,895 --> 00:01:26,650
+Add them up, and you get a security level.
+
+31
+00:01:26,650 --> 00:01:31,109
+Then staff can adjust it with what they call management variables: a
+
+32
+00:01:31,109 --> 00:01:35,306
+gang conflict, a medical need, a request to be closer to family.
+
+33
+00:01:35,306 --> 00:01:37,339
+The score is not fixed, either.
+
+34
+00:01:37,339 --> 00:01:40,224
+Behave for years, and the points drift down.
+
+35
+00:01:40,224 --> 00:01:42,126
+Start fights, and they climb.
+
+36
+00:01:42,126 --> 00:01:45,536
+In other words, the ladder moves in both directions,
+
+37
+00:01:45,536 --> 00:01:47,175
+and every rung is earned.
+
+38
+00:01:47,775 --> 00:01:50,167
+We start at the bottom of the ladder,
+
+39
+00:01:50,167 --> 00:01:51,784
+which is barely a ladder.
+
+40
+00:01:51,784 --> 00:01:55,793
+A Residential Reentry Center, better known as a halfway house.
+
+41
+00:01:55,793 --> 00:01:59,931
+The Bureau of Prisons contracts them to help people near the end
+
+42
+00:01:59,931 --> 00:02:02,259
+of a sentence rebuild a normal life.
+
+43
+00:02:02,259 --> 00:02:05,039
+Residents go out to work, look for housing,
+
+44
+00:02:05,039 --> 00:02:08,854
+reconnect with family, then come back at night and sign in.
+
+45
+00:02:08,854 --> 00:02:09,436
+No cells.
+
+46
+00:02:09,436 --> 00:02:09,953
+No bars.
+
+47
+00:02:09,953 --> 00:02:14,026
+Just a curfew, drug tests, and a staff member who knows exactly
+
+48
+00:02:14,026 --> 00:02:16,419
+what time you said you would be back.
+
+49
+00:02:16,419 --> 00:02:20,104
+Some people finish the very last stretch at home instead,
+
+50
+00:02:20,104 --> 00:02:25,018
+on home confinement, with phone check-ins and the occasional surprise visit.
+
+51
+00:02:25,018 --> 00:02:29,545
+It is the only kind of prison where the hardest part is the paperwork.
+
+52
+00:02:29,545 --> 00:02:33,230
+Break the rules, though, and the ladder works in reverse.
+
+53
+00:02:33,230 --> 00:02:34,200
+You go back up.
+
+54
+00:02:34,800 --> 00:02:36,701
+Next, the federal prison camp.
+
+55
+00:02:36,701 --> 00:02:37,778
+Minimum security.
+
+56
+00:02:37,778 --> 00:02:41,073
+Dormitory housing, a relatively low number of staff,
+
+57
+00:02:41,073 --> 00:02:43,354
+and limited or no perimeter fencing.
+
+58
+00:02:43,354 --> 00:02:46,712
+Yes, at some of them you could technically walk away.
+
+59
+00:02:46,712 --> 00:02:50,831
+People mostly don't, because walking away is a new federal crime,
+
+60
+00:02:50,831 --> 00:02:53,936
+it adds years, and it sends you several rungs up.
+
+61
+00:02:53,936 --> 00:02:56,344
+Camps are built around work: kitchens,
+
+62
+00:02:56,344 --> 00:03:01,096
+groundskeeping, maintenance, sometimes jobs at the bigger prison next door.
+
+63
+00:03:01,096 --> 00:03:04,771
+Many camps sit right beside a higher-security institution,
+
+64
+00:03:04,771 --> 00:03:07,749
+like a small cottage in the shadow of a castle.
+
+65
+00:03:07,749 --> 00:03:11,995
+The press likes to call them "Club Fed." When Martha Stewart served
+
+66
+00:03:11,995 --> 00:03:14,339
+her sentence at the camp in Alderson,
+
+67
+00:03:14,339 --> 00:03:18,901
+West Virginia, tabloids nicknamed it "Camp Cupcake." It is not a resort.
+
+68
+00:03:18,901 --> 00:03:22,260
+There are counts, searches, and rules for everything.
+
+69
+00:03:22,260 --> 00:03:26,125
+It is just the level where the walls are mostly in your head.
+
+70
+00:03:26,725 --> 00:03:28,511
+One step up: low security.
+
+71
+00:03:28,511 --> 00:03:31,738
+Here the fence appears, and it brings a friend.
+
+72
+00:03:31,738 --> 00:03:36,133
+Low-security federal institutions have double-fenced perimeters.
+
+73
+00:03:36,133 --> 00:03:39,567
+Most people still live in dormitories or cubicles,
+
+74
+00:03:39,567 --> 00:03:42,177
+rows of bunks separated by half walls,
+
+75
+00:03:42,177 --> 00:03:43,756
+so privacy is a rumour.
+
+76
+00:03:43,756 --> 00:03:47,190
+There are more officers per inmate than at a camp,
+
+77
+00:03:47,190 --> 00:03:49,868
+and the day is organised around counts,
+
+78
+00:03:49,868 --> 00:03:52,684
+work assignments, and education programs.
+
+79
+00:03:52,684 --> 00:03:57,903
+Many people here were convicted of non-violent crimes but have sentences too
+
+80
+00:03:57,903 --> 00:04:01,131
+long, or histories too complicated, for a camp.
+
+81
+00:04:01,131 --> 00:04:06,625
+Think of it as the first level where the building is actively watching you back.
+
+82
+00:04:07,225 --> 00:04:09,448
+Quick question before we go deeper.
+
+83
+00:04:09,448 --> 00:04:12,433
+Which level do you think holds the most people?
+
+84
+00:04:12,433 --> 00:04:14,529
+Leave your guess in the comments.
+
+85
+00:04:14,529 --> 00:04:17,577
+I'll give you the answer at the end of the file,
+
+86
+00:04:17,577 --> 00:04:20,118
+and it is less dramatic than you'd hope,
+
+87
+00:04:20,118 --> 00:04:22,150
+which is exactly why it matters.
+
+88
+00:04:22,750 --> 00:04:23,821
+Medium security.
+
+89
+00:04:23,821 --> 00:04:29,379
+The perimeter gets stronger, often double fences with electronic detection systems,
+
+90
+00:04:29,379 --> 00:04:32,460
+so touching the wire is not a secret for long.
+
+91
+00:04:32,460 --> 00:04:35,741
+Housing changes too: mostly cells now, not dorms.
+
+92
+00:04:35,741 --> 00:04:37,482
+That means a door, a bunk,
+
+93
+00:04:37,482 --> 00:04:40,428
+a toilet, and a roommate you did not choose.
+
+94
+00:04:40,428 --> 00:04:44,982
+Medium institutions run a wide range of work and treatment programs,
+
+95
+00:04:44,982 --> 00:04:48,129
+from factory jobs to drug treatment to classes,
+
+96
+00:04:48,129 --> 00:04:50,272
+but movement is more controlled.
+
+97
+00:04:50,272 --> 00:04:52,013
+You go where you are told,
+
+98
+00:04:52,013 --> 00:04:55,696
+when you are told, and the schedule is the real warden.
+
+99
+00:04:55,696 --> 00:05:00,316
+Staff numbers rise again, and so do internal controls: more searches,
+
+100
+00:05:00,316 --> 00:05:04,602
+more cameras, more counts, including in the middle of the night.
+
+101
+00:05:04,602 --> 00:05:06,812
+This is the middle of the ladder,
+
+102
+00:05:06,812 --> 00:05:10,629
+and for many people it is the place where a long sentence
+
+103
+00:05:10,629 --> 00:05:13,575
+actually happens, year after identical year.
+
+104
+00:05:14,175 --> 00:05:16,417
+It helps to picture one ordinary day.
+
+105
+00:05:16,417 --> 00:05:18,478
+Wake-up comes early, then a count,
+
+106
+00:05:18,478 --> 00:05:22,175
+where everyone must be exactly where they are supposed to be.
+
+107
+00:05:22,175 --> 00:05:22,781
+Breakfast.
+
+108
+00:05:22,781 --> 00:05:24,962
+Work call: the kitchen, the laundry,
+
+109
+00:05:24,962 --> 00:05:26,962
+the factory floor, the classroom.
+
+110
+00:05:26,962 --> 00:05:27,811
+Another count.
+
+111
+00:05:27,811 --> 00:05:28,174
+Lunch.
+
+112
+00:05:28,174 --> 00:05:28,780
+More work.
+
+113
+00:05:28,780 --> 00:05:30,720
+Recreation, if the yard is open.
+
+114
+00:05:30,720 --> 00:05:31,326
+Mail call.
+
+115
+00:05:31,326 --> 00:05:31,750
+Dinner.
+
+116
+00:05:31,750 --> 00:05:32,598
+Another count.
+
+117
+00:05:32,598 --> 00:05:33,144
+Lockdown.
+
+118
+00:05:33,144 --> 00:05:35,507
+And then, while you sleep, more counts,
+
+119
+00:05:35,507 --> 00:05:39,568
+a flashlight checking that the shape in the bed is still breathing.
+
+120
+00:05:39,568 --> 00:05:43,507
+Change the level, and the shape of the day stays almost the same.
+
+121
+00:05:43,507 --> 00:05:47,022
+What changes is the space around it: how far you can walk,
+
+122
+00:05:47,022 --> 00:05:51,325
+how many doors you pass, and how many people are watching while you do.
+
+123
+00:05:51,925 --> 00:05:52,911
+High security.
+
+124
+00:05:52,911 --> 00:05:58,193
+In the federal system these are the United States Penitentiaries, the USPs.
+
+125
+00:05:58,193 --> 00:06:02,347
+Highly secured perimeters, with walls or reinforced fences,
+
+126
+00:06:02,347 --> 00:06:04,883
+and towers or patrols watching them.
+
+127
+00:06:04,883 --> 00:06:07,347
+Single and multiple-occupant cells.
+
+128
+00:06:07,347 --> 00:06:11,573
+The highest ratio of staff to inmates of the regular levels,
+
+129
+00:06:11,573 --> 00:06:15,094
+and close control of every movement: when you eat,
+
+130
+00:06:15,094 --> 00:06:17,277
+when you walk, when you shower.
+
+131
+00:06:17,277 --> 00:06:21,995
+This is where the system sends people convicted of the most violent
+
+132
+00:06:21,995 --> 00:06:24,530
+crimes, or with histories of escape,
+
+133
+00:06:24,530 --> 00:06:27,418
+gang activity, or violence inside prison.
+
+134
+00:06:27,418 --> 00:06:30,657
+The most famous penitentiary of all is closed.
+
+135
+00:06:30,657 --> 00:06:34,601
+Alcatraz operated as a federal prison from 1934 to 1963,
+
+136
+00:06:34,601 --> 00:06:38,051
+on a rock in the cold water of San Francisco Bay.
+
+137
+00:06:38,051 --> 00:06:43,192
+Over those years, thirty-six men tried to escape it in fourteen attempts.
+
+138
+00:06:43,192 --> 00:06:44,389
+Most were caught.
+
+139
+00:06:44,389 --> 00:06:45,446
+Some were shot.
+
+140
+00:06:45,446 --> 00:06:46,291
+Two drowned.
+
+141
+00:06:46,291 --> 00:06:48,051
+Officially, none made it.
+
+142
+00:06:48,051 --> 00:06:52,699
+But five were never found, including the three men who left behind
+
+143
+00:06:52,699 --> 00:06:57,417
+papier-mâché heads in their beds one night in June 1962 and paddled
+
+144
+00:06:57,417 --> 00:07:00,375
+into the dark on a raft made of raincoats.
+
+145
+00:07:00,975 --> 00:07:03,646
+But there is a level inside every level.
+
+146
+00:07:03,646 --> 00:07:07,252
+Most federal institutions have a Special Housing Unit,
+
+147
+00:07:07,252 --> 00:07:09,322
+the SHU, or as inmates call it,
+
+148
+00:07:09,322 --> 00:07:12,994
+"the hole." This is where people go for breaking rules,
+
+149
+00:07:12,994 --> 00:07:16,400
+during investigations, or for their own protection.
+
+150
+00:07:16,400 --> 00:07:20,139
+Time in the SHU usually means being locked in a cell for
+
+151
+00:07:20,139 --> 00:07:24,613
+most of the day, with meals delivered through a slot and recreation
+
+152
+00:07:24,613 --> 00:07:25,681
+in a small cage.
+
+153
+00:07:25,681 --> 00:07:28,953
+It is not a separate prison you are sentenced to.
+
+154
+00:07:28,953 --> 00:07:31,491
+It is a place the prison can send you,
+
+155
+00:07:31,491 --> 00:07:33,093
+any day, from any level.
+
+156
+00:07:33,093 --> 00:07:37,300
+Which is why, in practice, every security level has a basement.
+
+157
+00:07:37,900 --> 00:07:40,028
+And now, the bottom of the file.
+
+158
+00:07:40,028 --> 00:07:45,813
+The Bureau of Prisons calls the last category "administrative." These institutions have
+
+159
+00:07:45,813 --> 00:07:48,872
+special missions: holding people before trial,
+
+160
+00:07:48,872 --> 00:07:56,186
+treating serious medical cases, or containing people considered extremely dangerous, violent, or escape-prone.
+
+161
+00:07:56,186 --> 00:07:59,179
+The most extreme is ADX Florence in Colorado,
+
+162
+00:07:59,179 --> 00:08:03,767
+opened in 1994 and nicknamed "the Alcatraz of the Rockies." Cells are
+
+163
+00:08:03,767 --> 00:08:07,092
+roughly seven by twelve feet, with a concrete bed,
+
+164
+00:08:07,092 --> 00:08:10,283
+a concrete desk, a concrete stool, and a shower.
+
+165
+00:08:10,283 --> 00:08:15,337
+Most prisoners there spend about twenty-three hours a day alone in the cell.
+
+166
+00:08:15,337 --> 00:08:17,066
+Food comes through a slot.
+
+167
+00:08:17,066 --> 00:08:21,920
+Exercise happens alone, in an outdoor pen that some former prisoners have
+
+168
+00:08:21,920 --> 00:08:24,248
+compared to an empty swimming pool.
+
+169
+00:08:24,248 --> 00:08:26,974
+And the window is about four inches wide,
+
+170
+00:08:26,974 --> 00:08:29,900
+angled so you see sky but not the landscape,
+
+171
+00:08:29,900 --> 00:08:33,158
+so you cannot tell where in the building you are.
+
+172
+00:08:33,158 --> 00:08:37,879
+Over the years, the people held there have included Zacarias Moussaoui,
+
+173
+00:08:37,879 --> 00:08:41,137
+Dzhokhar Tsarnaev, and Joaquín "El Chapo" Guzmán.
+
+174
+00:08:41,137 --> 00:08:45,792
+There is a step-down program, a slow climb through several phases that
+
+175
+00:08:45,792 --> 00:08:47,986
+can, after years of good conduct,
+
+176
+00:08:47,986 --> 00:08:50,513
+lead back to an ordinary penitentiary.
+
+177
+00:08:50,513 --> 00:08:53,639
+At this level, the punishment is not the walls.
+
+178
+00:08:53,639 --> 00:08:55,700
+It is the silence between them.
+
+179
+00:08:56,300 --> 00:08:58,393
+So, the answer to the question.
+
+180
+00:08:58,393 --> 00:09:03,727
+The level holding the most people is not the supermax and not the penitentiary.
+
+181
+00:09:03,727 --> 00:09:05,009
+It is low security.
+
+182
+00:09:05,009 --> 00:09:07,440
+In recent Bureau of Prisons figures,
+
+183
+00:09:07,440 --> 00:09:10,276
+it holds more people than any other level,
+
+184
+00:09:10,276 --> 00:09:12,301
+well over a third of everyone.
+
+185
+00:09:12,301 --> 00:09:14,866
+The ladder is not a tower of monsters.
+
+186
+00:09:14,866 --> 00:09:17,297
+It is mostly a long, crowded middle.
+
+187
+00:09:17,297 --> 00:09:20,740
+And here is the strangest detail in the whole file.
+
+188
+00:09:20,740 --> 00:09:24,859
+In Florence, Colorado, a single federal complex holds a camp,
+
+189
+00:09:24,859 --> 00:09:27,762
+a medium, a penitentiary, and the supermax,
+
+190
+00:09:27,762 --> 00:09:30,530
+side by side on the same stretch of road.
+
+191
+00:09:30,530 --> 00:09:34,716
+The whole ladder, from walk-away fences to a four-inch window,
+
+192
+00:09:34,716 --> 00:09:36,606
+within sight of one another.
+
+193
+00:09:36,606 --> 00:09:41,197
+Next time, we open the file on the strangest punishments in history.
+
+194
+00:09:41,197 --> 00:09:42,750
+I'll leave the lamp on.
+
