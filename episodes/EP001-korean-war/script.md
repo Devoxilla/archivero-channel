@@ -1,6 +1,6 @@
 # EP001 — The Korean War: The War That Never Ended
 
-Channel: The Archivero · Format: Conflict summarized (geopolitics) · Target: about 22 minutes (about 3,700 words at Kokoro pace)
+Channel: Brinkman · Format: Conflict summarized (geopolitics) · Target: about 22 minutes (about 3,700 words at Kokoro pace)
 Status: v1, 2026-11-20. Numbers are the commonly cited estimates from the sources at the end; casualty figures vary widely between sources and are given as ranges.
 
 ---
@@ -9,7 +9,7 @@ Status: v1, 2026-11-20. Numbers are the commonly cited estimates from the source
 There is a line across the Korean Peninsula, two hundred and fifty kilometers long and four kilometers wide. On either side of it, about a million soldiers stand ready, behind minefields, fences and guard posts. Technically, the war they are guarding has never ended. There was no peace treaty. Only a ceasefire, signed in 1953, by generals who could not agree on anything except that they were tired of dying. That war killed around three million people, pulled in the United States, China and the Soviet Union, and still shapes the most dangerous border on Earth. And it started with two American officers, a map, and about thirty minutes.
 
 [S02] INTRO
-Good evening. I'm the Archivero, and I keep the files nobody asked for. Tonight's file is the Korean War, from 1950 to 1953. In the West it's often called the Forgotten War, squeezed between the Second World War and Vietnam. But almost everything about East Asia today, the two Koreas, the American bases, China's place in the world, even North Korea's nuclear weapons, traces back to these three years. So let's open the map, and go back to where the line was drawn.
+Good evening, this is Brinkman. Every war starts at the brink, and tonight's brink is a pencil line on a map. This is the Korean War, from 1950 to 1953. In the West it's often called the Forgotten War, squeezed between the Second World War and Vietnam. But almost everything about East Asia today, the two Koreas, the American bases, China's place in the world, even North Korea's nuclear weapons, traces back to these three years. So let's open the map, and go back to where the line was drawn.
 
 [S03] A COLONY SPLIT IN TWO
 For thirty-five years, from 1910 to 1945, Korea was a colony of the Empire of Japan. Koreans lost their independence, and during the Second World War hundreds of thousands were forced into labor for the Japanese war machine. In August 1945, Japan collapsed. The Soviet Union declared war on Japan on the 8th of August and its troops poured into Manchuria and northern Korea. In Washington, officials worried that the Soviets would take the whole peninsula. On the night of the 10th of August, two American officers, Colonel Charles Bonesteel and Major Dean Rusk, were given about half an hour to propose a dividing line. Using a National Geographic map, they picked the 38th parallel, because it left the capital, Seoul, on the American side. To Washington's surprise, Stalin accepted. A line meant to be temporary was now on the map.
@@ -42,7 +42,7 @@ It was not a bluff. On the night of the 19th of October 1950, the same day Pyong
 At the Chosin Reservoir in the northeast, around thirty thousand UN troops, most of them US Marines, were surrounded by about a hundred and twenty thousand Chinese soldiers. Temperatures dropped to minus thirty degrees Celsius. Weapons froze. Medical supplies froze. For two weeks the Marines fought their way out, south towards the sea, carrying their wounded with them. At the port of Hungnam in December, the US Navy evacuated more than a hundred thousand soldiers, and nearly a hundred thousand Korean civilians who did not want to stay under the North. One cargo ship, the SS Meredith Victory, built for twelve passengers, carried about fourteen thousand refugees in a single voyage. In the west, the UN armies fell back across the 38th parallel. In January 1951, Seoul fell for the second time.
 
 [S13] MID QUESTION
-Quick question before we go on. Was crossing the 38th parallel in October 1950 the biggest mistake of the war, or was trying to unify Korea the right call that simply went wrong? Tell me in the comments. I read the best arguments in the next file.
+Quick question before we go on. Was crossing the 38th parallel in October 1950 the biggest mistake of the war, or was trying to unify Korea the right call that simply went wrong? Tell me in the comments. I'll read the best arguments in the next episode.
 
 [S14] RIDGWAY AND THE MEAT GRINDER
 In December 1950, the commander of the US Eighth Army, General Walton Walker, was killed in a jeep accident. His replacement, General Matthew Ridgway, arrived to find an army that was exhausted, demoralized and expecting to be pushed into the sea. Ridgway rebuilt it. He stopped the retreat, sent his troops back out on the attack, and changed the goal: not to capture territory, but to inflict as many losses as possible on the enemy, using overwhelming artillery and air power. His soldiers called it the meat grinder. In March 1951, Seoul changed hands for the fourth and last time. By spring, the front had stabilized roughly around the 38th parallel, almost exactly where the war had started.
@@ -69,7 +69,7 @@ Geopolitically, the Korean War changed far more than Korea. The United States, w
 The two halves of Korea then took very different roads. South Korea went from one of the poorest countries in the world to a rich, high-tech democracy, after decades of military rule along the way. North Korea became the most closed state on Earth, ruled by Kim Il Sung, then his son, then his grandson, in the world's only communist dynasty. It built nuclear weapons, arguing that only a bomb would stop an American attack like the one it remembers from the 1950s. The armistice still holds. Soldiers from both sides still stand face to face in the blue huts at Panmunjom. And every few years, a shelling, a sinking or a missile test reminds the world that the Korean War was paused, not finished.
 
 [S22] OUTRO
-So that's the file of the Korean War. A line drawn in thirty minutes, a war that swept up and down a peninsula three times in one year, two years of fighting over hills while diplomats argued about prisoners, and a ceasefire that has now lasted more than seventy years. Forgotten in the West, remembered every day in Korea. Next time, we open another file. I'll leave the lamp on.
+So that's the Korean War. A line drawn in thirty minutes, a war that swept up and down a peninsula three times in one year, two years of fighting over hills while diplomats argued about prisoners, and a ceasefire that has now lasted more than seventy years. Forgotten in the West, remembered every day in Korea. Next time on Brinkman: another war, and the brink it started from.
 
 ---
 
