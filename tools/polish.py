@@ -292,7 +292,7 @@ def bed(kind, n, rng):
         out = _band(_noise(n, rng, "brown"), 30, 300) * 0.4
         period = rng.uniform(0.7, 1.1)
         for k in range(int(n / SR / period)):
-            i = int((k * period + rng.uniform(-0.03, 0.03)) * SR)
+            i = max(0, int((k * period + rng.uniform(-0.03, 0.03)) * SR))
             m = min(int(0.5 * SR), n - i)
             if m <= 0:
                 break
