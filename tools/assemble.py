@@ -32,7 +32,7 @@ PAPER = (243, 236, 220)
 INK = (24, 22, 20)
 RED = (190, 30, 30)
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp"}
-NO_CHAPTER = {"PATTERN INTERRUPT", "INTRO"}
+NO_CHAPTER = {"PATTERN INTERRUPT", "INTRO", "MID QUESTION"}
 FONT_DIRS = ["/usr/share/fonts/truetype/dejavu", "C:/Windows/Fonts", "/Library/Fonts", "/System/Library/Fonts/Supplemental"]
 
 
@@ -64,7 +64,9 @@ def chapter_case(text: str) -> str:
     """Title Case for chapter names without str.title()'s bugs ("Yamamoto'S", "O'Clock" stays "O'clock")."""
     out = []
     for i, w in enumerate(text.lower().split()):
-        if i and w in SMALL_WORDS:
+        if any(ch.isdigit() for ch in w) or "." in w.rstrip("."):
+            out.append(w.upper())  # times and abbreviations: 7:55 A.M.
+        elif i and w in SMALL_WORDS:
             out.append(w)
         else:
             k = next((j for j, ch in enumerate(w) if ch.isalnum()), 0)
