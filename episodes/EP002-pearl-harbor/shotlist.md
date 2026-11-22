@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 13 done, plus 1 character references.
+104 pictures, 22 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -90,49 +90,49 @@ a large black oil storage tank and a tanker ship at a dock in 1941, the pipeline
 Japanese soldiers of 1941 with rifles marching along a tropical road lined with palm trees in Indochina, trucks and dust, hot sun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_b.png  (S03, shot 2)
+### [x] S03_b.png  (S03, shot 2)
 
 ```
 stylised flat cartoon map of East and Southeast Asia seen from above, Japan in red at the top right, a red arrow pushing down from China into southern Indochina, the islands of the Dutch East Indies glowing yellow at the bottom, flat blue sea, absolutely no words, no letters, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_c.png  (S03, shot 3)
+### [x] S03_c.png  (S03, shot 3)
 
 ```
 a fuel gauge on a dark ship's bulkhead with its needle sinking towards empty, a red warning lamp glowing, oil dripping, dramatic light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_d.png  (S03, shot 4)
+### [x] S03_d.png  (S03, shot 4)
 
 ```
 Japanese generals and admirals of 1941 in uniform sitting around a long table in a dark imperial conference room, grim faces, a folding screen with a golden sun behind them, cigarette smoke, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_e.png  (S03, shot 5)
+### [x] S03_e.png  (S03, shot 5)
 
 ```
 a row of grey American battleships of 1941 at anchor in a calm tropical harbor with green mountains behind, palm trees on the shore, sunny morning, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_a.png  (S04, shot 1)
+### [x] S04_a.png  (S04, shot 1)
 
 ```
 caricature of Admiral Isoroku Yamamoto, a short stern Japanese admiral of 1941 in a dark navy uniform with gold braid, standing on the bridge of a battleship, studying a chart, calm piercing eyes, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_a2.jpg  (S04, shot 1)
+### [x] S04_a2.jpg  (S04, shot 1)
 
 ```
 a busy American steel factory and oil derricks in the 1930s seen through the eyes of a visiting Japanese naval officer, smoke stacks, rows of cars, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_b.png  (S04, shot 2)
+### [x] S04_b.png  (S04, shot 2)
 
 ```
 night, old British biplane torpedo bombers flying low over a harbor full of Italian battleships, searchlights sweeping, anti-aircraft fire, a torpedo hitting a battleship with a column of water, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_c.png  (S04, shot 3)
+### [x] S04_c.png  (S04, shot 3)
 
 ```
 cutaway diagram style picture of a shallow tropical harbor seen from the side, a battleship on the surface and a torpedo dropped from an aircraft sinking into the mud of the shallow bottom, blue water, no text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -144,7 +144,7 @@ cutaway diagram style picture of a shallow tropical harbor seen from the side, a
 close-up of a Japanese aerial torpedo of 1941 on a trolley in a workshop, mechanics fixing flat wooden fins to its tail, workbench light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_e.png  (S04, shot 5)
+### [x] S04_e.png  (S04, shot 5)
 
 ```
 Japanese navy torpedo bombers of 1941 with red sun roundels flying very low over the water of a bay in southern Japan, a coastal town and green hills behind, spray behind them, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
