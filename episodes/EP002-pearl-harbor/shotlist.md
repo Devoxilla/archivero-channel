@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 73 done, plus 1 character references.
+104 pictures, 71 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -186,10 +186,10 @@ stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and 
 an American ambassador of 1941 with grey hair and glasses in a dark suit writing a telegram at a desk in the US embassy in Tokyo at night, Japanese roofs through the window, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [x] S06_b.png  (S06, shot 2)
+### [ ] S06_b.png  (S06, shot 2)
 
 ```
-an American naval intelligence officer of 1941 in a Washington office tossing a telegram into an overflowing wire tray marked with nothing, bored expression, stacks of files, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+an American naval intelligence officer of 1941 in a Washington office tossing a blank folded paper into an overflowing wire tray, bored expression, stacks of plain files, absolutely no letters or words anywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] S06_c.png  (S06, shot 3)
@@ -210,10 +210,10 @@ a young Japanese man of 1941 in a white shirt and straw hat sitting on a green h
 the Japanese consulate in Honolulu in 1941, a white two-storey building with a lawn and palm trees, a car parked in front, afternoon sun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [x] S06_e.png  (S06, shot 5)
+### [ ] S06_e.png  (S06, shot 5)
 
 ```
-a decoded telegram on a desk in Washington stamped with a big red mark, being slid into a filing cabinet drawer that is closing, dim light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
+a hand sliding a plain folded paper with a red wax seal into a grey filing cabinet drawer that is closing, dim office light, absolutely no letters or words anywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
 ### [x] S07_a.png  (S07, shot 1)

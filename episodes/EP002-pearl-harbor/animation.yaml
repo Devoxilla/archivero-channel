@@ -198,7 +198,7 @@ S06:
       - {label: "\"A SURPRISE ATTACK ON PEARL HARBOR\"", x: 960, y: 920, in: 0.35}
   - at: 0.22
     img: S06_b.png
-    prompt: "an American naval intelligence officer of 1941 in a Washington office tossing a telegram into an overflowing wire tray marked with nothing, bored expression, stacks of files"
+    prompt: "an American naval intelligence officer of 1941 in a Washington office tossing a blank folded paper into an overflowing wire tray, bored expression, stacks of plain files, absolutely no letters or words anywhere"
     move: push
     items:
       - {label: "NOT CREDIBLE", x: 1400, y: 180, in: 0.3, c: red}
@@ -221,7 +221,7 @@ S06:
       - {label: "THE SPY", x: 1450, y: 900, in: 0.2}
   - at: 0.82
     img: S06_e.png
-    prompt: "a decoded telegram on a desk in Washington stamped with a big red mark, being slid into a filing cabinet drawer that is closing, dim light, no readable text"
+    prompt: "a hand sliding a plain folded paper with a red wax seal into a grey filing cabinet drawer that is closing, dim office light, absolutely no letters or words anywhere"
     move: push
     items:
       - {label: "NEVER SENT TO HAWAII", x: 960, y: 160, in: 0.3, c: red}
