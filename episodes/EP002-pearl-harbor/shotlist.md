@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 62 done, plus 1 character references.
+104 pictures, 72 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -390,61 +390,61 @@ a tall fair-haired American admiral of 1941 in white uniform leaning over a desk
 a Japanese radio officer of 1941 on a carrier bridge handing a decoded slip of paper to an admiral, the admiral reading it gravely, grey sea through the windows, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_e.png  (S13, shot 5)
+### [x] S13_e.png  (S13, shot 5)
 
 ```
 a snow-capped mountain peak above the clouds at sunrise, golden light, dramatic and silent, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_a.png  (S14, shot 1)
+### [x] S14_a.png  (S14, shot 1)
 
 ```
 embassy staff of 1941 in suits burning stacks of secret papers and code books in a metal barrel in an embassy courtyard at night, flames and smoke, worried faces, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_a2.jpg  (S14, shot 1)
+### [x] S14_a2.jpg  (S14, shot 1)
 
 ```
 Japanese embassy staff in 1941 smashing a cipher machine with hammers in a back room, parts flying, papers on the floor, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_b.png  (S14, shot 2)
+### [x] S14_b.png  (S14, shot 2)
 
 ```
 an American codebreaker of 1941 in shirtsleeves reading a teletype printout and slowly lowering it, shocked face, other desks behind him, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_c.png  (S14, shot 3)
+### [x] S14_c.png  (S14, shot 3)
 
 ```
 barrage balloons of the 1940s floating on cables above a harbor with warships, and an underwater steel torpedo net hanging beneath the surface beside a battleship, split view above and below the water, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S14_d.png  (S14, shot 4)
+### [x] S14_d.png  (S14, shot 4)
 
 ```
 a stack of untranslated intercepted messages in Japanese characters on a desk in a busy Washington office, an overworked translator with his head in his hands, papers everywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_a.png  (S15, shot 1)
+### [x] S15_a.png  (S15, shot 1)
 
 ```
 an FBI agent of 1941 in a hat and suit wearing headphones beside a reel-to-reel recorder in a small dark room, listening intently, taking notes, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_b.png  (S15, shot 2)
+### [x] S15_b.png  (S15, shot 2)
 
 ```
 close-up of bright red hibiscus and poinsettia flowers in bloom in a Honolulu garden, a black telephone on a garden table beside them, soft sunlight, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_c.png  (S15, shot 3)
+### [x] S15_c.png  (S15, shot 3)
 
 ```
 three American army officers of 1941 in a dim office at night puzzling over a typed transcript, one shrugging, one checking his watch, a desk lamp, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_d.png  (S15, shot 4)
+### [x] S15_d.png  (S15, shot 4)
 
 ```
 a young Japanese man of 1941 in a white shirt writing a short coded telegram at a desk in a consulate office at night, a window showing the lights of a harbor with warships, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
