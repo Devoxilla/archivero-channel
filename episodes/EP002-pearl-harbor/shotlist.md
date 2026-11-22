@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 32 done, plus 1 character references.
+104 pictures, 42 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -204,61 +204,61 @@ stylised flat cartoon map of the island of Oahu seen from above, green mountains
 a young Japanese man of 1941 in a white shirt and straw hat sitting on a green hillside above a harbor full of grey warships, pretending to be a tourist, secretly sketching the ships in a notebook, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_d2.jpg  (S06, shot 4)
+### [x] S06_d2.jpg  (S06, shot 4)
 
 ```
 the Japanese consulate in Honolulu in 1941, a white two-storey building with a lawn and palm trees, a car parked in front, afternoon sun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_e.png  (S06, shot 5)
+### [x] S06_e.png  (S06, shot 5)
 
 ```
 a decoded telegram on a desk in Washington stamped with a big red mark, being slid into a filing cabinet drawer that is closing, dim light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S07_a.png  (S07, shot 1)
+### [x] S07_a.png  (S07, shot 1)
 
 ```
 caricature of Cordell Hull, an elderly white-haired American Secretary of State of 1941 in a dark suit, and a tall Japanese ambassador with one eye half-closed in a dark suit, sitting stiffly across a desk in a wood-panelled office, tense polite faces, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S07_b.png  (S07, shot 2)
+### [x] S07_b.png  (S07, shot 2)
 
 ```
 a big old alarm clock on a desk among decoded telegrams, its hands near midnight, a red pencil circle on a calendar behind it, dramatic shadows, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S07_c.png  (S07, shot 3)
+### [x] S07_c.png  (S07, shot 3)
 
 ```
 a decoded Japanese diplomatic telegram in English typewriter text lines too small to read, one line underlined twice in red pencil, desk lamp, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S07_d.png  (S07, shot 4)
+### [x] S07_d.png  (S07, shot 4)
 
 ```
 caricature of President Franklin Roosevelt in 1941, with his cigarette holder and pince-nez glasses, sitting at the head of a table with his war cabinet of older men in suits and uniforms, all looking at a map of Southeast Asia, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S07_d2.jpg  (S07, shot 4)
+### [x] S07_d2.jpg  (S07, shot 4)
 
 ```
 a large wall map of Southeast Asia in a 1941 war office with red pins clustered around Malaya, Thailand and the Philippines, officers pointing at it, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_a.png  (S08, shot 1)
+### [x] S08_a.png  (S08, shot 1)
 
 ```
 an elderly white-haired American Secretary of State handing a short typed note across a desk to two Japanese diplomats in dark suits, who look shocked, a wood-panelled office, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_b.png  (S08, shot 2)
+### [x] S08_b.png  (S08, shot 2)
 
 ```
 six Japanese aircraft carriers of 1941 and battleships at anchor in a cold grey foggy bay surrounded by snowy volcanic islands, dawn, steam rising, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_c.png  (S08, shot 3)
+### [x] S08_c.png  (S08, shot 3)
 
 ```
 stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels, a long thin dashed white line curving from the Kuril Islands far across the empty northern Pacific and then down towards Hawaii, small grey ship shapes along it, stormy clouds, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
