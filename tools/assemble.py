@@ -57,6 +57,21 @@ def wav_seconds(path: Path) -> float:
         return w.getnframes() / w.getframerate()
 
 
+SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs"}
+
+
+def chapter_case(text: str) -> str:
+    """Title Case for chapter names without str.title()'s bugs ("Yamamoto'S", "O'Clock" stays "O'clock")."""
+    out = []
+    for i, w in enumerate(text.lower().split()):
+        if i and w in SMALL_WORDS:
+            out.append(w)
+        else:
+            k = next((j for j, ch in enumerate(w) if ch.isalnum()), 0)
+            out.append(w[:k] + w[k:k + 1].upper() + w[k + 1:])
+    return " ".join(out)
+
+
 def chunk_captions(text: str, max_words: int) -> list[str]:
     """Sentences, long ones split at commas or every max_words words."""
     out = []
@@ -97,7 +112,7 @@ def timeline(scenes, durations, max_words=12):
             c1 = c0 + d * len(c) / total
             caps.append((c0, c1, c))
             c0 = c1
-        title = sc["title"].split("—")[-1].strip().title() if "—" in sc["title"] else sc["title"].title()
+        title = chapter_case(sc["title"].split("—")[-1].strip() if "—" in sc["title"] else sc["title"])
         if not chapters:
             chapters.append(f"0:00 Intro")
         elif sc["title"].upper() not in NO_CHAPTER:
@@ -399,6 +414,8 @@ def render_anim(job):
     for f in range(frames):
         t = f / FPS
         shot, start, dur = next((x for x in reversed(plan) if t >= x[1]), plan[0])
+        if job.get("cta") and t >= seconds - CTA_S:
+            shot = dict(shot, items=[])  # end card: no leftover overlays peeking out behind the box
         native = vertical and shot.get("_img916")
         if native:  # full-screen 9:16 picture, title drawn over it
             img = doodle.render_vertical_frame(shot, t - start, dur, frame0 + f)

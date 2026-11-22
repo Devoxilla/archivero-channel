@@ -48,7 +48,7 @@ S01:
     move: push
     focus: [0.45, 0.4]
     items:
-      - {title: "\"DON'T WORRY ABOUT IT\"", y: 940, size: 90, in: 0.3}
+      - {title: "\"DON'T WORRY ABOUT IT\"", size: 90, in: 0.3}
   - at: 0.58
     img: S01_d.png
     prompt: "dozens of Japanese navy aircraft of 1941 with red sun roundels flying in formation above white clouds at sunrise towards a green island"
@@ -162,12 +162,12 @@ S05:
     also:
       - img: S05_a2.jpg
         prompt: "a small team of American codebreakers of 1940 men and women at desks covered in paper strips and columns of letters, coffee cups, a blackboard, late at night"
-    prompt: "caricature of William Friedman, a dapper American cryptologist of 1940 with a thin moustache and a bow tie, sitting at a desk covered with sheets of code, holding a pencil, focused"
+    prompt: "caricature of William Friedman, a dapper American cryptologist of 1940 with a thin moustache and a bow tie, sitting at a desk covered with sheets of paper showing only faint grey pencil squiggles, holding a pencil, focused, plain walls with no signs, absolutely no letters, words or numbers anywhere"
     move: push
     focus: [0.45, 0.4]
     items:
       - {stamp: "WASHINGTON · 1940", in: 0.05}
-      - {label: "FRIEDMAN & ROWLETT", x: 1400, y: 900, in: 0.25}
+      - {label: "FRIEDMAN & ROWLETT", x: 960, y: 160, in: 0.25}
   - at: 0.3
     img: S05_b.png
     prompt: "an improvised cipher machine of 1940 on a table, an electric typewriter wired to a box of telephone switches and rotary stepping switches, tangles of cables, workbench lamp"
@@ -195,7 +195,7 @@ S06:
     move: push
     items:
       - {stamp: "TOKYO · 27 JANUARY 1941", in: 0.05}
-      - {label: "\"A SURPRISE ATTACK ON PEARL HARBOR\"", x: 960, y: 920, in: 0.35}
+      - {label: "\"A SURPRISE ATTACK ON PEARL HARBOR\"", x: 960, y: 160, in: 0.35}
   - at: 0.22
     img: S06_b.png
     prompt: "an American naval intelligence officer of 1941 in a Washington office tossing a blank folded paper into an overflowing wire tray, bored expression, stacks of plain files, absolutely no letters or words anywhere"
@@ -240,10 +240,10 @@ S07:
     flow: "The second hand ticks steadily, the minute hand jumps forward, papers flutter slightly, very slow push-in on the clock face."
     move: push
     items:
-      - {stamp: "DEADLINE: 25 NOV → 29 NOV", in: 0.1}
+      - {stamp: "DEADLINE: 25 NOV TO 29 NOV", in: 0.1}
   - at: 0.52
     img: S07_c.png
-    prompt: "a decoded Japanese diplomatic telegram in English typewriter text lines too small to read, one line underlined twice in red pencil, desk lamp"
+    prompt: "close-up of a typed telegram sheet lying on a desk, every typed line blurred into soft grey bars, one bar underlined twice in red pencil, a brass desk lamp, absolutely no readable letters, words or numbers anywhere"
     move: push
     items:
       - {title: "\"THINGS ARE AUTOMATICALLY", sub: "GOING TO HAPPEN\"", y: 180, in: 0.2}
@@ -299,7 +299,7 @@ S09:
       - {stamp: "T-MINUS 11 DAYS · 27 NOVEMBER", in: 0.05}
   - at: 0.2
     img: S09_b.png
-    prompt: "a yellowed navy message form on a desk with lines of typewriter text too small to read, a big red stamp in the corner, a pair of glasses beside it"
+    prompt: "a yellowed navy message form on a desk, its typed lines blurred into soft grey bars, a big round red ink stamp in the corner with no lettering, a pair of glasses beside it, absolutely no readable letters, words or numbers anywhere"
     move: push
     items:
       - {title: "\"THIS DISPATCH IS TO BE", sub: "CONSIDERED A WAR WARNING\"", y: 180, in: 0.2}
@@ -329,7 +329,7 @@ S09:
 
 S10:
   - img: S10_a.png
-    prompt: "Honolulu street in 1941, shops with signs without readable text, Japanese-American families and other locals walking past, a policeman, bright sunshine, palm trees"
+    prompt: "Honolulu street in 1941, shop fronts with blank plain coloured signboards and striped awnings, Japanese-American families and other locals walking past, a policeman, bright sunshine, palm trees, absolutely no letters, words or numbers anywhere"
     move: pan_right
     items:
       - {label: "1 IN 3 OF JAPANESE DESCENT", x: 960, y: 160, in: 0.25}
@@ -339,7 +339,7 @@ S10:
     flow: "A lone guard walks slowly past the rows of parked planes, heat shimmers over the runway, a flag flutters, slow push along the rows."
     move: pan_left
     items:
-      - {title: "WINGTIP TO WINGTIP", y: 940, size: 90, in: 0.3}
+      - {title: "WINGTIP TO WINGTIP", size: 90, in: 0.3}
   - at: 0.5
     img: S10_c.png
     prompt: "boxes of ammunition being stacked inside a locked wire cage in an army warehouse, a soldier turning a key in a heavy padlock, dim light"
@@ -359,7 +359,7 @@ S11:
     prompt: "the American aircraft carrier USS Enterprise of 1941 steaming out of a tropical harbor past green mountains, fighter planes on its deck, escort destroyers, bright morning"
     move: pan_right
     items:
-      - {stamp: "28 NOVEMBER · ENTERPRISE → WAKE", in: 0.05}
+      - {stamp: "28 NOVEMBER · ENTERPRISE TO WAKE", in: 0.05}
   - at: 0.3
     img: S11_b.png
     prompt: "{pacific}, three small aircraft carrier icons spread far apart, one heading west towards a tiny island, one heading north-west towards another tiny island, one far off the right edge near California"
@@ -376,7 +376,7 @@ S11:
     prompt: "Battleship Row at Pearl Harbor in 1941 seen from the air, grey battleships moored in pairs side by side along a small island in the harbor, calm blue water, sunny weekend"
     move: push
     items:
-      - {title: "BATTLESHIP ROW", y: 940, size: 100, in: 0.25}
+      - {title: "BATTLESHIP ROW", size: 100, in: 0.25}
   - at: 0.8
     img: S11_d.png
     prompt: "caricature of a tall fair-haired American admiral of 1941 in white uniform watching an aircraft carrier sail away from a harbor wharf, binoculars in hand"
@@ -433,10 +433,10 @@ S14:
     move: push
     items:
       - {stamp: "T-MINUS 5 DAYS · 2 DECEMBER", in: 0.05}
-      - {title: "BURN THE CODES", y: 940, size: 100, in: 0.3, c: red}
+      - {title: "BURN THE CODES", size: 100, in: 0.3, c: red}
   - at: 0.3
     img: S14_b.png
-    prompt: "an American codebreaker of 1941 in shirtsleeves reading a teletype printout and slowly lowering it, shocked face, other desks behind him"
+    prompt: "an American codebreaker of 1941 in shirtsleeves holding a long teletype printout whose lines are blurred grey bars, lowering it slowly, shocked face, other desks behind him, absolutely no readable letters, words or numbers anywhere"
     move: push
     items:
       - {label: "WASHINGTON · LONDON · MANILA · SINGAPORE", x: 960, y: 160, in: 0.25}
@@ -449,7 +449,7 @@ S14:
       - {label: "TORPEDO NETS?", x: 1320, y: 920, in: 0.45}
   - at: 0.72
     img: S14_d.png
-    prompt: "a stack of untranslated intercepted messages in Japanese characters on a desk in a busy Washington office, an overworked translator with his head in his hands, papers everywhere"
+    prompt: "a tall stack of intercepted message sheets covered in faint blurred grey lines on a desk in a busy Washington office, an overworked translator with his head in his hands, papers everywhere, absolutely no readable characters, letters or numbers anywhere"
     move: push
     items:
       - {label: "TRANSLATED AFTER THE ATTACK", x: 960, y: 160, in: 0.3, c: red}
@@ -481,10 +481,10 @@ S15:
       - {label: "NO BALLOONS · NO NETS", x: 960, y: 160, in: 0.25}
   - at: 0.84
     img: S15_e.png
-    prompt: "a decoded telegram lying on a desk with a red stamped date in the corner, an empty coffee cup and an ashtray, early morning light, no readable text"
+    prompt: "a telegram sheet lying on a desk, its typed lines blurred into soft grey bars, a round red ink stamp in the corner with no lettering, an empty coffee cup and an ashtray, early morning light, absolutely no readable letters, words or numbers anywhere"
     move: push
     items:
-      - {title: "DECODED: 8 DECEMBER", y: 940, size: 90, in: 0.25, c: red}
+      - {title: "DECODED: 8 DECEMBER", size: 90, in: 0.25, c: red}
 
 S16:
   - img: S16_a.png
@@ -498,7 +498,7 @@ S16:
     move: push
     focus: [0.45, 0.4]
     items:
-      - {title: "\"THIS MEANS WAR\"", y: 940, size: 100, in: 0.4, c: red}
+      - {title: "\"THIS MEANS WAR\"", size: 100, in: 0.4, c: red}
   - at: 0.52
     img: S16_c.png
     prompt: "an old theater in Washington in 1941 seen from the balcony during a show, a navy admiral in dress uniform in a box seat watching the stage, warm stage lights"
@@ -510,7 +510,7 @@ S16:
     prompt: "a black telephone on a desk in an empty dark office at night, a map of the Hawaiian Islands pinned on the wall behind it, the receiver untouched"
     move: push
     items:
-      - {title: "NOBODY PHONED HAWAII", y: 940, size: 90, in: 0.3}
+      - {title: "NOBODY PHONED HAWAII", size: 90, in: 0.3}
 
 S17:
   - img: S17_a.png
@@ -518,7 +518,7 @@ S17:
     move: push
     items:
       - {stamp: "7 DECEMBER · WASHINGTON MORNING", in: 0.05}
-      - {title: "DELIVER AT 1:00 PM", y: 940, size: 90, in: 0.35, c: red}
+      - {title: "DELIVER AT 1:00 PM", size: 90, in: 0.35, c: red}
   - at: 0.22
     img: S17_b.png
     prompt: "two clocks side by side on a wall, the left one showing one o'clock and the right one showing half past seven, one with a small American flag and one with a palm tree beneath it, no text"
@@ -573,7 +573,7 @@ S19:
     move: push
     items:
       - {stamp: "OPANA · 7:02 AM", in: 0.05}
-      - {label: "PVT. LOCKARD & PVT. ELLIOTT", x: 960, y: 920, in: 0.35}
+      - {label: "PVT. LOCKARD & PVT. ELLIOTT", x: 960, y: 160, in: 0.35}
   - at: 0.22
     img: S19_b.png
     prompt: "extreme close-up of a round green radar oscilloscope screen of 1941 with one huge bright spike rising out of the line, glowing in the dark"
@@ -623,7 +623,7 @@ S20:
     jolts: [0.15, 0.4]
     items:
       - {flash: true, in: 0.1}
-      - {title: "USS ARIZONA", sub: "1,177 KILLED", y: 940, size: 100, in: 0.4, c: red}
+      - {title: "USS ARIZONA", sub: "1,177 KILLED", size: 100, in: 0.4, c: red}
   - at: 0.5
     img: S20_d.png
     also:
@@ -655,7 +655,7 @@ S21:
     move: push
     items:
       - {stamp: "THE ROBERTS COMMISSION · 1942", in: 0.05}
-      - {label: "\"DERELICTION OF DUTY\"", x: 960, y: 920, in: 0.4, c: red}
+      - {label: "\"DERELICTION OF DUTY\"", x: 960, y: 160, in: 0.4, c: red}
   - at: 0.25
     img: S21_b.png
     prompt: "a huge 1946 congressional hearing room with rows of microphones, senators at a raised bench, stacks of thick report volumes, press photographers"
@@ -683,9 +683,6 @@ S21:
 
 S22:
   - img: S22_a.png
-    also:
-      - img: S22_a2.jpg
-        prompt: "American dive bombers of 1942 diving out of the clouds onto a burning Japanese aircraft carrier at sea, explosions on its flight deck"
     prompt: "the white USS Arizona Memorial in Pearl Harbor seen at sunset, floating over the dark shape of the sunken battleship, a few drops of oil shimmering on the calm water, a flag at half mast"
     move: push
     items:
@@ -694,4 +691,4 @@ S22:
     img: HOST_lamp.png
     move: push
     items:
-      - {title: "WHAT ARE WE MISSING?", y: 940, size: 80, in: 0.55}
+      - {title: "WHAT ARE WE MISSING?", size: 80, in: 0.55}

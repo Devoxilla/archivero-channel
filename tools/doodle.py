@@ -76,6 +76,7 @@ class Pen:
 
     def __init__(self, img, frame, wobble=2.2):
         self.d = ImageDraw.Draw(img)
+        self.w = img.width
         self.boil = frame // BOIL
         self.n = 0
         self.wob = wobble
@@ -723,9 +724,11 @@ def label(p, it, t, life):
     """Pop-in text: scale bounce on entry."""
     k = min(1.0, life / 0.25)
     s = 1 + 0.25 * math.sin(k * math.pi) if k < 1 else 1
-    size = g(it, "size", 80) * s
+    size = g(it, "size", 80)
     x, y = g(it, "x", 960), g(it, "y", 160)
     txt = it["label"]
+    room = 2 * min(x, getattr(p, "w", 2 * x) - x) - 140  # box stays inside the frame
+    size = min(size, size * room / max(1.0, font(int(size)).getlength(txt) + 60)) * s
     if g(it, "box", True):
         tw = font(int(size)).getlength(txt)
         p.rect(x - tw / 2 - 30, y - size * 0.75, x + tw / 2 + 30, y + size * 0.75, g(it, "bc", "white"), "ink", 7)
@@ -917,8 +920,11 @@ def title(p, it, life):
     """Huge block-letter title with heavy outline, optional subtitle line."""
     k = min(1.0, life / 0.3)
     s = 1 + 0.18 * math.sin(k * math.pi) if k < 1 else 1
-    size = g(it, "size", 170) * s
+    size = g(it, "size", 170)
     x, y = g(it, "x", 960), g(it, "y", 200)
+    room = 2 * min(x, getattr(p, "w", 2 * x) - x) - 120  # never wider than the frame (outline included)
+    tw = font(int(size)).getlength(it["title"]) * 1.14
+    size = min(size, size * room / max(1.0, tw)) * s
     p.d.text((x, y), it["title"], font=font(int(size)), fill=col(g(it, "c", "white")), anchor="mm",
              stroke_width=int(size * 0.07), stroke_fill=C["ink"])
     if it.get("sub"):
@@ -1024,7 +1030,7 @@ def vertical_item(it, slot=0):
         it.update(x=60, y=1330, size=size)
     elif "title" in it:
         size = g(it, "size", 170)
-        size = min(size, size * 980 / max(1, font(int(size)).getlength(it["title"])))
+        size = min(size, size * 900 / max(1, font(int(size)).getlength(it["title"]) * 1.14))
         it.update(x=540, y=780, size=size, sub_size=g(it, "sub_size", 70) * 0.85)
     for k, k2 in (("vx", "x"), ("vy", "y"), ("vsize", "size")):
         if k in it:
