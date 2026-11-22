@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 3 done, plus 1 character references.
+104 pictures, 13 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -18,37 +18,37 @@ character reference sheet of a short round-bodied archivist with a pale round fa
 
 ## Shots
 
-### [ ] S01_a.png  (S01, shot 1)
+### [x] S01_a.png  (S01, shot 1)
 
 ```
 inside a small army radar truck at night before dawn in 1941, a round green radar oscilloscope screen glowing with one huge bright spike, two young American army privates in olive uniforms and headphones leaning in, staring in surprise, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_b.png  (S01, shot 2)
+### [x] S01_b.png  (S01, shot 2)
 
 ```
 stylised flat cartoon map of the island of Oahu seen from above, green mountains, the branching inlets of Pearl Harbor on the south coast, flat blue sea, absolutely no words, no letters, no labels, a tiny glowing radar dot on the northern tip of the island and many small white dots far out at sea to the north, coming closer, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_b2.jpg  (S01, shot 2)
+### [x] S01_b2.jpg  (S01, shot 2)
 
 ```
 a lonely army radar station on a green hilltop above the ocean at dawn, a tall metal radar antenna on a trailer, a truck and a tent, pink sky, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_c.png  (S01, shot 3)
+### [x] S01_c.png  (S01, shot 3)
 
 ```
 a relaxed young American army lieutenant of 1941 in a quiet operations room at dawn, holding a black telephone receiver to his ear, half-smiling, empty plotting table behind him, a wall clock, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_d.png  (S01, shot 4)
+### [x] S01_d.png  (S01, shot 4)
 
 ```
 dozens of Japanese navy aircraft of 1941 with red sun roundels flying in formation above white clouds at sunrise towards a green island, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S01_e.png  (S01, shot 5)
+### [x] S01_e.png  (S01, shot 5)
 
 ```
 a wooden desk in a dark archive covered with dozens of old telegrams, decoded messages and stamped secret papers, a red wax seal, a lamp, scattered so they overlap, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -60,13 +60,13 @@ a wooden desk in a dark archive covered with dozens of old telegrams, decoded me
 , bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S02_b.png  (S02, shot 2)
+### [x] S02_b.png  (S02, shot 2)
 
 ```
 a thick old cardboard archive folder lying on a desk, tied with string, a red wax seal, faded photographs of battleships and aircraft carriers sticking out of it, lamp light, no text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S02_c.png  (S02, shot 3)
+### [x] S02_c.png  (S02, shot 3)
 
 ```
 an old wall calendar for December 1941 with the days crossed out one by one in red pencil, the 7th circled in red, a ticking alarm clock beside it, dim archive light, no readable words, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -78,13 +78,13 @@ an old wall calendar for December 1941 with the days crossed out one by one in r
 , bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_a.png  (S03, shot 1)
+### [x] S03_a.png  (S03, shot 1)
 
 ```
 a large black oil storage tank and a tanker ship at a dock in 1941, the pipeline valve closed with a heavy chain and padlock, an American flag on the dock, grey sky, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S03_a2.jpg  (S03, shot 1)
+### [x] S03_a2.jpg  (S03, shot 1)
 
 ```
 Japanese soldiers of 1941 with rifles marching along a tropical road lined with palm trees in Indochina, trucks and dust, hot sun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
