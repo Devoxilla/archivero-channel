@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 52 done, plus 1 character references.
+104 pictures, 62 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -324,37 +324,37 @@ American army fighter planes of 1941 parked in neat tight rows wingtip to wingti
 boxes of ammunition being stacked inside a locked wire cage in an army warehouse, a soldier turning a key in a heavy padlock, dim light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S10_d.png  (S10, shot 4)
+### [x] S10_d.png  (S10, shot 4)
 
 ```
 an army clerk in Washington in 1941 dropping a short telegram reply into a tall pile of papers in an in-tray, not reading it, busy office behind, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_a.png  (S11, shot 1)
+### [x] S11_a.png  (S11, shot 1)
 
 ```
 the American aircraft carrier USS Enterprise of 1941 steaming out of a tropical harbor past green mountains, fighter planes on its deck, escort destroyers, bright morning, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_b.png  (S11, shot 2)
+### [x] S11_b.png  (S11, shot 2)
 
 ```
 stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels, three small aircraft carrier icons spread far apart, one heading west towards a tiny island, one heading north-west towards another tiny island, one far off the right edge near California, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_c.png  (S11, shot 3)
+### [x] S11_c.png  (S11, shot 3)
 
 ```
 Battleship Row at Pearl Harbor in 1941 seen from the air, grey battleships moored in pairs side by side along a small island in the harbor, calm blue water, sunny weekend, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_c2.jpg  (S11, shot 3)
+### [x] S11_c2.jpg  (S11, shot 3)
 
 ```
 young American sailors of 1941 in white sailor uniforms and white round caps relaxing on the deck of a grey battleship in a calm harbor on a Saturday afternoon, playing cards and writing letters, palm trees on shore, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S11_d.png  (S11, shot 4)
+### [x] S11_d.png  (S11, shot 4)
 
 ```
 caricature of a tall fair-haired American admiral of 1941 in white uniform watching an aircraft carrier sail away from a harbor wharf, binoculars in hand, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -366,25 +366,25 @@ caricature of a tall fair-haired American admiral of 1941 in white uniform watch
 , bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_a.png  (S13, shot 1)
+### [x] S13_a.png  (S13, shot 1)
 
 ```
 a dark radio intelligence room in Hawaii in 1941, American navy operators with headphones at radio sets, one tearing off a sheet and looking puzzled, a wall chart with ship markers, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_b.png  (S13, shot 2)
+### [x] S13_b.png  (S13, shot 2)
 
 ```
 stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels, small grey carrier markers on the ocean fading out and disappearing into dark static, a big empty patch of sea in the north, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_c.png  (S13, shot 3)
+### [x] S13_c.png  (S13, shot 3)
 
 ```
 a tall fair-haired American admiral of 1941 in white uniform leaning over a desk towards a younger navy intelligence officer with glasses, raising an eyebrow, an office in Hawaii with a window to the sea, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S13_d.png  (S13, shot 4)
+### [x] S13_d.png  (S13, shot 4)
 
 ```
 a Japanese radio officer of 1941 on a carrier bridge handing a decoded slip of paper to an admiral, the admiral reading it gravely, grey sea through the windows, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
