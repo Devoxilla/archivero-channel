@@ -1,0 +1,697 @@
+# EP002 "Pearl Harbor: The Warnings Washington Ignored" - animation plan (tools/doodle.py image shots).
+# Serious geopolitics countdown: wordless maps with overlays, caricatures of the (long dead) leaders, period scenes.
+# Every shot is one illustrated picture from art/<img>, moved by the build; overlays (stamp, title, pin, label,
+# flash) are drawn on top. "at" = where the shot starts, as a fraction of the scene; overlay "in"/"out" =
+# fractions of the shot. Frame is 1920x1080. Maps carry no text: every name comes from an overlay.
+# The countdown is carried by stamps ("T-MINUS 12 DAYS"). No living people are drawn.
+# HOST_*.png and REF_host.png are copied from EP001 (same Brinkman host pictures).
+
+characters:
+  host: >-
+    a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed
+    over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame
+  sailor: >-
+    young American sailors of 1941 in white sailor uniforms and white round caps
+  pacific: >-
+    stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the
+    left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels
+  oahu: >-
+    stylised flat cartoon map of the island of Oahu seen from above, green mountains, the branching inlets of
+    Pearl Harbor on the south coast, flat blue sea, absolutely no words, no letters, no labels
+
+refs:
+  host:
+    img: REF_host.png
+    prompt: "character reference sheet of {host}, full body, front view and three-quarter view, smug half-smile, plain light grey background"
+
+S01:
+  - img: S01_a.png
+    prompt: "inside a small army radar truck at night before dawn in 1941, a round green radar oscilloscope screen glowing with one huge bright spike, two young American army privates in olive uniforms and headphones leaning in, staring in surprise"
+    flow: "The green trace on the round screen jumps into one huge spike that keeps growing, the two privates lean closer, one reaches for a field telephone, slow push-in on the screen."
+    move: push
+    focus: [0.45, 0.45]
+    items:
+      - {stamp: "OAHU · 7 DECEMBER 1941 · 7:02 AM", in: 0.05}
+  - at: 0.18
+    img: S01_b.png
+    also:
+      - img: S01_b2.jpg
+        prompt: "a lonely army radar station on a green hilltop above the ocean at dawn, a tall metal radar antenna on a trailer, a truck and a tent, pink sky"
+    prompt: "{oahu}, a tiny glowing radar dot on the northern tip of the island and many small white dots far out at sea to the north, coming closer"
+    move: push
+    items:
+      - {pin: "OPANA RADAR", x: 900, y: 260, in: 0.15}
+      - {label: "137 MILES", x: 960, y: 120, in: 0.45, c: red}
+  - at: 0.38
+    img: S01_c.png
+    prompt: "a relaxed young American army lieutenant of 1941 in a quiet operations room at dawn, holding a black telephone receiver to his ear, half-smiling, empty plotting table behind him, a wall clock"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {title: "\"DON'T WORRY ABOUT IT\"", y: 940, size: 90, in: 0.3}
+  - at: 0.58
+    img: S01_d.png
+    prompt: "dozens of Japanese navy aircraft of 1941 with red sun roundels flying in formation above white clouds at sunrise towards a green island"
+    move: pan_left
+    items:
+      - {label: "50 MINUTES LATER", x: 960, y: 160, in: 0.2, c: red}
+  - at: 0.76
+    img: S01_e.png
+    prompt: "a wooden desk in a dark archive covered with dozens of old telegrams, decoded messages and stamped secret papers, a red wax seal, a lamp, scattered so they overlap"
+    move: pull
+    items:
+      - {title: "DOZENS OF WARNINGS", sub: "ALL MISSED", y: 200, in: 0.25}
+
+S02:
+  - img: HOST_desk.png
+    move: push
+    focus: [0.4, 0.45]
+  - at: 0.3
+    img: S02_b.png
+    prompt: "a thick old cardboard archive folder lying on a desk, tied with string, a red wax seal, faded photographs of battleships and aircraft carriers sticking out of it, lamp light, no text"
+    move: push
+    items:
+      - {title: "PEARL HARBOR", sub: "THE WARNINGS", y: 200, in: 0.1}
+  - at: 0.55
+    img: S02_c.png
+    prompt: "an old wall calendar for December 1941 with the days crossed out one by one in red pencil, the 7th circled in red, a ticking alarm clock beside it, dim archive light, no readable words"
+    move: push
+    items:
+      - {label: "12 DAYS", x: 960, y: 150, in: 0.3, c: red}
+  - at: 0.8
+    img: HOST_map.png
+    move: push
+    focus: [0.35, 0.45]
+
+S03:
+  - img: S03_a.png
+    also:
+      - img: S03_a2.jpg
+        prompt: "Japanese soldiers of 1941 with rifles marching along a tropical road lined with palm trees in Indochina, trucks and dust, hot sun"
+    prompt: "a large black oil storage tank and a tanker ship at a dock in 1941, the pipeline valve closed with a heavy chain and padlock, an American flag on the dock, grey sky"
+    move: push
+    items:
+      - {stamp: "SUMMER 1941", in: 0.05}
+      - {label: "80% OF JAPAN'S OIL", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.25
+    img: S03_b.png
+    prompt: "stylised flat cartoon map of East and Southeast Asia seen from above, Japan in red at the top right, a red arrow pushing down from China into southern Indochina, the islands of the Dutch East Indies glowing yellow at the bottom, flat blue sea, absolutely no words, no letters, no labels"
+    move: static
+    items:
+      - {pin: "INDOCHINA", x: 760, y: 470, in: 0.15}
+      - {pin: "DUTCH EAST INDIES", x: 900, y: 820, in: 0.5}
+  - at: 0.45
+    img: S03_c.png
+    prompt: "a fuel gauge on a dark ship's bulkhead with its needle sinking towards empty, a red warning lamp glowing, oil dripping, dramatic light"
+    move: push
+    items:
+      - {title: "~2 YEARS", sub: "OF FUEL LEFT", y: 200, in: 0.2}
+  - at: 0.62
+    img: S03_d.png
+    prompt: "Japanese generals and admirals of 1941 in uniform sitting around a long table in a dark imperial conference room, grim faces, a folding screen with a golden sun behind them, cigarette smoke"
+    move: push
+    focus: [0.5, 0.45]
+    items:
+      - {label: "QUIT CHINA?", x: 560, y: 160, in: 0.2}
+      - {label: "OR TAKE THE OIL?", x: 1360, y: 160, in: 0.5, c: red}
+  - at: 0.8
+    img: S03_e.png
+    prompt: "a row of grey American battleships of 1941 at anchor in a calm tropical harbor with green mountains behind, palm trees on the shore, sunny morning"
+    flow: "Gentle waves lap at the grey battleships at anchor, a flag flutters at a stern, small boats cross the harbor, slow sideways pan along the row."
+    move: pan_right
+    items:
+      - {stamp: "PEARL HARBOR · SINCE 1940", in: 0.1}
+
+S04:
+  - img: S04_a.png
+    also:
+      - img: S04_a2.jpg
+        prompt: "a busy American steel factory and oil derricks in the 1930s seen through the eyes of a visiting Japanese naval officer, smoke stacks, rows of cars"
+    prompt: "caricature of Admiral Isoroku Yamamoto, a short stern Japanese admiral of 1941 in a dark navy uniform with gold braid, standing on the bridge of a battleship, studying a chart, calm piercing eyes"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {label: "YAMAMOTO", x: 1450, y: 900, in: 0.2}
+  - at: 0.28
+    img: S04_b.png
+    prompt: "night, old British biplane torpedo bombers flying low over a harbor full of Italian battleships, searchlights sweeping, anti-aircraft fire, a torpedo hitting a battleship with a column of water"
+    move: push_shake
+    jolts: [0.5, 0.75]
+    items:
+      - {stamp: "TARANTO · NOVEMBER 1940", in: 0.05}
+  - at: 0.5
+    img: S04_c.png
+    prompt: "cutaway diagram style picture of a shallow tropical harbor seen from the side, a battleship on the surface and a torpedo dropped from an aircraft sinking into the mud of the shallow bottom, blue water, no text"
+    move: push
+    items:
+      - {label: "40 FEET DEEP", x: 960, y: 160, in: 0.25, c: red}
+  - at: 0.68
+    img: S04_d.png
+    prompt: "close-up of a Japanese aerial torpedo of 1941 on a trolley in a workshop, mechanics fixing flat wooden fins to its tail, workbench light"
+    move: push
+    items:
+      - {label: "WOODEN FINS", x: 1400, y: 180, in: 0.3}
+  - at: 0.84
+    img: S04_e.png
+    prompt: "Japanese navy torpedo bombers of 1941 with red sun roundels flying very low over the water of a bay in southern Japan, a coastal town and green hills behind, spray behind them"
+    flow: "Three torpedo bombers skim low across the bay towards the camera, spray trailing behind, they roar past overhead, camera tilts to follow."
+    move: pan_left
+
+S05:
+  - img: S05_a.png
+    also:
+      - img: S05_a2.jpg
+        prompt: "a small team of American codebreakers of 1940 men and women at desks covered in paper strips and columns of letters, coffee cups, a blackboard, late at night"
+    prompt: "caricature of William Friedman, a dapper American cryptologist of 1940 with a thin moustache and a bow tie, sitting at a desk covered with sheets of code, holding a pencil, focused"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {stamp: "WASHINGTON · 1940", in: 0.05}
+      - {label: "FRIEDMAN & ROWLETT", x: 1400, y: 900, in: 0.25}
+  - at: 0.3
+    img: S05_b.png
+    prompt: "an improvised cipher machine of 1940 on a table, an electric typewriter wired to a box of telephone switches and rotary stepping switches, tangles of cables, workbench lamp"
+    move: push
+    items:
+      - {title: "PURPLE", sub: "BROKEN", y: 200, in: 0.2, c: red}
+  - at: 0.5
+    img: S05_c.png
+    prompt: "a leather courier pouch with a heavy padlock lying on a desk, a stack of papers inside stamped with a big red diagonal stripe, dim office light, no readable text"
+    move: push
+    items:
+      - {label: "MAGIC", x: 960, y: 160, in: 0.25, c: red}
+      - {label: "FEWER THAN 12 READERS", x: 960, y: 920, in: 0.55}
+  - at: 0.72
+    img: S05_d.png
+    prompt: "{pacific}, a long thin dashed line of radio waves stretching from Washington far to the right across the ocean, ending in a question mark of static above the Hawaiian Islands"
+    move: static
+    items:
+      - {pin: "HAWAII", x: 1420, y: 620, in: 0.15}
+      - {label: "NO PURPLE MACHINE", x: 1300, y: 160, in: 0.45, c: red}
+
+S06:
+  - img: S06_a.png
+    prompt: "an American ambassador of 1941 with grey hair and glasses in a dark suit writing a telegram at a desk in the US embassy in Tokyo at night, Japanese roofs through the window"
+    move: push
+    items:
+      - {stamp: "TOKYO · 27 JANUARY 1941", in: 0.05}
+      - {label: "\"A SURPRISE ATTACK ON PEARL HARBOR\"", x: 960, y: 920, in: 0.35}
+  - at: 0.22
+    img: S06_b.png
+    prompt: "an American naval intelligence officer of 1941 in a Washington office tossing a telegram into an overflowing wire tray marked with nothing, bored expression, stacks of files"
+    move: push
+    items:
+      - {label: "NOT CREDIBLE", x: 1400, y: 180, in: 0.3, c: red}
+  - at: 0.4
+    img: S06_c.png
+    prompt: "{oahu}, the waters of Pearl Harbor divided by thick red pencil lines into five separate areas, small grey ship shapes in each area"
+    move: push
+    items:
+      - {stamp: "24 SEPTEMBER 1941", in: 0.05}
+      - {title: "5 AREAS", sub: "WHICH SHIPS, WHERE", y: 180, in: 0.3}
+  - at: 0.62
+    img: S06_d.png
+    also:
+      - img: S06_d2.jpg
+        prompt: "the Japanese consulate in Honolulu in 1941, a white two-storey building with a lawn and palm trees, a car parked in front, afternoon sun"
+    prompt: "a young Japanese man of 1941 in a white shirt and straw hat sitting on a green hillside above a harbor full of grey warships, pretending to be a tourist, secretly sketching the ships in a notebook"
+    move: push
+    focus: [0.4, 0.45]
+    items:
+      - {label: "THE SPY", x: 1450, y: 900, in: 0.2}
+  - at: 0.82
+    img: S06_e.png
+    prompt: "a decoded telegram on a desk in Washington stamped with a big red mark, being slid into a filing cabinet drawer that is closing, dim light, no readable text"
+    move: push
+    items:
+      - {label: "NEVER SENT TO HAWAII", x: 960, y: 160, in: 0.3, c: red}
+
+S07:
+  - img: S07_a.png
+    prompt: "caricature of Cordell Hull, an elderly white-haired American Secretary of State of 1941 in a dark suit, and a tall Japanese ambassador with one eye half-closed in a dark suit, sitting stiffly across a desk in a wood-panelled office, tense polite faces"
+    move: push
+    focus: [0.5, 0.45]
+    items:
+      - {label: "HULL", x: 520, y: 900, in: 0.2}
+      - {label: "NOMURA", x: 1400, y: 900, in: 0.35}
+  - at: 0.3
+    img: S07_b.png
+    prompt: "a big old alarm clock on a desk among decoded telegrams, its hands near midnight, a red pencil circle on a calendar behind it, dramatic shadows"
+    flow: "The second hand ticks steadily, the minute hand jumps forward, papers flutter slightly, very slow push-in on the clock face."
+    move: push
+    items:
+      - {stamp: "DEADLINE: 25 NOV → 29 NOV", in: 0.1}
+  - at: 0.52
+    img: S07_c.png
+    prompt: "a decoded Japanese diplomatic telegram in English typewriter text lines too small to read, one line underlined twice in red pencil, desk lamp"
+    move: push
+    items:
+      - {title: "\"THINGS ARE AUTOMATICALLY", sub: "GOING TO HAPPEN\"", y: 180, in: 0.2}
+  - at: 0.74
+    img: S07_d.png
+    also:
+      - img: S07_d2.jpg
+        prompt: "a large wall map of Southeast Asia in a 1941 war office with red pins clustered around Malaya, Thailand and the Philippines, officers pointing at it"
+    prompt: "caricature of President Franklin Roosevelt in 1941, with his cigarette holder and pince-nez glasses, sitting at the head of a table with his war cabinet of older men in suits and uniforms, all looking at a map of Southeast Asia"
+    move: push
+    focus: [0.45, 0.45]
+    items:
+      - {stamp: "WHITE HOUSE · 25 NOVEMBER", in: 0.05}
+
+S08:
+  - img: S08_a.png
+    prompt: "an elderly white-haired American Secretary of State handing a short typed note across a desk to two Japanese diplomats in dark suits, who look shocked, a wood-panelled office"
+    move: push
+    items:
+      - {stamp: "T-MINUS 12 DAYS · 26 NOVEMBER", in: 0.05}
+      - {label: "THE HULL NOTE", x: 960, y: 160, in: 0.3}
+  - at: 0.25
+    img: S08_b.png
+    prompt: "six Japanese aircraft carriers of 1941 and battleships at anchor in a cold grey foggy bay surrounded by snowy volcanic islands, dawn, steam rising"
+    flow: "The carriers slowly weigh anchor and begin to move out of the foggy bay one after another, fog drifts across, snow falls, slow wide pan."
+    move: pan_right
+    items:
+      - {pin: "KURIL ISLANDS", x: 960, y: 200, in: 0.2}
+  - at: 0.48
+    img: S08_c.png
+    prompt: "{pacific}, a long thin dashed white line curving from the Kuril Islands far across the empty northern Pacific and then down towards Hawaii, small grey ship shapes along it, stormy clouds"
+    move: static
+    items:
+      - {label: "6 CARRIERS · 400+ AIRCRAFT", x: 960, y: 140, in: 0.15, c: red}
+      - {label: "RADIO SILENCE", x: 960, y: 940, in: 0.5}
+  - at: 0.68
+    img: S08_d.png
+    prompt: "a Japanese aircraft carrier of 1941 ploughing through huge grey winter waves in a storm, spray over the flight deck, aircraft lashed down"
+    move: push_shake
+    jolts: [0.3, 0.7]
+  - at: 0.84
+    img: S08_e.png
+    prompt: "an American scout seaplane of 1941 flying over a long convoy of Japanese troop ships sailing south on a bright blue sea, palm-covered islands far away"
+    move: pan_left
+    items:
+      - {label: "THE FLEET EVERYONE WATCHED", x: 960, y: 160, in: 0.3}
+
+S09:
+  - img: S09_a.png
+    prompt: "a navy radio operator of 1941 in a Washington communications room typing a message on a teletype, the paper strip rolling out, red light, urgent mood"
+    move: push
+    items:
+      - {stamp: "T-MINUS 11 DAYS · 27 NOVEMBER", in: 0.05}
+  - at: 0.2
+    img: S09_b.png
+    prompt: "a yellowed navy message form on a desk with lines of typewriter text too small to read, a big red stamp in the corner, a pair of glasses beside it"
+    move: push
+    items:
+      - {title: "\"THIS DISPATCH IS TO BE", sub: "CONSIDERED A WAR WARNING\"", y: 180, in: 0.2}
+  - at: 0.44
+    img: S09_c.png
+    prompt: "caricature of Admiral Husband Kimmel, a tall handsome American admiral of 1941 with fair hair in a white navy uniform, reading a message at his desk in Hawaii with a frown, palm trees through the window"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {label: "ADM. KIMMEL", x: 1450, y: 900, in: 0.2}
+  - at: 0.62
+    img: S09_d.png
+    prompt: "stylised flat cartoon map of the western Pacific and Southeast Asia, bright red target circles over the Philippines, Thailand, the Malay Peninsula and Borneo, the small Hawaiian Islands far away on the right with no circle, flat blue sea, absolutely no words, no letters, no labels"
+    move: static
+    items:
+      - {pin: "PHILIPPINES", x: 1000, y: 430, in: 0.1}
+      - {pin: "THAILAND", x: 520, y: 400, side: left, in: 0.25}
+      - {pin: "BORNEO", x: 860, y: 640, in: 0.4}
+      - {label: "HAWAII? NOT LISTED", x: 1500, y: 900, in: 0.6, c: red}
+  - at: 0.82
+    img: S09_e.png
+    prompt: "caricature of Lieutenant General Walter Short, a stern grey-haired American army general of 1941 in olive uniform, reading a telegram in his headquarters, a map of Oahu on the wall"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {label: "GEN. SHORT", x: 1450, y: 900, in: 0.2}
+
+S10:
+  - img: S10_a.png
+    prompt: "Honolulu street in 1941, shops with signs without readable text, Japanese-American families and other locals walking past, a policeman, bright sunshine, palm trees"
+    move: pan_right
+    items:
+      - {label: "1 IN 3 OF JAPANESE DESCENT", x: 960, y: 160, in: 0.25}
+  - at: 0.25
+    img: S10_b.png
+    prompt: "American army fighter planes of 1941 parked in neat tight rows wingtip to wingtip on an airfield in Hawaii, a single guard with a rifle walking past, mountains behind, sunny"
+    flow: "A lone guard walks slowly past the rows of parked planes, heat shimmers over the runway, a flag flutters, slow push along the rows."
+    move: pan_left
+    items:
+      - {title: "WINGTIP TO WINGTIP", y: 940, size: 90, in: 0.3}
+  - at: 0.5
+    img: S10_c.png
+    prompt: "boxes of ammunition being stacked inside a locked wire cage in an army warehouse, a soldier turning a key in a heavy padlock, dim light"
+    move: push
+    items:
+      - {label: "AMMO LOCKED AWAY", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.7
+    img: S10_d.png
+    prompt: "an army clerk in Washington in 1941 dropping a short telegram reply into a tall pile of papers in an in-tray, not reading it, busy office behind"
+    move: push
+    items:
+      - {title: "\"ALERTED TO PREVENT", sub: "SABOTAGE\"", y: 180, in: 0.15}
+      - {label: "FILED. NO QUESTIONS.", x: 960, y: 940, in: 0.6, c: red}
+
+S11:
+  - img: S11_a.png
+    prompt: "the American aircraft carrier USS Enterprise of 1941 steaming out of a tropical harbor past green mountains, fighter planes on its deck, escort destroyers, bright morning"
+    move: pan_right
+    items:
+      - {stamp: "28 NOVEMBER · ENTERPRISE → WAKE", in: 0.05}
+  - at: 0.3
+    img: S11_b.png
+    prompt: "{pacific}, three small aircraft carrier icons spread far apart, one heading west towards a tiny island, one heading north-west towards another tiny island, one far off the right edge near California"
+    move: static
+    items:
+      - {pin: "WAKE", x: 760, y: 560, in: 0.15}
+      - {pin: "MIDWAY", x: 1080, y: 420, in: 0.35}
+      - {label: "SARATOGA: CALIFORNIA", x: 1500, y: 160, in: 0.55}
+  - at: 0.55
+    img: S11_c.png
+    also:
+      - img: S11_c2.jpg
+        prompt: "{sailor} relaxing on the deck of a grey battleship in a calm harbor on a Saturday afternoon, playing cards and writing letters, palm trees on shore"
+    prompt: "Battleship Row at Pearl Harbor in 1941 seen from the air, grey battleships moored in pairs side by side along a small island in the harbor, calm blue water, sunny weekend"
+    move: push
+    items:
+      - {title: "BATTLESHIP ROW", y: 940, size: 100, in: 0.25}
+  - at: 0.8
+    img: S11_d.png
+    prompt: "caricature of a tall fair-haired American admiral of 1941 in white uniform watching an aircraft carrier sail away from a harbor wharf, binoculars in hand"
+    move: push
+    items:
+      - {label: "A LUCKY DECISION", x: 960, y: 160, in: 0.3}
+
+S12:
+  - img: HOST_lamp.png
+    move: push
+    items:
+      - {title: "YOUR CALL", sub: "WHAT WOULD YOU DO?", y: 180, in: 0.2}
+
+S13:
+  - img: S13_a.png
+    prompt: "a dark radio intelligence room in Hawaii in 1941, American navy operators with headphones at radio sets, one tearing off a sheet and looking puzzled, a wall chart with ship markers"
+    move: push
+    items:
+      - {stamp: "T-MINUS 6 DAYS · 1 DECEMBER", in: 0.05}
+      - {label: "CALL SIGNS CHANGED", x: 960, y: 160, in: 0.35, c: red}
+  - at: 0.25
+    img: S13_b.png
+    prompt: "{pacific}, small grey carrier markers on the ocean fading out and disappearing into dark static, a big empty patch of sea in the north"
+    move: push
+    items:
+      - {label: "CARRIERS: LOST", x: 960, y: 160, in: 0.3, c: red}
+  - at: 0.45
+    img: S13_c.png
+    prompt: "a tall fair-haired American admiral of 1941 in white uniform leaning over a desk towards a younger navy intelligence officer with glasses, raising an eyebrow, an office in Hawaii with a window to the sea"
+    move: push
+    focus: [0.5, 0.45]
+    items:
+      - {title: "\"ROUNDING DIAMOND HEAD", sub: "AND YOU WOULDN'T KNOW IT?\"", y: 180, in: 0.2}
+  - at: 0.68
+    img: S13_d.png
+    prompt: "a Japanese radio officer of 1941 on a carrier bridge handing a decoded slip of paper to an admiral, the admiral reading it gravely, grey sea through the windows"
+    move: push
+    items:
+      - {title: "CLIMB MOUNT NIITAKA", sub: "1208", y: 200, in: 0.2, c: red}
+  - at: 0.86
+    img: S13_e.png
+    prompt: "a snow-capped mountain peak above the clouds at sunrise, golden light, dramatic and silent"
+    move: pull
+    items:
+      - {label: "ATTACK: 7 DECEMBER (HAWAII)", x: 960, y: 940, in: 0.3}
+
+S14:
+  - img: S14_a.png
+    also:
+      - img: S14_a2.jpg
+        prompt: "Japanese embassy staff in 1941 smashing a cipher machine with hammers in a back room, parts flying, papers on the floor"
+    prompt: "embassy staff of 1941 in suits burning stacks of secret papers and code books in a metal barrel in an embassy courtyard at night, flames and smoke, worried faces"
+    flow: "Papers are tossed into the barrel and flare up, sparks rise into the night air, smoke curls, the men keep feeding the fire."
+    move: push
+    items:
+      - {stamp: "T-MINUS 5 DAYS · 2 DECEMBER", in: 0.05}
+      - {title: "BURN THE CODES", y: 940, size: 100, in: 0.3, c: red}
+  - at: 0.3
+    img: S14_b.png
+    prompt: "an American codebreaker of 1941 in shirtsleeves reading a teletype printout and slowly lowering it, shocked face, other desks behind him"
+    move: push
+    items:
+      - {label: "WASHINGTON · LONDON · MANILA · SINGAPORE", x: 960, y: 160, in: 0.25}
+  - at: 0.5
+    img: S14_c.png
+    prompt: "barrage balloons of the 1940s floating on cables above a harbor with warships, and an underwater steel torpedo net hanging beneath the surface beside a battleship, split view above and below the water"
+    move: push
+    items:
+      - {label: "BALLOONS?", x: 600, y: 160, in: 0.2}
+      - {label: "TORPEDO NETS?", x: 1320, y: 920, in: 0.45}
+  - at: 0.72
+    img: S14_d.png
+    prompt: "a stack of untranslated intercepted messages in Japanese characters on a desk in a busy Washington office, an overworked translator with his head in his hands, papers everywhere"
+    move: push
+    items:
+      - {label: "TRANSLATED AFTER THE ATTACK", x: 960, y: 160, in: 0.3, c: red}
+
+S15:
+  - img: S15_a.png
+    prompt: "an FBI agent of 1941 in a hat and suit wearing headphones beside a reel-to-reel recorder in a small dark room, listening intently, taking notes"
+    move: push
+    items:
+      - {stamp: "T-MINUS 2 DAYS · 5 DECEMBER", in: 0.05}
+  - at: 0.22
+    img: S15_b.png
+    prompt: "close-up of bright red hibiscus and poinsettia flowers in bloom in a Honolulu garden, a black telephone on a garden table beside them, soft sunlight"
+    move: push
+    items:
+      - {title: "\"WHICH FLOWERS", sub: "ARE IN BLOOM?\"", y: 180, in: 0.2}
+  - at: 0.45
+    img: S15_c.png
+    prompt: "three American army officers of 1941 in a dim office at night puzzling over a typed transcript, one shrugging, one checking his watch, a desk lamp"
+    move: push
+    items:
+      - {label: "CODE? OR SMALL TALK?", x: 960, y: 160, in: 0.25}
+  - at: 0.65
+    img: S15_d.png
+    prompt: "a young Japanese man of 1941 in a white shirt writing a short coded telegram at a desk in a consulate office at night, a window showing the lights of a harbor with warships"
+    move: push
+    focus: [0.45, 0.45]
+    items:
+      - {label: "NO BALLOONS · NO NETS", x: 960, y: 160, in: 0.25}
+  - at: 0.84
+    img: S15_e.png
+    prompt: "a decoded telegram lying on a desk with a red stamped date in the corner, an empty coffee cup and an ashtray, early morning light, no readable text"
+    move: push
+    items:
+      - {title: "DECODED: 8 DECEMBER", y: 940, size: 90, in: 0.25, c: red}
+
+S16:
+  - img: S16_a.png
+    prompt: "night in Washington 1941, a young navy officer in a dark coat carrying a locked leather pouch up the steps of the lit White House portico, bare trees, cold"
+    move: push
+    items:
+      - {stamp: "WASHINGTON · 6 DECEMBER · 9:30 PM", in: 0.05}
+  - at: 0.25
+    img: S16_b.png
+    prompt: "caricature of President Franklin Roosevelt in 1941 with pince-nez glasses sitting in his cluttered study at night reading typed pages, a thin tired adviser in a suit standing beside him, lamp light"
+    move: push
+    focus: [0.45, 0.4]
+    items:
+      - {title: "\"THIS MEANS WAR\"", y: 940, size: 100, in: 0.4, c: red}
+  - at: 0.52
+    img: S16_c.png
+    prompt: "an old theater in Washington in 1941 seen from the balcony during a show, a navy admiral in dress uniform in a box seat watching the stage, warm stage lights"
+    move: pan_right
+    items:
+      - {label: "ADM. STARK: AT THE THEATER", x: 960, y: 160, in: 0.3}
+  - at: 0.75
+    img: S16_d.png
+    prompt: "a black telephone on a desk in an empty dark office at night, a map of the Hawaiian Islands pinned on the wall behind it, the receiver untouched"
+    move: push
+    items:
+      - {title: "NOBODY PHONED HAWAII", y: 940, size: 90, in: 0.3}
+
+S17:
+  - img: S17_a.png
+    prompt: "an American army intelligence colonel of 1941 in a Washington office on a Sunday morning reading a short decoded message, his eyes widening, looking at a wall clock"
+    move: push
+    items:
+      - {stamp: "7 DECEMBER · WASHINGTON MORNING", in: 0.05}
+      - {title: "DELIVER AT 1:00 PM", y: 940, size: 90, in: 0.35, c: red}
+  - at: 0.22
+    img: S17_b.png
+    prompt: "two clocks side by side on a wall, the left one showing one o'clock and the right one showing half past seven, one with a small American flag and one with a palm tree beneath it, no text"
+    move: push
+    items:
+      - {label: "WASHINGTON 1:00 PM", x: 560, y: 920, in: 0.2}
+      - {label: "HAWAII 7:30 AM", x: 1360, y: 920, in: 0.4, c: red}
+  - at: 0.42
+    img: S17_c.png
+    prompt: "caricature of General George Marshall, a tall serious American general of 1941 in civilian riding clothes on a horse, trotting along a quiet wooded trail by a river on a cold Sunday morning"
+    move: pan_right
+    items:
+      - {label: "GEN. MARSHALL", x: 1450, y: 900, in: 0.2}
+  - at: 0.62
+    img: S17_d.png
+    prompt: "a tall serious American general of 1941 in uniform writing a message by hand with a fountain pen at his desk, a telephone pushed aside, a clock showing almost noon"
+    move: push
+    items:
+      - {label: "NO PHONE: NOT SECURE", x: 960, y: 160, in: 0.3}
+  - at: 0.8
+    img: S17_e.png
+    prompt: "a Western Union style telegraph office counter of 1941, a clerk tapping a telegraph key, a message form in a tray, no readable words, a calm Sunday mood"
+    move: push
+    items:
+      - {title: "COMMERCIAL TELEGRAM", sub: "NO PRIORITY", y: 200, in: 0.2, c: red}
+
+S18:
+  - img: S18_a.png
+    prompt: "night, a small American navy minesweeper of 1941 off the entrance of a harbor, a sailor on deck pointing at a periscope cutting through the dark water, moonlight"
+    move: push
+    items:
+      - {stamp: "PEARL HARBOR · 3:42 AM", in: 0.05}
+      - {label: "PERISCOPE", x: 1300, y: 600, in: 0.4, c: red}
+  - at: 0.3
+    img: S18_b.png
+    prompt: "dawn, the old four-funnel American destroyer USS Ward of 1941 firing its deck gun at the small conning tower of a midget submarine in the water, muzzle flash, splash, sailors at the gun"
+    flow: "The destroyer's deck gun fires with a bright flash, a splash erupts beside the small submarine, the destroyer surges past dropping depth charges that blast up columns of water."
+    move: push_shake
+    jolts: [0.3, 0.6]
+    items:
+      - {stamp: "6:45 AM · USS WARD", in: 0.05}
+      - {title: "FIRST SHOTS", sub: "OF THE PACIFIC WAR", y: 200, in: 0.35, c: red}
+  - at: 0.62
+    img: S18_c.png
+    prompt: "a chain of navy officers of 1941 in a row of offices passing a message slip from hand to hand, each one holding a telephone and looking doubtful, clocks on the walls"
+    move: pan_right
+    items:
+      - {label: "\"CONFIRM?\"", x: 960, y: 160, in: 0.3}
+
+S19:
+  - img: S01_b2.jpg
+    move: push
+    items:
+      - {stamp: "OPANA · 7:02 AM", in: 0.05}
+      - {label: "PVT. LOCKARD & PVT. ELLIOTT", x: 960, y: 920, in: 0.35}
+  - at: 0.22
+    img: S19_b.png
+    prompt: "extreme close-up of a round green radar oscilloscope screen of 1941 with one huge bright spike rising out of the line, glowing in the dark"
+    flow: "The bright spike on the green screen grows taller and taller, the glow pulses, a hand taps the glass, very slow push-in."
+    move: push
+    items:
+      - {title: "50+ AIRCRAFT?", sub: "137 MILES NORTH", y: 200, in: 0.25, c: red}
+  - at: 0.45
+    img: S19_c.png
+    prompt: "a young American army lieutenant pilot of 1941 alone in a big quiet operations room at dawn with an empty plotting table, a telephone at his ear, relaxed posture"
+    move: push
+    items:
+      - {label: "LT. TYLER · 2ND SHIFT", x: 960, y: 160, in: 0.25}
+  - at: 0.65
+    img: S19_d.png
+    prompt: "a flight of American B-17 bombers of 1941 flying over the ocean in the early morning, silver against the dawn sky"
+    move: pan_left
+    items:
+      - {label: "B-17s DUE FROM CALIFORNIA", x: 960, y: 160, in: 0.25}
+  - at: 0.82
+    img: S19_e.png
+    prompt: "a Japanese navy pilot of 1941 in a leather flying helmet in a cockpit above the clouds, listening to a radio with headphones, a direction-finder dial glowing, a green island appearing ahead"
+    move: push
+    items:
+      - {label: "TUNED TO HONOLULU RADIO", x: 960, y: 160, in: 0.25, c: red}
+
+S20:
+  - img: S20_a.png
+    prompt: "Japanese torpedo bombers of 1941 with red sun roundels skimming low over Pearl Harbor towards a row of grey battleships, torpedo wakes in the water, smoke rising, a sunny morning turned to chaos"
+    flow: "The torpedo bombers swoop low over the water towards the battleships, torpedoes splash in and race forward leaving white wakes, a battleship erupts in a column of water."
+    move: push_shake
+    jolts: [0.35, 0.65]
+    items:
+      - {stamp: "7:55 AM", in: 0.05}
+      - {flash: true, in: 0.4}
+  - at: 0.18
+    img: S20_b.png
+    prompt: "{oahu}, red arrows of aircraft sweeping down from the north over the island onto the harbor and the airfields, small flame symbols on the bases"
+    move: static
+    items:
+      - {title: "353 AIRCRAFT", sub: "TWO WAVES", y: 140, in: 0.15, c: red}
+  - at: 0.33
+    img: S20_c.png
+    prompt: "the battleship USS Arizona of 1941 exploding in a gigantic fireball at its mooring in Pearl Harbor, its forward mast collapsing, black smoke billowing, burning oil on the water"
+    flow: "A gigantic fireball erupts from the front of the battleship and rolls upward into black smoke, debris falls into the burning water, the camera shakes once and holds."
+    move: push_shake
+    jolts: [0.15, 0.4]
+    items:
+      - {flash: true, in: 0.1}
+      - {title: "USS ARIZONA", sub: "1,177 KILLED", y: 940, size: 100, in: 0.4, c: red}
+  - at: 0.5
+    img: S20_d.png
+    also:
+      - img: S20_d2.jpg
+        prompt: "{sailor} in a small boat pulling survivors out of oily burning water in front of a capsized battleship, smoke everywhere"
+    prompt: "burning American aircraft parked in rows on a Hawaiian airfield after an air attack, hangars on fire, black smoke, mechanics running"
+    move: pan_right
+    items:
+      - {label: "188 AIRCRAFT DESTROYED", x: 960, y: 160, in: 0.25}
+  - at: 0.66
+    img: S20_e.png
+    prompt: "a vast cloud of black smoke rising over a harbor full of burning and capsized battleships, seen from a hillside above, small figures watching in shock"
+    move: pull
+    items:
+      - {title: "2,403 AMERICANS KILLED", sub: "68 CIVILIANS", y: 200, in: 0.2, c: red}
+  - at: 0.82
+    img: S20_f.png
+    also:
+      - img: S20_f2.jpg
+        prompt: "two Japanese diplomats in dark suits handing a document to an elderly white-haired American statesman who glares at them in fury, a wood-panelled office"
+    prompt: "a young Japanese-American telegraph messenger of 1941 on a motorcycle riding through Honolulu streets with a telegram envelope, black smoke rising over the harbor in the distance"
+    move: pan_left
+    items:
+      - {label: "THE WARNING ARRIVES. TOO LATE.", x: 960, y: 160, in: 0.3, c: red}
+
+S21:
+  - img: S21_a.png
+    prompt: "a tall fair-haired American admiral and a grey-haired American general of 1941 in uniform sitting side by side before a stern commission of older men at a long table, a hearing room, grim faces"
+    move: push
+    items:
+      - {stamp: "THE ROBERTS COMMISSION · 1942", in: 0.05}
+      - {label: "\"DERELICTION OF DUTY\"", x: 960, y: 920, in: 0.4, c: red}
+  - at: 0.25
+    img: S21_b.png
+    prompt: "a huge 1946 congressional hearing room with rows of microphones, senators at a raised bench, stacks of thick report volumes, press photographers"
+    move: pan_right
+    items:
+      - {title: "9 INVESTIGATIONS", y: 200, in: 0.2}
+  - at: 0.45
+    img: S21_c.png
+    prompt: "a shadowy cartoon conspiracy board with string connecting photographs and newspaper clippings, a big red question mark, dim light, no readable text"
+    move: push
+    items:
+      - {label: "NO EVIDENCE", x: 960, y: 160, in: 0.35, c: red}
+  - at: 0.62
+    img: S21_d.png
+    prompt: "a huge pile of thousands of telegrams, reports and papers in a dark warehouse with a few small bright red papers glowing among them, a flashlight beam searching"
+    move: push
+    items:
+      - {title: "SIGNALS", sub: "AND NOISE", y: 200, in: 0.2}
+  - at: 0.82
+    img: S21_e.png
+    prompt: "a modern-looking 1947 intelligence headquarters office, analysts gathering papers from different departments onto one central table under a single lamp, many file folders converging"
+    move: push
+    items:
+      - {stamp: "1947 · A CENTRAL INTELLIGENCE AGENCY", in: 0.05}
+
+S22:
+  - img: S22_a.png
+    also:
+      - img: S22_a2.jpg
+        prompt: "American dive bombers of 1942 diving out of the clouds onto a burning Japanese aircraft carrier at sea, explosions on its flight deck"
+    prompt: "the white USS Arizona Memorial in Pearl Harbor seen at sunset, floating over the dark shape of the sunken battleship, a few drops of oil shimmering on the calm water, a flag at half mast"
+    move: push
+    items:
+      - {title: "85 YEARS", sub: "7 DECEMBER 1941", y: 200, in: 0.25}
+  - at: 0.5
+    img: HOST_lamp.png
+    move: push
+    items:
+      - {title: "WHAT ARE WE MISSING?", y: 940, size: 80, in: 0.55}
