@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 22 done, plus 1 character references.
+104 pictures, 32 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -138,7 +138,7 @@ night, old British biplane torpedo bombers flying low over a harbor full of Ital
 cutaway diagram style picture of a shallow tropical harbor seen from the side, a battleship on the surface and a torpedo dropped from an aircraft sinking into the mud of the shallow bottom, blue water, no text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S04_d.png  (S04, shot 4)
+### [x] S04_d.png  (S04, shot 4)
 
 ```
 close-up of a Japanese aerial torpedo of 1941 on a trolley in a workshop, mechanics fixing flat wooden fins to its tail, workbench light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -150,55 +150,55 @@ close-up of a Japanese aerial torpedo of 1941 on a trolley in a workshop, mechan
 Japanese navy torpedo bombers of 1941 with red sun roundels flying very low over the water of a bay in southern Japan, a coastal town and green hills behind, spray behind them, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_a.png  (S05, shot 1)
+### [x] S05_a.png  (S05, shot 1)
 
 ```
 caricature of William Friedman, a dapper American cryptologist of 1940 with a thin moustache and a bow tie, sitting at a desk covered with sheets of code, holding a pencil, focused, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_a2.jpg  (S05, shot 1)
+### [x] S05_a2.jpg  (S05, shot 1)
 
 ```
 a small team of American codebreakers of 1940 men and women at desks covered in paper strips and columns of letters, coffee cups, a blackboard, late at night, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_b.png  (S05, shot 2)
+### [x] S05_b.png  (S05, shot 2)
 
 ```
 an improvised cipher machine of 1940 on a table, an electric typewriter wired to a box of telephone switches and rotary stepping switches, tangles of cables, workbench lamp, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_c.png  (S05, shot 3)
+### [x] S05_c.png  (S05, shot 3)
 
 ```
 a leather courier pouch with a heavy padlock lying on a desk, a stack of papers inside stamped with a big red diagonal stripe, dim office light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S05_d.png  (S05, shot 4)
+### [x] S05_d.png  (S05, shot 4)
 
 ```
 stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels, a long thin dashed line of radio waves stretching from Washington far to the right across the ocean, ending in a question mark of static above the Hawaiian Islands, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_a.png  (S06, shot 1)
+### [x] S06_a.png  (S06, shot 1)
 
 ```
 an American ambassador of 1941 with grey hair and glasses in a dark suit writing a telegram at a desk in the US embassy in Tokyo at night, Japanese roofs through the window, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_b.png  (S06, shot 2)
+### [x] S06_b.png  (S06, shot 2)
 
 ```
 an American naval intelligence officer of 1941 in a Washington office tossing a telegram into an overflowing wire tray marked with nothing, bored expression, stacks of files, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_c.png  (S06, shot 3)
+### [x] S06_c.png  (S06, shot 3)
 
 ```
 stylised flat cartoon map of the island of Oahu seen from above, green mountains, the branching inlets of Pearl Harbor on the south coast, flat blue sea, absolutely no words, no letters, no labels, the waters of Pearl Harbor divided by thick red pencil lines into five separate areas, small grey ship shapes in each area, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_d.png  (S06, shot 4)
+### [x] S06_d.png  (S06, shot 4)
 
 ```
 a young Japanese man of 1941 in a white shirt and straw hat sitting on a green hillside above a harbor full of grey warships, pretending to be a tourist, secretly sketching the ships in a notebook, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
