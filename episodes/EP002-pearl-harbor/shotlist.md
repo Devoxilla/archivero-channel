@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 42 done, plus 1 character references.
+104 pictures, 52 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -264,61 +264,61 @@ six Japanese aircraft carriers of 1941 and battleships at anchor in a cold grey 
 stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and the Kuril Islands on the left, the small Hawaiian Islands on the right, flat deep blue sea, absolutely no words, no letters, no labels, a long thin dashed white line curving from the Kuril Islands far across the empty northern Pacific and then down towards Hawaii, small grey ship shapes along it, stormy clouds, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_d.png  (S08, shot 4)
+### [x] S08_d.png  (S08, shot 4)
 
 ```
 a Japanese aircraft carrier of 1941 ploughing through huge grey winter waves in a storm, spray over the flight deck, aircraft lashed down, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S08_e.png  (S08, shot 5)
+### [x] S08_e.png  (S08, shot 5)
 
 ```
 an American scout seaplane of 1941 flying over a long convoy of Japanese troop ships sailing south on a bright blue sea, palm-covered islands far away, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_a.png  (S09, shot 1)
+### [x] S09_a.png  (S09, shot 1)
 
 ```
 a navy radio operator of 1941 in a Washington communications room typing a message on a teletype, the paper strip rolling out, red light, urgent mood, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_b.png  (S09, shot 2)
+### [x] S09_b.png  (S09, shot 2)
 
 ```
 a yellowed navy message form on a desk with lines of typewriter text too small to read, a big red stamp in the corner, a pair of glasses beside it, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_c.png  (S09, shot 3)
+### [x] S09_c.png  (S09, shot 3)
 
 ```
 caricature of Admiral Husband Kimmel, a tall handsome American admiral of 1941 with fair hair in a white navy uniform, reading a message at his desk in Hawaii with a frown, palm trees through the window, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_d.png  (S09, shot 4)
+### [x] S09_d.png  (S09, shot 4)
 
 ```
 stylised flat cartoon map of the western Pacific and Southeast Asia, bright red target circles over the Philippines, Thailand, the Malay Peninsula and Borneo, the small Hawaiian Islands far away on the right with no circle, flat blue sea, absolutely no words, no letters, no labels, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S09_e.png  (S09, shot 5)
+### [x] S09_e.png  (S09, shot 5)
 
 ```
 caricature of Lieutenant General Walter Short, a stern grey-haired American army general of 1941 in olive uniform, reading a telegram in his headquarters, a map of Oahu on the wall, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S10_a.png  (S10, shot 1)
+### [x] S10_a.png  (S10, shot 1)
 
 ```
 Honolulu street in 1941, shops with signs without readable text, Japanese-American families and other locals walking past, a policeman, bright sunshine, palm trees, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S10_b.png  (S10, shot 2)
+### [x] S10_b.png  (S10, shot 2)
 
 ```
 American army fighter planes of 1941 parked in neat tight rows wingtip to wingtip on an airfield in Hawaii, a single guard with a rifle walking past, mountains behind, sunny, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S10_c.png  (S10, shot 3)
+### [x] S10_c.png  (S10, shot 3)
 
 ```
 boxes of ammunition being stacked inside a locked wire cage in an army warehouse, a soldier turning a key in a heavy padlock, dim light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
