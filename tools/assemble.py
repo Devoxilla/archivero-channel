@@ -57,6 +57,7 @@ def wav_seconds(path: Path) -> float:
         return w.getnframes() / w.getframerate()
 
 
+NAME_CASE = {"macarthur": "MacArthur", "ussr": "USSR", "un": "UN", "us": "US", "dmz": "DMZ", "uss": "USS"}
 SMALL_WORDS = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs"}
 
 
@@ -64,7 +65,10 @@ def chapter_case(text: str) -> str:
     """Title Case for chapter names without str.title()'s bugs ("Yamamoto'S", "O'Clock" stays "O'clock")."""
     out = []
     for i, w in enumerate(text.lower().split()):
-        if any(ch.isdigit() for ch in w) or "." in w.rstrip("."):
+        core = w.strip("\"'?!,.:;")
+        if core in NAME_CASE:
+            out.append(w.replace(core, NAME_CASE[core]))
+        elif any(ch.isdigit() for ch in w) or "." in w.rstrip("."):
             out.append(w.upper())  # times and abbreviations: 7:55 A.M.
         elif i and w in SMALL_WORDS:
             out.append(w)

@@ -55,7 +55,7 @@ S01:
     prompt: "a vast field of simple white grave markers on a hillside in Korea, autumn trees, a lone soldier standing with head bowed"
     move: pull
     items:
-      - {title: "~3,000,000 DEAD", y: 940, size: 110, in: 0.25, c: red}
+      - {title: "~3,000,000 DEAD", size: 110, in: 0.25, c: red}
   - at: 0.85
     img: S01_e.png
     prompt: "two American officers of 1945 in khaki uniforms bending over a big paper map of Asia on a desk at night, a desk lamp, a wall clock, one holding a pencil and a ruler"
@@ -123,7 +123,7 @@ S03:
     move: push
     focus: [0.5, 0.5]
     items:
-      - {title: "THE 38TH PARALLEL", y: 920, size: 110, in: 0.35}
+      - {title: "THE 38TH PARALLEL", size: 110, in: 0.35}
   - at: 0.82
     img: S03_e.png
     also:
@@ -141,7 +141,7 @@ S04:
     also:
       - img: S04_a2.jpg
         prompt: "young Korean guerrilla fighters of the 1930s in a snowy Manchurian forest with old rifles and fur hats, campfire smoke"
-    prompt: "caricature of young Kim Il Sung in 1948, a round-faced man in his thirties with short black hair in a plain grey Soviet-style tunic, standing in front of a red flag at a rally, a Soviet officer behind him"
+    prompt: "caricature of young Kim Il Sung in 1948, a slim-faced man in his thirties with thick wavy black hair swept back and parted at the side, in a light grey Western suit and tie, speaking at a podium in front of a red flag at a rally, a Soviet officer behind him"
     move: push
     focus: [0.45, 0.4]
     items:
@@ -281,7 +281,7 @@ S07:
     focus: [0.5, 0.5]
     items:
       - {label: "EMPTY SEAT", x: 960, y: 160, in: 0.3, c: red}
-      - {label: "NO VETO", x: 960, y: 940, in: 0.55, c: red}
+      - {label: "NO VETO", x: 960, y: 290, in: 0.55, c: red}
   - at: 0.5
     img: S07_c.png
     also:
@@ -474,8 +474,8 @@ S11:
     prompt: "a destroyed headquarters hut in snowy mountains after an air raid, smoke rising, a single Chinese soldier's fur cap lying in the snow"
     move: push
     items:
-      - {label: "MAO ANYING", x: 1450, y: 880, in: 0.3, c: red}
-      - {label: "MAO'S SON", x: 1450, y: 980, in: 0.5}
+      - {label: "MAO ANYING", x: 1450, y: 760, in: 0.3, c: red}
+      - {label: "MAO'S SON", x: 1450, y: 890, in: 0.5}
 
 S12:
   - img: S12_a.png
@@ -721,7 +721,7 @@ S18:
     move: static
     items:
       - {label: "DMZ", x: 1500, y: 470, in: 0.15}
-      - {label: "BACK TO THE START", x: 960, y: 950, in: 0.45, c: red}
+      - {label: "BACK TO THE START", x: 960, y: 160, in: 0.45, c: red}
 
 S19:
   - img: S19_a.png
@@ -751,7 +751,7 @@ S19:
     prompt: "a long line of Korean civilian refugees in white clothes walking along a frozen road with bundles, children on their backs, a burned village behind, winter"
     move: pan_left
     items:
-      - {title: "2 - 3 MILLION KOREANS", y: 940, size: 100, in: 0.25, c: red}
+      - {title: "2 - 3 MILLION KOREANS", size: 100, in: 0.25, c: red}
   - at: 0.76
     img: S19_d.png
     also:
@@ -858,4 +858,4 @@ S22:
     img: HOST_lamp.png
     move: push
     items:
-      - {title: "I'LL LEAVE THE LAMP ON", y: 940, size: 80, in: 0.55}
+      - {title: "I'LL LEAVE THE LAMP ON", size: 80, in: 0.55}
