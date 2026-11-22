@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 72 done, plus 1 character references.
+104 pictures, 73 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -450,7 +450,7 @@ three American army officers of 1941 in a dim office at night puzzling over a ty
 a young Japanese man of 1941 in a white shirt writing a short coded telegram at a desk in a consulate office at night, a window showing the lights of a harbor with warships, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S15_e.png  (S15, shot 5)
+### [x] S15_e.png  (S15, shot 5)
 
 ```
 a decoded telegram lying on a desk with a red stamped date in the corner, an empty coffee cup and an ashtray, early morning light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
