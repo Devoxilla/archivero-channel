@@ -1,6 +1,6 @@
 # Shot list: EP002-pearl-harbor
 
-104 pictures, 71 done, plus 1 character references.
+104 pictures, 104 done, plus 1 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -186,7 +186,7 @@ stylised flat cartoon map of the North Pacific Ocean seen from above, Japan and 
 an American ambassador of 1941 with grey hair and glasses in a dark suit writing a telegram at a desk in the US embassy in Tokyo at night, Japanese roofs through the window, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_b.png  (S06, shot 2)
+### [x] S06_b.png  (S06, shot 2)
 
 ```
 an American naval intelligence officer of 1941 in a Washington office tossing a blank folded paper into an overflowing wire tray, bored expression, stacks of plain files, absolutely no letters or words anywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -210,7 +210,7 @@ a young Japanese man of 1941 in a white shirt and straw hat sitting on a green h
 the Japanese consulate in Honolulu in 1941, a white two-storey building with a lawn and palm trees, a car parked in front, afternoon sun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S06_e.png  (S06, shot 5)
+### [x] S06_e.png  (S06, shot 5)
 
 ```
 a hand sliding a plain folded paper with a red wax seal into a grey filing cabinet drawer that is closing, dim office light, absolutely no letters or words anywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
@@ -456,187 +456,187 @@ a young Japanese man of 1941 in a white shirt writing a short coded telegram at 
 a decoded telegram lying on a desk with a red stamped date in the corner, an empty coffee cup and an ashtray, early morning light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_a.png  (S16, shot 1)
+### [x] S16_a.png  (S16, shot 1)
 
 ```
 night in Washington 1941, a young navy officer in a dark coat carrying a locked leather pouch up the steps of the lit White House portico, bare trees, cold, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_b.png  (S16, shot 2)
+### [x] S16_b.png  (S16, shot 2)
 
 ```
 caricature of President Franklin Roosevelt in 1941 with pince-nez glasses sitting in his cluttered study at night reading typed pages, a thin tired adviser in a suit standing beside him, lamp light, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_c.png  (S16, shot 3)
+### [x] S16_c.png  (S16, shot 3)
 
 ```
 an old theater in Washington in 1941 seen from the balcony during a show, a navy admiral in dress uniform in a box seat watching the stage, warm stage lights, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S16_d.png  (S16, shot 4)
+### [x] S16_d.png  (S16, shot 4)
 
 ```
 a black telephone on a desk in an empty dark office at night, a map of the Hawaiian Islands pinned on the wall behind it, the receiver untouched, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_a.png  (S17, shot 1)
+### [x] S17_a.png  (S17, shot 1)
 
 ```
 an American army intelligence colonel of 1941 in a Washington office on a Sunday morning reading a short decoded message, his eyes widening, looking at a wall clock, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_b.png  (S17, shot 2)
+### [x] S17_b.png  (S17, shot 2)
 
 ```
 two clocks side by side on a wall, the left one showing one o'clock and the right one showing half past seven, one with a small American flag and one with a palm tree beneath it, no text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_c.png  (S17, shot 3)
+### [x] S17_c.png  (S17, shot 3)
 
 ```
 caricature of General George Marshall, a tall serious American general of 1941 in civilian riding clothes on a horse, trotting along a quiet wooded trail by a river on a cold Sunday morning, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_d.png  (S17, shot 4)
+### [x] S17_d.png  (S17, shot 4)
 
 ```
 a tall serious American general of 1941 in uniform writing a message by hand with a fountain pen at his desk, a telephone pushed aside, a clock showing almost noon, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S17_e.png  (S17, shot 5)
+### [x] S17_e.png  (S17, shot 5)
 
 ```
 a Western Union style telegraph office counter of 1941, a clerk tapping a telegraph key, a message form in a tray, no readable words, a calm Sunday mood, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_a.png  (S18, shot 1)
+### [x] S18_a.png  (S18, shot 1)
 
 ```
 night, a small American navy minesweeper of 1941 off the entrance of a harbor, a sailor on deck pointing at a periscope cutting through the dark water, moonlight, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_b.png  (S18, shot 2)
+### [x] S18_b.png  (S18, shot 2)
 
 ```
 dawn, the old four-funnel American destroyer USS Ward of 1941 firing its deck gun at the small conning tower of a midget submarine in the water, muzzle flash, splash, sailors at the gun, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S18_c.png  (S18, shot 3)
+### [x] S18_c.png  (S18, shot 3)
 
 ```
 a chain of navy officers of 1941 in a row of offices passing a message slip from hand to hand, each one holding a telephone and looking doubtful, clocks on the walls, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_b.png  (S19, shot 2)
+### [x] S19_b.png  (S19, shot 2)
 
 ```
 extreme close-up of a round green radar oscilloscope screen of 1941 with one huge bright spike rising out of the line, glowing in the dark, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_c.png  (S19, shot 3)
+### [x] S19_c.png  (S19, shot 3)
 
 ```
 a young American army lieutenant pilot of 1941 alone in a big quiet operations room at dawn with an empty plotting table, a telephone at his ear, relaxed posture, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_d.png  (S19, shot 4)
+### [x] S19_d.png  (S19, shot 4)
 
 ```
 a flight of American B-17 bombers of 1941 flying over the ocean in the early morning, silver against the dawn sky, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S19_e.png  (S19, shot 5)
+### [x] S19_e.png  (S19, shot 5)
 
 ```
 a Japanese navy pilot of 1941 in a leather flying helmet in a cockpit above the clouds, listening to a radio with headphones, a direction-finder dial glowing, a green island appearing ahead, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_a.png  (S20, shot 1)
+### [x] S20_a.png  (S20, shot 1)
 
 ```
 Japanese torpedo bombers of 1941 with red sun roundels skimming low over Pearl Harbor towards a row of grey battleships, torpedo wakes in the water, smoke rising, a sunny morning turned to chaos, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_b.png  (S20, shot 2)
+### [x] S20_b.png  (S20, shot 2)
 
 ```
 stylised flat cartoon map of the island of Oahu seen from above, green mountains, the branching inlets of Pearl Harbor on the south coast, flat blue sea, absolutely no words, no letters, no labels, red arrows of aircraft sweeping down from the north over the island onto the harbor and the airfields, small flame symbols on the bases, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_c.png  (S20, shot 3)
+### [x] S20_c.png  (S20, shot 3)
 
 ```
 the battleship USS Arizona of 1941 exploding in a gigantic fireball at its mooring in Pearl Harbor, its forward mast collapsing, black smoke billowing, burning oil on the water, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_d.png  (S20, shot 4)
+### [x] S20_d.png  (S20, shot 4)
 
 ```
 burning American aircraft parked in rows on a Hawaiian airfield after an air attack, hangars on fire, black smoke, mechanics running, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_d2.jpg  (S20, shot 4)
+### [x] S20_d2.jpg  (S20, shot 4)
 
 ```
 young American sailors of 1941 in white sailor uniforms and white round caps in a small boat pulling survivors out of oily burning water in front of a capsized battleship, smoke everywhere, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_e.png  (S20, shot 5)
+### [x] S20_e.png  (S20, shot 5)
 
 ```
 a vast cloud of black smoke rising over a harbor full of burning and capsized battleships, seen from a hillside above, small figures watching in shock, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_f.png  (S20, shot 6)
+### [x] S20_f.png  (S20, shot 6)
 
 ```
 a young Japanese-American telegraph messenger of 1941 on a motorcycle riding through Honolulu streets with a telegram envelope, black smoke rising over the harbor in the distance, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S20_f2.jpg  (S20, shot 6)
+### [x] S20_f2.jpg  (S20, shot 6)
 
 ```
 two Japanese diplomats in dark suits handing a document to an elderly white-haired American statesman who glares at them in fury, a wood-panelled office, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_a.png  (S21, shot 1)
+### [x] S21_a.png  (S21, shot 1)
 
 ```
 a tall fair-haired American admiral and a grey-haired American general of 1941 in uniform sitting side by side before a stern commission of older men at a long table, a hearing room, grim faces, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_b.png  (S21, shot 2)
+### [x] S21_b.png  (S21, shot 2)
 
 ```
 a huge 1946 congressional hearing room with rows of microphones, senators at a raised bench, stacks of thick report volumes, press photographers, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_c.png  (S21, shot 3)
+### [x] S21_c.png  (S21, shot 3)
 
 ```
 a shadowy cartoon conspiracy board with string connecting photographs and newspaper clippings, a big red question mark, dim light, no readable text, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_d.png  (S21, shot 4)
+### [x] S21_d.png  (S21, shot 4)
 
 ```
 a huge pile of thousands of telegrams, reports and papers in a dark warehouse with a few small bright red papers glowing among them, a flashlight beam searching, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S21_e.png  (S21, shot 5)
+### [x] S21_e.png  (S21, shot 5)
 
 ```
 a modern-looking 1947 intelligence headquarters office, analysts gathering papers from different departments onto one central table under a single lamp, many file folders converging, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_a.png  (S22, shot 1)
+### [x] S22_a.png  (S22, shot 1)
 
 ```
 the white USS Arizona Memorial in Pearl Harbor seen at sunset, floating over the dark shape of the sunken battleship, a few drops of oil shimmering on the calm water, a flag at half mast, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_a2.jpg  (S22, shot 1)
+### [x] S22_a2.jpg  (S22, shot 1)
 
 ```
 American dive bombers of 1942 diving out of the clouds onto a burning Japanese aircraft carrier at sea, explosions on its flight deck, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
