@@ -1,6 +1,6 @@
 # Shot list: EP002-pov-roman-legionary
 
-106 pictures, 101 done, plus 2 character references.
+106 pictures, 106 done, plus 2 character references.
 
 **In the Gemini app** (gemini.google.com, Plus plan):
 1. Make the character references first (top of this list). Keep the best one of each.
@@ -630,31 +630,31 @@ stylised cartoon map of Europe with the Rhine river as a thick blue line, the Ro
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals being handed transfer orders by a clerk, packing his kit with relief, a sign pointing to another legion, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_b.png  (S22, shot 2)  · attach REF_grunt.png
+### [x] S22_b.png  (S22, shot 2)  · attach REF_grunt.png
 
 ```
 a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals aged twenty years, grey stubble, holding his back, receiving a discharge diploma and a bag of coins from an officer at a ceremony, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_c.png  (S22, shot 3)  · attach REF_grunt.png
+### [x] S22_c.png  (S22, shot 3)  · attach REF_grunt.png
 
 ```
 the old veteran a skinny young Roman legionary with a very pale, round, deadpan face, dark tired circles under small dot eyes, a thin flat mouth, an iron Roman helmet with cheek guards slightly too big for him, red wool tunic, segmented iron plate armour, hobnailed sandals on a little farm plot in a veterans' colony with a local wife and children, a son putting on a too-big Roman helmet, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S22_d.png  (S22, shot 4)
+### [x] S22_d.png  (S22, shot 4)
 
 ```
 transformation picture, a Roman fort on a river slowly turning into a Roman town with a temple, a bridge and markets, warm sunset, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S23_a.png  (S23, shot 1)
+### [x] S23_a.png  (S23, shot 1)
 
 ```
 a Roman road paved with stones leading straight to the horizon and a stone wall on a hill, centuries old, a modern hiker walking on it, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
 ```
 
-### [ ] S23_c.png  (S23, shot 3)  · attach REF_host.png
+### [x] S23_c.png  (S23, shot 3)  · attach REF_host.png
 
 ```
 a short round-bodied archivist with a pale round face, tiny round wire glasses, a few grey hairs combed over, an oversized brown wool cardigan with yellow buttons, holding an old brass oil lamp with a red flame, closing a fat file folder with a Roman helmet sticker on it and putting it on a shelf among hundreds of others, the oil lamp glowing red, bold thick black outlines, flat bright colours with simple cel shading, cartoon illustration in the style of a modern adult animated history explainer, expressive slightly exaggerated faces, clean background with clear depth, high detail, no text, no watermark, 16:9
