@@ -1,0 +1,93 @@
+[
+ {
+  "scene": "S01",
+  "seconds": 23.7,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S02",
+  "seconds": 28.2,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S03",
+  "seconds": 49.1,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S04",
+  "seconds": 41.9,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S05",
+  "seconds": 51.2,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S06",
+  "seconds": 41.9,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S07",
+  "seconds": 14.3,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S08",
+  "seconds": 43.6,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S09",
+  "seconds": 36.9,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S10",
+  "seconds": 55.1,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S11",
+  "seconds": 36.4,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S12",
+  "seconds": 76.2,
+  "images": [
+   "animated"
+  ]
+ },
+ {
+  "scene": "S13",
+  "seconds": 46.5,
+  "images": [
+   "animated"
+  ]
+ }
+]

@@ -1,0 +1,1676 @@
+1
+00:00:00,000 --> 00:00:02,301
+It is September, in the year 9 AD.
+
+2
+00:00:02,301 --> 00:00:05,618
+You are twenty-six years old, soaked to the bone,
+
+3
+00:00:05,618 --> 00:00:09,611
+and standing in a German forest so thick you cannot see the
+
+4
+00:00:09,611 --> 00:00:12,589
+man three places ahead of you in the column.
+
+5
+00:00:12,589 --> 00:00:14,416
+It has rained for two days.
+
+6
+00:00:14,416 --> 00:00:16,379
+Your sandals are full of mud,
+
+7
+00:00:16,379 --> 00:00:18,680
+your shield is twice as heavy wet,
+
+8
+00:00:18,680 --> 00:00:22,674
+and somewhere in the trees, thousands of men who used to be
+
+9
+00:00:22,674 --> 00:00:25,720
+your allies are quietly moving into position.
+
+10
+00:00:25,720 --> 00:00:27,344
+By the end of this week,
+
+11
+00:00:27,344 --> 00:00:29,171
+your legion will not exist.
+
+12
+00:00:29,171 --> 00:00:31,608
+Its number will never be used again.
+
+13
+00:00:31,608 --> 00:00:33,300
+This is how you got here.
+
+14
+00:00:33,900 --> 00:00:35,949
+Good evening, this is Brinkman.
+
+15
+00:00:35,949 --> 00:00:37,865
+Tonight we look at a uniform.
+
+16
+00:00:37,865 --> 00:00:42,028
+Red tunic, iron helmet, hobnailed sandals: the Roman legionary,
+
+17
+00:00:42,028 --> 00:00:44,341
+the most famous soldier in history.
+
+18
+00:00:44,341 --> 00:00:48,703
+For about four hundred years, men like you held an empire together
+
+19
+00:00:48,703 --> 00:00:51,214
+that stretched from Scotland to Syria.
+
+20
+00:00:51,214 --> 00:00:53,395
+Not with genius generals, mostly.
+
+21
+00:00:53,395 --> 00:00:58,351
+With walking, digging, paperwork, and a level of discipline that would make
+
+22
+00:00:58,351 --> 00:01:00,333
+a modern drill sergeant faint.
+
+23
+00:01:00,333 --> 00:01:02,382
+So let's put the helmet on you,
+
+24
+00:01:02,382 --> 00:01:04,100
+and see how long you last.
+
+25
+00:01:04,700 --> 00:01:07,355
+Rewind eight years, to the year 1 AD.
+
+26
+00:01:07,355 --> 00:01:11,731
+You are eighteen, the son of a poor farmer in northern Italy,
+
+27
+00:01:11,731 --> 00:01:15,821
+and you have a problem: your older brother gets the farm,
+
+28
+00:01:15,821 --> 00:01:17,255
+and you get nothing.
+
+29
+00:01:17,255 --> 00:01:21,417
+A century earlier that would have kept you out of the army
+
+30
+00:01:21,417 --> 00:01:25,937
+entirely, because Roman soldiers were supposed to own property.
+
+31
+00:01:25,937 --> 00:01:31,174
+But after the reforms traditionally credited to the general Gaius Marius,
+
+32
+00:01:31,174 --> 00:01:33,757
+the legions started taking the poor.
+
+33
+00:01:33,757 --> 00:01:35,551
+Now the army is a career.
+
+34
+00:01:35,551 --> 00:01:38,277
+Steady pay, a roof, three meals a day,
+
+35
+00:01:38,277 --> 00:01:41,362
+and a big bonus at the end, if you survive.
+
+36
+00:01:41,362 --> 00:01:46,456
+You walk to the recruiting officer with a letter of recommendation from
+
+37
+00:01:46,456 --> 00:01:48,537
+a local big man, because yes,
+
+38
+00:01:48,537 --> 00:01:51,478
+even in ancient Rome, it is who you know.
+
+39
+00:01:51,478 --> 00:01:53,487
+You must be a Roman citizen,
+
+40
+00:01:53,487 --> 00:01:55,281
+healthy, and tall enough.
+
+41
+00:01:55,281 --> 00:01:58,868
+A doctor checks your eyes, your teeth, your limbs.
+
+42
+00:01:58,868 --> 00:01:59,514
+You pass.
+
+43
+00:01:59,514 --> 00:02:03,531
+They give you a small lead tag to wear around your neck,
+
+44
+00:02:03,531 --> 00:02:05,397
+a kind of ancient dog tag,
+
+45
+00:02:05,397 --> 00:02:07,693
+and you swear the military oath,
+
+46
+00:02:07,693 --> 00:02:10,562
+the sacramentum: to obey your commander,
+
+47
+00:02:10,562 --> 00:02:14,293
+to never desert, and to never abandon the standards.
+
+48
+00:02:14,293 --> 00:02:15,441
+Congratulations.
+
+49
+00:02:15,441 --> 00:02:17,450
+You belong to the state now.
+
+50
+00:02:18,050 --> 00:02:21,015
+Read the contract you did not get to read.
+
+51
+00:02:21,015 --> 00:02:25,816
+Under the emperor Augustus, a legionary signed up for sixteen years,
+
+52
+00:02:25,816 --> 00:02:27,652
+plus four more in reserve.
+
+53
+00:02:27,652 --> 00:02:30,617
+In the year 5 AD that became twenty years,
+
+54
+00:02:30,617 --> 00:02:33,159
+plus five more as a veteran on call.
+
+55
+00:02:33,159 --> 00:02:35,771
+Later it would simply be twenty-five.
+
+56
+00:02:35,771 --> 00:02:38,171
+You may not marry while you serve.
+
+57
+00:02:38,171 --> 00:02:40,078
+If you already have a wife,
+
+58
+00:02:40,078 --> 00:02:43,043
+as far as the law is concerned, you don't.
+
+59
+00:02:43,043 --> 00:02:47,420
+Your pay is two hundred and twenty-five silver denarii a year.
+
+60
+00:02:47,420 --> 00:02:51,021
+That sounds fine until the deductions arrive: food,
+
+61
+00:02:51,021 --> 00:02:55,680
+boots, clothing, your tent, the burial club that will pay for your
+
+62
+00:02:55,680 --> 00:02:58,363
+funeral, and a forced savings account.
+
+63
+00:02:58,363 --> 00:03:03,094
+Some soldiers finished the year with almost nothing in their hands.
+
+64
+00:03:03,094 --> 00:03:05,494
+And no, you were not paid in salt.
+
+65
+00:03:05,494 --> 00:03:10,224
+The idea that "salary" comes from Roman soldiers being paid in salt
+
+66
+00:03:10,224 --> 00:03:11,425
+is mostly a myth.
+
+67
+00:03:11,425 --> 00:03:13,048
+You were paid in coins.
+
+68
+00:03:13,048 --> 00:03:13,825
+Small ones.
+
+69
+00:03:14,425 --> 00:03:16,508
+Now you learn to be a Roman.
+
+70
+00:03:16,508 --> 00:03:19,409
+According to the Roman writer Vegetius,
+
+71
+00:03:19,409 --> 00:03:22,458
+recruits had to march twenty Roman miles,
+
+72
+00:03:22,458 --> 00:03:27,591
+around eighteen of ours, in five summer hours at the regular military
+
+73
+00:03:27,591 --> 00:03:30,491
+pace, and twenty-four at the fast pace.
+
+74
+00:03:30,491 --> 00:03:34,211
+While carrying a load of about sixty Roman pounds.
+
+75
+00:03:34,211 --> 00:03:35,847
+You train twice a day.
+
+76
+00:03:35,847 --> 00:03:40,012
+You fight a wooden post with a wooden sword and a wicker
+
+77
+00:03:40,012 --> 00:03:43,806
+shield, both made twice as heavy as the real thing,
+
+78
+00:03:43,806 --> 00:03:45,888
+so the real ones feel light.
+
+79
+00:03:45,888 --> 00:03:48,194
+You learn to stab, never slash,
+
+80
+00:03:48,194 --> 00:03:52,062
+because a stab kills and a slash just annoys people.
+
+81
+00:03:52,062 --> 00:03:54,219
+You learn to throw a javelin,
+
+82
+00:03:54,219 --> 00:03:57,194
+to swim, to jump, and above all, to dig.
+
+83
+00:03:57,194 --> 00:04:01,732
+Because the secret weapon of the Roman army is not the sword.
+
+84
+00:04:01,732 --> 00:04:02,996
+It is the shovel.
+
+85
+00:04:02,996 --> 00:04:08,426
+Every single night on campaign, the entire legion builds a fortified camp
+
+86
+00:04:08,426 --> 00:04:11,401
+from scratch: a ditch, an earth rampart,
+
+87
+00:04:11,401 --> 00:04:15,790
+a palisade of stakes, and neat streets of tents in the same
+
+88
+00:04:15,790 --> 00:04:20,550
+layout every time, so that every man knows exactly where his bed
+
+89
+00:04:20,550 --> 00:04:23,600
+is, in the dark, in any country on earth.
+
+90
+00:04:24,200 --> 00:04:25,369
+Let's dress you.
+
+91
+00:04:25,369 --> 00:04:30,336
+A wool tunic, a cloak, and caligae: heavy sandals with iron hobnails
+
+92
+00:04:30,336 --> 00:04:35,302
+in the soles, which grip the road and announce you from a mile away.
+
+93
+00:04:35,302 --> 00:04:37,567
+A helmet with big cheek guards.
+
+94
+00:04:37,567 --> 00:04:40,050
+Body armour: a shirt of iron mail,
+
+95
+00:04:40,050 --> 00:04:44,360
+or the famous plate armour made of overlapping iron strips.
+
+96
+00:04:44,360 --> 00:04:47,281
+A curved rectangular shield, the scutum,
+
+97
+00:04:47,281 --> 00:04:49,326
+about as tall as your chest.
+
+98
+00:04:49,326 --> 00:04:54,147
+Two javelins, the pila, with long soft iron necks designed to bend
+
+99
+00:04:54,147 --> 00:04:57,872
+when they hit, so the enemy cannot throw them back,
+
+100
+00:04:57,872 --> 00:05:02,328
+and a shield with a bent javelin stuck in it becomes useless.
+
+101
+00:05:02,328 --> 00:05:02,985
+A dagger.
+
+102
+00:05:02,985 --> 00:05:07,733
+And the gladius, a short sword built for stabbing at close range.
+
+103
+00:05:07,733 --> 00:05:08,975
+Then the luggage.
+
+104
+00:05:08,975 --> 00:05:13,430
+On campaign you carry a pole over your shoulder loaded with a
+
+105
+00:05:13,430 --> 00:05:15,621
+cooking pot, a saw, a pickaxe,
+
+106
+00:05:15,621 --> 00:05:18,105
+a basket for moving earth, a rope,
+
+107
+00:05:18,105 --> 00:05:20,661
+a sickle, and several days of food.
+
+108
+00:05:20,661 --> 00:05:25,482
+The Jewish historian Josephus, who watched Roman legions up close,
+
+109
+00:05:25,482 --> 00:05:27,454
+listed almost exactly that.
+
+110
+00:05:27,454 --> 00:05:32,275
+Soldiers carried so much that they got a nickname: Marius's mules.
+
+111
+00:05:32,875 --> 00:05:34,155
+You are not alone.
+
+112
+00:05:34,155 --> 00:05:38,207
+You are one of eight men in a contubernium: a tent group.
+
+113
+00:05:38,207 --> 00:05:42,188
+Eight men, one leather tent, one mule, one cooking fire.
+
+114
+00:05:42,188 --> 00:05:45,173
+These seven strangers are now your family,
+
+115
+00:05:45,173 --> 00:05:49,581
+your kitchen, and the people who will be ordered to punish you
+
+116
+00:05:49,581 --> 00:05:50,789
+if you fail them.
+
+117
+00:05:50,789 --> 00:05:53,846
+Ten tent groups make a century: eighty men,
+
+118
+00:05:53,846 --> 00:05:55,623
+commanded by a centurion.
+
+119
+00:05:55,623 --> 00:05:57,614
+Six centuries make a cohort.
+
+120
+00:05:57,614 --> 00:06:01,310
+Ten cohorts make a legion, around five thousand men,
+
+121
+00:06:01,310 --> 00:06:04,225
+with the first cohort at double strength.
+
+122
+00:06:04,225 --> 00:06:07,211
+At the top of the legion stands its eagle,
+
+123
+00:06:07,211 --> 00:06:11,334
+the aquila, a golden eagle on a pole, carried into battle.
+
+124
+00:06:11,334 --> 00:06:13,893
+The eagle is the soul of the legion.
+
+125
+00:06:13,893 --> 00:06:17,874
+Losing it is the worst disgrace a Roman unit can suffer.
+
+126
+00:06:17,874 --> 00:06:20,717
+Remember that, because it matters later.
+
+127
+00:06:20,717 --> 00:06:22,850
+Your legion is the Eighteenth.
+
+128
+00:06:23,450 --> 00:06:28,046
+On campaign, every day starts before sunrise with three trumpet calls.
+
+129
+00:06:28,046 --> 00:06:30,475
+At the first, you take down the tent.
+
+130
+00:06:30,475 --> 00:06:33,823
+At the second, you load the mule and your own pole.
+
+131
+00:06:33,823 --> 00:06:36,121
+At the third, the column moves out,
+
+132
+00:06:36,121 --> 00:06:38,222
+and woe to anyone still packing.
+
+133
+00:06:38,222 --> 00:06:42,293
+The order of march is always the same: scouts and light troops
+
+134
+00:06:42,293 --> 00:06:46,889
+in front, then the surveyors and engineers who will mark out tonight's
+
+135
+00:06:46,889 --> 00:06:49,909
+camp, then the general's baggage, the cavalry,
+
+136
+00:06:49,909 --> 00:06:53,848
+the siege engines, the legions in long columns six men wide,
+
+137
+00:06:53,848 --> 00:06:56,146
+and the camp followers at the back.
+
+138
+00:06:56,146 --> 00:06:58,247
+You march for five or six hours,
+
+139
+00:06:58,247 --> 00:07:01,070
+singing rude songs about your own generals,
+
+140
+00:07:01,070 --> 00:07:03,499
+which Roman soldiers were famous for.
+
+141
+00:07:03,499 --> 00:07:07,964
+In the early afternoon you reach the spot the surveyors have chosen,
+
+142
+00:07:07,964 --> 00:07:12,822
+and instead of resting, you put down your load and start digging the camp.
+
+143
+00:07:12,822 --> 00:07:17,746
+By evening the legion is inside a fortress that did not exist that morning.
+
+144
+00:07:17,746 --> 00:07:21,226
+You eat, you stand guard in shifts through the night,
+
+145
+00:07:21,226 --> 00:07:23,721
+and tomorrow you burn it, or leave it,
+
+146
+00:07:23,721 --> 00:07:25,625
+and do the whole thing again.
+
+147
+00:07:26,225 --> 00:07:28,402
+Look at a map of your new world.
+
+148
+00:07:28,402 --> 00:07:31,939
+Under Augustus there are about twenty-eight legions,
+
+149
+00:07:31,939 --> 00:07:35,545
+around a hundred and fifty thousand citizen soldiers,
+
+150
+00:07:35,545 --> 00:07:39,627
+plus roughly as many again in the auxiliary units made up of
+
+151
+00:07:39,627 --> 00:07:41,803
+non-citizens from the provinces.
+
+152
+00:07:41,803 --> 00:07:45,885
+That sounds like a lot until you see the size of the empire.
+
+153
+00:07:45,885 --> 00:07:48,470
+Almost none of these men are in Italy.
+
+154
+00:07:48,470 --> 00:07:50,647
+They sit on the edges: in Spain,
+
+155
+00:07:50,647 --> 00:07:53,028
+in the Balkans, in Syria, in Egypt,
+
+156
+00:07:53,028 --> 00:07:56,430
+and above all along the great rivers in the north,
+
+157
+00:07:56,430 --> 00:07:58,130
+the Rhine and the Danube.
+
+158
+00:07:58,130 --> 00:08:01,532
+Beyond the Rhine lies Germania, a land of forests,
+
+159
+00:08:01,532 --> 00:08:07,042
+marshes and dozens of tribes, which Augustus has decided to turn into a province.
+
+160
+00:08:07,042 --> 00:08:11,396
+Your legion, the Eighteenth, is stationed on the Rhine frontier.
+
+161
+00:08:11,396 --> 00:08:13,845
+Your job, for the next twenty years,
+
+162
+00:08:13,845 --> 00:08:15,069
+is to be the wall.
+
+163
+00:08:15,069 --> 00:08:16,226
+Not a stone wall.
+
+164
+00:08:16,226 --> 00:08:18,947
+A wall made of men who are always there,
+
+165
+00:08:18,947 --> 00:08:21,600
+always watching, always ready to march.
+
+166
+00:08:21,600 --> 00:08:24,865
+The Romans would build actual stone walls later,
+
+167
+00:08:24,865 --> 00:08:26,974
+like Hadrian's Wall in Britain.
+
+168
+00:08:26,974 --> 00:08:28,675
+For now, the wall is you.
+
+169
+00:08:29,275 --> 00:08:32,102
+Most of a legionary's life is not battle.
+
+170
+00:08:32,102 --> 00:08:32,998
+It is chores.
+
+171
+00:08:32,998 --> 00:08:37,134
+In winter quarters or in a permanent fort you do guard duty,
+
+172
+00:08:37,134 --> 00:08:41,133
+cleaning, road building, bridge building, quarrying stone,
+
+173
+00:08:41,133 --> 00:08:46,166
+cutting firewood, and paperwork, because the Roman army ran on paperwork.
+
+174
+00:08:46,166 --> 00:08:48,923
+Letters found at the fort of Vindolanda,
+
+175
+00:08:48,923 --> 00:08:53,129
+near Hadrian's Wall, written about a century after your time,
+
+176
+00:08:53,129 --> 00:08:55,404
+show what soldiers worried about.
+
+177
+00:08:55,404 --> 00:08:58,506
+One man was sent socks, two pairs of sandals,
+
+178
+00:08:58,506 --> 00:09:00,436
+and two pairs of underpants.
+
+179
+00:09:00,436 --> 00:09:05,538
+Another letter is a birthday party invitation between two officers' wives.
+
+180
+00:09:05,538 --> 00:09:07,330
+You eat a ration of wheat,
+
+181
+00:09:07,330 --> 00:09:09,674
+which you grind and bake yourself,
+
+182
+00:09:09,674 --> 00:09:12,777
+plus whatever your tent group can add: bacon,
+
+183
+00:09:12,777 --> 00:09:17,396
+cheese, lentils, vegetables, and posca, sour wine mixed with water.
+
+184
+00:09:17,396 --> 00:09:20,085
+On the march you eat hard, dry biscuit.
+
+185
+00:09:20,085 --> 00:09:21,532
+You gamble with dice.
+
+186
+00:09:21,532 --> 00:09:23,256
+You go to the bath house,
+
+187
+00:09:23,256 --> 00:09:25,738
+because a proper Roman fort has one.
+
+188
+00:09:25,738 --> 00:09:26,910
+And you complain.
+
+189
+00:09:26,910 --> 00:09:29,116
+Every army in history complains.
+
+190
+00:09:29,116 --> 00:09:30,150
+Yours does too.
+
+191
+00:09:30,750 --> 00:09:32,982
+Not everyone stays at the bottom.
+
+192
+00:09:32,982 --> 00:09:35,011
+If you can read, write, count,
+
+193
+00:09:35,011 --> 00:09:39,881
+or do anything useful, you might become an immunis: a specialist excused
+
+194
+00:09:39,881 --> 00:09:41,368
+from the worst chores.
+
+195
+00:09:41,368 --> 00:09:45,427
+Surveyors, engineers, clerks, medics, blacksmiths, butchers,
+
+196
+00:09:45,427 --> 00:09:48,132
+even the men who look after the weapons.
+
+197
+00:09:48,132 --> 00:09:53,543
+Above them are the principales, junior officers on pay and a half or double pay.
+
+198
+00:09:53,543 --> 00:09:55,977
+The optio is the centurion's deputy.
+
+199
+00:09:55,977 --> 00:10:00,441
+The tesserarius runs the guard and hands out the nightly password,
+
+200
+00:10:00,441 --> 00:10:02,267
+written on a little tablet.
+
+201
+00:10:02,267 --> 00:10:07,272
+The signifer carries the century's standard and also looks after the men's
+
+202
+00:10:07,272 --> 00:10:12,142
+savings, which makes him a mix between a flag bearer and a bank manager.
+
+203
+00:10:12,142 --> 00:10:15,388
+The aquilifer carries the legion's eagle itself,
+
+204
+00:10:15,388 --> 00:10:18,973
+the most honoured and most dangerous job in the unit.
+
+205
+00:10:18,973 --> 00:10:21,340
+And above them all, the centurions,
+
+206
+00:10:21,340 --> 00:10:23,369
+paid many times more than you,
+
+207
+00:10:23,369 --> 00:10:27,833
+with their crests worn sideways across the helmet so their men can
+
+208
+00:10:27,833 --> 00:10:29,388
+find them in the chaos.
+
+209
+00:10:29,388 --> 00:10:34,123
+A few ordinary soldiers really did rise to centurion after many years.
+
+210
+00:10:34,123 --> 00:10:35,002
+Most did not.
+
+211
+00:10:35,002 --> 00:10:37,775
+You, for now, are scrubbing the latrines.
+
+212
+00:10:38,375 --> 00:10:42,431
+Outside the walls of every big fortress grows a second town,
+
+213
+00:10:42,431 --> 00:10:46,757
+the canabae: taverns, shops, craftsmen, merchants, and families.
+
+214
+00:10:46,757 --> 00:10:52,300
+Because soldiers cannot legally marry, thousands of them simply live with partners
+
+215
+00:10:52,300 --> 00:10:56,355
+there anyway, and have children the law pretends not to see.
+
+216
+00:10:56,355 --> 00:10:58,248
+This is where your pay goes.
+
+217
+00:10:58,248 --> 00:11:00,749
+Wine, better food, dice, a new cloak,
+
+218
+00:11:00,749 --> 00:11:05,886
+a good-luck charm, a letter written for you by a scribe if you cannot write.
+
+219
+00:11:05,886 --> 00:11:08,860
+Soldiers saved money, lent it to each other,
+
+220
+00:11:08,860 --> 00:11:10,280
+and lost it gambling.
+
+221
+00:11:10,280 --> 00:11:12,240
+Some had slaves of their own.
+
+222
+00:11:12,240 --> 00:11:16,093
+And all of them listened for news of a donative: an extra
+
+223
+00:11:16,093 --> 00:11:19,946
+cash gift from the emperor, usually at the start of a new
+
+224
+00:11:19,946 --> 00:11:24,069
+reign or after a victory, which could be worth months of pay.
+
+225
+00:11:24,069 --> 00:11:26,840
+Life in a Roman fort was hard and boring,
+
+226
+00:11:26,840 --> 00:11:30,017
+but it was also oddly comfortable for the time.
+
+227
+00:11:30,017 --> 00:11:34,005
+Regular food, a doctor, a bath house and a salary were more
+
+228
+00:11:34,005 --> 00:11:37,250
+than most farmers in the empire would ever have.
+
+229
+00:11:37,850 --> 00:11:39,589
+The army is also a church.
+
+230
+00:11:39,589 --> 00:11:43,935
+In the middle of every fortress stands the headquarters building,
+
+231
+00:11:43,935 --> 00:11:47,881
+and in its heart is a shrine holding the legion's eagle and
+
+232
+00:11:47,881 --> 00:11:50,355
+the standards, guarded day and night.
+
+233
+00:11:50,355 --> 00:11:55,571
+Beneath the shrine, very conveniently, sits the strongroom with the pay chest,
+
+234
+00:11:55,571 --> 00:11:57,644
+so if you want to rob the army,
+
+235
+00:11:57,644 --> 00:11:59,717
+you have to rob the gods first.
+
+236
+00:11:59,717 --> 00:12:02,793
+Every year you renew your oath to the emperor.
+
+237
+00:12:02,793 --> 00:12:07,072
+The army keeps a calendar of festivals for the emperor's family,
+
+238
+00:12:07,072 --> 00:12:11,085
+for Mars, for Jupiter, for the birthday of the eagle itself.
+
+239
+00:12:11,085 --> 00:12:13,425
+Soldiers also bring their own gods.
+
+240
+00:12:13,425 --> 00:12:17,571
+A century or two later, many legionaries will worship Mithras,
+
+241
+00:12:17,571 --> 00:12:22,252
+a god of light whose followers meet in small dark underground temples,
+
+242
+00:12:22,252 --> 00:12:24,258
+with secret ranks like a club.
+
+243
+00:12:24,258 --> 00:12:28,070
+You touch your lucky charm, you pour a little wine on the
+
+244
+00:12:28,070 --> 00:12:32,082
+ground for the gods, and you hope they are paying attention.
+
+245
+00:12:32,082 --> 00:12:35,225
+In a few years you will find out they were not.
+
+246
+00:12:35,825 --> 00:12:39,632
+Quick question before your legion marches into Germany.
+
+247
+00:12:39,632 --> 00:12:42,608
+Out of everything so far, the twenty years,
+
+248
+00:12:42,608 --> 00:12:45,585
+the marching, the digging, the no marriage,
+
+249
+00:12:45,585 --> 00:12:49,391
+the underpants letters, what would make you quit first?
+
+250
+00:12:49,391 --> 00:12:51,053
+Tell me in the comments.
+
+251
+00:12:51,053 --> 00:12:54,375
+I'll read the worst answers in the next episode.
+
+252
+00:12:54,975 --> 00:12:58,428
+You will not quit, because quitting is desertion,
+
+253
+00:12:58,428 --> 00:13:00,895
+and Roman discipline is terrifying.
+
+254
+00:13:00,895 --> 00:13:03,432
+Your centurion carries a vine stick,
+
+255
+00:13:03,432 --> 00:13:05,828
+the vitis, the symbol of his rank,
+
+256
+00:13:05,828 --> 00:13:07,802
+and he uses it on your back.
+
+257
+00:13:07,802 --> 00:13:12,030
+The historian Tacitus describes a centurion called Lucilius,
+
+258
+00:13:12,030 --> 00:13:14,849
+nicknamed by his men "Bring me another",
+
+259
+00:13:14,849 --> 00:13:19,148
+because he broke his stick over so many soldiers that he kept
+
+260
+00:13:19,148 --> 00:13:20,769
+shouting for a new one.
+
+261
+00:13:20,769 --> 00:13:23,518
+When his men mutinied, they killed him.
+
+262
+00:13:23,518 --> 00:13:28,099
+Fall asleep on night guard, and you may face the fustuarium: your
+
+263
+00:13:28,099 --> 00:13:30,918
+own comrades beat or stone you to death.
+
+264
+00:13:30,918 --> 00:13:33,737
+And if a whole unit runs away in battle,
+
+265
+00:13:33,737 --> 00:13:38,600
+the commander can order a decimation: the unit is divided into groups
+
+266
+00:13:38,600 --> 00:13:42,546
+of ten, lots are drawn, and in each group the other nine
+
+267
+00:13:42,546 --> 00:13:44,097
+kill the one who lost.
+
+268
+00:13:44,097 --> 00:13:45,788
+It was rare, but famous.
+
+269
+00:13:45,788 --> 00:13:48,819
+In 71 BC, during the war against Spartacus,
+
+270
+00:13:48,819 --> 00:13:50,651
+Marcus Crassus revived it.
+
+271
+00:13:50,651 --> 00:13:54,175
+Nobody in your century plans to be the one in ten.
+
+272
+00:13:54,775 --> 00:13:59,237
+Before your first battle, the good news: the Roman army has some
+
+273
+00:13:59,237 --> 00:14:02,164
+of the best medicine in the ancient world.
+
+274
+00:14:02,164 --> 00:14:05,371
+Big forts have a hospital, the valetudinarium,
+
+275
+00:14:05,371 --> 00:14:08,508
+with wards of small rooms around a courtyard.
+
+276
+00:14:08,508 --> 00:14:13,597
+There are doctors, and orderlies who carry bandages onto the battlefield.
+
+277
+00:14:13,597 --> 00:14:17,083
+Archaeologists have found Roman scalpels, forceps,
+
+278
+00:14:17,083 --> 00:14:22,869
+probes, bone levers and needles, many of them surprisingly similar to modern tools.
+
+279
+00:14:22,869 --> 00:14:26,215
+Surgeons could pull out arrowheads, stitch cuts,
+
+280
+00:14:26,215 --> 00:14:28,376
+set broken bones, and amputate.
+
+281
+00:14:28,376 --> 00:14:31,095
+The bad news: there are no antibiotics,
+
+282
+00:14:31,095 --> 00:14:34,162
+no anaesthesia beyond strong wine and herbs,
+
+283
+00:14:34,162 --> 00:14:36,393
+and nobody knows what germs are.
+
+284
+00:14:36,393 --> 00:14:38,484
+A clean stab wound might heal.
+
+285
+00:14:38,484 --> 00:14:42,737
+A dirty one in your belly almost certainly kills you, slowly.
+
+286
+00:14:42,737 --> 00:14:46,013
+So most soldiers died not from a famous battle,
+
+287
+00:14:46,013 --> 00:14:50,056
+but from fevers, dysentery, infected wounds and accidents.
+
+288
+00:14:50,056 --> 00:14:54,378
+The enemy you should fear most is not a barbarian with an axe.
+
+289
+00:14:54,378 --> 00:14:56,400
+It is the water in your camp.
+
+290
+00:14:57,000 --> 00:15:00,340
+Your first real fight comes on a frontier river,
+
+291
+00:15:00,340 --> 00:15:02,010
+against a raiding party.
+
+292
+00:15:02,010 --> 00:15:04,167
+It is nothing like the stories.
+
+293
+00:15:04,167 --> 00:15:06,880
+The noise comes first: horns, shouting,
+
+294
+00:15:06,880 --> 00:15:09,316
+the drumming of weapons on shields.
+
+295
+00:15:09,316 --> 00:15:10,359
+Then the order.
+
+296
+00:15:10,359 --> 00:15:13,630
+You throw your first javelin, then your second,
+
+297
+00:15:13,630 --> 00:15:16,135
+into the mass of men running at you.
+
+298
+00:15:16,135 --> 00:15:18,500
+The iron necks bend, shields drop,
+
+299
+00:15:18,500 --> 00:15:20,101
+and then the lines hit.
+
+300
+00:15:20,101 --> 00:15:23,858
+You do not swing your sword like a hero in a painting.
+
+301
+00:15:23,858 --> 00:15:28,311
+You crouch behind your shield, punch forward with its iron boss,
+
+302
+00:15:28,311 --> 00:15:31,303
+and stab low, under the other man's shield,
+
+303
+00:15:31,303 --> 00:15:34,574
+over and over, while the man behind you pushes,
+
+304
+00:15:34,574 --> 00:15:37,774
+and the man beside you covers your right side.
+
+305
+00:15:37,774 --> 00:15:41,045
+A Roman battle line is a machine made of tired,
+
+306
+00:15:41,045 --> 00:15:43,619
+terrified people trusting each other.
+
+307
+00:15:43,619 --> 00:15:45,776
+When the enemy breaks and runs,
+
+308
+00:15:45,776 --> 00:15:47,933
+you are too exhausted to cheer.
+
+309
+00:15:47,933 --> 00:15:49,742
+That night you dig a camp.
+
+310
+00:15:49,742 --> 00:15:50,925
+Of course you do.
+
+311
+00:15:51,525 --> 00:15:53,773
+The Roman army had another face,
+
+312
+00:15:53,773 --> 00:15:55,529
+the one you see in films.
+
+313
+00:15:55,529 --> 00:16:00,586
+The testudo, the tortoise: a block of men locking their shields together
+
+314
+00:16:00,586 --> 00:16:03,045
+on every side and over their heads,
+
+315
+00:16:03,045 --> 00:16:06,557
+so they can walk right up to an enemy wall under a
+
+316
+00:16:06,557 --> 00:16:08,383
+rain of arrows and stones.
+
+317
+00:16:08,383 --> 00:16:13,230
+The siege engines: the ballista, a giant crossbow that throws stones,
+
+318
+00:16:13,230 --> 00:16:18,147
+and the scorpio, a smaller bolt thrower so accurate that Roman writers
+
+319
+00:16:18,147 --> 00:16:21,308
+boast about it pinning enemies to the ground.
+
+320
+00:16:21,308 --> 00:16:25,804
+And the most Roman thing of all: when Julius Caesar besieged the
+
+321
+00:16:25,804 --> 00:16:30,791
+Gallic leader Vercingetorix at Alesia, half a century before your time,
+
+322
+00:16:30,791 --> 00:16:32,617
+he did not storm the town.
+
+323
+00:16:32,617 --> 00:16:34,374
+He built a ring of walls,
+
+324
+00:16:34,374 --> 00:16:37,254
+ditches and towers all the way around it,
+
+325
+00:16:37,254 --> 00:16:39,993
+and then a second ring facing outwards,
+
+326
+00:16:39,993 --> 00:16:43,084
+against the relief army coming to rescue it.
+
+327
+00:16:43,084 --> 00:16:45,542
+His men fought both armies at once,
+
+328
+00:16:45,542 --> 00:16:48,773
+from inside their own fortifications, and won.
+
+329
+00:16:48,773 --> 00:16:51,513
+Your instructors tell that story a lot.
+
+330
+00:16:51,513 --> 00:16:53,550
+It mainly means more digging.
+
+331
+00:16:54,150 --> 00:16:58,115
+In the spring of 9 AD your three legions cross the Rhine
+
+332
+00:16:58,115 --> 00:17:01,230
+and march deep into Germania for the summer.
+
+333
+00:17:01,230 --> 00:17:07,531
+Your general, Publius Quinctilius Varus, behaves as if the province is already conquered.
+
+334
+00:17:07,531 --> 00:17:10,646
+He holds courts, hands down Roman judgments,
+
+335
+00:17:10,646 --> 00:17:15,248
+and collects taxes from tribes who are not used to paying anyone.
+
+336
+00:17:15,248 --> 00:17:18,221
+You spend the summer near the river Weser,
+
+337
+00:17:18,221 --> 00:17:20,840
+building, patrolling and being bored.
+
+338
+00:17:20,840 --> 00:17:25,088
+The local Germanic leaders smile, trade and dine with Varus.
+
+339
+00:17:25,088 --> 00:17:27,637
+The most trusted of all is Arminius,
+
+340
+00:17:27,637 --> 00:17:29,832
+a prince of the Cherusci tribe,
+
+341
+00:17:29,832 --> 00:17:33,655
+who grew up in Rome, served as an officer in the Roman
+
+342
+00:17:33,655 --> 00:17:35,991
+army and holds Roman citizenship.
+
+343
+00:17:35,991 --> 00:17:41,584
+Another German noble, Segestes, warns Varus that Arminius is planning a revolt.
+
+344
+00:17:41,584 --> 00:17:45,053
+Varus thinks it is a family feud and ignores him.
+
+345
+00:17:45,053 --> 00:17:46,823
+At the end of the summer,
+
+346
+00:17:46,823 --> 00:17:51,000
+the army starts back towards its winter camps on the Rhine.
+
+347
+00:17:51,600 --> 00:17:53,807
+And now we're back in the rain.
+
+348
+00:17:53,807 --> 00:17:58,077
+On the way home, news arrives of an uprising among a distant
+
+349
+00:17:58,077 --> 00:18:03,060
+tribe, and Arminius suggests the army make a short detour to crush it.
+
+350
+00:18:03,060 --> 00:18:03,985
+Varus agrees.
+
+351
+00:18:03,985 --> 00:18:08,611
+Arminius rides ahead, saying he will gather his warriors to help.
+
+352
+00:18:08,611 --> 00:18:10,035
+He does gather them.
+
+353
+00:18:10,035 --> 00:18:11,245
+Just not to help.
+
+354
+00:18:11,245 --> 00:18:14,377
+The detour leads your column, three legions,
+
+355
+00:18:14,377 --> 00:18:19,075
+auxiliaries, cavalry, wagons, mules, servants, women and children,
+
+356
+00:18:19,075 --> 00:18:23,986
+stretched out for miles, into a strip of land squeezed between wooded
+
+357
+00:18:23,986 --> 00:18:29,893
+hills and a great bog, near what the Romans would remember as the Teutoburg Forest.
+
+358
+00:18:29,893 --> 00:18:32,527
+Then the trees start throwing spears.
+
+359
+00:18:32,527 --> 00:18:36,584
+For three or four days the column is attacked from cover,
+
+360
+00:18:36,584 --> 00:18:40,712
+in mud and rain, in terrain where you cannot form a battle
+
+361
+00:18:40,712 --> 00:18:43,061
+line, cannot build a proper camp,
+
+362
+00:18:43,061 --> 00:18:45,481
+and cannot see who is killing you.
+
+363
+00:18:45,481 --> 00:18:50,891
+The tribes Arminius has secretly united pick the army apart, piece by piece.
+
+364
+00:18:50,891 --> 00:18:55,375
+Varus, wounded, falls on his own sword rather than be captured.
+
+365
+00:18:55,375 --> 00:18:58,009
+Almost the entire force is destroyed,
+
+366
+00:18:58,009 --> 00:19:01,639
+somewhere around fifteen to twenty thousand people.
+
+367
+00:19:01,639 --> 00:19:03,133
+The eagles are taken.
+
+368
+00:19:03,133 --> 00:19:08,045
+Two thousand years later, archaeologists at a place called Kalkriese,
+
+369
+00:19:08,045 --> 00:19:10,465
+near the modern city of Osnabrück,
+
+370
+00:19:10,465 --> 00:19:14,308
+found thousands of Roman objects in the ground: coins,
+
+371
+00:19:14,308 --> 00:19:17,867
+weapons, armour, hobnails from sandals like yours,
+
+372
+00:19:17,867 --> 00:19:21,070
+and the iron face mask of a Roman cavalryman.
+
+373
+00:19:21,070 --> 00:19:24,985
+One of your officers, a centurion named Marcus Caelius,
+
+374
+00:19:24,985 --> 00:19:28,401
+has a tombstone that still survives in a museum.
+
+375
+00:19:28,401 --> 00:19:30,964
+It says he fell in the war of Varus,
+
+376
+00:19:30,964 --> 00:19:34,736
+and that his bones may one day be placed in the tomb.
+
+377
+00:19:34,736 --> 00:19:35,875
+They never were.
+
+378
+00:19:36,475 --> 00:19:40,941
+In Rome, the old emperor Augustus takes the news so badly that,
+
+379
+00:19:40,941 --> 00:19:45,833
+according to the historian Suetonius, he lets his hair and beard grow
+
+380
+00:19:45,833 --> 00:19:49,024
+for months and bangs his head against a door,
+
+381
+00:19:49,024 --> 00:19:54,554
+shouting: "Quinctilius Varus, give me back my legions!" The numbers Seventeen,
+
+382
+00:19:54,554 --> 00:19:58,949
+Eighteen and Nineteen are never used for a Roman legion again.
+
+383
+00:19:58,949 --> 00:20:04,196
+Six years later, a Roman army under Germanicus reaches the battlefield and
+
+384
+00:20:04,196 --> 00:20:06,606
+finds the bones still lying there,
+
+385
+00:20:06,606 --> 00:20:09,938
+skulls nailed to trees, and buries what it can.
+
+386
+00:20:09,938 --> 00:20:14,192
+Two of the lost eagles are recovered in the following years,
+
+387
+00:20:14,192 --> 00:20:16,390
+and the last one only in 41 AD,
+
+388
+00:20:16,390 --> 00:20:19,367
+more than thirty years after it was taken.
+
+389
+00:20:19,367 --> 00:20:22,558
+Rome never conquers Germany beyond the Rhine.
+
+390
+00:20:22,558 --> 00:20:26,315
+A single ambush in the rain helps draw a border that,
+
+391
+00:20:26,315 --> 00:20:30,711
+in a way, Europe still feels today: the line between the Latin
+
+392
+00:20:30,711 --> 00:20:32,625
+world and the Germanic one.
+
+393
+00:20:33,225 --> 00:20:34,750
+But let's be generous.
+
+394
+00:20:34,750 --> 00:20:38,701
+Say you were transferred to another legion a year before.
+
+395
+00:20:38,701 --> 00:20:40,087
+What happens to you?
+
+396
+00:20:40,087 --> 00:20:43,276
+If disease, accidents or battle don't get you,
+
+397
+00:20:43,276 --> 00:20:47,019
+and many soldiers did die long before their discharge,
+
+398
+00:20:47,019 --> 00:20:50,623
+you serve your twenty years plus your reserve years.
+
+399
+00:20:50,623 --> 00:20:54,505
+Then comes the honourable discharge, the honesta missio.
+
+400
+00:20:54,505 --> 00:20:59,773
+Under Augustus a retiring legionary received a bonus of about three thousand
+
+401
+00:20:59,773 --> 00:21:03,031
+denarii, more than thirteen years of basic pay,
+
+402
+00:21:03,031 --> 00:21:05,803
+or a plot of land in a veterans' colony.
+
+403
+00:21:05,803 --> 00:21:08,091
+You would be in your mid-forties,
+
+404
+00:21:08,091 --> 00:21:10,309
+with a bad back, iron-hard feet,
+
+405
+00:21:10,309 --> 00:21:13,081
+and a family the law finally recognises.
+
+406
+00:21:13,081 --> 00:21:16,894
+Many veterans settled near the forts where they served,
+
+407
+00:21:16,894 --> 00:21:20,845
+married local women, and their sons joined the same army.
+
+408
+00:21:20,845 --> 00:21:25,835
+That is how Rome turned frontier camps into cities: places like Cologne,
+
+409
+00:21:25,835 --> 00:21:28,192
+York, and many others started out,
+
+410
+00:21:28,192 --> 00:21:31,450
+in one way or another, as Roman military sites.
+
+411
+00:21:32,050 --> 00:21:33,582
+So that's your career.
+
+412
+00:21:33,582 --> 00:21:36,855
+Twenty-five years of marching, digging, chores,
+
+413
+00:21:36,855 --> 00:21:41,242
+terrifying discipline and the occasional nightmare in a forest,
+
+414
+00:21:41,242 --> 00:21:43,610
+for a pension and a piece of land.
+
+415
+00:21:43,610 --> 00:21:46,604
+Most legionaries never saw a famous battle.
+
+416
+00:21:46,604 --> 00:21:51,409
+They built roads and walls that are still standing two thousand years
+
+417
+00:21:51,409 --> 00:21:55,031
+later, which is more than most of us will be able to
+
+418
+00:21:55,031 --> 00:21:56,354
+say about our jobs.
+
+419
+00:21:56,354 --> 00:21:59,975
+Next time on Brinkman: another uniform, another war.
+
